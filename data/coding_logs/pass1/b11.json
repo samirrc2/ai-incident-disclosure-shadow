@@ -1,0 +1,123 @@
+{
+  "181": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM FY2021 10-K (0001467858-22-000034, 2022-02-02) and FY2022 10-K (0001467858-23-000029, 2023-01-31) both carry autonomous-vehicle risk-factor language: 'Our AV strategy is dependent upon our ability to successfully mitigate unique technological, operational and regulatory risks... To the extent accidents... associated with our autonomous driving systems occur, we could be subject to liability, reputational harm, government scrutiny and further regulation.' No in-window filing names this Feb-2022 BMW/Cruise collision; efts searches for 'pedestrian'/'dragged' return zero hits in 2022-2023 GM filings.",
+    "accounting_channel": null,
+    "specific_queries": ["\"pedestrian\" ciks=0001467858 2022 filings", "\"collision\" ciks=0001467858 2022-2023", "Item 1A AV risk-factor review of FY2021/FY2022 10-K"],
+    "rationale": "Minor Cruise AV fender-bender never named in any GM filing; only the family-level autonomous-driving accident/liability risk language is present in the in-window 10-Ks."
+  },
+  "427": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window annual report is GM FY2022 10-K (0001467858-23-000029, 2023-01-31), which carries the AV accident/liability/government-scrutiny risk factor. No filing references Cruise sudden-braking/rear-end events; efts incident-term searches ('collision' hits are generic collision-avoidance/coverage references, not this event).",
+    "accounting_channel": null,
+    "specific_queries": ["\"sudden braking\" ciks=0001467858", "\"collision\" ciks=0001467858 2022-2023", "AV risk-factor review FY2022 10-K Item 1A"],
+    "rationale": "Operational Cruise braking incidents are not disclosed; only generic autonomous-driving risk language of the same harm family appears in the in-window 10-K."
+  },
+  "175": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM FY2022 10-K (0001467858-23-000029, 2023-01-31) carries AV risk-factor language re accidents/regulatory scrutiny. No filing references the April-2022 Cruise-fled-police SF episode; no incident-specific hits in efts.",
+    "accounting_channel": null,
+    "specific_queries": ["\"police\" ciks=0001467858 2022", "\"autonomous\" pulled over ciks=0001467858", "FY2022 10-K Item 1A AV risk review"],
+    "rationale": "Widely-reported but immaterial operational episode; not named in filings, only family-level AV/regulatory risk language present."
+  },
+  "389": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM FY2022 10-K (0001467858-23-000029, 2023-01-31) AV risk factor present. efts 'fire hose' = 0 hits (2022-2024); no filing references a Cruise AV blocking a fire truck.",
+    "accounting_channel": null,
+    "specific_queries": ["\"fire truck\" ciks=0001467858", "\"fire hose\" ciks=0001467858 2022-2024 (0 hits)", "FY2022 10-K AV risk review"],
+    "rationale": "First-responder obstruction incident not disclosed; only generic autonomous-driving risk language of the same family in the in-window 10-K."
+  },
+  "253": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM FY2022 10-K (0001467858-23-000029, 2023-01-31) AV risk factor present. No filing references the May-2022 Cruise connectivity-loss traffic-blockage event; no incident-specific efts hits.",
+    "accounting_channel": null,
+    "specific_queries": ["\"connectivity\" Cruise ciks=0001467858", "\"traffic\" blockage ciks=0001467858", "FY2022 10-K AV risk review"],
+    "rationale": "Operational stall/blockage not disclosed; only family-level AV technological/operational risk language present in the in-window 10-K."
+  },
+  "293": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "The June-3-2022 Cruise-vs-Prius intersection collision (minor injuries) led to a Sept-2022 Cruise voluntary software recall of ~80 AVs. Neither the crash nor that recall is separately named in GM's FY2022 10-K (0001467858-23-000029, 2023-01-31); efts 'recall' in the FY2022 window flags only the routine 10-K, and 'collision' hits are generic collision-avoidance/insurance references. AV accident/liability risk language is present.",
+    "accounting_channel": null,
+    "specific_queries": ["\"recall\" ciks=0001467858 forms=10-K 2022-08..2023-06 (only the routine 10-K)", "\"collision\" ciks=0001467858 2022-2023 (generic hits)", "FY2022 10-K Item 3/contingencies review"],
+    "rationale": "Immaterial minor-injury collision and small voluntary Cruise software recall not separately disclosed as legal proceedings; captured only by family-level AV risk language (T3, medium given the recall could conceivably sit in an undisclosed contingencies line)."
+  },
+  "460": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM FY2022 10-K (0001467858-23-000029, 2023-01-31) AV risk factor present. efts 'fire hose' = 0 hits across 2022-2024 GM filings; no filing references a Cruise AV running over a fire hose.",
+    "accounting_channel": null,
+    "specific_queries": ["\"fire hose\" ciks=0001467858 2022-2024 (0 hits)", "FY2022 10-K AV risk review"],
+    "rationale": "First-responder-scene operational incident not disclosed; only generic autonomous-driving risk language of the same family present."
+  },
+  "459": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Incident date 2023-01-21; the in-window annual report is GM FY2022 10-K (0001467858-23-000029, filed 2023-01-31, 10 days later), which carries AV accident/regulatory risk language (the FY2023 10-K filed 2024-01-30 falls just outside the +12-month window). efts 'fire hose' = 0 hits; incident not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"fire hose\" ciks=0001467858 2022-2024 (0 hits)", "FY2022 10-K AV risk review"],
+    "rationale": "Firefighters-smashed-window incident not disclosed; only family-level AV risk language in the in-window FY2022 10-K."
+  },
+  "595": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window filing is GM FY2023 10-K (0001467858-24-000031, 2024-01-30), which discusses Cruise AV strategy/risk (accidents, regulatory scrutiny, permit suspension) but does not name the Aug-11-2023 connectivity-driven mass-immobilization traffic-jam event. No incident-specific efts hits.",
+    "accounting_channel": null,
+    "specific_queries": ["\"connectivity\" Cruise ciks=0001467858 2023", "\"immobilized\"/\"traffic\" ciks=0001467858", "FY2023 10-K Item 1A AV risk review"],
+    "rationale": "Operational fleet-stall event not individually disclosed; only the family-level Cruise AV risk language present (the specific disclosed event is the later October 2023 incident)."
+  },
+  "563": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM FY2023 10-K (0001467858-24-000031, 2024-01-30) carries Cruise AV risk-factor language but names only the October 2023 pedestrian incident; the Aug-14-2023 ambulance-delay episode (for which Cruise was later cleared of fault) is not referenced. No incident-specific efts hits.",
+    "accounting_channel": null,
+    "specific_queries": ["\"ambulance\" ciks=0001467858 2023", "\"pedestrian\" ciks=0001467858 (only Oct-2023-incident filings)", "FY2023 10-K AV risk review"],
+    "rationale": "August ambulance-delay incident (later attributed away from Cruise) not disclosed; only family-level AV risk language present, distinct from the specifically-disclosed October event."
+  },
+  "726": {
+    "code": "T1",
+    "confidence": "high",
+    "evidence": "GM FY2023 10-K (0001467858-24-000031, 2024-01-30), Item 1 Business and Item 1A Risk Factors: 'In October 2023, a hit-and-run accident involving a pedestrian and a third-party vehicle occurred, which resulted in the pedestrian being thrown into the path of a Cruise AV... the California DMV suspended Cruise's permits to operate AVs... Cruise voluntarily paused all of its driverless, supervised and manual AV operations... Certain federal and state agencies, including the California DMV, the California Public Utilities Commission, NHTSA, the U.S. Department of Justice and the SEC, have opened investigations or made inquiries in connection with the incident.' Q4/FY2023 earnings 8-K (0001467858-24-000029, 2024-01-30) books a $478M 'Cruise restructuring' special-item charge tied to the AV-operations pause.",
+    "accounting_channel": {
+      "filing_item": "10-K Item 1 (Business/AV strategy) and Item 1A (Risk Factors); charge in Q4/FY2023 earnings 8-K special-items/EBIT-adjusted reconciliation and FY2023 10-K restructuring note (NOTE: the incident is NOT in the Legal Proceedings/Commitments & Contingencies note).",
+      "booked_impact": "yes -- $478 million 'Cruise restructuring' charge (Q4 and full-year 2023), described as non-cash restructuring, supplier-related and employee-separation charges 'resulting from Cruise voluntarily pausing its driverless, supervised and manual AV operations'; recorded as an EBIT-adjusted special item, not as an incident-specific legal reserve (no reserve for the investigations/settlement disclosed in the contingencies note)."
+    },
+    "specific_queries": ["\"pedestrian\" ciks=0001467858 (10-K + 2 x 10-Q hits)", "\"Cruise Restructuring\" ciks=0001467858 forms=10-K/10-Q/8-K", "\"dragged\" ciks=0001467858 (0 hits -- softened phrasing)", "R26 restructuring note + Q4-2023 earnings 8-K EX-99.1"],
+    "rationale": "The October 2023 Cruise pedestrian incident is explicitly narrated (event, DMV permit suspension, voluntary pause, and NHTSA/DOJ/SEC/DMV/CPUC investigations) in the FY2023 10-K and accompanied by a booked $478M Cruise restructuring charge -- a clear disclosed-specific T1."
+  },
+  "596": {
+    "code": "T1",
+    "confidence": "medium",
+    "evidence": "GM FY2023 10-K (0001467858-24-000031, 2024-01-30), Item 1A Risk Factors, names the federal safety probe of Cruise AV pedestrian conduct: '...NHTSA... [has] opened investigations or made inquiries in connection with the incident.' This is the same NHTSA scrutiny of Cruise AVs' caution around pedestrians/crosswalks captured by this incident, framed within GM's AV-incident/risk discussion (not merely as a generic legal matter).",
+    "accounting_channel": {
+      "filing_item": "10-K Item 1A (Risk Factors) / Item 1 (Business, AV strategy) -- disclosed alongside the October 2023 Cruise incident cluster; not carried as a standalone Legal Proceedings item.",
+      "booked_impact": "no incident/investigation-specific reserve disclosed; the accompanying booked charge for the broader Cruise pause is the $478M FY2023 'Cruise restructuring' special item (see incident 726)."
+    },
+    "specific_queries": ["\"NHTSA\" Cruise ciks=0001467858 2023-2024", "\"pedestrian\" ciks=0001467858 (10-K hit)", "FY2023 10-K Item 1A AV-incident review"],
+    "rationale": "The FY2023 10-K explicitly discloses a NHTSA (and other-agency) investigation into the Cruise AV pedestrian incident, framed as an AV-safety matter -- coded T1 (medium: the 10-K ties the NHTSA probe to 'the incident' and does not separately elaborate the crosswalk-pattern investigation)."
+  },
+  "622": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "No disclosure located. efts 'chatbot' = 0 hits in GM filings (2023-12..2025-01); 'artificial intelligence' appears in GM 10-Ks only from FY2024 (0001467858-25-000032, 2025-01-28) and later -- i.e., NOT in any filing within this incident's window (2023-12-18 to 2024-12-18; the FY2023 10-K of 2024-01-30 has AV/cyber risk language but no generative-AI/chatbot risk factor). The event involved an independent Chevrolet dealer's ChatGPT-powered chatbot, not a GM product.",
+    "accounting_channel": null,
+    "specific_queries": ["\"chatbot\" ciks=0001467858 2023-12..2025-01 (0 hits)", "\"artificial intelligence\" ciks=0001467858 forms=10-K (first in FY2024 10-K, out of window)", "\"Tahoe\" ciks=0001467858"],
+    "rationale": "Dealer chatbot gag; not GM's own system, no legal consequence to GM, and no in-window generic AI/generative-AI risk language of the same tech family -- GM's AI risk factor first appears in the FY2024 10-K, outside this window. T4."
+  },
+  "733": {
+    "code": "T2",
+    "confidence": "high",
+    "evidence": "GM Q1 2025 10-Q (0001467858-25-000096, 2025-05-01), Note 'Commitments, Contingencies and Uncertainties': 'The Company resolved a Federal Trade Commission investigation through an agreed administrative consent order,' and describes 'putative class actions pending against GM in federal courts... alleging violations of state and federal privacy and consumer protection laws related to the collection and use of certain consumer data obtained through our former OnStar Smart Driver product,' plus state enforcement lawsuits/AG inquiries. This is the exact facts of the driver-data-collection/scoring matter, disclosed as a privacy/consumer-protection legal-regulatory contingency without any AI/algorithmic-incident framing.",
+    "accounting_channel": {
+      "filing_item": "10-Q Note: Commitments, Contingencies and Uncertainties (litigation matters) -- FTC consent order + OnStar Smart Driver privacy class actions and state AG suits.",
+      "booked_impact": "no -- FTC matter resolved via an injunctive administrative consent order (5-year ban on sharing/selling geolocation and driver-behavior data, per the FTC action); privacy class actions and state enforcement suits ongoing with no material reserve quantified in the disclosure."
+    },
+    "specific_queries": ["\"Federal Trade Commission\" ciks=0001467858 2024-06..2025-06 (Q1-2025 10-Q hit)", "\"driver data\" / \"geolocation\" ciks=0001467858 (0 hits -- not GM's framing)", "\"telematics\" ciks=0001467858 (subsidiary-list/business-description hits only)", "R21 contingencies note of Q1-2025 10-Q"],
+    "rationale": "GM's OnStar Smart Driver data-collection/sharing (the automaker-side of the insurer telematics-scoring incident) surfaces in filings only as its legal/regulatory aftermath -- an FTC consent order plus privacy class actions and state suits -- disclosed without AI/algorithmic framing, i.e., T2."
+  }
+}

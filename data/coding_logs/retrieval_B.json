@@ -1,0 +1,142 @@
+{
+  "1401": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Department of Licensing\" | CIK 0001018724 | 8-K,10-K,10-Q | 2026-02-27..2027-02-27 -> 0 hits"]
+  },
+  "364": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Everseen\" (vendor of bagging/missed-scan detection) | CIK 0000104169 | 8-K,10-K,10-Q | 2020-04-15..2021-04-15 -> 0 hits"]
+  },
+  "83": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"AlgorithmWatch\" | CIK 0000789019 | 8-K,10-K,10-Q | 2020-10-22..2021-10-22 -> 0 hits"]
+  },
+  "240": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Copilot\" | CIK 0000789019 | window (500 server error)", "\"GitHub Copilot\" | CIK 0000789019 | 8-K,10-K,10-Q | 2021-06-29..2022-06-29 -> 0 hits (Copilot copyright litigation filed Nov 2022, after window)"]
+  },
+  "620": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"robot\" | CIK 0001318605 | 8-K,10-K,10-Q | 2021-11-10..2022-11-10 -> 1 hit (0001564590-22-026048 Q2-2022 earnings press release; 'robot' refers to product/manufacturing, no engineer-injury reference)"]
+  },
+  "463": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Crash Detection\" | CIK 0000320193 | 8-K,10-K,10-Q | 2022-11-15..2023-11-15 -> 0 hits"]
+  },
+  "1528": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Acclarent\" | CIK 0000917520 | 8-K,10-K,10-Q | 2023-05-19..2024-05-19 -> 8 hits (all relate to Integra's Dec-2023/Apr-2024 acquisition of Acclarent from J&J, M&A disclosures only)", "\"TruDi\" | same | 3 hits (acquisition investor deck + Ex-21 subsidiary list; no reference to the Fernihough patient-stroke incident)"]
+  },
+  "124": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"algorithm\" | CIK 0000731766 | 8-K,10-K,10-Q | 2019-10-24..2020-10-24 -> 0 hits (no algorithm mention at all; Optum risk-score racial-bias study not disclosed)"]
+  },
+  "127": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"MSN\" | CIK 0000789019 | 8-K,10-K,10-Q | 2020-06-06..2021-06-06 -> 4 hits (routine business-segment/product mentions of MSN in 10-K/10-Q; no reference to algorithm selecting wrong photo or editorial layoffs)"]
+  },
+  "549": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"McHire\" (McDonald's AI hiring chatbot) | CIK 0000063908 | 8-K,10-K,10-Q | 2023-01-05..2024-01-05 -> 0 hits"]
+  },
+  "1559": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Kalibrate\" | CIK 0000104169 | 8-K,10-K,10-Q | 2022-06-22..2023-06-22 -> 0 hits (antitrust complaint dated 2026, well after window)"]
+  },
+  "102": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"voice recognition\" | CIK 0000789019 | 8-K,10-K,10-Q | 2020-03-23..2021-03-23 -> 0 hits"]
+  },
+  "996": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Sarah Silverman\" | CIK 0001326801 | 2020-10-25..2021-10-25 -> 0 hits", "\"Books3\" | same | 0 hits (Kadrey/Silverman v. Meta and LLaMA both post-date window by ~2 years)"]
+  },
+  "350": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"delivery robot\" | CIK 0001832483 | 8-K,10-K,10-Q | 2022-09-13..2023-09-13 -> 4 hits (all Patricia Acquisition SPAC-merger / Uber master-agreement exhibits describing the business; no reference to the crime-scene incident)"]
+  },
+  "431": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"facial recognition\" | CIK 0000320193 | 8-K,10-K,10-Q | 2022-04-20..2023-04-20 -> 0 hits"]
+  },
+  "622": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"chatbot\" | CIK 0001467858 | 8-K,10-K,10-Q | 2023-12-18..2024-12-18 -> 0 hits (dealer's chatbot, not GM; not disclosed)"]
+  },
+  "968": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Pravda\" | CIK 0000789019 | 8-K,10-K,10-Q | 2022-02-24..2023-02-24 -> 0 hits"]
+  },
+  "228": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Apple Maps\" | CIK 0000320193 | 8-K,10-K,10-Q | 2019-02-01..2020-02-01 -> 0 hits"]
+  },
+  "501": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"naviHealth\" (nH Predict length-of-stay tool) | CIK 0000731766 | 8-K,10-K,10-Q | 2019-06-03..2020-06-03 -> 0 hits"]
+  },
+  "1436": {
+    "pass1_code": "T4",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T4",
+    "missed_disclosure": null,
+    "queries_tried": ["\"Acclarent\" | CIK 0000917520 | 8-K,10-K,10-Q | 2022-06-23..2023-06-23 -> 0 hits (Integra had not yet acquired Acclarent during this window; patient-stroke incident not disclosed)"]
+  }
+}

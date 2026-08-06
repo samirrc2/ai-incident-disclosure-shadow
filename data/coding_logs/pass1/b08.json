@@ -1,0 +1,237 @@
+{
+  "_baseline_context": {
+    "note": "Microsoft FY ends June 30; 10-K filed late July. Verified via EDGAR full-text search (efts) which fiscal-year 10-Ks carry AI-harm-family risk-factor language versus AI-only-as-business-line language.",
+    "FY2020_10K": "0001564590-20-034944 (2020-07-30): 'artificial intelligence' appears only in Business/competition context; NO AI-harm/bias/liability risk factor.",
+    "FY2021_10K": "0001564590-21-039151 (2021-07-29): AI as business/competitive line only; no AI-harm risk factor.",
+    "FY2022_10K": "0001564590-22-026876 (2022-07-28): AI only in competition/investment context; verified NO risk language on flawed/biased/harmful AI outputs, AI IP, or AI liability.",
+    "FY2023_10K": "0000950170-23-035122 (2023-07-27): FIRST 10-K carrying AI-harm-family risk language; full-text confirms presence of 'responsible AI', 'AI systems', 'biased', and 'reputational harm' in the filing. AI-harm risk-factor family (bias, reputational/regulatory harm) present.",
+    "FY2024_10K": "0000950170-24-087843 (2024-07-30): extensive AI risk factor; full-text confirms 'unintended or inappropriate' and 'flawed or biased' AI-harm language (bias, harmful/inaccurate outputs, IP, data, reputational/legal/regulatory).",
+    "FY2025_10K": "0000950170-25-100235 (2025-07-30): AI-harm risk factor continues ('unintended or inappropriate', 'flawed or biased').",
+    "litigation_checks": "efts 'New York Times' across MSFT filings 2023-12-27..2024-12-27 = 0 hits (NYT v. OpenAI/Microsoft NOT named in any filing). 'copyright' returns only routine FY2024 10-K/10-Q boilerplate. 'GitHub' hits are routine business mentions (Microsoft owns GitHub), not litigation. No incident is named in any filing; no AI incident appears in Legal Proceedings/Contingencies. => No T1, no T2 in this batch."
+  },
+  "102": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Incident window 2020-03-23..2021-03-23. Only in-window annual report is FY2020 10-K (0001564590-20-034944, 2020-07-30), which mentions AI solely as a business/competitive capability and contains NO AI-harm or algorithmic-bias risk-factor language; in-window 10-Qs incorporate 10-K risk factors by reference and add none. Voice-recognition racial-bias study never named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: '\"artificial intelligence\"' forms=10-K ciks=789019 2020-07-01..2022-08-31 (FY2020/21/22 10-Ks)", "FY2020 10-K risk-factor read confirming AI-as-business-only"],
+    "rationale": "Pre-FY2023: no in-window AI risk-factor language of the bias/discrimination family; event not disclosed. T4."
+  },
+  "127": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Window 2020-06-06..2021-06-06. Only in-window annual report is FY2020 10-K (0001564590-20-034944), AI-as-business-only, no AI-harm/bias risk factor. MSN algorithmic mis-selection of a mixed-race person's photo never referenced; no legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2020 10-K risk-factor read", "efts scoping of MSFT annual reports 2020-2022"],
+    "rationale": "Pre-FY2023 window lacks AI risk-factor language of the same (bias) family; not named. T4."
+  },
+  "83": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Window 2020-10-22..2021-10-22. In-window annual report FY2021 10-K (0001564590-21-039151, 2021-07-29) treats AI only as a competitive line; no AI-harm/bias risk factor. Outlook spam-filter bias study (AlgorithmWatch) not named; no proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2021/FY2022 10-K reads confirming no AI-harm language"],
+    "rationale": "Pre-FY2023: no in-window AI-harm/bias risk-factor language; event unnamed. T4."
+  },
+  "240": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Window 2021-06-29..2022-06-29. In-window annual report FY2021 10-K (0001564590-21-039151) has AI-as-business-only, no AI-IP/copyright risk factor. efts 'GitHub' hits in MSFT filings are routine business mentions, not litigation. The Doe v. GitHub/Copilot class action was filed Nov 2022, outside the 12-month window. Copilot copyright issue never disclosed as such.",
+    "accounting_channel": null,
+    "specific_queries": ["efts '\"GitHub\"' forms=10-K,10-Q,8-K 2021-06-29..2025-08-31 (all routine business mentions)", "efts '\"Copilot\"' 2021-06-29..2022-12-31 = 0 hits"],
+    "rationale": "Pre-FY2023 window lacks AI IP/copyright risk-factor language; no in-window litigation; unnamed. T4."
+  },
+  "968": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Window 2022-02-24..2023-02-24. In-window annual report FY2022 10-K (0001564590-22-026876, 2022-07-28) verified to contain NO AI-harm/disinformation risk-factor language (AI only in competition/investment context); FY2023 10-K (2023-07-27) falls just outside window. In-window 10-Qs add no AI risk language. Pravda/NewsGuard disinformation-seeding never disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2022 10-K risk-factor read confirming AI-as-business-only", "efts 'flawed or biased'/'unintended or inappropriate' first appear FY2024, absent FY2022"],
+    "rationale": "Pre-FY2023 window has no AI-harm risk-factor language of the disinformation/output-integrity family; unnamed. T4. (Contrast incident 734, the same story in 2024, which is T3.)"
+  },
+  "468": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-07..2024-02-07 includes FY2023 10-K (0000950170-23-035122, 2023-07-27), which carries AI-harm-family risk language (full-text confirms 'responsible AI', 'AI systems', 'biased', 'reputational harm'). ChatGPT-powered Bing factual-accuracy failures fall squarely within the AI flawed/inaccurate-output risk family, but the specific event is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["efts '\"AI systems\"'/'\"responsible AI\"'/'\"biased\"'/'\"reputational harm\"' scoped to FY2023 10-K 2023-07-20..2023-08-01 (all hit)", "efts '\"Bing\"' event terms not tested as filing never names incidents"],
+    "rationale": "In-window FY2023 10-K carries generic AI risk-factor language of the same (inaccurate/harmful output) family; event not named. T3."
+  },
+  "470": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-08..2024-02-08 includes FY2023 10-K (0000950170-23-035122) with AI-harm risk language ('AI systems', 'biased', 'reputational harm', 'responsible AI'). Bing Chat citing disinformation is within the flawed/harmful-output AI risk family; not named specifically.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 10-K AI-harm phrase confirmations (efts)"],
+    "rationale": "Generic in-window AI risk-factor language of same family; unnamed event. T3."
+  },
+  "473": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-08..2024-02-08 includes FY2023 10-K (0000950170-23-035122) carrying AI-harm/security risk language. Prompt-injection revealing Bing Chat's initial prompt maps to the AI misuse/output-integrity/security risk family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk language of same family; event not named. T3."
+  },
+  "504": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-08..2024-02-08 includes FY2023 10-K (0000950170-23-035122) with AI flawed/inaccurate-output risk language. Bing Chat demo containing false figures/features is within that family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "Generic in-window AI risk-factor language of same (inaccurate-output) family; unnamed. T3."
+  },
+  "511": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-12..2024-02-12 includes FY2023 10-K (0000950170-23-035122) with AI-harm/inaccurate-output risk language. Bing's showtime/date-confusion erratic behavior is within that family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk language of same family; unnamed. T3."
+  },
+  "477": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-14..2024-02-14 includes FY2023 10-K (0000950170-23-035122) carrying AI flawed/inaccurate-output and reputational-harm risk language. Bing Chat hallucination / emotional persona is within the flawed-output family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "Generic in-window AI risk-factor language of same family; event unnamed. T3."
+  },
+  "503": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-14..2024-02-14 includes FY2023 10-K (0000950170-23-035122) with AI-harm/reputational risk language. Bing AI 'threats' / hostile persona is within the harmful-output/reputational-harm family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk language of same family; unnamed. T3."
+  },
+  "552": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-06-22..2024-06-22 includes FY2023 10-K (0000950170-23-035122) and FY2024 10-K (0000950170-24-087843, 2024-07-30, 'unintended or inappropriate'/'flawed or biased' AI risk factor). Bing Chat bypassing CAPTCHA safeguards maps to AI misuse/safeguard-failure family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023 & FY2024 10-K AI risk-factor confirmations (efts)"],
+    "rationale": "In-window AI risk-factor language of same (misuse/safeguard) family; event unnamed. T3."
+  },
+  "571": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-06-22..2024-06-22 includes FY2023 10-K (0000950170-23-035122) and FY2024 10-K (0000950170-24-087843). 38TB AI-research data exposure maps to the AI-development/data-security risk family (FY2024 AI risk factor expressly covers data and 'unintended' AI-development practices). Incident not named; not disclosed as a proceeding.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2023/FY2024 10-K AI + data-security risk confirmations (efts)"],
+    "rationale": "In-window AI/data-security risk-factor language of same family; event unnamed. T3."
+  },
+  "612": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-10-31..2024-10-31 includes FY2024 10-K (0000950170-24-087843) with 'unintended or inappropriate'/'flawed or biased' AI-harm risk language and reputational-harm framing. AI-generated Guardian death poll maps to harmful/inappropriate-output + reputational-harm family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["efts '\"unintended or inappropriate\"'/'\"flawed or biased\"' hit FY2024 10-K"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "621": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-11-10..2024-11-10 includes FY2024 10-K (0000950170-24-087843) covering offensive/harmful/biased AI-generated content ('flawed or biased', 'unintended or inappropriate'). Bing/Paint Image Creator producing violent imagery of minorities and public figures is squarely within that family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 10-K AI-harm phrase confirmations (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same (harmful/offensive-content) family; event unnamed. T3."
+  },
+  "995": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2023-12-27..2024-12-27 includes FY2024 10-K (0000950170-24-087843) whose AI risk factor covers intellectual-property exposure from AI. NYT v. OpenAI/Microsoft copyright suit is NOT named in any MSFT filing: efts '\"New York Times\"' across MSFT filings in-window = 0 hits; 'copyright' returns only routine boilerplate; suit not itemized in Legal Proceedings/Contingencies. Therefore not T1 and not T2.",
+    "accounting_channel": null,
+    "specific_queries": ["efts '\"New York Times\"' forms=10-K,10-Q,8-K ciks=789019 2023-12-27..2024-12-27 = 0 hits", "efts '\"copyright\"' same window = routine FY2024 10-K/10-Q only"],
+    "rationale": "Material AI-copyright suit against Microsoft exists but is not disclosed by name or as a proceeding; in-window FY2024 10-K carries generic AI-IP risk language of the same family. T3 (not T1/T2). Confidence medium given a real proceeding went undisclosed.",
+    "_note": "NYT lawsuit filed 2023-12-27 names Microsoft as co-defendant; absence from filings is notable but confirmed."
+  },
+  "654": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2024-03-06..2025-03-06 includes FY2024 10-K (0000950170-24-087843) with 'flawed or biased'/'unintended or inappropriate' AI-harm risk language covering offensive/harmful generated content. Copilot Designer producing sexual/violent/biased images (engineer's FTC letter) is within that family; not named. FTC letter is not a disclosed proceeding.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 10-K AI-harm phrase confirmations (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "714": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2024-03-29..2025-03-29 includes FY2024 10-K (0000950170-24-087843) with AI flawed/inaccurate-output risk language. Microsoft-powered NYC MyCity chatbot giving unlawful advice maps to inaccurate/harmful-output family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "838": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2024-04-25..2025-04-25 includes FY2024 10-K (0000950170-24-087843) with AI flawed/inaccurate/harmful-output risk language. Copilot unsafe medical advice (54% accuracy study) is within that family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "734": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2024-06-18..2025-06-18 includes FY2024 10-K (0000950170-24-087843) with AI flawed/harmful-output risk language. NewsGuard finding that leading chatbots (incl. Microsoft Copilot) repeat Russian/Pravda disinformation maps to the inaccurate/harmful-output family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3. (2022 predecessor incident 968 is T4, pre-FY2023.)"
+  },
+  "744": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2024-06-25..2025-06-25 includes FY2024 10-K (0000950170-24-087843) whose AI risk factor covers products/services being 'less useful' and AI reliance on flawed/inaccurate data. CIO reports of Copilot 365 requiring more effort / producing incorrect output map to that reliability family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same (utility/accuracy) family; event unnamed. T3. Confidence medium as the incident is a diffuse enterprise-adoption observation."
+  },
+  "770": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2024-08-16..2025-08-16 includes FY2024 10-K (0000950170-24-087843) and FY2025 10-K (0000950170-25-100235), both carrying AI harmful/inaccurate-output and liability risk language. Copilot falsely accusing journalist Martin Bernklau (defamation) maps to the harmful-output/legal-liability family; not named; no disclosed proceeding.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 & FY2025 10-K AI risk-factor confirmations (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "773": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2024-08-20..2025-08-20 includes FY2024 10-K (0000950170-24-087843) and FY2025 10-K (0000950170-25-100235) with AI harmful-output and personal-data risk language. Copilot surfacing a real person's name in a training scenario (privacy/harmful output) is within that family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2024 & FY2025 10-K AI risk-factor confirmations (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same (privacy/harmful-output) family; event unnamed. T3."
+  },
+  "1174": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2025-02-26..2026-02-26 includes FY2025 10-K (0000950170-25-100235) carrying AI-harm ('unintended or inappropriate', 'flawed or biased') and data/security risk language. Copilot returning cached content from since-private GitHub repos maps to the AI data-exposure/security family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["efts '\"unintended or inappropriate\"'/'\"flawed or biased\"' hit FY2025 10-K"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "956": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2025-02-28..2026-02-28 includes FY2025 10-K (0000950170-25-100235) with AI data-security and training-data risk language. Truffle Security's finding of 12,000 live API keys in Common Crawl LLM training data maps to the AI training-data/security family; Microsoft's role is peripheral and the event is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2025 10-K AI/data-security risk confirmation (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed and Microsoft only tangentially implicated. T3, medium confidence."
+  },
+  "1159": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2025-05-10..2026-05-10 includes FY2025 10-K (0000950170-25-100235) with AI flawed/inaccurate-output risk language. AI4Peat (Natural England + Microsoft) misclassifying granite/quarries as peat maps to the AI flawed-output/accuracy family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2025 10-K AI risk-factor confirmation (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  },
+  "1106": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2025-06-13..2026-06-13 includes FY2025 10-K (0000950170-25-100235) with AI harmful-output/liability risk language ('used in ways that are unintended or inappropriate', potential harm to individuals). Chatbots reinforcing delusional/dangerous behavior maps to the harmful-output/harm-to-users family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2025 10-K AI-harm phrase confirmations (efts)"],
+    "rationale": "In-window generic AI risk-factor language of same family; event unnamed. T3."
+  }
+}

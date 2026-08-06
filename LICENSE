@@ -1,0 +1,13 @@
+Paper 13 reproducibility capsule — "The AI Incident Disclosure Shadow."
+
+CODE (code/**, reproduce.sh): MIT License. Copyright (c) 2026 the authors.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies,
+subject to including this notice. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+DATA (data/**): CC BY 4.0. Incident and issuer names are public facts drawn from the AI Incident
+Database and SEC EDGAR. The dataset records disclosure BEHAVIOR (search-scoped codes); it makes no
+assertion that any issuer violated a disclosure duty. Reusers must retain attribution and this
+behavior-not-compliance notice. The upstream AIID snapshot is (c) the Responsible AI Collaborative
+under its own terms and is not redistributed here.

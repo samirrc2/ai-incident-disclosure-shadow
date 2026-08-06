@@ -1,0 +1,58 @@
+{
+  "149": {
+    "code_6mo": "T1",
+    "code_12mo (given)": "T1",
+    "code_18mo": "T1",
+    "code_24mo": "T1",
+    "disclosing_filing_date": "2021-11-02",
+    "note": "Zillow Group. Incident 2021-11-02. Windows end 2022-05-02 (6mo) / 2022-11-02 (12mo) / 2023-05-02 (18mo) / 2023-11-02 (24mo). Wind-down of Zillow Offers announced via 8-K on the incident date itself (earliest 'Zillow Offers' 8-K hit = 2021-11-02, next 2021-12-02). Contemporaneous disclosure => present and T1 in ALL windows. Window length is irrelevant here."
+  },
+  "534": {
+    "code_6mo": "T3",
+    "code_12mo (given)": "T2",
+    "code_18mo": "T2",
+    "code_24mo": "T2",
+    "disclosing_filing_date": "2022-02-03",
+    "note": "Meta Platforms. Incident 2021-04-29 (Ohio AG / algorithm-harm-to-children securities allegations). Windows end 2021-10-29 (6mo) / 2022-04-29 (12mo) / 2022-10-29 (18mo) / 2023-04-29 (24mo). Substantive legal-proceedings/contingencies disclosure of the securities litigation first appears in the FY2021 10-K filed 2022-02-03 (~9 months post-incident). Inside 12/18/24mo => T2. Outside 6mo: the only in-window filings are Q1-2021 10-Q (~2021-04) and Q2-2021 10-Q (~2021-07), which carry generic content-moderation/algorithm/user-safety risk-factor language but no legal-proceedings disclosure of this matter => degrades to T3 (same-family risk language present, not silence)."
+  },
+  "596": {
+    "code_6mo": "T1",
+    "code_12mo (given)": "T1",
+    "code_18mo": "T1",
+    "code_24mo": "T1",
+    "disclosing_filing_date": "2024-01-30",
+    "note": "General Motors (Cruise). Incident 2023-10-17 (NHTSA probe into Cruise conduct near pedestrians). Windows end 2024-04-17 (6mo) / 2024-10-17 (12mo) / 2025-04-17 (18mo) / 2025-10-17 (24mo). Incident-specific disclosure (Cruise incidents/suspension/investigations and related charge) appears in FY2023 10-K filed 2024-01-30, plus corroborating Cruise 8-Ks from 2023-10-04 onward -- all well inside the 6mo window. Present and T1 in ALL windows."
+  },
+  "711": {
+    "code_6mo": "T3",
+    "code_12mo (given)": "T2",
+    "code_18mo": "T2",
+    "code_24mo": "T2",
+    "disclosing_filing_date": "2025-01-30",
+    "note": "Tesla. Incident 2024-04-26 (NHTSA opens new probe PE24016 into adequacy of Autopilot Dec-2023 recall). Windows end 2024-10-26 (6mo) / 2025-04-26 (12mo) / 2025-10-26 (18mo) / 2026-04-26 (24mo). Legal/investigation disclosure of this specific new probe appears in the FY2024 10-K filed 2025-01-30 (~9 months post-incident). Inside 12/18/24mo => T2. Outside 6mo: in-window filings (Q1-2024 10-Q ~2024-04, Q2 2024-07-24, Q3 2024-10-24 10-Qs) carry standing Autopilot/ADAS/NHTSA-investigation risk-factor language of the same family but not the specific new-probe legal disclosure => degrades to T3."
+  },
+  "726": {
+    "code_6mo": "T1",
+    "code_12mo (given)": "T1",
+    "code_18mo": "T1",
+    "code_24mo": "T1",
+    "disclosing_filing_date": "2024-01-30",
+    "note": "General Motors (Cruise). Incident 2023-10-02 (Cruise AV struck and dragged a pedestrian). Windows end 2024-04-02 (6mo) / 2024-10-02 (12mo) / 2025-04-02 (18mo) / 2025-10-02 (24mo). Incident-specific disclosure appears in FY2023 10-K filed 2024-01-30, plus corroborating Cruise 8-Ks starting 2023-10-04 -- all inside the 6mo window. Present and T1 in ALL windows."
+  },
+  "733": {
+    "code_6mo": "T3",
+    "code_12mo (given)": "T2",
+    "code_18mo": "T2",
+    "code_24mo": "T2",
+    "disclosing_filing_date": "2025-01-28",
+    "note": "General Motors (OnStar / Smart Driver driver-data privacy). Incident 2024-06-09. Windows end 2024-12-09 (6mo) / 2025-06-09 (12mo) / 2025-12-09 (18mo) / 2026-06-09 (24mo). Substantive legal-proceedings disclosure of the FTC action / 'Smart Driver' driver-data privacy litigation appears from the FY2024 10-K filed 2025-01-28 (FTC order 2025-01-16) and continues in the Q1-2025 10-Q filed 2025-05-01. Both are just inside the 12mo cutoff (2025-06-09) => T2 at 12mo (the pass1 anchor note flagged it as borderline / 'likely outside 12mo', but it lands inside). Inside 18/24mo => T2. Outside 6mo (2024-12-09): in-window Q2-2024 (2024-07-23) and Q3-2024 (2024-10-22) 10-Qs contain generic 'Smart Driver'/telematics/privacy risk language of the same family but not the substantive legal-proceedings disclosure => degrades to T3. (If the substantive disclosure is attributed to the Q1-2025 10-Q 2025-05-01 instead of the FY2024 10-K, all four window verdicts are unchanged.)"
+  },
+  "997": {
+    "code_6mo": "T3",
+    "code_12mo (given)": "T1",
+    "code_18mo": "T1",
+    "code_24mo": "T1",
+    "disclosing_filing_date": "2024-02-02",
+    "note": "Meta Platforms (Kadrey v. Meta / LibGen pirated-books AI training). Incident 2023-02-28. Windows end 2023-08-28 (6mo) / 2024-02-28 (12mo) / 2024-08-28 (18mo) / 2025-02-28 (24mo). The incident is first NAMED (Kadrey litigation) in the FY2023 10-K filed 2024-02-02; efts confirms zero 'Kadrey' hits before that date, then 2024-02-02, 2024-04-25, 2024-08-01, 2024-10-31, 2025-01-30. Inside 12/18/24mo => T1. Outside 6mo (2023-08-28): in-window filings (Q1-2023 10-Q ~2023-04, Q2-2023 10-Q ~2023-07, filed before Kadrey was named) carry generic generative-AI / IP / copyright risk-factor language of the same family but do not name the suit => degrades to T3."
+  }
+}

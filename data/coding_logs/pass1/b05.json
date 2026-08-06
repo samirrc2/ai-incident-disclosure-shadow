@@ -1,0 +1,271 @@
+{
+  "_baseline": {
+    "issuer": "Meta Platforms, Inc. (CIK 0001326801)",
+    "note": "T3 baseline established by reading Risk Factors + Legal Proceedings/Contingencies of the four relevant 10-Ks. Same-family AI/content-risk language is present in every year, but no ADI incident event is named. Only one incident (997, Kadrey copyright litigation) is specifically disclosed via named litigation in Meta's own periodic reports.",
+    "risk_language": {
+      "FY2021_10K": {
+        "accession": "0001326801-22-000018",
+        "file": "fb-20211231.htm",
+        "quotes": [
+          "objectionable content made available on our products by third parties",
+          "use of our products or services for illicit or objectionable ends",
+          "we also may fail to respond expeditiously or appropriately to the sharing of objectionable content",
+          "susceptible to algorithm or other technical errors"
+        ]
+      },
+      "FY2022_10K": {
+        "accession": "0001326801-23-000013",
+        "file": "meta-20221231.htm",
+        "quotes": [
+          "reductions of advertising by marketers due to objectionable content made available on our products by third parties",
+          "use of our products or services for illicit or objectionable ends, including ... geopolitical events, or elections",
+          "develop new product features using generative AI ... may result in new or enhanced governmental or regulatory scrutiny, litigation, ethical concerns, or other complications"
+        ]
+      },
+      "FY2023_10K": {
+        "accession": "0001326801-24-000012",
+        "file": "meta-20231231.htm",
+        "quotes": [
+          "risks related to harmful or illegal content, accuracy, misinformation (including related to elections), bias, discrimination, toxicity",
+          "intellectual property infringement or misappropriation",
+          "cannot guarantee that third parties will not use such AI technologies for improper purposes, including through the dissemination of illegal, inaccurate, defamatory or harmful content",
+          "provision of our services to younger users; FTC administrative proceeding alleging COPPA violations"
+        ]
+      },
+      "FY2024_10K": {
+        "accession": "0001326801-25-000017",
+        "file": "meta-20241231.htm",
+        "quotes": [
+          "harmful or illegal content, accuracy, misinformation and deepfakes (including related to elections), bias, discrimination, toxicity",
+          "inaccurate, defamatory or harmful content, intellectual property infringement or misappropriation",
+          "third parties using Meta's open-source Llama models could engage in intellectual property infringement or misappropriation",
+          "exposure to litigation over training data and model outputs; child safety / COPPA administrative proceeding"
+        ]
+      }
+    }
+  },
+  "197": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2021 10-K (0001326801-22-000018) Risk Factors: 'we also may fail to respond expeditiously or appropriately to the sharing of objectionable content'; News Feed ranking algorithm 'susceptible to algorithm or other technical errors'. Event (internal ranking-algorithm bug allowing harmful content to evade down-ranking, surfaced in the Facebook Papers) is not named in any Meta filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline review of FY2021 10-K; journalistic/internal-report event with no distinctive filing-searchable term"],
+    "rationale": "Same-family content-moderation-failure and algorithm-error risk language present in the contemporaneous 10-K, but the specific incident is not disclosed. Classic T3."
+  },
+  "846": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='Honduras' &ciks=1326801 returned only Conflict Minerals Reports (Form SD, e.g. 0001326801-23-000081) covering supply-chain due diligence, unrelated to the disinformation incident. FY2021 10-K covers 'use of our products or services for illicit or objectionable ends, including ... elections' and 'election interference'.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Honduras\" (3 hits, all Form SD conflict-minerals, unrelated)"],
+    "rationale": "No named disclosure of the Honduras election-disinformation campaign; election-integrity/objectionable-use risk language present. T3."
+  },
+  "163": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='hate speech' returns only generic 10-K risk-factor usage, not the event. FY2021 10-K addresses 'hate speech, and other content' handling and content-moderation failure risk. Internal-research finding (hate-speech detection under-removing content harming minority groups, Facebook Papers) not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"hate speech\" (10-K risk-factor hits only, event not named)"],
+    "rationale": "Same-family harmful-content / moderation-failure and algorithmic-bias risk language present; specific internal finding not disclosed. T3."
+  },
+  "393": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2021 10-K (0001326801-22-000018) Risk Factors: 'objectionable content made available on our products' and moderation-failure language; hate-speech content handling referenced. The Global Witness ad-moderation test (hateful/violent ads in English and Swahili not flagged) is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["\"hate speech\" (risk-factor only); no distinctive filing-searchable term for the Global Witness ad test"],
+    "rationale": "Same-family ad/content-moderation-failure risk language present; specific test/event not disclosed. T3."
+  },
+  "168": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2022 10-K (0001326801-23-000013) recommendation/ranking-algorithm and metrics language ('algorithm or other technical errors'; 'statistical variances and uncertainties'); FY2023 10-K lists AI risks including 'bias'. Popularity-bias in collaborative filtering is a generic technical characterization, not a named Meta event.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (algorithmic bias / recommendation risk); generic academic characterization, no named event"],
+    "rationale": "Same-family recommender-bias risk language present; no specific disclosed event. T3."
+  },
+  "278": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='BlenderBot' &ciks=1326801 = ZERO HITS. FY2022 10-K discloses generative-AI risk ('develop new product features using generative AI ... may result in ... litigation, ethical concerns'); FY2023 10-K lists 'harmful or illegal content, ... bias, discrimination, toxicity'. BlenderBot 3's antisemitic outputs not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"BlenderBot\" (ZERO HITS in any Meta filing)"],
+    "rationale": "Generative-AI harmful-output risk language present; the specific BlenderBot incident is not disclosed. T3."
+  },
+  "313": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='BlenderBot' = ZERO HITS. Same generative-AI risk language as incident 278 (FY2022/FY2023 10-Ks: 'toxicity', 'defamatory or harmful content'). BlenderBot 3 labeling a Dutch politician a 'terrorist' is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"BlenderBot\" (ZERO HITS)"],
+    "rationale": "Generative-AI defamatory/harmful-output risk language present; specific event not disclosed. T3."
+  },
+  "399": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='Galactica' returned 1 hit only, a third-party shareholder proposal (PX14A6G 0001214659-23-006039), not a company disclosure. Meta's own filings do not name Galactica. FY2022 generative-AI risk language and FY2023 AI 'accuracy'/'harmful ... content' language cover the family.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Galactica\" (1 hit, a shareholder PX14A6G exempt solicitation; no company disclosure)"],
+    "rationale": "Only a shareholder proponent referenced Galactica; the issuer did not disclose the event. Same-family generative-AI accuracy/harm risk language present. T3."
+  },
+  "416": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='Fair Housing' returned only shareholder proposals (PX14A6G) and the 2020 DEF 14A - no 10-K/10-Q/8-K. Meta did not disclose the DOJ Fair-Housing ad-delivery settlement or the Real Women in Trucking EEOC charge in periodic reports. FY2023/FY2024 10-Ks list AI 'bias, discrimination' as a risk.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Fair Housing\" (proxy/DEF 14A only, no periodic report)"],
+    "rationale": "Same-family algorithmic-discrimination risk language present; the specific job-ad discrimination matter is not disclosed as an event or named litigation in periodic reports. T3 (not T2)."
+  },
+  "419": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2022 10-K objectionable-content / moderation-failure risk language; FY2023 lists 'harmful or illegal content ... (including related to elections)'. The Global Witness finding that Facebook's automated moderation allowed ads with violent language against election workers is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (election-integrity / ad-moderation failure); no distinctive searchable term"],
+    "rationale": "Same-family automated-moderation-failure and election-integrity risk language present; specific event not disclosed. T3."
+  },
+  "447": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2022/FY2023 10-K AI 'accuracy' and objectionable-content risk language covers machine-translation errors producing embarrassing/objectionable output. The Instagram mistranslation of a footballer's comment is a minor journalistic item, not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (AI accuracy / objectionable output); trivial journalistic item, no searchable term"],
+    "rationale": "Same-family AI-accuracy/objectionable-output risk language present; specific event not disclosed. T3."
+  },
+  "997": {
+    "code": "T1",
+    "confidence": "medium",
+    "evidence": "efts q='Kadrey' &ciks=1326801 = 13 hits in Meta's OWN periodic filings, first appearing in FY2023 10-K (0001326801-24-000012, meta-20231231.htm, filed 2024-02-02) and multiple subsequent 10-Qs (e.g. 0001326801-24-000049 Q1-2024). Kadrey et al. v. Meta Platforms is the copyright class action alleging Meta used copyrighted/pirated books (incl. via LibGen shadow library) to train its Llama LLMs - the exact subject of this incident. (efts q='LibGen' = ZERO HITS; the matter is disclosed under the case name Kadrey.) FY2023/FY2024 10-K Risk Factors independently flag AI 'intellectual property infringement or misappropriation' and training-data litigation exposure.",
+    "accounting_channel": "Loss contingency / legal proceedings disclosure (Commitments & Contingencies note; IP-litigation reserve channel). Litigation narrative is not XBRL-tagged so verbatim text could not be extracted from R-files; presence confirmed via full-text search of the primary 10-K/10-Q documents.",
+    "specific_queries": ["\"Kadrey\" (13 hits across Meta 10-K/10-Q/ARS - company disclosure)", "\"LibGen\" (ZERO HITS)"],
+    "rationale": "The specific incident (using copyrighted/pirated books to train Llama) is disclosed via the named Kadrey copyright litigation in Meta's own periodic reports; the matter is inherently AI-training-data framed. Coded T1 (disclosed-specific). Confidence medium because verbatim AI-framing sentence could not be extracted from the truncating full document, though the named Kadrey matter is unambiguously the AI-training-copyright case."
+  },
+  "583": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='trafficking' returned only proxy filings (PX14A6G / DEF 14A), no 10-K/10-Q/8-K; q='child sexual' surfaces risk-factor/proxy usage, not a named CSAM-recommendation lawsuit. FY2023/FY2024 10-Ks address child-safety regulatory scrutiny and recommendation-algorithm risk, but the WSJ/Stanford finding that Instagram's recommender promotes CSAM-facilitating accounts is not named. Disclosed youth-safety litigation concerns addictive-design/mental-health, a different subject.",
+    "accounting_channel": null,
+    "specific_queries": ["\"trafficking\" (proxy only)", "\"child sexual\" (risk-factor/proxy usage, no matching named matter)"],
+    "rationale": "Same-family child-safety and recommendation-algorithm risk language present; the specific CSAM-recommendation incident is not named. T3."
+  },
+  "580": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='Fair Housing' = proxy/DEF 14A only, no periodic report. FY2023/FY2024 10-Ks list AI 'bias, discrimination' as risks. The alleged gender-discriminatory ad-delivery is not disclosed as an event or named litigation in periodic reports.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Fair Housing\" (proxy only); shared with incident 416"],
+    "rationale": "Same-family algorithmic ad-discrimination risk language present; specific matter not disclosed/named. T3 (not T2)."
+  },
+  "578": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K explicitly warns that 'third parties using Meta's open-source Llama models could engage in' misuse and 'dissemination of illegal, inaccurate, defamatory or harmful content'. The specific Washington Post report of Llama-derived NSFW/violent chatbots (e.g. 'Allie') is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (open-source Llama third-party-misuse language, FY2024 10-K); journalistic item, no named event"],
+    "rationale": "Same-family open-source-model-misuse risk language squarely present; specific event not disclosed. T3."
+  },
+  "758": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='controlled substances' = ZERO HITS; no named drug-ad matter. FY2023/FY2024 10-Ks cover objectionable/illegal third-party content and ad-moderation-failure risk. The report linking a teen's overdose to Meta's failure to block illegal-drug ads is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"controlled substances\" (ZERO HITS)"],
+    "rationale": "Same-family ad-moderation-failure / illegal-content risk language present; specific incident not disclosed. T3."
+  },
+  "570": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2023 10-K generative-AI risk language ('harmful or illegal content, accuracy, ... toxicity'; AI features may face 'ethical concerns' and 'litigation'). The Facebook Messenger AI-sticker generation of inappropriate imagery is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (generative-AI harmful/objectionable-output language); journalistic item"],
+    "rationale": "Same-family generative-AI objectionable-output risk language present; specific event not disclosed. T3."
+  },
+  "576": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2023 10-K objectionable-content-on-platform and generative-AI harmful-content risk language covers a third-party generative-AI app (PicSo) advertised on Instagram producing inappropriate 'girls' content. Not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (objectionable ads / generative-AI misuse); journalistic item, no searchable term"],
+    "rationale": "Same-family objectionable-ad / generative-AI-misuse risk language present; specific event not disclosed. T3."
+  },
+  "731": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2023/FY2024 10-K AI-risk language on 'accuracy' and 'inaccurate ... or harmful content'. The 'package hallucination' phenomenon (LLMs inventing package names later uploaded as malware) is a cross-industry LLM-accuracy report only loosely tied to Meta as a model developer; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (AI accuracy/hallucination language); cross-industry journalistic item"],
+    "rationale": "Same-family generative-AI-inaccuracy risk language present; specific event not disclosed and only tangentially Meta-specific. T3."
+  },
+  "655": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='deepfake' returned only proxy filings, but FY2024 10-K Risk Factors do address 'misinformation and deepfakes' and objectionable/fraudulent third-party activity, plus AI-moderation limits. The proliferation of investor-impersonation/deepfake scams on Facebook is not named as an event.",
+    "accounting_channel": null,
+    "specific_queries": ["\"deepfake\" (proxy filings only; FY2024 10-K contains deepfake/scam risk language)"],
+    "rationale": "Same-family scam/deepfake/objectionable-third-party-activity risk language present; specific event not disclosed. T3."
+  },
+  "696": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2024 10-K discloses AI/automation-in-advertising risks and reliance on AI ad-ranking/optimization that may malfunction. The Advantage+ automated-ad overspending/CPM-surge affecting advertisers is not named as an event or litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (AI ad-optimization / automation risk); advertiser-performance journalistic item, no named matter"],
+    "rationale": "Same-family AI-ad-automation risk language present; specific Advantage+ overspend incident not disclosed. T3."
+  },
+  "686": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K AI-risk language: 'bias, discrimination' and inaccurate/harmful output. Meta's AI image generator failing to depict interracial couples is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (generative-AI bias/discrimination language); journalistic item"],
+    "rationale": "Same-family generative-AI bias risk language present; specific event not disclosed. T3."
+  },
+  "718": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K flags AI training-data risks and 'intellectual property infringement or misappropriation' plus litigation over training data. The report that Meta/Google/OpenAI overstepped legal boundaries gathering training data (primarily about OpenAI/YouTube) is not named; Meta's own named training-data litigation is Kadrey (see incident 997), a distinct matter.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (AI training-data / IP-infringement language); multi-company journalistic item"],
+    "rationale": "Same-family AI-training-data/IP risk language present; this specific multi-company report is not disclosed. T3."
+  },
+  "710": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K content-moderation and AI-accuracy risk language ('accuracy'; automated systems susceptible to error; over-/under-enforcement of community standards). Facebook AI mislabeling Auschwitz Memorial photos as 'bullying'/'nudity' is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (AI moderation over-enforcement / accuracy); journalistic item"],
+    "rationale": "Same-family AI-moderation-error risk language present; specific event not disclosed. T3."
+  },
+  "712": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K AI-risk language explicitly includes 'inaccurate, defamatory or harmful content' and 'accuracy'. Meta AI chatbot fabricating sexual-harassment allegations against New York lawmakers is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (generative-AI defamatory/inaccurate-output language); journalistic item"],
+    "rationale": "Same-family generative-AI hallucination/defamation risk language present; specific event not disclosed. T3."
+  },
+  "723": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "efts q='trafficking' = proxy only; no named matter. FY2024 10-K covers ad-delivery/targeting algorithm risk, child-safety scrutiny, and objectionable use. Instagram algorithmically directing a children's-merch ad campaign to adult men/sex offenders is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"trafficking\" (proxy only); Risk-factor baseline (ad-targeting / child-safety language)"],
+    "rationale": "Same-family ad-targeting and child-safety risk language present; specific event not disclosed. T3."
+  },
+  "803": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K addresses AI-generated content, spam/objectionable content, misinformation, and scams, plus recommendation-algorithm risk. The report that Facebook's algorithm amplifies AI-generated spam/scam images is not named as an event.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (AI-generated spam / scam / amplification language); journalistic item"],
+    "rationale": "Same-family AI-generated-content/spam/scam risk language present; specific event not disclosed. T3."
+  },
+  "700": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2024 10-K generative-AI risk language ('inaccurate ... or harmful content'; AI features may draw 'negative consumer perceptions' and 'ethical concerns'). Meta AI chatbots entering support communities uninvited and posting false/misleading info is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["Risk-factor baseline (generative-AI misleading-output / deployment-perception language); journalistic item"],
+    "rationale": "Same-family generative-AI misleading-output risk language present; specific event not disclosed. T3."
+  }
+}

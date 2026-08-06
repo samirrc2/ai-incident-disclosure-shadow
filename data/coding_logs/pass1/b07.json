@@ -1,0 +1,234 @@
+{
+  "_meta": {
+    "coder": "SEC AI-incident disclosure coding, Tesla batch b07",
+    "cik": "0001318605",
+    "baseline_evidence": "T3 same-family baseline is established for every fiscal year spanning these incidents. Tesla's 10-Ks each carry Autopilot/FSD automated-driving risk-factor language, and every incident's 12-month window contains at least one such 10-K plus quarterly 10-Qs. FY2019 10-K (ACCESSION 0001564590-20-004475, filed 2020-02-13, Item 1A): 'Our vehicles have been involved and we expect in the future will be involved in crashes resulting in death or personal injury, and such crashes where Autopilot or FSD features are engaged are the subject of significant public attention'; also 'claims arising from or related to misuse or claimed failures of new technologies ... including Autopilot and FSD' and self-driving regulatory-uncertainty language. FY2021 10-K (0000950170-22-000796, filed 2022-02-07) and FY2022 10-K (0000950170-23-001409, filed 2023-01-31) carry equivalent language, the FY2022 filing adding 'regulatory scrutiny arising from or related to misuse or claimed failures or alleged misrepresentations of such new technologies' and reference to 'NHTSA's Standing General Order requiring reports regarding crashes involving vehicles with advanced driver assistance systems.'",
+    "negative_search_evidence": "EDGAR full-text search (efts.sec.gov, ciks=0001318605) returned NO in-window filing naming any single incident here or its specific legal/regulatory consequence: 'rolling stop'=0 hits; 'phantom braking'=0 hits; 'first responder'=1 hit (a 2026 8-K, out of window); 'false advertising' and 'Department of Motor Vehicles'=hits only from 2010-2012 (early dealership/franchise matters, not the 2021 CA-DMV Autopilot action). Tesla does not itemize individual crashes or product-liability suits in its filings. A U.S. DOJ investigation into Autopilot/FSD IS disclosed ('requests from the DOJ') in the FY2022 10-K and 2023 10-Qs, but it is a general Autopilot/FSD probe, not tied to any specific incident in this batch.",
+    "webfetch_budget_used": "approx 11"
+  },
+
+  "230": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-03 to 2020-03) includes the FY2019 10-K (0001564590-20-004475, 2020-02-13) with Autopilot 'crashes resulting in death or personal injury' risk language, plus 2019 10-Qs. No filing names this Florida Model 3-into-tractor-trailer fatality; efts shows no incident-specific or legal reference.",
+    "accounting_channel": null,
+    "specific_queries": ["site-level crash terms (Florida / Autopilot / tractor-trailer) covered by aggregate negative crash-name search; 'NHTSA'/'investigation' baseline searches"],
+    "rationale": "Fatal Autopilot crash under NTSB/NHTSA review but never disclosed as such in SEC filings; only generic Autopilot/FSD death-and-injury risk-factor language present in-window. Generic same-family risk language = T3."
+  },
+  "353": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Duplicate/companion of the same 2019-03 Florida Model 3 tractor-trailer Autopilot fatality. Window includes FY2019 10-K (0001564590-20-004475) Autopilot death/injury risk language. No incident-specific or legal reference located in efts.",
+    "accounting_channel": null,
+    "specific_queries": ["Florida / Autopilot / tractor-trailer (aggregate negative crash-name search); baseline NHTSA/investigation searches"],
+    "rationale": "Same reasoning as incident 230 (this is the same underlying crash). Generic Autopilot risk language only = T3."
+  },
+  "159": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-03 to 2020-03) includes FY2019 10-K (0001564590-20-004475) with Autopilot/self-driving technology and 'claimed failures of new technologies' risk language. No filing references the Tencent Keen adversarial-attack security research.",
+    "accounting_channel": null,
+    "specific_queries": ["'adversarial' / 'Keen' / cybersecurity-vulnerability terms (no filing hits); baseline Autopilot risk language"],
+    "rationale": "Third-party security-research demonstration; not disclosed. Autopilot/self-driving reliability risk language is same-family = T3."
+  },
+  "525": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-07 to 2020-07) includes FY2019 10-K (0001564590-20-004475) plus 2019-2020 10-Qs, all carrying Autopilot/FSD crash and product-liability risk language. The related product-liability lawsuit (jury found no damages) is not itemized in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["individual product-liability lawsuit terms (not itemized in filings); baseline Autopilot risk + 'lawsuit' searches"],
+    "rationale": "Individual Autopilot product-liability suit not disclosed as material; only generic same-family risk language in-window = T3."
+  },
+  "105": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-08 to 2020-08) includes FY2019 10-K (0001564590-20-004475) Autopilot death/injury risk language. No filing names the California Model 3-into-Ford-Explorer fatality of a 15-year-old.",
+    "accounting_channel": null,
+    "specific_queries": ["California / Autopilot fatality crash terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Fatal Autopilot crash not individually disclosed; generic Autopilot risk-factor language only = T3."
+  },
+  "322": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-12 to 2020-12) includes FY2019 10-K (0001564590-20-004475). This Connecticut crash into a parked police car is a constituent of NHTSA's later first-responder-crash inquiry, but 'first responder' returns no in-window filing (only a 2026 8-K), and the crash itself is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["'first responder' (efts: no in-window hit); Connecticut / police car / Autopilot crash terms; baseline"],
+    "rationale": "Neither the crash nor the (later) NHTSA first-responder investigation is disclosed as such in-window; only generic Autopilot risk language = T3. Conservatively not T2 because the specific investigation is not referenced in filings."
+  },
+  "153": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-12 to 2020-12) includes FY2019 10-K (0001564590-20-004475) Autopilot death/injury risk language. The Gardena red-light Autopilot fatality (two killed; driver later criminally charged) is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Gardena / red light / Autopilot fatality terms (aggregate negative crash-name search); baseline"],
+    "rationale": "High-profile fatal Autopilot crash and driver prosecution never disclosed in SEC filings; generic Autopilot risk language only = T3."
+  },
+  "319": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2019-12 to 2020-12) includes FY2019 10-K (0001564590-20-004475). Indiana Autopilot crash into a parked fire truck; a constituent of NHTSA's later stationary-emergency-vehicle inquiry, but 'first responder' returns no in-window filing and the crash is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["'first responder' / 'fire truck' (efts: no in-window hit); Indiana Autopilot crash terms; baseline"],
+    "rationale": "Neither the crash nor the (later) NHTSA first-responder/stationary-vehicle investigation is disclosed in-window; only generic Autopilot risk language = T3."
+  },
+  "218": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2020-06 to 2021-06) includes the FY2020 10-K (filed 2021-02) and FY2019 10-K, both carrying Autopilot crash/product-liability risk language. The Taiwan overturned-truck Autopilot crash is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Taiwan / overturned truck / Autopilot crash terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Foreign Autopilot crash not disclosed; generic same-family Autopilot risk language only = T3."
+  },
+  "209": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "The FSD 'rolling stop' functionality that was recalled (NHTSA recall 22V-085, Feb 2022) is NOT disclosed: efts 'rolling stop'=0 hits across all Tesla filings. In-window FY2020/FY2021 10-Ks carry generic FSD risk and generic 'recall' language, but the specific recall is never referenced.",
+    "accounting_channel": null,
+    "specific_queries": ["'rolling stop' (efts=0 hits); 'recall' in FY2022 10-K (generic only); baseline FSD risk language"],
+    "rationale": "The specific regulatory consequence (the FSD rolling-stop recall) does not appear in filings, so not T2; only generic FSD risk-factor language of the same family is present = T3."
+  },
+  "97": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2020-10 to 2021-10) includes FY2020 10-K (2021-02) and FY2021 10-K (2022-02) with Autopilot vision/perception reliability risk language. The flag-misread-as-traffic-light perception glitch is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["traffic-light / perception misidentification terms (no filing hits); baseline vision-based-sensor risk language"],
+    "rationale": "Perception-error demonstration not disclosed; Tesla's vision-based self-driving reliability risk language is same-family = T3."
+  },
+  "333": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2021-03 to 2022-03) includes FY2020 10-K (2021-02) and FY2021 10-K (2022-02). Michigan Autopilot crash into a parked police car; constituent of NHTSA first-responder inquiry, but 'first responder' returns no in-window filing and the crash is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["'first responder' (efts: no in-window hit); Michigan / police car / Autopilot crash terms; baseline"],
+    "rationale": "Neither the crash nor the NHTSA first-responder investigation is disclosed in-window; generic Autopilot risk language only = T3."
+  },
+  "337": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2021-04 to 2022-04) includes FY2020 10-K (2021-02) and FY2021 10-K (2022-02) with Autopilot/driver-assist crash risk language. The Spring, Texas Model S fatal crash (two killed) is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Texas / Spring / Model S fatal crash terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Fatal driver-assist crash not individually disclosed; generic same-family risk language only = T3."
+  },
+  "208": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "The phantom-braking / Tesla Vision issue and the resulting NHTSA inquiry (PE22-002) are NOT disclosed: efts 'phantom braking'=0 hits. In-window FY2021 10-K (2022-02) carries the vision-based-sensor reliability risk factor ('may ... result in initial functional disparities from prior iterations') but does not reference the specific matter.",
+    "accounting_channel": null,
+    "specific_queries": ["'phantom braking' (efts=0 hits); 'radar' / 'Tesla Vision' terms; baseline vision-based-sensor risk language"],
+    "rationale": "Specific NHTSA phantom-braking investigation not disclosed, so not T2; generic vision-based self-driving reliability risk language is same-family = T3."
+  },
+  "291": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "The California DMV false-advertising action over Autopilot/FSD marketing is NOT disclosed as such: efts 'Department of Motor Vehicles' and 'false advertising' return only 2010-2012 dealership-era filings. However, the FY2022 10-K risk factors add generic 'regulatory scrutiny arising from or related to ... alleged misrepresentations of such new technologies' language, which is same-family but does not name the DMV proceeding.",
+    "accounting_channel": null,
+    "specific_queries": ["'Department of Motor Vehicles' (only 2010-2012 hits); 'false advertising' (only 2010-2012 hits); 'advertising'/'marketing' Autopilot; baseline"],
+    "rationale": "The specific CA-DMV regulatory proceeding is not disclosed in filings, so not T2; only generic Autopilot/FSD marketing-misrepresentation risk language of the same family is present = T3. Medium confidence because the contingencies note could not be fully retrieved (long-doc truncation), but negative full-text searches on the proceeding's identifiers are conclusive."
+  },
+  "533": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2021-06 to 2022-06) includes FY2021 10-K (2022-02) with Autopilot/FSD vision-perception reliability risk language. The FSD traffic-light-misidentification (truck hauling traffic lights) demonstration is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["FSD traffic-light misidentification terms (no filing hits); baseline vision-based-sensor risk language"],
+    "rationale": "Perception-error demonstration not disclosed; same-family FSD reliability risk language = T3."
+  },
+  "145": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2021-07 to 2022-07) includes FY2021 10-K (2022-02) with Autopilot vision-perception reliability risk language. The moon-mistaken-for-yellow-light perception glitch is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["moon / traffic-light perception terms (no filing hits); baseline vision-based-sensor risk language"],
+    "rationale": "Perception-error demonstration not disclosed; same-family Autopilot reliability risk language = T3."
+  },
+  "304": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2021-11 to 2022-11) includes FY2021 10-K (2022-02) and 2022 10-Qs with Autopilot/FSD crash and product-liability risk language. The Brea, California FSD wrong-lane collision is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Brea / California / FSD wrong-lane crash terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Individual FSD collision not disclosed; generic same-family risk language only = T3."
+  },
+  "620": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "The Giga Texas manufacturing-robot injury is not disclosed, and there is no same-family risk language: efts 'robot'=0 hits in the FY2022 10-K. Tesla's Autopilot/FSD risk factors concern automated DRIVING, a different product family from an industrial factory robot; no AI/automation workplace-injury risk factor was located.",
+    "accounting_channel": null,
+    "specific_queries": ["'robot' in FY2022 10-K (efts=0 hits); manufacturing-automation / workplace-injury terms; DART report / factory injury"],
+    "rationale": "Not an automated-driving/Autopilot incident, so the pervasive Autopilot risk language is NOT same-family, and no industrial-automation-injury disclosure exists. No disclosure located = T4. Medium confidence: turns on treating factory-robot automation as outside the AI/automated-driving risk family per the taxonomy scope."
+  },
+  "211": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2021-12 to 2022-12) includes FY2021 10-K (2022-02) and 2022 10-Qs carrying Autopilot/FSD and sudden-acceleration/product-liability-type risk language. The Paris Model 3 taxi crash (SUA allegation, ~20 injured) is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Paris / taxi / unintended acceleration crash terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Foreign crash/SUA allegation not individually disclosed; generic same-family driver-assist/vehicle risk language only = T3."
+  },
+  "187": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-02 to 2023-02) includes FY2021 10-K (2022-02) and FY2022 10-K (2023-01) with FSD Beta driver-assist risk language. The YouTuber FSD-Beta bollard-collision test is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["FSD Beta / bollard / San Jose test terms (no filing hits); baseline FSD risk language"],
+    "rationale": "FSD Beta demonstration not disclosed; same-family FSD/driver-assist risk language present = T3."
+  },
+  "221": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-03 to 2023-03) includes FY2021 10-K (2022-02) and FY2022 10-K (2023-01) with Autopilot crash/death risk language. The Taiwan Autopilot crash and road-engineer fatality is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Taiwan / road engineer / Autopilot crash terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Foreign Autopilot crash not disclosed; generic same-family Autopilot risk language only = T3."
+  },
+  "178": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-04 to 2023-04) includes FY2021 10-K (2022-02) and FY2022 10-K (2023-01). The Smart Summon collision with a Vision Jet aircraft in Spokane is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Smart Summon / aircraft / Spokane crash terms (no filing hits); baseline Autopilot/automated-feature risk language"],
+    "rationale": "Automated-summon feature incident not disclosed; same-family automated-driving/driver-assist risk language present = T3."
+  },
+  "638": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-05 to 2023-05) includes FY2022 10-K (2023-01) with Autopilot/FSD 'crashes resulting in death or personal injury' risk language and disclosure of the general DOJ Autopilot/FSD probe. The Hans von Ohain FSD fatality is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["von Ohain / FSD fatality / Colorado crash terms (aggregate negative crash-name search); 'requests from the DOJ' (general, not incident-specific); baseline"],
+    "rationale": "Fatal FSD crash not individually disclosed; only generic same-family FSD death/injury risk language (and a general, non-incident-specific DOJ probe) present = T3."
+  },
+  "271": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-07 to 2023-07) includes FY2022 10-K (2023-01) with Autopilot crash/death risk language plus 2023 10-Qs. The Utah Model 3-Autopilot motorcyclist fatality is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Utah / motorcyclist / Autopilot fatality terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Fatal Autopilot crash not individually disclosed; generic same-family Autopilot risk language only = T3."
+  },
+  "398": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-08 to 2023-08) includes FY2022 10-K (2023-01) with Autopilot vision-perception reliability risk language. The horse-drawn-carriage misclassification demonstration is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["horse-drawn carriage / perception misclassification terms (no filing hits); baseline vision-based-sensor risk language"],
+    "rationale": "Perception-error demonstration not disclosed; same-family Autopilot reliability risk language = T3."
+  },
+  "434": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-11 to 2023-11) includes FY2022 10-K (2023-01) with FSD crash/product-liability risk language and the general DOJ Autopilot/FSD probe disclosure. The alleged FSD-braking 8-car San Francisco tunnel pileup is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["San Francisco tunnel / FSD braking / pileup crash terms (aggregate negative crash-name search); 'requests from the DOJ' (general); baseline"],
+    "rationale": "Individual crash not disclosed; only generic same-family FSD risk language and a general DOJ probe present = T3."
+  },
+  "436": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window (2022-12 to 2023-12) includes FY2022 10-K (2023-01) with Autopilot crash/misuse risk language and 2023 10-Qs. The Autobahn 'driver asleep on Autopilot' incident in Germany is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["Germany / Autobahn / Autopilot asleep terms (aggregate negative crash-name search); baseline"],
+    "rationale": "Foreign Autopilot-misuse incident not disclosed; generic same-family Autopilot/misuse risk language only = T3."
+  }
+}

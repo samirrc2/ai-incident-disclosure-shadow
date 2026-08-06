@@ -1,0 +1,14 @@
+metadata_version: 1
+name: "The AI Incident Disclosure Shadow"
+description: >
+  Reproducibility capsule for "The AI Incident Disclosure Shadow: An Incident-Level
+  Study Matching AIID-Recorded AI Failures to U.S.-Listed Companies' Investor
+  Disclosures, 2019-2026." From a frozen, SHA-256-pinned AI Incident Database
+  snapshot and the frozen disclosure-coding logs, the capsule reproduces entity
+  resolution (N_matchable = 307), the four-tier disclosure distribution, Wilson and
+  issuer-clustered-bootstrap confidence intervals, concentration and window
+  robustness, formal stratum tests, inter-coder reliability (Cohen's kappa, PABAK,
+  Gwet's AC1), the incident-firm map, and all publication figures — 100% offline and
+  byte-identical across runs. Measures disclosure behavior, not compliance.
+authors:
+  - name: "Samir Chincholikar"

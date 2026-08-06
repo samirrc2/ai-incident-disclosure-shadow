@@ -1,0 +1,244 @@
+{
+  "_meta": {
+    "issuer": "Meta Platforms, Inc.",
+    "cik": "1326801",
+    "coder_notes": "Baseline established by reading FY2024 10-K (0001326801-25-000017), FY2025 10-K (0001628280-26-003942), and the Q2 2026 10-Q Commitments & Contingencies note (0001628280-26-050705 / R17.htm). Meta carries a standing generative-AI risk factor in every 10-K (FY2022-FY2025) and every 10-Q from 2023 through Q2 2026 that enumerates: 'harmful or illegal content, accuracy, misinformation and deepfakes (including related to elections), bias, discrimination, toxicity, consumer protection, products liability, intellectual property infringement, defamation, data privacy, cybersecurity,' plus a third-party-misuse clause ('we cannot guarantee that third parties will not use such AI technologies for improper purposes, including through the dissemination of illegal, inaccurate, defamatory or harmful content'). It also carries separate harmful/objectionable-content, content-moderation-failure, and minors/teen-safety risk factors. FTS confirms same-family language is present in a window filing for EVERY incident here. No incident in this batch is NAMED in any Meta filing. Targeted FTS negatives: 'Starbuck' = 0 hits, 'Wongbandue' = 0 hits. 'chatbot' appears in exactly ONE filing (Q2 2026 10-Q) but refers to an EU antitrust interim measure about 'general purpose AI providers using the WhatsApp Business API to provide chatbot services' -- NOT any AI-safety incident here. The only NAMED AI-related litigation in the contingencies note is Kadrey v. Meta (AI-training copyright) and the EU DSA youth proceedings; neither maps to a discrete incident in this batch. Consequently there are no T1 or T2 codes; accounting_channel is null throughout. The contingencies note's accrual language ('accrued significant amounts... reasonable possibility that additional accruals... could be material') is tied to European privacy/competition matters, not these AI incidents.",
+    "webfetch_budget_used": "~18",
+    "window_anchor_filings": {
+      "Q2-2024-10Q": "0001326801-24-000069 (2024-08-01)",
+      "Q3-2024-10Q": "0001326801-24-000081 (2024-10-31)",
+      "FY2024-10K": "0001326801-25-000017 (2025-01-30)",
+      "Q1-2025-10Q": "0001326801-25-000054 (2025-05-01)",
+      "Q2-2025-10Q": "0001628280-25-036791 (2025-07-31)",
+      "Q3-2025-10Q": "0001628280-25-047240 (2025-10-30)",
+      "FY2025-10K": "0001628280-26-003942 (2026-01-29)",
+      "Q1-2026-10Q": "0001628280-26-028526 (2026-04-30)",
+      "Q2-2026-10Q": "0001628280-26-050705 (2026-07-30)"
+    }
+  },
+
+  "796": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q2 2024 10-Q (0001326801-24-000069, filed 2024-08-01) and FY2024 10-K carry harmful/objectionable-content and content-moderation-failure risk factors ('failure to prevent or limit spam or otherwise objectionable content'; risk that we 'take, or fail to take, actions to enforce our policies, that result in our removal of users'). Over-removal of legitimate wildfire emergency posts by automated moderation falls squarely in this same family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: content-moderation/objectionable-content risk factor in FY2024 10-K", "\"generative AI\" forms=10-Q (window coverage confirm)"],
+    "rationale": "Automated content-moderation over-removal error; Meta discloses generic content-moderation and objectionable-content risk but never names discrete moderation-error events. Classic T3."
+  },
+
+  "789": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Same content-moderation/objectionable-content risk factor family in Q2 2024 10-Q (2024-08-01) and FY2024 10-K ('failure to prevent or limit spam or otherwise objectionable content'; enforcement-action risk). Wrongful spam-flagging of independent news publishers is the same family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: content-moderation risk factor", "\"generative AI\" forms=10-Q"],
+    "rationale": "AI moderation false-positive against publishers; covered by generic content/enforcement risk language, not disclosed specifically. T3."
+  },
+
+  "788": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K minors/teen-safety risk factors (state laws 'restricting our ability to offer services to minors'; Nevada AG teen-encryption action; 'activities that threaten people's safety or well-being... including with respect to younger users' in FY2025 10-K) plus objectionable-content risk. Meta also discloses broad Youth-Related Actions litigation (Social Media Adolescent Addiction MDL; New Mexico/Tennessee AG youth cases) about algorithmic harm to minors -- same family but not a consequence of this specific incident. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: minors/teen-safety + objectionable-content risk factors", "contingencies note Youth-Related Actions review (R17.htm)"],
+    "rationale": "Algorithmic recommendation of sexual content to teen accounts; same family as disclosed teen-safety risk factors and youth litigation, but the specific WSJ-tested event is not named and the MDL predates it. Conservative T3 (not T2, since the disclosed litigation is not a consequence of this incident)."
+  },
+
+  "750": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Generative-AI risk factor explicitly lists 'accuracy, misinformation and deepfakes (including related to elections)' as risks of Meta's AI (present Q2 2024 10-Q 2024-08-01 and FY2024 10-K). AI chatbots giving inaccurate real-time political news is precisely this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: generative-AI accuracy/misinformation risk factor", "\"generative AI\" forms=10-Q"],
+    "rationale": "Generative-AI factual-accuracy failure on breaking political news; on-point same-family language, event unnamed. T3."
+  },
+
+  "1172": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2024 10-K (0001326801-25-000017, filed 2025-01-30) generative-AI risk factor lists 'data privacy, cybersecurity' among AI risks, and separate security-breach risk factor covers 'improper access to or disclosure of our data or user data, and other cyber incidents.' A Meta AI prompt-ID vulnerability exposing other users' prompts/responses is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: AI data-privacy/cybersecurity + security-breach risk factors"],
+    "rationale": "Security/data-exposure bug in Meta AI service; covered by generic AI-data-privacy and security-breach risk language. No incident-specific disclosure. T3."
+  },
+
+  "885": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K generative-AI risk factor covers 'harmful or illegal content... bias, discrimination, toxicity' from Meta's AI features. Meta AI fabricated personas (e.g., 'Liv','Grandpa Brian') exhibiting racism and false identity claims is the same family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: generative-AI harmful-output/bias risk factor"],
+    "rationale": "First-party generative-AI persona producing biased/deceptive outputs; on-point same-family risk language, unnamed. T3."
+  },
+
+  "939": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2024 10-K third-party-misuse clause: 'we cannot guarantee that third parties will not use such AI technologies for improper purposes... We may not have insight into, or control over, the practices of third parties who may utilize such AI technologies' (referring to Meta's open-source models). A Chinese surveillance system built on Meta's open-source Llama is exactly this disclosed risk. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: open-source AI third-party-misuse risk factor"],
+    "rationale": "Third-party misuse of Meta's open-source model (Llama); squarely within the open-source-misuse risk factor, unnamed. T3."
+  },
+
+  "957": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q1 2025 10-Q (0001326801-25-000054, filed 2025-05-01) and FY2024 10-K objectionable-content, content-moderation-failure, and user-safety risk factors ('fail to respond expeditiously or appropriately to the sharing of content... that are illegal, illicit, or in violation of our policies'). An Instagram algorithm malfunction flooding Reels with violent/graphic content is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: objectionable-content/moderation + user-safety risk factors"],
+    "rationale": "Algorithmic amplification of violent content; generic objectionable-content/safety risk covers it, discrete malfunction not named. T3."
+  },
+
+  "1180": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'Wongbandue' = 0 hits across all Meta filings; the wrongful-death matter is not disclosed by name. However, Q1 2025 10-Q (2025-05-01) generative-AI risk factor covers 'harmful... content... products liability' from Meta AI, and Q2 2026 contingencies confirm no named AI-companion wrongful-death proceeding. Same-family generative-AI-harm language present; event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Wongbandue\" ciks=0001326801 (0 hits)", "\"chatbot\" ciks=0001326801 (only EU antitrust, not this)", "baseline: generative-AI harmful-content/products-liability risk factor"],
+    "rationale": "Meta AI companion ('Big sis Billie') linked to a user's death; no named litigation or event-specific disclosure located, but same-family generative-AI harmful-output/products-liability risk language is present. Conservative T3 (not T2 -- no proceeding disclosed)."
+  },
+
+  "1020": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q1 2025 10-Q (2025-05-01) third-party-misuse clause for Meta's open-source AI ('third parties will not use such AI technologies for improper purposes, including through the dissemination of illegal... harmful content') plus generative-AI 'harmful or illegal content' language. Misconfigured llama.cpp servers exposing CSAM-roleplay prompts is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: open-source AI third-party-misuse + illegal-content risk factor"],
+    "rationale": "Third-party unsafe deployment of Meta open-source stack generating illegal content; within open-source-misuse risk factor, unnamed. T3."
+  },
+
+  "1040": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q1 2025 10-Q (2025-05-01) generative-AI 'harmful or illegal content' risk plus minors/teen-safety risk factors. Meta AI and user-created companions engaging in sexual roleplay with minor personas is this family. Event not named; FTS 'chatbot' surfaces only an unrelated EU antitrust matter.",
+    "accounting_channel": null,
+    "specific_queries": ["\"chatbot\" ciks=0001326801 (only EU antitrust)", "baseline: generative-AI harmful-content + minors-safety risk factors"],
+    "rationale": "First/third-party Meta AI companions producing sexual content to minor accounts; on-point same-family language, unnamed. T3."
+  },
+
+  "1247": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'Starbuck' = 0 hits across all Meta filings -- the defamation suit is NOT disclosed by name. But Meta's generative-AI risk factor EXPLICITLY lists 'defamation' among AI-output risks (Q1 2025 10-Q 2025-05-01 and both 10-Ks: 'defamatory or harmful content'). Strong same-family match; event/suit not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Starbuck\" ciks=0001326801 (0 hits)", "baseline: generative-AI 'defamation' risk factor"],
+    "rationale": "Meta AI defamation lawsuit (Robby Starbuck); the suit is not disclosed by name and is not in the contingencies note, but the AI risk factor explicitly enumerates 'defamation' -- textbook same-family generic language. Conservative T3 (not T2, suit not disclosed)."
+  },
+
+  "1101": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q1 2025 10-Q (2025-05-01) generative-AI risk factor lists 'data privacy' among AI risks; general privacy/user-data risk factors also present. The Meta AI app 'Discover' feed inadvertently surfacing users' personal chats is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: generative-AI data-privacy risk factor"],
+    "rationale": "Generative-AI product privacy failure (unintended public sharing of personal chats); same-family AI-data-privacy language present, event unnamed. T3."
+  },
+
+  "1108": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q2 2025 10-Q (0001628280-25-036791, filed 2025-07-31) and FY2025 10-K generative-AI risk factor lists 'consumer protection' among AI risks; FY2025 10-K also references 'inquiries and investigations by the FTC, members of Congress and state attorneys general' in the AI context. The FTC complaint alleging chatbots posed as licensed therapists is this same family. The specific complaint is not named (FTS 'therapist' = 0; contingencies note names no such FTC AI-chatbot proceeding).",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" \"therapist\" ciks=0001326801 (0 hits)", "\"chatbot\" ciks=0001326801 (only EU antitrust)", "baseline: generative-AI consumer-protection + FTC/AG-inquiry risk language"],
+    "rationale": "FTC complaint over chatbots impersonating therapists; Meta discloses generic AI consumer-protection risk and generic FTC/Congress/AG AI inquiries, but does not name this complaint as a proceeding. Same-family generic language => T3, not T2."
+  },
+
+  "1219": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q2 2025 10-Q (2025-07-31) content-moderation-failure and user-safety risk factors ('fail to respond... appropriately'; enforcement-action removal risk). Wrongful account lockouts from automated CSAM-flagging false positives is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: content-moderation/enforcement + user-safety risk factors"],
+    "rationale": "Automated-moderation false positives locking out users; generic enforcement/moderation risk covers it, event unnamed. T3."
+  },
+
+  "1200": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q3 2025 10-Q (0001628280-25-047240, filed 2025-10-30) and FY2025 10-K generative-AI 'harmful or illegal content' risk plus minors/teen-safety risk factors ('safety or well-being... including with respect to younger users'). Meta AI co-planning suicide / eating-disorder roleplay with teen accounts is this family. FTS 'chatbot' surfaces only unrelated EU antitrust; no named AI-teen-safety proceeding in Q2 2026 contingencies. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"chatbot\" ciks=0001326801 (only EU antitrust)", "baseline: generative-AI harmful-content + minors-safety risk factors"],
+    "rationale": "Meta AI producing suicide/self-harm content to teen accounts; on-point same-family generative-AI + teen-safety risk language present, event unnamed and no specific proceeding disclosed. T3."
+  },
+
+  "1223": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q3 2025 10-Q (2025-10-30) and FY2025 10-K generative-AI risk factor explicitly lists 'deepfakes (including related to elections)' and the third-party-misuse clause. AI-generated deepfake political ads impersonating public figures is squarely this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: generative-AI 'deepfakes (including related to elections)' + third-party-misuse risk factor"],
+    "rationale": "Third-party AI deepfake political ads; explicit same-family 'deepfakes/elections' risk language, unnamed. T3."
+  },
+
+  "1224": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q3 2025 10-Q (2025-10-30) and FY2025 10-K generative-AI 'deepfakes' risk plus third-party-misuse and objectionable-ad content risk factors. AI deepfake celebrity ads (Gisele Bundchen) on Instagram in a Brazilian fraud scheme is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: generative-AI deepfakes + third-party-misuse/objectionable-ad risk factors"],
+    "rationale": "Third-party AI deepfake fraud ads; same-family deepfake/objectionable-ad risk language present, unnamed. T3."
+  },
+
+  "1268": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FY2025 10-K (0001628280-26-003942, filed 2026-01-29) objectionable-content risk factor ('reductions of advertising... due to illegal, illicit, or otherwise objectionable content made available on our products by third parties') and content-moderation-failure risk. Reuters reporting that automated ad/targeting systems monetized fraudulent ads is this family. Event/reporting not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: objectionable/illegal-ad-content + moderation-failure risk factors"],
+    "rationale": "Automated ad-system fraud monetization; covered by generic objectionable-/illegal-ad-content risk language, discrete Reuters findings not named. T3 (medium: the disclosure frames scam ads as a content-enforcement risk rather than an AI-specific event)."
+  },
+
+  "1277": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "FY2025 10-K (2026-01-29) generative-AI 'harmful or illegal content' plus minors-safety risk factors provide same-family language. However, this incident centers on third-party products (FoloToy 'Kumma', Miko, Character.AI), with only tangential Meta involvement; Meta discloses nothing specific and would not.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: generative-AI harmful-content + minors-safety risk factors"],
+    "rationale": "Harmful AI outputs in children's products predominantly by non-Meta firms; Meta's same-family generative-AI/minors risk language nominally applies, but Meta's role is peripheral and nothing incident-specific is disclosed. T3, low confidence."
+  },
+
+  "1418": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Q1 2026 10-Q (0001628280-26-028526, filed 2026-04-30) generative-AI risk factor lists 'data privacy' among AI risks; general privacy and human-review/data-handling and security risk factors also present (FTS confirms 'generative AI' in the Q1 2026 10-Q). Meta AI smart-glasses capturing intimate imagery routed to human reviewers is this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"generative AI\" forms=10-Q (Q1 2026 window confirm)", "baseline: AI data-privacy + human-review/security risk factors"],
+    "rationale": "AI device capturing intimate imagery exposed to human reviewers; same-family AI-data-privacy risk language present, discrete event unnamed. T3."
+  },
+
+  "1471": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Q1 2026 10-Q (2026-04-30) generative-AI risk factor lists 'cybersecurity, data privacy' among AI risks; broad security-breach/data-disclosure risk factor also present. An internal Meta AI agent giving advice that exposed sensitive data to unauthorized employees is loosely this family, but the risk factors are framed around user-facing AI/data, not internal-tooling operational failures. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline: AI cybersecurity/data-privacy + security-breach risk factors"],
+    "rationale": "Internal AI-agent operational data-exposure incident; only loosely within Meta's (user-facing) AI-data/security risk language, nothing incident-specific disclosed. T3, low confidence (borderline family fit)."
+  },
+
+  "1523": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Q2 2026 10-Q (0001628280-26-050705, filed 2026-07-30) carries generative-AI risk language including 'deepfakes (including related to elections)' and the third-party-misuse clause (FTS confirms 'generative AI' in this 10-Q). AI-fabricated campaign videos of Kosovo candidates circulating on Facebook is squarely this family. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"generative AI\" forms=10-Q (Q2 2026 window confirm)", "baseline: generative-AI deepfakes/elections + third-party-misuse risk factor"],
+    "rationale": "Third-party AI election deepfakes; explicit same-family deepfakes/elections risk language present, unnamed. T3."
+  },
+
+  "1584": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Q2 2026 10-Q (2026-07-30) generative-AI risk factor lists 'bias, discrimination' among AI risks, providing a nominal same-family anchor. But that language addresses discriminatory AI outputs/content, not internal AI-assisted employment/RIF decisions; no employment-discrimination proceeding on this matter is disclosed (not in the contingencies note). Event not named.",
+    "accounting_channel": null,
+    "specific_queries": ["contingencies note review (R17.htm) -- no employment AI matter named", "baseline: generative-AI 'bias, discrimination' risk factor"],
+    "rationale": "AI-assisted layoff alleged to disparately select protected-leave employees; an employment/HR-AI matter only loosely connected to Meta's product-focused 'AI bias/discrimination' risk language, and no litigation is disclosed. Coded T3 at low confidence given the tenuous family fit (arguably T4)."
+  },
+
+  "1510": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Q2 2026 10-Q (2026-07-30) generative-AI risk factor (including data privacy/cybersecurity) plus broad security-breach and 'intentional misuse of our services' risk factors. Hackers manipulating Meta's AI support chatbot to trigger account-recovery takeovers is this family (AI + social-engineering/security). Event not named; the sole 'chatbot' mention in this filing is an unrelated EU antitrust matter.",
+    "accounting_channel": null,
+    "specific_queries": ["\"chatbot\" ciks=0001326801 (only EU antitrust, not this)", "baseline: AI + security-breach/service-misuse risk factors"],
+    "rationale": "AI support-bot exploited for account takeovers; same-family AI + security/misuse risk language present, discrete event unnamed. T3."
+  }
+}
