@@ -1,0 +1,202 @@
+[
+ {
+  "incident_id": "1401",
+  "incident_date": "2026-02-27",
+  "CIK": "1018724",
+  "matched_company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "pass1_code": "T4",
+  "title": "Washington State DOL's AI Phone System Reportedly Failed to Provide Spanish-Language Service to Callers Requesting Spanish",
+  "description": "For months, callers to the Washington State Department of Licensing who selected Spanish reportedly received AI-generated English responses spoken with a Spanish accent rather than actual Spanish-language service. The ag"
+ },
+ {
+  "incident_id": "364",
+  "incident_date": "2020-04-15",
+  "CIK": "104169",
+  "matched_company": "Walmart Inc.",
+  "ticker": "WMT",
+  "pass1_code": "T4",
+  "title": "Walmart's Bagging-Detection False Positives Exposed Workers to Health Risk",
+  "description": "Walmart's theft-deterring bagging-detection system allegedly exposed workers to health risks during the coronavirus pandemic when its false positives prompted workers to unnecessarily step in to resolve the issue."
+ },
+ {
+  "incident_id": "83",
+  "incident_date": "2020-10-22",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "pass1_code": "T4",
+  "title": "AI Spam Filters Allegedly Block Legitimate Emails Based on Biased Keyword Detection",
+  "description": "AlgorithmWatch tested spam filtering algorithms across Gmail, Yahoo, Outlook, GMX, and LaPoste. Their findings reportedly showed that Microsoft Outlook\u2019s spam filter flagged emails based on specific keywords that led to "
+ },
+ {
+  "incident_id": "240",
+  "incident_date": "2021-06-29",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "pass1_code": "T4",
+  "title": "GitHub Copilot, Copyright Infringement and Open Source Licensing",
+  "description": "Users of GitHub Copilot can produce source code subject to license requirements without attributing and licensing the code to the rights holder."
+ },
+ {
+  "incident_id": "620",
+  "incident_date": "2021-11-10",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "pass1_code": "T4",
+  "title": "A Robot at a Tesla Factory in Texas Allegedly Injured an Engineer",
+  "description": "A Tesla manufacturing robot at the Giga Texas factory is reported to have malfunctioned, injuring an engineer. The robot, which was designed for handling car parts, is described as having caused a significant open wound "
+ },
+ {
+  "incident_id": "463",
+  "incident_date": "2022-11-15",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "pass1_code": "T4",
+  "title": "Apple Devices Mistook Skiing Activities, Dialed False Distress Emergency Calls ",
+  "description": "Apple devices of skiers and snowboarders reportedly misclassified winter activities as accidents, which resulted in numerous false inadvertent distress calls to 911 dispatchers."
+ },
+ {
+  "incident_id": "1528",
+  "incident_date": "2023-05-19",
+  "CIK": "917520",
+  "matched_company": "Integra LifeSciences Holdings",
+  "ticker": "IART",
+  "pass1_code": "T4",
+  "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During May 2023 Sinuplasty",
+  "description": "Patient Donna Fernihough allegedly suffered carotid-artery damage and a same-day stroke during a May 19, 2023 balloon sinuplasty in Texas in which surgeon Marc Dean reportedly used Acclarent's AI-enabled TruDi Navigation"
+ },
+ {
+  "incident_id": "124",
+  "incident_date": "2019-10-24",
+  "CIK": "731766",
+  "matched_company": "UnitedHealth Group Inc.",
+  "ticker": "UNH",
+  "pass1_code": "T4",
+  "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs",
+  "description": "Researchers analyzing an Optum algorithm used by a large academic hospital reportedly found evidence that it tended to under-predict the health care needs of Black patients, which in turn appeared to result in lower prio"
+ },
+ {
+  "incident_id": "127",
+  "incident_date": "2020-06-06",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "pass1_code": "T4",
+  "title": "Microsoft\u2019s Algorithm Allegedly Selected Photo of the Wrong Mixed-Race Person Featured in a News Story",
+  "description": "A news story published on MSN.com featured a photo of the wrong mixed-race person that was allegedly selected by an algorithm, following Microsoft\u2019s layoff and replacement of journalists and editorial workers at its orga"
+ },
+ {
+  "incident_id": "549",
+  "incident_date": "2023-01-05",
+  "CIK": "63908",
+  "matched_company": "McDonald's Corporation",
+  "ticker": "MCD",
+  "pass1_code": "T4",
+  "title": "Fast Food Chains' AI Chatbots Failed to Assist Job Applicants with Scheduling Interviews",
+  "description": "McDonald's, Wendy's, and Hardee's AI chatbots deployed to pre-screen job candidates and schedule interviews reportedly ran into issues such as not giving useful submission instructions, failing to relay information to th"
+ },
+ {
+  "incident_id": "1559",
+  "incident_date": "2022-06-22",
+  "CIK": "104169",
+  "matched_company": "Walmart Inc.",
+  "ticker": "WMT",
+  "pass1_code": "T4",
+  "title": "Kalibrate Fuel Pricing Allegedly Enabled California Gas Station Operators to Coordinate Higher Pump Prices",
+  "description": "Major gas station operators in California allegedly used Kalibrate Fuel Pricing to automate pump prices using competitor data and reduce price competition. A June 2026 complaint said the AI-based system increased gasolin"
+ },
+ {
+  "incident_id": "102",
+  "incident_date": "2020-03-23",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "pass1_code": "T4",
+  "title": "Personal voice assistants struggle with black voices, new study shows",
+  "description": "A study found that voice recognition tools from Apple, Amazon, Google, IBM, and Microsoft disproportionately made errors when transcribing black speakers."
+ },
+ {
+  "incident_id": "996",
+  "incident_date": "2020-10-25",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T4",
+  "title": "Meta Allegedly Used Books3, a Dataset of 191,000 Pirated Books, to Train LLaMA AI",
+  "description": "Meta and Bloomberg allegedly used Books3, a dataset containing 191,000 pirated books, to train their AI models, including LLaMA and BloombergGPT, without author consent. Lawsuits from authors such as Sarah Silverman and "
+ },
+ {
+  "incident_id": "350",
+  "incident_date": "2022-09-13",
+  "CIK": "1832483",
+  "matched_company": "Serve Robotics Inc.",
+  "ticker": "SERV",
+  "pass1_code": "T4",
+  "title": "Delivery Robot Rolled Through Crime Scene",
+  "description": "A Serve Robotics delivery robot was shown on video rolling through a crime scene blocked off by police tape."
+ },
+ {
+  "incident_id": "431",
+  "incident_date": "2022-04-20",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "pass1_code": "T4",
+  "title": "Robbers Accessed Drugged Gay Men's Bank Accounts Using Their Phones' Facial Recognition",
+  "description": "Gay men in New York City were drugged by robbers who accessed their phones using facial recognition while they were unconscious to transfer funds out of their bank accounts."
+ },
+ {
+  "incident_id": "622",
+  "incident_date": "2023-12-18",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "pass1_code": "T4",
+  "title": "Chevrolet Dealer Chatbot Agrees to Sell Tahoe for $1",
+  "description": "A Chevrolet dealer's AI chatbot, powered by ChatGPT, humorously agreed to sell a 2024 Chevy Tahoe for just $1, following a user's crafted prompt. The chatbot's response, \"That's a deal, and that's a legally binding offer"
+ },
+ {
+  "incident_id": "968",
+  "incident_date": "2022-02-24",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "pass1_code": "T4",
+  "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformation",
+  "description": "A purported Moscow-based disinformation network, Pravda, allegedly infiltrated AI models by flooding the internet with pro-Kremlin falsehoods. A NewsGuard audit found that 10 major AI chatbots repeated these narratives 3"
+ },
+ {
+  "incident_id": "228",
+  "incident_date": "2019-02-01",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "pass1_code": "T4",
+  "title": "Apple Maps Allegedly Directed Ski Trip Couple Onto Unpaved Road in the Mountains",
+  "description": "Near Los Angeles, Apple Maps allegedly directed a couple on a ski trip in the mountains toward into an unconventional route out of town, where the drivers found themselves lost and stuck on an unpaved road in the snow."
+ },
+ {
+  "incident_id": "501",
+  "incident_date": "2019-06-03",
+  "CIK": "731766",
+  "matched_company": "UnitedHealth Group Inc.",
+  "ticker": "UNH",
+  "pass1_code": "T4",
+  "title": "Length of Stay False Diagnosis Cut Off Insurer's Payment for Treatment of Elderly Woman",
+  "description": "An elderly Wisconsin woman was algorithmically determined to have a rapid recovery, an output which the insurer based on to cut off payment for her treatment despite medical notes showing her still experiencing debilitat"
+ },
+ {
+  "incident_id": "1436",
+  "incident_date": "2022-06-23",
+  "CIK": "917520",
+  "matched_company": "Integra LifeSciences Holdings",
+  "ticker": "IART",
+  "pass1_code": "T4",
+  "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During June 2022 Sinus Procedure",
+  "description": "Patient Erin Ralph allegedly suffered carotid-artery injury and a stroke after a June 23, 2022 sinus procedure in Texas in which surgeon Marc Dean reportedly used Acclarent's AI-enabled TruDi Navigation System. Ralph's l"
+ }
+]

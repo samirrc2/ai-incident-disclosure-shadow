@@ -1,0 +1,10 @@
+{
+  "_doc": "Post-coding corrections applied to the raw pass-1 logs to produce the frozen coded table. Each is auditable and documented in the manuscript/DECISIONS. CIK corrections affect the entity map (not the disclosure code); the one code change is incident 350.",
+  "cik_fixes": {
+    "SoundThinking, Inc.": {"from": 1476470, "to": 1351636, "reason": "1476470 is a defunct shell (Carbon 612); correct SoundThinking/ShotSpotter CIK is 1351636 (verified via data.sec.gov)."},
+    "Serve Robotics Inc.": {"from": 1826681, "to": 1832483, "reason": "1826681 is Palladyne AI; correct Serve Robotics CIK is 1832483 (verified via EDGAR display_names)."}
+  },
+  "code_overrides": {
+    "350": {"from": "T3", "to": "T4", "reason": "Serve Robotics was private (pre-Oct-2023 IPO) at the 2022-09 incident date; no in-window SEC filings exist, so no disclosure is possible -> T4."}
+  }
+}

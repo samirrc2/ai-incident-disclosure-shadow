@@ -1,0 +1,87 @@
+{
+  "363": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Meta FY2020 10-K (0001326801-21-000014:fb-20201231.htm, in-window filed 2021-01-28) carries same-family risk-factor language on automated content enforcement: risk of failing 'to respond expeditiously or appropriately to the sharing of objectionable content' and of adverse impacts from 'relying more heavily on artificial intelligence to perform tasks.' The specific automated-moderation error (flagging Landmark's name) is not named. No specific reference located; generic AI/content-moderation risk language present."
+  },
+  "646": {
+    "code": "T2",
+    "confidence": "medium",
+    "evidence": "Snap FY2024 10-K (0001564408-25-000019:snap-20241231.htm) and all three 2024 10-Qs disclose 'product liability' litigation involving 'minors'/young users, plus the Jan-2025 FTC referral to DOJ regarding 'risk of harm to young users.' These legal/regulatory consequences (the child-safety/predator product-liability suits) are disclosed in generic product-liability terms without recommendation-algorithm/AI framing. Legal-proceedings disclosure without AI framing => T2."
+  },
+  "996": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Coding window is [2020-10-25, 2021-10-25]; LLaMA and the Books3 training-data copyright litigation postdate this (2023). In-window Meta filings (FY2020 10-K + 2021 10-Qs) carry general AI-for-content and general copyright-liability language but NO same-family risk-factor language about generative-AI models trained on copyrighted works. No matching disclosure located in-window."
+  },
+  "398": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2022 10-K (in-window, filed Jan 2023) and 10-Qs carry same-family Autopilot/FSD driver-assistance risk-factor language and disclose NHTSA/regulatory investigations into Autopilot; 'Autopilot' appears in Tesla's in-window 10-K/10-Q filings. The specific horse-drawn-carriage misidentification event is not named. Generic AI/driver-assist risk language present."
+  },
+  "726": {
+    "code": "T1",
+    "confidence": "high",
+    "evidence": "GM FY2023 10-K (0001467858-24-000031:gm-20231231.htm, in-window) references THIS incident directly: 'In October 2023, a hit-and-run accident involving a pedestrian and a third-party vehicle occurred, which resulted in the pedestrian being thrown into the path of a Cruise AV,' the California DMV suspension of Cruise's driverless permits, Cruise's voluntary operations pause, and investigations opened by DMV, CPUC, NHTSA, DOJ and the SEC 'in connection with the incident.'"
+  },
+  "534": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Meta FY2021 10-K (0001326801-22-000018:fb-20211231.htm, in-window filed 2022-02-03) carries same-family risk language: 'media reports concerning the perceived or actual impacts of our products or services on user well-being' and disclosure of 'media, legislative, and regulatory scrutiny... relating to... our algorithms... content enforcement practices... and user well-being.' The specific lawsuit alleging Facebook misled the public about algorithm effects on children is not named as such; algorithm/child-wellbeing risk language present but event not identified."
+  },
+  "102": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Microsoft FY2020 10-K (0001564590-20-034944:msft-10k_20200630.htm, in-window) contains no substantive same-family AI-bias/discrimination risk factor; 'artificial intelligence' appears only in a passing list of regulated technologies and in Business/strategy sections, not as risk-factor language about flawed/biased AI. Incident (racial bias in speech recognition) is also only weakly Microsoft-specific. No matching disclosure located."
+  },
+  "968": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Microsoft FY2022 10-K (0001564590-22-026876:msft-10k_20220630.htm, in-window) has no dedicated AI risk factor (Microsoft's 'Issues in the development and use of AI' risk factor was not yet present); AI appears only as a Business capability. No same-family AI-model-integrity/disinformation risk-factor language in in-window filings. No matching disclosure located."
+  },
+  "614": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Alphabet FY2023 10-K (0001652044-24-000022:goog-20231231.htm, in-window filed 2024-01-31) carries same-family generative-AI risk-factor language: 'Our evolving AI-related efforts may give rise to risks related to harmful content, inaccuracies, discrimination, intellectual property infringement or misappropriation, defamation...' and names Bard as a product. The specific Bard defamation-of-consulting-firm incident is not referenced. Generic gen-AI risk language present, event not named."
+  },
+  "838": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Microsoft FY2024 10-K (0000950170-24-087843:msft-20240630.htm, in-window) and 2024 10-Qs name 'Copilot' and carry Microsoft's AI risk factor on harmful/inaccurate AI outputs and resulting reputational/legal liability. The specific unsafe-medical-advice study is not named. Generic AI risk-factor language present, event not named."
+  },
+  "560": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2023 10-K (0001628280-24-002390:tsla-20231231.htm, in-window) and 2023-2024 10-Qs carry same-family Autopilot risk-factor language and disclose NHTSA/regulatory investigations of Autopilot crashes; 'Autopilot' appears across in-window 10-K/10-Q filings. The specific Pennsylvania parked-work-truck crash is not named. Generic AI/driver-assist risk language present."
+  },
+  "1512": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window Microsoft filings (FY2026 10-K filed ~July 2026 and FY2026 10-Qs) carry Microsoft's established AI risk-factor language (harmful/inaccurate AI outputs, reputational/legal liability) and reference Copilot. The incident (a newspaper pulling an opinion piece over undisclosed third-party Copilot use) is not named. Generic AI risk language present, event not named."
+  },
+  "463": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Apple FY2023 10-K (0000320193-23-000106:aapl-20230930.htm, in-window filed 2023-11-03) mentions 'artificial intelligence' only in a passing list under regulatory-compliance risks and otherwise carries generic product-defect language ('Sophisticated operating system software... often have issues that can unexpectedly interfere with... products'). No same-family AI/algorithm-feature risk-factor framing for the Crash Detection false-positive family. No matching disclosure located."
+  },
+  "963": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window Alphabet filings (2025 10-Qs and FY2025 10-K 0001652044-26-000018:goog-20251231.htm) name 'Gemini' and carry Alphabet's generative-AI risk-factor language on harmful content, inaccuracies, and legal/regulatory scrutiny. The specific eSafety terrorism/CSAM reporting event is not named. Generic gen-AI risk language present, event not named."
+  },
+  "967": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window Alphabet filings (2025 10-Qs and FY2025 10-K) carry same-family AI/search risk-factor language on harmful, objectionable, and inaccurate AI/search outputs and reputational/regulatory harm. The specific 'Mein Kampf' search-result incident is not named. Generic AI risk language present, event not named."
+  },
+  "141": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Meta FY2020 10-K (in-window) and FY2021 10-K (0001326801-22-000018, in-window through window end 2022-02-05) carry same-family risk language on reliance on automated/AI content systems and on 'liability for copyright infringement.' The trivial incident (police triggering Instagram's automated copyright/DMCA muting) is not named; family match is loose. Generic automated-content-system/copyright risk language present, event not named."
+  },
+  "1401": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "In-window Amazon 10-Q for Q1 2026 (0001018724-26-000014:amzn-20260331.htm, filed 2026-04-30) incorporates Amazon's risk factors, which include generative-AI risk-factor language; 'artificial intelligence' is present in the in-window corpus. The incident (a Washington State DOL AI phone system failing Spanish-language callers) is a third-party deployment not named in Amazon filings; attribution to Amazon is weak. Generic AI risk language present, event not named."
+  }
+}

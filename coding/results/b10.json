@@ -1,0 +1,148 @@
+{
+  "_baseline_context": {
+    "issuer": "Amazon.com, Inc. (CIK 0001018724)",
+    "annual_reports_in_scope": {
+      "FY2018_10-K": "0001018724-19-000004 (filed 2019-02-01)",
+      "FY2019_10-K": "0001018724-20-000004 (filed 2020-01-31)",
+      "FY2020_10-K": "0001018724-21-000004 (filed 2021-02-03)",
+      "FY2021_10-K": "0001018724-22-000005 (filed 2022-02-04)",
+      "FY2022_10-K": "0001018724-23-000004 (filed 2023-02-03)",
+      "FY2023_10-K": "0001018724-24-000008 (filed 2024-02-02)",
+      "FY2024_10-K": "0001018724-25-000004 (filed 2025-02-07)",
+      "FY2025_10-K": "0001018724-26-000004 (filed 2026-02-06)"
+    },
+    "ai_ml_risk_language": "Every in-window 10-K carries generic AI/ML risk-factor language. 'artificial intelligence' appears in all 8 10-Ks (FY2018 filed 2019-02-01 through FY2025 filed 2026-02-06); 'machine learning' in the 7 10-Ks from FY2019 (2020-01-31) onward. Framing is generic: (a) government regulation of 'artificial intelligence technologies and services' may be unfavorable; (b) 'our and our customers' development and use of artificial intelligence may result in increased claims of infringement or other claims'; (c) 'practical applications of artificial intelligence and machine learning' increase competition. No incident-specific naming.",
+    "adjacent_risk_families": "Long-standing product-liability risk factor ('products we sell or manufacture expose us to product liability ... relating to personal injury or illness, death'); fraudulent/unlawful/objectionable seller-goods-and-content risk factor; data/privacy/security risk factors; labor/employment risk. Worker-safety appears in the Business/Human-Capital section ('new safety technology, vehicle safety controls'), not as a standalone risk factor.",
+    "autonomous_zoox": "'autonomous' first appears in FY2022 10-K (2023-02-03) and 10-Qs from Q1 2023; described in MD&A as investment in 'autonomous vehicles for ride-hailing services' (Zoox), NOT as an AV-safety/accident risk factor. 'Zoox' appears ONLY in 8-K earnings press-release exhibits (99.1), DEF 14A, and ARS as positive business highlights - never in 10-K/10-Q risk factors or legal proceedings, and never in connection with a crash or recall.",
+    "legal_proceedings": "Note 7 (Commitments & Contingencies - Legal Proceedings), confirmed via Q1 2026 10-Q (0001018724-26-000014): only named product-family matter is Rensselaer Polytechnic Institute v. Amazon (Alexa Voice Software PATENT suit, unrelated to any incident here). Otherwise only generic categories (patent/IP, tax, labor/employment, antitrust, privacy, consumer protection, government inquiries). No named matter for Zoox/NHTSA/autonomous vehicles, warehouse worker safety, delivery-driver monitoring, Alexa content, or recommendation algorithms. => No incident qualifies for T2.",
+    "negative_fts": "efts CIK-restricted full-text searches returning NO HITS: 'time off task', 'delivery service partners', 'generative artificial intelligence' (exact phrase). Confirms no incident-specific naming (no T1)."
+  },
+  "386": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2019-07-03 to 2020-07-03. In-window FY2019 10-K (0001018724-20-000004, filed 2020-01-31) carries generic AI/ML risk-factor language ('artificial intelligence' and 'machine learning' both present) plus labor/employment risk language. The algorithmic worker-productivity ('Time Off Task') tracking system is an Amazon algorithmic-management system, but neither it nor the incident is named. FTS 'time off task' => NO HITS.",
+    "accounting_channel": null,
+    "specific_queries": ["\"time off task\" (NO HITS)", "\"artificial intelligence\" / \"machine learning\" in FY2019 10-K (present)"],
+    "rationale": "No specific disclosure (not named; no legal proceeding). Generic AI/algorithm risk language of the same broad family present in the in-window annual report => T3."
+  },
+  "125": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Window 2020-09-29 to 2021-09-29. In-window FY2020 10-K (0001018724-21-000004, filed 2021-02-03) carries generic AI/ML risk language and describes robotics/automation and safety investment in the Business section. No risk factor addresses robotic-fulfillment injury rates; the event is not named and does not appear in Legal Proceedings.",
+    "accounting_channel": null,
+    "specific_queries": ["\"robotic\"/\"machine learning\" risk language in FY2020 10-K (present)", "Legal Proceedings review (no worker-safety matter named)"],
+    "rationale": "Robotics/automation is an AI-adjacent Amazon system covered by generic AI/ML risk language; incident not named. Family match is weak (workplace-injury framing absent), hence low confidence, but generic same-family language present => T3 over T4."
+  },
+  "139": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2021-01-21 to 2022-01-21. In-window FY2020 10-K (0001018724-21-000004, filed 2021-02-03) and 2021 10-Qs carry generic AI/ML risk language plus the fraudulent/unlawful/objectionable seller-content risk factor. Search/recommendation-algorithm surfacing of vaccine-misinformation products is not named; no related legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML + objectionable-content risk language in FY2020 10-K (present)"],
+    "rationale": "Recommendation/algorithm harm covered by generic AI/algorithm and objectionable-content risk language; event not named => T3."
+  },
+  "395": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2021-03-02 to 2022-03-02. In-window FY2021 10-K (0001018724-22-000005, filed 2022-02-04) carries generic AI/ML risk language and data/privacy (biometric) risk factors. AI-powered delivery-driver camera surveillance is an Amazon algorithmic system but is not named; no related legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML + privacy/biometric risk language in FY2021 10-K (present)"],
+    "rationale": "Generic AI/algorithm and privacy risk language of the same family present; specific system/event not named => T3."
+  },
+  "157": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2021-03-15 to 2022-03-15. In-window FY2021 10-K (0001018724-22-000005, filed 2022-02-04) carries generic AI/ML risk language. The AI driver-monitoring system and the individual crash tort suit are not named; Legal Proceedings names no delivery-driver matter (individual tort, immaterial).",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML risk language in FY2021 10-K (present)", "Legal Proceedings (no driver matter named)"],
+    "rationale": "Individual tort suit not disclosed (no T2). Generic AI/algorithm risk language of same family present; event not named => T3."
+  },
+  "116": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2021-09-20 to 2022-09-20. In-window FY2021 10-K (0001018724-22-000005, filed 2022-02-04) carries generic AI/ML risk language. AI-camera automated performance-evaluation of delivery drivers is not named; no related legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML risk language in FY2021 10-K (present)"],
+    "rationale": "Generic AI/algorithm risk language of same family present; specific system/event not named => T3."
+  },
+  "160": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2021-12-26 to 2022-12-26. In-window FY2021 10-K (0001018724-22-000005, filed 2022-02-04) carries generic AI/ML risk language plus product-liability and objectionable-content risk factors. Alexa's harmful 'penny challenge' recommendation is not named; the only Alexa legal matter disclosed is an unrelated patent suit.",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML + product-liability risk language in FY2021 10-K (present)", "Legal Proceedings (only unrelated Alexa patent suit)"],
+    "rationale": "Alexa is an Amazon AI system covered by generic AI and product-safety/content risk language; incident not named => T3."
+  },
+  "156": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2022-02-04 to 2023-02-04. In-window FY2021 10-K (0001018724-22-000005, filed 2022-02-04) and 2022 10-Qs carry generic AI/ML risk language plus the product-liability and fraudulent/objectionable-goods risk factors. Recommendation-system surfacing of suicide-aid products / 'frequently bought together' is not named; no incident-specific legal proceeding disclosed (product-liability risk factor is generic).",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML + product-liability + objectionable-goods risk language in FY2021/FY2022 10-K (present)", "Legal Proceedings (no named product-recommendation matter)"],
+    "rationale": "Recommendation-algorithm + product harm covered by generic AI/algorithm and product-liability/objectionable-content risk language; event not named => T3."
+  },
+  "528": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2023-04-08 to 2024-04-08. In-window FY2023 10-K (0001018724-24-000008, filed 2024-02-02) carries generic AI/ML risk language. Algorithmic-pricing anomaly is not named; no related legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML/algorithm risk language in FY2023 10-K (present)"],
+    "rationale": "Pricing-algorithm harm covered by generic AI/algorithm risk language; event not named => T3."
+  },
+  "778": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2024-09-04 to 2025-09-04. In-window FY2024 10-K (0001018724-25-000004, filed 2025-02-07) carries generic AI/ML risk language ('our and our customers' development and use of artificial intelligence may result in ... claims'). Alexa political-bias responses are not named; no related legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["AI risk language in FY2024 10-K (present)"],
+    "rationale": "Alexa generative responses covered by generic AI risk language; incident not named => T3."
+  },
+  "1158": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2025-07-17 to 2026-07-17. In-window Q2 2025 10-Q (0001018724-25-000086), Q3 2025 10-Q (0001018724-25-000123) and FY2025 10-K (0001018724-26-000004, filed 2026-02-06) carry generic AI/ML risk language plus AWS/security risk factors. The Amazon Q coding-assistant supply-chain compromise is not named; no related legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["AI/ML + security/AWS risk language across in-window filings (present)"],
+    "rationale": "Amazon Q (AWS AI assistant) compromise covered by generic AI and security risk language; incident not named => T3."
+  },
+  "1539": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2025-08-26 to 2026-08-26. In-window FY2025 10-K (0001018724-26-000004, filed 2026-02-06) and 10-Qs carry generic AI/ML risk language and reference 'autonomous vehicles for ride-hailing' as an investment. Zoox is named only in 8-K earnings highlights, never in risk factors/legal proceedings; the lane-crossing event and 332-vehicle recall are not disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Zoox\" (only in 8-K earnings/proxy exhibits, not risk factors)", "\"autonomous\" in FY2025 10-K (investment mention)"],
+    "rationale": "Zoox AV incident/recall covered by generic AI/autonomous risk language; event not named and no legal proceeding disclosed => T3."
+  },
+  "1540": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2026-01-17 to 2027-01-17. In-window FY2025 10-K (0001018724-26-000004, filed 2026-02-06) and Q1/Q2 2026 10-Qs carry generic AI/ML and 'autonomous' investment language. The Zoox door-collision injury is not named; Legal Proceedings (Q1 2026 10-Q) names no AV matter. Window remains partly open (future FY2026 10-K).",
+    "accounting_channel": null,
+    "specific_queries": ["\"Zoox\" (earnings exhibits only)", "Legal Proceedings Q1 2026 10-Q (no AV matter named)"],
+    "rationale": "Zoox AV injury covered by generic AI/autonomous risk language; event not named, no legal proceeding disclosed => T3."
+  },
+  "1602": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Window 2026-06-20 to 2027-06-20. In-window filing available to date is Q2 2026 10-Q (0001018724-26-000026, filed 2026-07-31), which carries 'autonomous' risk/MD&A language and incorporates AI risk factors. The smoke-detection recall / fire-scene event is not named. Window is largely open (future Q3 2026 10-Q and FY2026 10-K not yet filed as of 2026-08-03).",
+    "accounting_channel": null,
+    "specific_queries": ["\"autonomous\" in Q2 2026 10-Q (present)", "\"Zoox\" (earnings exhibits only)"],
+    "rationale": "Zoox AV recall covered by generic AI/autonomous risk language; event not named => T3. Low confidence because most of the disclosure window has not yet elapsed."
+  },
+  "1376": {
+    "code": "T4",
+    "confidence": "low",
+    "evidence": "Window 2026-02-15 to 2027-02-15. FY2025 10-K (filed 2026-02-06) predates the incident and is therefore outside the window; in-window filings to date are Q1 2026 10-Q (0001018724-26-000014) and Q2 2026 10-Q (0001018724-26-000026), which do not carry AI/algorithm risk-factor language of the same family for consumer GPS/satnav routing. The GPS-routing van-stranding is not named and is not clearly an Amazon proprietary AI system (satnav navigation). No legal proceeding disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["in-window 10-Qs Q1/Q2 2026 risk factors (no same-family satnav/routing AI language)"],
+    "rationale": "No incident-specific disclosure and no in-window same-family AI/algorithm risk language for GPS/satnav routing; weak Amazon-AI nexus => T4. Window still partly open."
+  },
+  "1401": {
+    "code": "T4",
+    "confidence": "low",
+    "evidence": "Window 2026-02-27 to 2027-02-27. Incident is a third party's (Washington State DOL) deployment of an AI phone system (AWS/Amazon as infrastructure vendor). FY2025 10-K (2026-02-06) predates the window; in-window filings to date are Q1 2026 and Q2 2026 10-Qs. No filing names the event; no legal proceeding disclosed; Amazon has no disclosure nexus to a customer-agency's Spanish-language service failure.",
+    "accounting_channel": null,
+    "specific_queries": ["in-window 10-Qs Q1/Q2 2026 (no same-family disclosure)"],
+    "rationale": "Third-party/customer deployment with no Amazon disclosure nexus and no in-window same-family risk language tied to the event => T4. Window still partly open."
+  }
+}

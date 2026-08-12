@@ -1,0 +1,60 @@
+{
+  "pass2_n": 68,
+  "cohens_kappa": 0.726,
+  "observed_agreement": 0.853,
+  "expected_agreement": 0.463,
+  "PABAK": 0.706,
+  "gwet_ac1": 0.821,
+  "ipw_projected_agreement_full": 0.909,
+  "per_tier_one_vs_rest": {
+    "T1": {
+      "n_pass1": 4,
+      "po": 0.971,
+      "kappa": 0.734
+    },
+    "T2": {
+      "n_pass1": 3,
+      "po": 0.941,
+      "kappa": -0.023
+    },
+    "T3": {
+      "n_pass1": 40,
+      "po": 0.882,
+      "kappa": 0.755
+    },
+    "T4": {
+      "n_pass1": 21,
+      "po": 0.912,
+      "kappa": 0.793
+    }
+  },
+  "confusion": {
+    "T1": {
+      "T1": 3,
+      "T2": 0,
+      "T3": 1,
+      "T4": 0
+    },
+    "T2": {
+      "T1": 1,
+      "T2": 0,
+      "T3": 1,
+      "T4": 1
+    },
+    "T3": {
+      "T1": 0,
+      "T2": 1,
+      "T3": 37,
+      "T4": 2
+    },
+    "T4": {
+      "T1": 0,
+      "T2": 0,
+      "T3": 3,
+      "T4": 18
+    }
+  },
+  "gate": "PASS (kappa>=0.70)",
+  "severity_note": "Severity: CSET authoritative for 40/307 incidents; the remaining 267 rubric-coded. Rubric-vs-CSET cross-check not a kappa (CSET takes precedence by design); severity strata read as indicative.",
+  "interpretation": "High T3 prevalence deflates chance-corrected kappa; prevalence-robust PABAK and Gwet's AC1 are reported alongside. Per-tier one-vs-rest kappa localizes reliability: the T1/T4 tiers are cleanly separated; residual uncertainty concentrates at the T2/T3 boundary."
+}

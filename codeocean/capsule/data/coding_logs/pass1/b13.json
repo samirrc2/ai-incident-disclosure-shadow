@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "batch": "b13",
+    "coder_notes": "CIK CORRECTION: The batch file lists SoundThinking/ShotSpotter as CIK 1476470, which is WRONG. CIK 1476470 = 'CARBON 612 Corp', a revoked shell (SIC Measuring & Controlling Devices), last filing 2014. The correct CIK for SoundThinking, Inc. (f/k/a SHOTSPOTTER, INC) is 1351636 (ticker SSTI), confirmed via EDGAR full-text search display_names and data.sec.gov submissions (former name SHOTSPOTTER, INC 2015-2023). All ShotSpotter coding below uses CIK 1351636. McDonald's (63908), UnitedHealth (731766), and Uber (1543151) CIKs were verified correct via efts display_names.",
+    "method": "EDGAR full-text search (efts.sec.gov/LATEST/search-index) restricted per correct CIK for specific-incident terms and same-family risk vocabulary; confirmed by opening in-window 10-K Risk Factors / Legal Proceedings where doc size permitted. Note: efts /search-index returns no highlight field, so presence/absence + year enumeration was used, supplemented by direct filing reads for SoundThinking FY2021/FY2023 and UnitedHealth FY2023. Session WebFetch limit was reached before direct reads of a McDonald's and a Uber 10-K could confirm exact risk-factor wording; those two companies' codes rely on efts presence/absence evidence plus one confirmed cross-company AI/ML risk-factor pattern.",
+    "no_T1_or_T2": "No incident was specifically disclosed (T1) and none had its specific legal/regulatory proceeding disclosed in filings (T2). Every matched specific-incident term (Durham, biometric, McHire, nH Predict, naviHealth-in-risk-context, facial recognition) returned zero relevant hits. accounting_channel is null for all (only T1/T2 carry a channel)."
+  },
+  "255": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Correct issuer CIK 1351636 (SoundThinking f/k/a ShotSpotter). In-window annual: FY2019 10-K filed 2020-03-13 and FY2020 10-K filed 2021-03-29 (acc 0001564590-21-016134, ssti-10k_20201231.htm). The term 'accuracy' appears in every ShotSpotter/SoundThinking 10-K FY2017-FY2025 (efts, CIK 1351636). The recurring same-family risk factor was read verbatim in the FY2021 and FY2023 10-Ks: 'Real or perceived false positive gunshot alerts or failure or perceived failure to generate alerts for actual gunfire could adversely affect our customers and their operations, damage our brand and reputation and adversely affect our growth prospects and results of operations.' The specific Chicago wrongful-conviction case / individual is not named (no person name surfaces; no case-specific disclosure).",
+    "accounting_channel": null,
+    "specific_queries": ["q=ShotSpotter&ciks=0001351636 (0 under wrong CIK 1476470; used to detect CIK error)", "q=accuracy&ciks=0001351636&forms=10-K (10 hits, all FY2017-2025 10-Ks)", "q=Durham&ciks=0001351636 (0)", "q=subpoena&ciks=0001351636 (3, all unrelated exhibits)"],
+    "rationale": "Gunshot-detection accuracy/false-alert reliability is the exact family the company discloses as a standing risk factor in every 10-K, but the specific Michael Williams / Chicago matter is not named. Same-family generic risk language present, event not named => T3."
+  },
+  "256": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window annual: FY2021 10-K filed 2022-03-29 (acc 0000950170-22-004805, ssti-20211231.htm), read directly. Carries the recurring false-alert / failure-to-alert accuracy risk factor (quoted under incident 255). No specific incident, court case, city, or individual named. 'subpoena' efts hits (S-1 exhibit 2017, 8-K ex99_1 2022-11-14, 10-Q exhibit 2018) are unrelated contract/press exhibits, not the DUI-alert subpoena matter.",
+    "accounting_channel": null,
+    "specific_queries": ["q=subpoena&ciks=0001351636 (3 unrelated)", "q=accuracy&ciks=0001351636&forms=10-K", "direct read FY2021 10-K Risk Factors"],
+    "rationale": "Reliability of ShotSpotter alerts (the family of the DUI-alert reliability challenge) is disclosed generically; the public-defender subpoena / specific case is not named. => T3."
+  },
+  "446": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window annual: FY2022 10-K filed 2023-03-14 (acc 0000950170-23-007845, ssti-20221231.htm). efts q=Durham&ciks=0001351636 returns ZERO hits across all filings, so the Durham New Year's Day missed-detection is nowhere named. The 'failure or perceived failure to generate alerts for actual gunfire' risk factor (a missed-detection/family match) is recurring and confirmed in adjacent-year 10-Ks (FY2021, FY2023).",
+    "accounting_channel": null,
+    "specific_queries": ["q=Durham&ciks=0001351636 (0)", "q=accuracy&ciks=0001351636&forms=10-K"],
+    "rationale": "Missed-detection / failure-to-alert is disclosed as a standing risk factor; the specific Durham event is not named (Durham=0). => T3."
+  },
+  "637": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window annual: FY2023 10-K filed 2024-04-01 (acc 0000950170-24-039479, ssti-20231231.htm), read directly. Contains the same-family risk factor 'Real or perceived false positive gunshot alerts or failure or perceived failure to generate alerts for actual gunfire could...damage our brand and reputation...' and 'The failure of our solutions to meet our customers' expectations could harm our reputation...'. It does NOT reference the reported 47% Chicago accuracy figure, any city, or specific study; no accuracy percentage disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["q=accuracy&ciks=0001351636&forms=10-K", "direct read FY2023 10-K Risk Factors (no '47%', no city named)"],
+    "rationale": "Accuracy/reliability of the gunshot-detection system is disclosed generically; the specific 47%-accuracy-in-Chicago reporting is not named. => T3."
+  },
+  "475": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "McDonald's CIK 63908 confirmed. In-window annual: FY2021 10-K filed 2022-02-24 (acc 0000063908-22-000011, mcd-20211231.htm). efts confirms a recurring 'technology initiatives' risk factor present in McDonald's 10-Ks for FY2014, FY2020, FY2021, FY2022, FY2023, FY2024, FY2025 (q=%22technology initiatives%22&ciks=0000063908&forms=10-K, 8 hits). The words 'artificial intelligence' do NOT appear in any McDonald's 10-K before FY2023 (efts: AI only in filings dated 2024-02-22, 2025-02-25, 2026-02-24); 'algorithm' appears in NO McDonald's 10-K (only 1 total hit, an unrelated 8-K exhibit 2023-12-06). The IBM/Apprente AI drive-thru pilot is not named anywhere.",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22artificial intelligence%22&ciks=0000063908 (only 10-Ks filed 2024+)", "q=algorithm&ciks=0000063908 (1 hit, unrelated 8-K exhibit)", "q=%22technology initiatives%22&ciks=0000063908&forms=10-K (present FY2020-FY2025)"],
+    "rationale": "The specific AI drive-thru pilot/ending of the IBM partnership is not disclosed. A recurring generic technology/digital-initiatives risk factor covers the same domain (automation/technology initiatives may fail or harm reputation), but with no AI/algorithm-specific framing in the in-window filing. Same-family generic risk language present, event not named => T3 (borderline; the family match is 'technology initiative' rather than explicit AI)."
+  },
+  "360": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window annual: FY2021 10-K filed 2022-02-24 (acc 0000063908-22-000011). efts q=biometric&ciks=0000063908 returns ZERO hits (the BIPA voiceprint matter is not named). 'privacy' risk-factor language is present in every McDonald's 10-K FY2020-FY2025 (efts q=privacy&forms=10-K). No AI/algorithm language pre-FY2023. The specific BIPA class action is not disclosed in Legal Proceedings.",
+    "accounting_channel": null,
+    "specific_queries": ["q=biometric&ciks=0000063908 (0)", "q=privacy&ciks=0000063908&forms=10-K (all years)", "q=%22artificial intelligence%22&ciks=0000063908 (FY2023+ only)"],
+    "rationale": "The AI drive-thru BIPA/biometric suit is not named (biometric=0) and the specific proceeding is not disclosed (so not T2). Generic data-privacy risk language of the same family is present in the in-window 10-K. Same-family generic risk, event not named => T3."
+  },
+  "549": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "In-window annual: FY2022 10-K filed 2023-02-24 (acc 0000063908-23-000012, mcd-20221231.htm). This filing predates any 'artificial intelligence' language in McDonald's 10-Ks (AI first appears FY2023, filed 2024-02-22) and 'algorithm' never appears in a McDonald's 10-K. The recurring 'technology initiatives' risk factor concerns customer-facing digital ordering/loyalty, not recruitment/hiring chatbots; there is no hiring-technology or AI-recruitment risk language and no mention of the McDonald's/Olivia hiring-chatbot scheduling failures. McHire/hiring-bot terms return zero (q=McHire=0).",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22artificial intelligence%22&ciks=0000063908 (FY2023+ only, not in in-window FY2022 10-K)", "q=algorithm&ciks=0000063908 (none in 10-K)", "q=McHire&ciks=0000063908 (0)"],
+    "rationale": "Minor operational chatbot-scheduling failures; no legal/regulatory consequence, event not named, and the in-window filing carries no AI/algorithm/hiring-technology risk language of this family (the generic 'technology initiatives' factor is customer-ordering, not HR). No same-family disclosure located => T4."
+  },
+  "1179": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window annual: FY2025 10-K filed 2026-02-24 (acc 0000063908-26-000035, mcd-20251231.htm) — within the incident window (2025-06-30 to 2026-06-30). efts q=McHire&ciks=0000063908 returns ZERO hits (the Paradox/Olivia 64M-applicant exposure is not named). This filing is in the FY2023+ set where 'artificial intelligence' language is present (efts), and 'privacy' plus 'cybersecurity' risk-factor language is present in every McDonald's 10-K (efts, forms=10-K).",
+    "accounting_channel": null,
+    "specific_queries": ["q=McHire&ciks=0000063908 (0)", "q=%22artificial intelligence%22&ciks=0000063908 (present FY2023-FY2025 10-Ks)", "q=cybersecurity&ciks=0000063908&forms=10-K", "q=privacy&ciks=0000063908&forms=10-K"],
+    "rationale": "The McHire data-exposure incident is not named. Generic same-family risk language (data privacy / cybersecurity / AI) is present in the in-window FY2025 10-K. Same-family generic risk, event not named => T3."
+  },
+  "501": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "UnitedHealth CIK 731766 confirmed. In-window annual: FY2019 10-K filed ~2020-02 (window 2019-06-03 to 2020-06-03). 'artificial intelligence'/'AI/ML' language does NOT appear in any UNH 10-K before FY2023 (efts: AI only in 10-Ks filed 2024-02-28, 2025-02-27, 2026-03-02). 'algorithm' appears in ZERO UNH 10-Ks (efts q=algorithm&forms=10-K = 0). 'nH Predict' = 0. 'naviHealth' appears only inside Exhibit 21 (subsidiary lists) of 10-Ks (efts _ids unhex21...htm) — and in mid-2019 naviHealth was not yet UNH-owned (acquired 2020). No same-family AI/algorithm risk language in-window and the length-of-stay algorithm care-denial matter is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22artificial intelligence%22&ciks=0000731766&forms=10-K (FY2023+ only)", "q=algorithm&ciks=0000731766&forms=10-K (0)", "q=%22nH Predict%22&ciks=0000731766 (0)", "q=naviHealth&ciks=0000731766&forms=10-K (5 hits, all Exhibit 21 subsidiary lists)"],
+    "rationale": "Event not named, and the in-window FY2019 10-K contains no AI/algorithm risk language of this family (AI/ML risk language first appears FY2023). No disclosure located => T4."
+  },
+  "124": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "In-window annual: FY2019 10-K (window 2019-10-24 to 2020-10-24). Same evidentiary base as incident 501: no 'artificial intelligence'/'AI/ML' language in UNH 10-Ks before FY2023; 'algorithm' in zero UNH 10-Ks; the Optum health-risk-score racial-bias study (Obermeyer et al., Science, Oct 2019) is not referenced. Optum risk-score/algorithm bias matter not named.",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22artificial intelligence%22&ciks=0000731766&forms=10-K (FY2023+ only)", "q=algorithm&ciks=0000731766&forms=10-K (0)"],
+    "rationale": "Event not named; no AI/algorithm same-family risk language in the in-window FY2019 10-K. No disclosure located => T4."
+  },
+  "608": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window: FY2023 10-K filed 2024-02-28 (acc 0000731766-24-000081, unh-20231231.htm) — at the window boundary (incident 2023-02-28 + 12mo = 2024-02-28) and read directly. It carries generic AI/ML risk-factor language, e.g.: 'the data we rely upon...including systems powered by or incorporating artificial intelligence and machine learning (AI/ML)...' and 'we anticipate that fast-evolving AI/ML technologies, including generative AI, will play an increasingly important role in our information systems...' No mention of naviHealth, nH Predict, AI coverage-denials, or related class-action litigation in Risk Factors or Legal Proceedings; 'nH Predict' = 0 and 'naviHealth' appears only in Exhibit 21 (subsidiary list).",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22nH Predict%22&ciks=0000731766 (0)", "q=naviHealth&ciks=0000731766&forms=10-K (Exhibit 21 only)", "q=algorithm&ciks=0000731766&forms=10-K (0)", "direct read FY2023 10-K Risk Factors + Legal Proceedings"],
+    "rationale": "The naviHealth/nH Predict AI care-denial matter and the related litigation are not disclosed; generic same-family AI/ML risk language is present in the in-window FY2023 10-K. Same-family generic risk, event not named => T3 (boundary-window; the AI language is generic AI/ML, not clinical-algorithm-specific)."
+  },
+  "354": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Uber CIK 1543151 confirmed. In-window annual: FY2020 10-K filed 2021-03-01 (acc 0001543151-21-000014, uber-20201231.htm). 'artificial intelligence' is present in Uber 10-Ks from FY2020 onward (efts q=%22artificial intelligence%22&forms=10-K: FY2020-FY2025). Uber's 10-K risk factors routinely address data-privacy/GDPR and reliance on AI/ML in the platform. The specific Dutch GDPR automated-profiling lawsuit is not named. (Direct read of the FY2020 10-K to capture exact GDPR/automated-decision wording could not be completed before the session WebFetch limit; coding rests on efts presence of AI language FY2020+ and Uber's well-established GDPR/privacy risk factors.)",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22artificial intelligence%22&ciks=0001543151&forms=10-K (FY2020-FY2025)", "q=%22facial recognition%22&ciks=0001543151 (0)"],
+    "rationale": "Automated decision-making/profiling and GDPR/data-privacy are disclosed generically as risk factors; the specific driver-profiling GDPR lawsuit is not named. Same-family generic risk, event not named => T3."
+  },
+  "265": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "In-window annuals: FY2020 10-K (filed 2021-03-01) and FY2021 10-K (filed 2022-02-24). efts q=%22facial recognition%22&ciks=0001543151 = ZERO hits across all Uber filings (the FRT/photo-verification driver-dismissal matter is not named and facial-recognition is never a named risk topic). Generic 'artificial intelligence' risk language is present in these in-window 10-Ks (efts).",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22facial recognition%22&ciks=0001543151 (0)", "q=%22artificial intelligence%22&ciks=0001543151&forms=10-K (FY2020+)"],
+    "rationale": "The Uber Eats facial-recognition mismatch/dismissal is not named and facial-recognition is absent from filings; however generic AI/ML platform risk language of the broader algorithmic-identity family is present in-window. Weak same-family match => T3 with low confidence (borderline T4)."
+  },
+  "203": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window annuals: FY2021 10-K filed 2022-02-24 (acc 0001543151-22-000008) and FY2022 10-K filed 2023-02-21. 'artificial intelligence' is present in these 10-Ks (efts FY2020+); the standalone word 'algorithm' first appears in Uber 10-Ks at FY2023 (efts q=algorithm&forms=10-K: FY2023-FY2025). Uber's risk factors address pricing/fares, driver dissatisfaction/attrition, and reliance on AI/ML in the platform. The specific opaque upfront-pay algorithm change is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["q=%22artificial intelligence%22&ciks=0001543151&forms=10-K (FY2020+)", "q=algorithm&ciks=0001543151&forms=10-K (FY2023+)"],
+    "rationale": "Pricing/pay-algorithm and driver-dissatisfaction risks are disclosed generically (with AI/ML risk language present in-window); the specific upfront-fares algorithm rollout is not named. Same-family generic risk, event not named => T3."
+  }
+}

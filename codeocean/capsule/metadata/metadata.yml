@@ -1,0 +1,17 @@
+metadata_version: 1
+name: "The AI Incident Disclosure Shadow"
+description: >
+  Reproducibility capsule for the Frontiers in Artificial Intelligence manuscript
+  "The AI Incident Disclosure Shadow: An Incident-Level Study Matching AIID-Recorded
+  AI Failures to U.S.-Listed Companies' Investor Disclosures, 2019-2026." From a
+  frozen, SHA-256-pinned AI Incident Database snapshot and the frozen
+  disclosure-coding logs, the capsule reproduces entity resolution (N_matchable =
+  307), the four-tier disclosure distribution, Wilson and issuer-clustered-bootstrap
+  confidence intervals, concentration and window robustness, formal stratum tests,
+  inter-coder reliability (Cohen's kappa, PABAK, Gwet's AC1), the incident-firm map,
+  and all publication figures — 100% offline and byte-identical across runs. Measures
+  disclosure behavior, not compliance. Keys-free Reproducible Run via /code/run.
+  Code Ocean DOI: https://doi.org/10.24433/CO.2340354.v1
+authors:
+  - name: "Samir Chincholikar"
+  - name: "Robin Chawla"

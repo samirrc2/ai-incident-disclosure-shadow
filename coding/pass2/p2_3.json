@@ -1,0 +1,138 @@
+[
+ {
+  "incident_id": "1436",
+  "incident_date": "2022-06-23",
+  "CIK": "917520",
+  "matched_company": "Integra LifeSciences Holdings",
+  "ticker": "IART",
+  "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During June 2022 Sinus Procedure"
+ },
+ {
+  "incident_id": "1584",
+  "incident_date": "2026-05-20",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave"
+ },
+ {
+  "incident_id": "1224",
+  "incident_date": "2025-10-01",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Purportedly AI-Generated Deepfake Ads on Instagram Impersonate Gisele B\u00fcndchen and Other Celebrities in Brazilian Fraud Scheme"
+ },
+ {
+  "incident_id": "540",
+  "incident_date": "2023-05-15",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla Failed to Yield to Detected Pedestrian on Crosswalk, Reportedly Violated Traffic Law"
+ },
+ {
+  "incident_id": "313",
+  "incident_date": "2022-08-25",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "BlenderBot 3 Cited Dutch Politician as a Terrorist"
+ },
+ {
+  "incident_id": "696",
+  "incident_date": "2024-02-14",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Meta's AI Ad Platform Reportedly Causes Overspending and Poor Performance"
+ },
+ {
+  "incident_id": "292",
+  "incident_date": "2021-09-01",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "title": "Apple\u2019s AVs Reportedly Struggled to Navigate Streets in Silicon Valley Test Drives"
+ },
+ {
+  "incident_id": "1528",
+  "incident_date": "2023-05-19",
+  "CIK": "917520",
+  "matched_company": "Integra LifeSciences Holdings",
+  "ticker": "IART",
+  "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During May 2023 Sinuplasty"
+ },
+ {
+  "incident_id": "881",
+  "incident_date": "2024-12-27",
+  "CIK": "1826681",
+  "matched_company": "Serve Robotics Inc.",
+  "ticker": "SERV",
+  "title": "Waymo Robotaxi Allegedly Collides With Serve Robotics Delivery Bot in Los Angeles"
+ },
+ {
+  "incident_id": "291",
+  "incident_date": "2021-05-28",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla Allegedly Misled Customers about Autopilot and FSD Capabilities"
+ },
+ {
+  "incident_id": "127",
+  "incident_date": "2020-06-06",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "Microsoft\u2019s Algorithm Allegedly Selected Photo of the Wrong Mixed-Race Person Featured in a News Story"
+ },
+ {
+  "incident_id": "293",
+  "incident_date": "2022-06-03",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "title": "Cruise\u2019s Self-Driving Car Involved in a Multiple-Injury Collision at an San Francisco Intersection"
+ },
+ {
+  "incident_id": "386",
+  "incident_date": "2019-07-03",
+  "CIK": "1018724",
+  "matched_company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "title": "Amazon\u2019s \"Time Off Task\" System Made False Assumptions about Workers' Time Management"
+ },
+ {
+  "incident_id": "528",
+  "incident_date": "2023-04-08",
+  "CIK": "1018724",
+  "matched_company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "title": "Amazon Algorithmic Pricing Allegedly Hiked up Price of Reference Book to Millions"
+ },
+ {
+  "incident_id": "240",
+  "incident_date": "2021-06-29",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "GitHub Copilot, Copyright Infringement and Open Source Licensing"
+ },
+ {
+  "incident_id": "271",
+  "incident_date": "2022-07-24",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla Model 3 Sedan on Autopilot Killed Motorcyclist in a Rear-End Collision in Utah"
+ },
+ {
+  "incident_id": "364",
+  "incident_date": "2020-04-15",
+  "CIK": "104169",
+  "matched_company": "Walmart Inc.",
+  "ticker": "WMT",
+  "title": "Walmart's Bagging-Detection False Positives Exposed Workers to Health Risk"
+ }
+]

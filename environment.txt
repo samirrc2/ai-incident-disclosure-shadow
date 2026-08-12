@@ -1,0 +1,14 @@
+# Exact environment that produced the committed results (offline analysis path).
+# Matches the audited Code Ocean capsule (https://doi.org/10.24433/CO.2340354.v1)
+# and environment/Dockerfile. Reproduces every reported statistic offline; no API
+# keys or network are required.
+python==3.12
+numpy==2.2.6
+scipy==1.14.1
+matplotlib==3.9.2     # figures only
+pytest==8.3.3         # verifier tests
+
+# Data-gathering path only (NOT needed to reproduce results from the frozen data):
+# requests>=2.31       # SEC EDGAR full-text search
+# python-dateutil>=2.8 # disclosure-window arithmetic
+# tqdm>=4.65           # progress bars

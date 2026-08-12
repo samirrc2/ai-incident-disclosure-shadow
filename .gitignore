@@ -1,0 +1,16 @@
+# OS / editor junk
+.DS_Store
+._*
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# session scratch / staging (not part of the artifact)
+_to_delete/
+_gold_list.txt
+_COMMITMSG.txt
+
+# packaged archives (the capsule ships unpacked under codeocean/capsule/)
+*.tgz
+*.zip

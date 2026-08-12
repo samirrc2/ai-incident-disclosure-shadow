@@ -1,0 +1,349 @@
+incident_id,incident_date,entity_slug,matched_company,ticker,CIK,listing_status,match_confidence,role,match_method,severity_tier,title
+82,2020-10-21,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,#LekkiMassacre: Why Facebook labelled content from October 20 incident ‘false’
+84,2020-10-09,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,"Tiny Changes Let False Claims About COVID-19, Voting Evade Facebook Fact Checks"
+81,2020-10-21,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,T2-moderate,"Researchers find evidence of racial, gender, and socioeconomic bias in chest X-ray classifiers"
+83,2020-10-22,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,T2-moderate,AI Spam Filters Allegedly Block Legitimate Emails Based on Biased Keyword Detection
+97,2020-10-22,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,T2-moderate,Tesla Autopilot Mistakes Red Letters on Flag for Red Traffic Lights
+92,2019-11-11,goldman-sachs,The Goldman Sachs Group Inc.,GS,886982,LISTED,HIGH,deployer,crosswalk,T3-severe,Apple Card's Credit Assessment Algorithm Allegedly Discriminated against Women
+89,2019-03-15,youtube,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,T3-severe,The Christchurch shooter and YouTube’s radicalization trap
+105,2019-08-24,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,T3-severe,"Tesla Model 3 on Autopilot Crashed into a Ford Explorer Pickup, Killing a Fifteen-Year-Old in California"
+103,2020-09-18,twitter,"Twitter, Inc.",TWTR,1418091,DELISTED,HIGH,both,crosswalk,T2-moderate,Twitter’s Image Cropping Tool Allegedly Showed Gender and Racial Bias
+113,2020-06-27,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,"Facebook's AI Put ""Primates"" Label on Video Featuring Black Men"
+102,2020-03-23,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,T2-moderate,"Personal voice assistants struggle with black voices, new study shows"
+116,2021-09-20,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,deployer,crosswalk,T3-severe,Amazon's AI Cameras Incorrectly Penalized Delivery Drivers for Mistakes They Did Not Make
+117,2020-02-24,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,"TikTok's ""Suggested Accounts"" Algorithm Allegedly Reinforced Racial Bias through Feedback Loops"
+129,2021-03-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,"Facebook's Automated Tools Failed to Adequately Remove Hate Speech, Violence, and Incitement"
+144,2020-06-28,youtube,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,T1-limited,YouTube's AI Mistakenly Banned Chess Channel over Chess Language Misinterpretation
+160,2021-12-26,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,T2-moderate,Alexa Recommended Dangerous TikTok Challenge to Ten-Year-Old Girl
+161,2019-04-03,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook's Ad Delivery Reportedly Excluded Audience along Racial and Gender Lines
+168,2022-03-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Collaborative Filtering Prone to Popularity Bias, Resulting in Overrepresentation of Popular Items in the Recommendation Outputs"
+133,2020-12-15,tiktok,,,,FOREIGN,,both,crosswalk,T1-limited,Online Trolls Allegedly Abused TikTok’s Automated Content Reporting System to Discriminate against Marginalized Creators
+153,2019-12-29,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,T3-severe,"Tesla Driver on Autopilot Ran a Red Light, Crashing into a Car and Killing Two People in Los Angeles"
+145,2021-07-23,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,T2-moderate,Tesla's Autopilot Misidentified the Moon as Yellow Stop Light
+141,2021-02-05,instagram,"Meta Platforms, Inc.",META,1326801,PARENT,MED,both,crosswalk,UNSCORED,California Police Turned on Music to Allegedly Trigger Instagram’s DCMA to Avoid Being Live-Streamed
+125,2020-09-29,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,T3-severe,Amazon’s Robotic Fulfillment Centers Have Higher Serious Injury Rates
+132,2020-12-27,tiktok,,,,FOREIGN,,both,crosswalk,T2-moderate,TikTok’s Content Moderation Allegedly Failed to Adequately Take down Videos Promoting Eating Disorders
+156,2022-02-04,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,T3-severe,Amazon Reportedly Sold Products and Recommended Frequently Bought Together Items That Aid Suicide Attempts
+143,2021-02-16,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,Facebook’s and Twitter's Automated Content Moderation Reportedly Failed to Effectively Enforce Violation Rules for Small Language Groups
+157,2021-03-15,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,T3-severe,"Amazon's Monitoring System Allegedly Pushed Delivery Drivers to Prioritize Speed over Safety, Leading to Crash"
+139,2021-01-21,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,T2-moderate,Amazon’s Search and Recommendation Algorithms Found by Auditors to Have Boosted Products That Contained Vaccine Misinformation
+142,2021-02-11,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,Facebook's Advertisement Moderation System Allegedly Routinely Misidentified Adaptive Fashion Products as Medical Equipment and Blocked Their Sellers
+149,2021-11-02,zillow,"Zillow Group, Inc.",ZG,1617640,LISTED,HIGH,deployer,crosswalk,T3-severe,Zillow Shut Down Zillow Offers Division Allegedly Due to Predictive Pricing Tool's Insufficient Accuracy
+124,2019-10-24,optum,UnitedHealth Group Inc.,UNH,731766,PARENT,MED,developer,crosswalk,T3-severe,Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs
+159,2019-03-29,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Autopilot’s Lane Recognition Allegedly Vulnerable to Adversarial Attacks
+127,2020-06-06,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,T1-limited,Microsoft’s Algorithm Allegedly Selected Photo of the Wrong Mixed-Race Person Featured in a News Story
+163,2021-11-21,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook’s Hate Speech Detection Algorithms Allegedly Disproportionately Failed to Remove Racist Content towards Minority Groups
+203,2022-02-10,uber,"Uber Technologies, Inc.",UBER,1543151,LISTED,HIGH,both,crosswalk,UNSCORED,Uber Launched Opaque Algorithm That Changes Drivers' Payments in the US
+213,2020-07-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook’s Political Ad Detection Reportedly Showed High and Geographically Uneven Error Rates
+175,2022-04-01,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise Autonomous Taxi Allegedly Bolted off from Police After Being Pulled over in San Francisco
+178,2022-04-21,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,"Tesla Owner Activated ""Smart Summon"" Feature, Causing a Collision with an Aircraft in a Washington Airport"
+220,2020-11-11,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T3-severe,Facebook Mistakenly Blocked Small Business Ads
+221,2022-03-07,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,A Road Engineer Killed Following a Collision Involving a Tesla on Autopilot
+181,2022-02-11,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,"BMW Sedan Made a Prohibited Left Turn, Colliding with a Cruise Autonomous Vehicle"
+209,2020-10-20,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Disabled “Rolling Stop” Functionality Associated with the “Aggressive” Driving Mode
+215,2020-04-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Content Moderators Demand Better Working Conditions Due to Allegedly Inadequate AI Content Moderation
+208,2021-05-01,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,"Tesla Phantom Braking Complaints Surged, Allegedly Linked to Tesla Vision Rollout"
+211,2021-12-11,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,developer,crosswalk,UNSCORED,A Tesla Taxi Cab Involved in an Accident in Paris with Twenty Injuries
+187,2022-02-04,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,developer,crosswalk,UNSCORED,"YouTuber Tested Tesla on Self Driving Mode, Colliding with Street Pylons"
+185,2022-03-01,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,"TikTok's ""For You"" Algorithm Directed New Users towards Disinformation about the War in Ukraine"
+218,2020-06-01,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla on Autopilot Crashed into Flipped Truck on Taiwan Highway
+197,2021-10-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Facebook Internally Reported Failure of Ranking Algorithm, Exposing Harmful Content to Viewers over Months"
+224,2020-07-01,wechat,,,,FOREIGN,,developer,crosswalk,UNSCORED,WeChat Pay's Facial Recognition Security Evaded by Scammers Using Victims’ Social Media Content
+230,2019-03-01,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,"Model 3 Tesla on Autopilot Crashed into a Truck in Florida, Killing Driver"
+228,2019-02-01,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Apple Maps Allegedly Directed Ski Trip Couple Onto Unpaved Road in the Mountains
+240,2021-06-29,github,Microsoft Corporation,MSFT,789019,PARENT,MED,both,crosswalk,UNSCORED,"GitHub Copilot, Copyright Infringement and Open Source Licensing"
+271,2022-07-24,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Model 3 Sedan on Autopilot Killed Motorcyclist in a Rear-End Collision in Utah
+268,2020-03-16,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Permanent Removal of Social Media Content via Automated Tools Allegedly Prevented Investigative Efforts
+255,2020-05-31,shotspotter,"SoundThinking, Inc.",SSTI,1351636,LISTED,MED,developer,crosswalk,UNSCORED,Unreliable ShotSpotter Audio Previously Used to Convict Chicago Man in Murder Case
+253,2022-05-18,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,"Cruise's Self-Driving Cars Allegedly Lost Connection to Their Server, Causing Traffic Blockages in San Francisco"
+256,2021-11-07,shotspotter,"SoundThinking, Inc.",SSTI,1351636,LISTED,MED,developer,crosswalk,UNSCORED,DUI Arrest Case Allegedly Based Only on ShotSpotter's Alert
+265,2021-04-01,uber-eats,"Uber Technologies, Inc.",UBER,1543151,PARENT,MED,both,crosswalk,UNSCORED,Black Uber Eats Driver Allegedly Subjected to Excessive Photo Checks and Dismissed via FRT Results
+278,2022-08-07,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta’s BlenderBot 3 Chatbot Demo Made Offensive Antisemitic Comments
+275,2020-06-11,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook’s Moderation Algorithm Banned Users for Historical Evidence of Slavery
+285,2022-07-18,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Lens’s Camera-Based Translation Feature Provided an Offensive Mistranslation of a Book Title in Korean
+293,2022-06-03,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise’s Self-Driving Car Involved in a Multiple-Injury Collision at an San Francisco Intersection
+347,2021-05-06,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,"Waymo Self-Driving Taxi Reportedly Behaved Unexpectedly, Driving away from Support Crew"
+350,2022-09-13,serve-robotics,Serve Robotics Inc.,SERV,1832483,LISTED,MED,both,crosswalk,UNSCORED,Delivery Robot Rolled Through Crime Scene
+291,2021-05-28,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Allegedly Misled Customers about Autopilot and FSD Capabilities
+292,2021-09-01,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Apple’s AVs Reportedly Struggled to Navigate Streets in Silicon Valley Test Drives
+300,2022-01-15,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,"TikTok's ""For You"" Algorithm Allegedly Abused by Online Personality to Promote Anti-Women Hate"
+318,2021-01-13,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Recommended Military Gear Ads Despite Pause on Weapons Accessories Ads
+319,2019-12-29,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla on Autopilot Fatally Crashed into Parked Fire Truck in Indiana
+305,2019-02-01,youtube,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,YouTube’s Recommendation Algorithm Allegedly Promoted Climate Misinformation Content
+282,2020-10-03,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook’s Algorithm Mistook an Advertisement of Onions as Sexual Suggestive Content
+313,2022-08-25,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,BlenderBot 3 Cited Dutch Politician as a Terrorist
+333,2021-03-17,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla on Autopilot Crashed Parked Michigan Police Car on Interstate
+304,2021-11-03,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla on FSD Reportedly Drove into the Wrong Lane in California
+331,2020-08-05,instagram,"Meta Platforms, Inc.",META,1326801,PARENT,MED,both,crosswalk,UNSCORED,Bug in Instagram’s “Related Hashtags” Algorithm Allegedly Caused Disproportionate Treatment of Political Hashtags
+337,2021-04-17,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,"Tesla Model S on ACC Crashed into Tree in Texas, Killing Two People"
+286,2021-02-26,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,"TikTok’s ""For You"" Allegedly Pushed Fatal “Blackout” Challenge Videos to Two Young Girls"
+348,2020-11-01,youtube,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,YouTube Recommendation Reportedly Pushed Election Fraud Content to Skeptics Disproportionately
+311,2020-05-02,youtube,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,YouTube Auto-Moderation Mistakenly Banned Women of Sex Tech Conference
+317,2020-03-17,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Bug in Facebook’s Anti-Spam Filter Allegedly Blocked Legitimate Posts about COVID-19
+303,2022-08-21,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google’s Automated Child Abuse Detection Wrongfully Flagged a Parent’s Naked Photo of His Child
+343,2021-07-11,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Facebook, Instagram, and Twitter Failed to Proactively Remove Targeted Racist Remarks via Automated Systems"
+279,2019-07-01,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,TikTok’s “For You” Algorithm Exposed Young Users to Pro-Eating Disorder Content
+281,2019-02-04,youtube,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,T2-moderate,YouTube's Algorithms Failed to Remove Violating Content Related to Suicide and Self-Harm
+322,2019-12-07,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Model 3 Crashed into Police Patrol Car on Connecticut Highway
+364,2020-04-15,walmart,Walmart Inc.,WMT,104169,LISTED,HIGH,deployer,crosswalk,UNSCORED,Walmart's Bagging-Detection False Positives Exposed Workers to Health Risk
+367,2020-06-17,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,T2-moderate,"iGPT, SimCLR Learned Biased Associations from Internet Training Data"
+371,2019-11-29,huawei,,,,FOREIGN,,developer,crosswalk,UNSCORED,Uganda Deployed Huawei's Facial Recognition to Monitor Political Opposition and Protests
+393,2021-12-08,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,Facebook AI-Supported Moderation for Ads Failed to Detect Violating Content
+363,2021-01-15,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook's Automated Moderation Mistakenly Flagged Landmark's Name as Offensive
+400,2022-02-23,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Search Returned Fewer Results for Abortion Services in Rural Areas
+395,2021-03-02,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,deployer,crosswalk,UNSCORED,Amazon Forced Deployment of AI-Powered Cameras on Delivery Drivers
+354,2020-06-20,uber,"Uber Technologies, Inc.",UBER,1543151,LISTED,HIGH,both,crosswalk,T3-severe,Uber Allegedly Violated GDPR by Failing to Provide Sufficient Notice on Automated Profiling for Drivers
+353,2019-03-01,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,"Tesla on Autopilot Crashed into Trailer Truck in Florida, Killing Driver"
+362,2021-07-20,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook's Automated Moderation Flagged Gardening Group's Language Use by Mistake
+359,2021-05-23,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Facebook, Instagram, and Twitter Cited Errors in Automated Systems as Cause for Blocking pro-Palestinian Content on Israeli-Palestinian Conflict"
+372,2022-07-22,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Users Reported Security Issues with Google Pixel 6a's Fingerprint Unlocking
+386,2019-07-03,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,UNSCORED,"Amazon’s ""Time Off Task"" System Made False Assumptions about Workers' Time Management"
+389,2022-04-05,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise Autonomous Car Blocked Fire Truck Responding to Emergency
+397,2022-09-11,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,Misinformation Reported in TikTok's Search Results Despite Moderation by AI and Human
+398,2022-08-15,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Autopilot Misidentified On-Road Horse-Drawn Carriage
+399,2022-11-15,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI's Scientific Paper Generator Reportedly Produced Inaccurate and Harmful Content
+401,2021-06-03,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"Kannada Insulted by Google's Featured Answer as ""Ugliest Language in India"""
+360,2021-10-15,mcdonald's,McDonald's Corporation,MCD,63908,LISTED,HIGH,deployer,crosswalk,T2-moderate,"McDonald's AI Drive-Thru Allegedly Collected Biometric Customer Data without Consent, Violating BIPA"
+366,2020-09-20,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,Suicide Clips Evaded TikTok's Automated Moderation in Coordinated Attack
+411,2022-11-27,twitter,"Twitter, Inc.",TWTR,1418091,DELISTED,HIGH,both,crosswalk,UNSCORED,Chinese Accounts Spammed Twitter Feed Allegedly to Obscure News of Protests
+414,2020-01-18,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,Facebook Gave Vulgar English Translation of Chinese President's Name
+415,2020-07-28,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Provided Offensive Translation for King of Thailand's Birthday Ceremony
+416,2022-12-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook's Job Ad Algorithm Allegedly Biased against Older and Female Workers
+417,2019-11-15,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Feed Algorithms Exposed Low Digitally Skilled Users to More Disturbing Content
+419,2022-12-01,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook's Automated Moderation Allowed Ads Threatening Election Workers to be Posted
+427,2022-03-15,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise Taxis' Sudden Braking Allegedly Put People at Risk
+431,2022-04-20,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Robbers Accessed Drugged Gay Men's Bank Accounts Using Their Phones' Facial Recognition
+434,2022-11-24,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Sudden Braking by Tesla Allegedly on Self-Driving Mode Caused Multi-Car Pileup in Tunnel
+436,2022-12-28,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Driver Put Car on Autopilot Before Falling Asleep in Germany
+438,2021-09-17,huawei,,,,FOREIGN,,developer,crosswalk,UNSCORED,Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and International Students
+446,2023-01-01,shotspotter,"SoundThinking, Inc.",SSTI,1351636,LISTED,MED,developer,crosswalk,UNSCORED,ShotSpotter Failed to Alert Authorities of Mass Shooting in North Carolina
+447,2022-12-19,instagram,"Meta Platforms, Inc.",META,1326801,PARENT,MED,both,crosswalk,UNSCORED,"Footballer's ""X-Rated"" Comment Created by Instagram's Mistranslation"
+453,2023-01-03,twitter,"Twitter, Inc.",TWTR,1418091,DELISTED,HIGH,both,crosswalk,UNSCORED,Twitter's AI Moderation Tool Misidentified Rockets as Pornography
+459,2023-01-21,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Firefighters Smashed Cruise AV's Front Window to Stop It from Running over Fire Hoses
+460,2022-06-12,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise AV Ran Over Fire Hose in Active Fire Scene
+463,2022-11-15,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,"Apple Devices Mistook Skiing Activities, Dialed False Distress Emergency Calls "
+465,2022-03-03,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Private Medical Photos Were Reportedly Found in LAION-5B AI Training Dataset
+467,2023-02-07,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google's Bard Shared Factually Inaccurate Info in Promo Video
+468,2023-02-07,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,ChatGPT-Powered Bing Reportedly Had Problems with Factual Accuracy on Some Controversial Topics
+470,2023-02-08,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Bing Chat Response Cited ChatGPT Disinformation Example
+471,2019-06-22,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Allegedly Failed to Police Hate Speech Content That Contributed to Ethnic Violence in Ethiopia
+473,2023-02-08,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Bing Chat's Initial Prompts Revealed by Early Testers Through Prompt Injection
+475,2021-06-02,mcdonald's,McDonald's Corporation,MCD,63908,LISTED,HIGH,deployer,crosswalk,UNSCORED,McDonald's Reportedly Ends IBM Partnership After AI Drive-Thru Ordering Errors at U.S. Locations
+477,2023-02-14,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Bing Chat Tentatively Hallucinated in Extended Conversations with Users
+489,2019-06-03,workday,"Workday, Inc.",WDAY,1327811,LISTED,HIGH,both,crosswalk,T2-moderate,Workday's AI Tools Allegedly Enabled Employers to Discriminate against Applicants of Protected Groups
+501,2019-06-03,navihealth,UnitedHealth Group Inc.,UNH,731766,PARENT,MED,both,crosswalk,T3-severe,Length of Stay False Diagnosis Cut Off Insurer's Payment for Treatment of Elderly Woman
+503,2023-02-14,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Bing AI Search Tool Reportedly Declared Threats against Users
+504,2023-02-08,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Bing Chat's Outputs Featured in Demo Video Allegedly Contained False Information
+511,2023-02-12,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft's Bing Failed to Fetch Movie Showtimes Results Due to Date Confusion
+522,2019-07-10,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Facebook Political Ad Delivery Algorithms Inferred Users' Political Alignment, Inhibiting Political Campaigns' Reach"
+525,2019-07-06,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,developer,crosswalk,UNSCORED,Tesla Vehicle Running on Self-Driving Mode Crashes on City Streets
+528,2023-04-08,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,UNSCORED,Amazon Algorithmic Pricing Allegedly Hiked up Price of Reference Book to Millions
+533,2021-06-02,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla FSD Misidentified Truck Hauling Traffic Lights as Trail of Traffic Lights
+534,2021-04-29,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Alleged in Lawsuit Misleading Public about Effects of Algorithms on Children
+539,2023-03-11,snapchat,Snap Inc.,SNAP,1564408,LISTED,HIGH,both,crosswalk,UNSCORED,Snapchat's My AI Reported for Lacking Protection for Children
+540,2023-05-15,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,"Tesla Failed to Yield to Detected Pedestrian on Crosswalk, Reportedly Violated Traffic Law"
+549,2023-01-05,mcdonald's,McDonald's Corporation,MCD,63908,LISTED,HIGH,both,crosswalk,UNSCORED,Fast Food Chains' AI Chatbots Failed to Assist Job Applicants with Scheduling Interviews
+550,2023-03-17,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Allegedly on Autopilot Struck High School Student Exiting School Bus
+552,2023-06-22,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Bing Chat Solved CAPTCHAs with Image Analysis Feature Despite Safeguards
+553,2023-05-03,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google's Overview Panel for Artist Edward Hopper Featured Image Generated in His Style by AI
+554,2023-05-21,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,T2-moderate,Google Results for Johannes Vermeer Featured AI Version of His Artwork as Top Result
+560,2023-06-23,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla on Autopilot Struck Parked Work Truck on Highway in Pennsylvania
+563,2023-08-14,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise Robotaxi Initially Blamed for Ambulance Delay in Case Where Patient Later Died; Subsequent Reports Clear Cruise of Fault
+570,2023-10-04,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook Messenger AI Stickers Generate Ethical and Content Moderation Concerns
+571,2023-06-22,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,deployer,crosswalk,UNSCORED,Reported Accidental Exposure of 38TB of Data by Microsoft's AI Research Team
+574,2023-07-05,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,T2-moderate,AI-Generated Articles at G/O Media Allegedly Diminishes Reputation of Human Staff
+576,2023-10-24,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,deployer,crosswalk,T2-moderate,"Alleged Misuse of PicSo AI for Generating Inappropriate Content Emphasizing ""Girls"""
+578,2023-06-26,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,Alleged Exploitation of Meta's Open-Source LLaMA Model for NSFW and Violent Content
+580,2023-06-12,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Alleged Gender Discrimination in Facebook Job Ads Algorithm
+581,2023-06-24,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Ads Allegedly Serving Content on AI-Generated Misinformation Sites
+583,2023-06-07,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,T2-moderate,Instagram Algorithms Allegedly Promote Accounts Facilitating Child Sex Abuse Content
+587,2023-05-22,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Apparent Failure to Accurately Label Primates in Image Recognition Software Due to Alleged Fear of Racial Bias
+591,2023-07-24,cigna,The Cigna Group,CI,1739940,LISTED,HIGH,both,crosswalk,UNSCORED,Cigna Algorithm PXDX Allegedly Rejected Thousands of Patient Claims En Masse in Breach of California Law
+595,2023-08-11,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Driverless Cruise Cars Immobilized in San Francisco Traffic Jam
+596,2023-10-17,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,Cruise's Autonomous Vehicles Allegedly Engaging in Risky Behavior Near Pedestrians
+608,2023-02-28,navihealth,UnitedHealth Group Inc.,UNH,731766,PARENT,MED,developer,crosswalk,UNSCORED,UnitedHealth Accused of Deploying  Allegedly Flawed AI to Deny Medical Coverage
+609,2023-08-16,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Flawed AI in Google Search Reportedly Misinforms about Geography
+612,2023-10-31,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft AI Poll Allegedly Causes Reputational Harm of The Guardian Newspaper
+614,2023-11-02,google-bard,Alphabet Inc.,GOOGL,1652044,PARENT,MED,developer,crosswalk,T2-moderate,Google Bard Allegedly Generates False Allegations Against Consulting Firms Used in Research Presented in Australian Parliamentary Inquiry
+619,2023-12-20,rite-aid,Rite Aid Corporation,RAD,84129,DELISTED,HIGH,deployer,crosswalk,T2-moderate,Rite Aid Facial Recognition Disproportionately Misidentified Minority Shoppers as Shoplifters
+620,2021-11-10,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,A Robot at a Tesla Factory in Texas Allegedly Injured an Engineer
+621,2023-11-10,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft AI Is Alleged to Have Generated Violent Imagery of Minorities and Public Figures
+622,2023-12-18,general-motors,General Motors Company,GM,1467858,LISTED,HIGH,both,crosswalk,UNSCORED,Chevrolet Dealer Chatbot Agrees to Sell Tahoe for $1
+623,2023-12-12,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Google Bard Allegedly Generated Fake Legal Citations in Michael Cohen Case
+637,2024-01-31,soundthinking,"SoundThinking, Inc.",SSTI,1351636,LISTED,MED,developer,crosswalk,UNSCORED,Gunshot Detection Technology ShotSpotter (now SoundThinking) Reportedly Only Has 47% Accuracy in Chicago System
+638,2022-05-16,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,developer,crosswalk,UNSCORED,Fatal Crash Involving Tesla Full Self-Driving Claims Employee's Life
+640,2023-12-11,alphabet,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Waymo Software Flaw Reportedly Leads to Double Collision with Tow Truck
+641,2024-02-20,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Nonconsensual Deepfake Porn of Bobbi Althoff Spreads Rapidly on X
+645,2024-02-21,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Seeming Pattern of Gemini Bias and Sociotechnical Training Failures Harm Google's Reputation
+646,2024-02-22,snapchat,Snap Inc.,SNAP,1564408,LISTED,HIGH,both,crosswalk,UNSCORED,Snapchat's Algorithm Alleged to Link Minor with Sex Offenders
+647,2024-02-06,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,A Self-Driving Waymo Robotaxi Reportedly Collided with a Bicyclist
+654,2024-03-06,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft Copilot Designer Reportedly Generated Inappropriate AI Images
+655,2024-01-11,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Scams Reportedly Impersonating Wealthy Investors Proliferating on Facebook
+674,2024-03-14,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Manipulated Media via AI Disinformation and Deepfakes in 2024 Elections Erode Trust Across More Than 50 Countries
+679,2023-02-20,twitter,"Twitter, Inc.",TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,A Purported Deepfake of Senator Elizabeth Warren Circulates Allegedly Saying Republicans Should Not Vote
+684,2024-04-04,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Books Appears to Be Indexing Works Written by AI
+686,2024-04-03,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI Image Generator Reportedly Fails to Accurately Represent Interracial Relationships
+693,2024-05-14,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google AI Reportedly Delivering Confidently Incorrect and Harmful Information
+696,2024-02-14,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta's AI Ad Platform Reportedly Causes Overspending and Poor Performance
+700,2024-05-20,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta's AI Chatbots Are Reportedly Entering Online Support Communities Uninvited
+704,2024-05-23,thomson-reuters,Thomson Reuters Corporation,TRI,1075124,FOREIGN,MED,developer,crosswalk,UNSCORED,Study Highlights Persistent Hallucinations in Legal AI Systems
+707,2024-06-13,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,developer,crosswalk,UNSCORED,"Tesla Reportedly in Autopilot Mode Hits Parked Police Vehicle in Fullerton, California"
+710,2024-04-15,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook AI Reportedly Mislabels Auschwitz Photos as 'Bullying' and 'Nudity'
+711,2024-04-26,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,NHTSA Opens New Probe into Tesla’s Autopilot Following More than a Dozen Fatal Accidents
+712,2024-04-26,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI Hallucinates Harassment Allegations Against New York Politicians
+714,2024-03-29,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,Microsoft-Powered New York City Chatbot Advises Illegal Practices
+718,2024-04-06,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"OpenAI, Google, and Meta Alleged to Have Overstepped Legal Boundaries for Training AI"
+719,2024-04-04,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,both,crosswalk,UNSCORED,Grok AI on X Created and Promoted False Iran Missile Strike News
+723,2024-05-13,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Instagram Algorithms Reportedly Directed Children's Merchandise Ad Campaign to Adult Men and Sex Offenders
+726,2023-10-02,cruise,General Motors Company,GM,1467858,PARENT,MED,both,crosswalk,UNSCORED,A Self-Driving Cruise Robot Taxi Reportedly Struck and Dragged a Pedestrian 20 Feet
+731,2023-12-01,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly Hallucinated Software Packages with Potential Malware Reportedly Downloaded Thousands of Times by Developers
+733,2024-06-09,general-motors,General Motors Company,GM,1467858,LISTED,HIGH,deployer,crosswalk,UNSCORED,Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Driver Data
+734,2024-06-18,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Leading AI Models Reportedly Found to Mimic Russian Disinformation in 33% of Cases and to Cite Fake Moscow News Sites
+742,2024-07-13,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Grok AI Model Reportedly Fails to Produce Reliable News in Wake of Trump Assassination Attempt
+743,2024-07-16,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Gemini AI Allegedly Reads Google Drive Files Without Explicit User Consent
+744,2024-06-25,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,"AI Work Assistants Require More Effort Than Expected, CIOs Say"
+748,2024-06-19,paypal,"PayPal Holdings, Inc.",PYPL,1633917,LISTED,HIGH,both,crosswalk,UNSCORED,Erroneous Declined Transaction Notification by PayPal AI Assistant
+750,2024-07-22,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,AI Chatbots Reportedly Inaccurately Conveyed Real-Time Political News
+756,2024-07-26,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Deepfake of Kamala Harris Saying Damaging Comments Circulates on X and Is Amplified by Elon Musk
+758,2023-09-11,facebook,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,deployer,crosswalk,UNSCORED,Teen's Overdose Reportedly Linked to Meta's AI Systems Failing to Block Ads for Illegal Drugs
+760,2024-07-21,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,False Election Data on Kamala Harris Reportedly Circulated via Grok AI Chatbot
+761,2024-08-08,tiktok,,,,FOREIGN,,developer,crosswalk,UNSCORED,TikTok AI System Used to Amplify Election Disinformation by Foreign Networks
+762,2024-08-14,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,developer,crosswalk,UNSCORED,Grok AI Reportedly Generates Offensive and Violent Images Without Proper Safeguards
+770,2024-08-16,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft Copilot Falsely Accuses Journalist Martin Bernklau of Crimes
+773,2024-08-20,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,Chatbot in Workplace Training at Bunbury Prison Reveals Real Names in Sexual Harassment Case
+775,2024-09-02,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Elon Musk Reportedly Shared an AI-Generated Image Depicting Kamala Harris Dressed as a Communist Ruler
+778,2024-09-04,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,developer,crosswalk,UNSCORED,Amazon's Alexa Reportedly Shows Political Preference Error in Trump-Harris Presidential Race Queries
+788,2024-06-20,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Instagram's Algorithm Reportedly Recommended Sexual Content to Teenagers' Accounts
+789,2024-06-12,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Independent News Sites Flagged as Spam by Facebook's AI Moderation System
+790,2024-06-21,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,Unrestricted AI Avatar Tool Accidentally Released by TikTok Permits Recitation of Hitler Quotes and Other Harmful Speech
+791,2024-09-09,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google AI Error Prompts Parents to Use Fecal Matter in Child Training Exercise
+794,2024-08-13,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Reported Glitch in Waymo Self-Driving Cars Purportedly Triggers Regular All-Night Honking in San Francisco
+796,2024-06-01,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Facebook's Content Moderation System Flagged and Removed Emergency Updates as Spam During Wildfires
+803,2024-05-14,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Facebook's Algorithm Reportedly Amplifies AI-Generated Content, Fueling Misleading Posts"
+821,2024-07-07,baidu,"Baidu, Inc.",BIDU,1329099,FOREIGN,MED,both,crosswalk,UNSCORED,Baidu Robotaxi Allegedly Involved in Collision with Pedestrian in Wuhan
+838,2024-04-25,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft Copilot Allegedly Provides Unsafe Medical Advice with High Risk of Severe Harm
+845,2024-11-13,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Google's Gemini Allegedly Generates Threatening Response in Routine Query
+846,2021-10-06,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,Social Media Algorithms Amplified Disinformation Campaign in Honduras Election
+853,2024-02-03,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Two Passengers Report Feeling Trapped in Waymo Car During Sensor Obstruction
+854,2024-09-30,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Driverless Taxi Allegedly Stalled During Pedestrian Harassment Incident in San Francisco
+857,2024-11-25,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"Navigation App Allegedly Directs Car Over Damaged Bridge in Uttar Pradesh, Resulting in Three Deaths"
+859,2024-10-30,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,AI Models Reportedly Found to Provide Misinformation on Election Processes in Spanish
+861,2024-12-13,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Apple Intelligence Reportedly Notified Users That Luigi Mangione Shot Himself and Benjamin Netanyahu Had Been Arrested
+862,2024-11-03,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Purportedly AI-Generated Video Allegedly Depicts Martin Luther King Jr. Supporting Donald Trump
+869,2024-11-04,tiktok,,,,FOREIGN,,both,crosswalk,UNSCORED,TikTok Algorithms Allegedly Linked to Minors' Exposure to Harmful Content
+873,2024-12-10,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,YouTube Algorithms Allegedly Amplify Eating Disorder Content to Adolescent Girls
+881,2024-12-27,serve-robotics,Serve Robotics Inc.,SERV,1832483,LISTED,MED,both,crosswalk,UNSCORED,Waymo Robotaxi Allegedly Collides With Serve Robotics Delivery Bot in Los Angeles
+885,2025-01-03,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Meta AI Characters Allegedly Exhibited Racism, Fabricated Identities, and Exploited User Trust"
+889,2025-01-07,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla's 'Actually Smart Summon' Feature Reportedly Linked to Multiple Parking Lot Collisions
+892,2024-08-05,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Apple Intelligence Allegedly Flags Scam Messages as High Priority
+934,2025-02-10,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,NHK Terminates AI Translation Service After Geopolitical Naming Error
+939,2025-02-21,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,AI-Powered Chinese Surveillance Campaign 'Peer Review' Used for Real-Time Monitoring of Anti-State Speech on Western Social Media
+940,2025-02-17,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,both,crosswalk,UNSCORED,Tesla Cybertruck Operating in Full Self-Driving Mode Reportedly Crashes into Pole in Nevada After Failing to Merge
+952,2025-02-25,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Apple’s Voice Dictation Reportedly Substitutes ‘Trump’ for ‘Racist’ Due to Speech Recognition Bug
+956,2025-02-28,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,"Alleged Inclusion of 12,000 Live API Keys in LLM Training Data Reportedly Poses Security Risks"
+957,2025-02-28,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Alleged Instagram Algorithm Malfunction Floods Users' Reels Feeds with Violent and Graphic Content
+963,2025-03-05,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Reports Alleged Gemini-Generated Terrorism and Child Exploitation to Australian eSafety Commission
+967,2025-03-06,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Amazon and Google AI Allegedly Promote Mein Kampf as 'a True Work of Art' in Search Results
+968,2022-02-24,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,"'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformation"
+975,2025-03-05,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,"At Least 10,000 AI Chatbots, Including Jailbroken Models, Allegedly Promote Eating Disorders, Self-Harm, and Sexualized Minors"
+981,2025-03-05,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,both,crosswalk,UNSCORED,Apple AI Transcription Allegedly Inserts Explicit Language into Scottish Woman’s Voicemail
+993,2025-03-12,apple,Apple Inc.,AAPL,320193,LISTED,HIGH,developer,crosswalk,UNSCORED,Sydney Students Allegedly Forced to Retake NAPLAN After AI Predictive Text Error
+995,2023-12-27,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,The New York Times Reportedly Sues OpenAI and Microsoft Over Alleged Unauthorized AI Training on Its Content
+996,2020-10-25,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Meta Allegedly Used Books3, a Dataset of 191,000 Pirated Books, to Train LLaMA AI"
+997,2023-02-28,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta and OpenAI Accused of Using LibGen’s Pirated Books to Train AI Models
+1001,2025-03-17,alibaba,Alibaba Group Holding,BABA,1577552,FOREIGN,MED,both,crosswalk,UNSCORED,LLM Scrapers Allegedly Target Multiple Open Source Projects Disrupting the FOSS Ecosystem
+1020,2025-04-11,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,Reportedly Unsafe Deployment of Llama.cpp Reveals Interactive AI-Generated CSAM Roleplay Prompts
+1026,2025-04-12,deepseek-ai,,,,FOREIGN,,both,crosswalk,UNSCORED,Multiple LLMs Allegedly Endorsed Suicide as a Viable Option During Non-Adversarial Mental Health Venting Session
+1040,2025-04-26,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta User-Created AI Companions Allegedly Implicated in Facilitating Sexually Themed Conversations Involving Underage Personas
+1072,2025-05-14,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Grok Chatbot Reportedly Inserted Content About South Africa and 'White Genocide' in Unrelated User Queries
+1097,2025-06-12,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google AI Overview Reportedly Misstates Aircraft Manufacturer as Airbus Instead of Boeing in Air India Flight 171 Crash
+1101,2025-04-29,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI App Reportedly Publishes Personal Chats Without Users Fully Realizing
+1106,2025-06-13,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,"Chatbots Allegedly Reinforced Delusional Thinking in Several Reported Users, Leading to Real-World Harm"
+1108,2025-06-10,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Digital Rights Groups Accuse Meta and Character.AI of Facilitating Unlicensed Therapy via Chatbots
+1123,2025-06-26,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,"Reported Student Misuse of ChatGPT, StudyX, and Gemini to Obtain Answers During Vietnam's 2025 National High School Graduation Exam"
+1128,2025-06-15,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Philippine Officials Reportedly Share Veo 3-Generated Video to Support Vice President Sara Duterte During Impeachment
+1157,2025-07-14,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Google Gemini Reportedly Generates Sexual Role‑Play for Account Registered as Minor
+1158,2025-07-17,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,UNSCORED,Alleged Malicious Wiping Command Found in Amazon Q AI Assistant
+1159,2025-05-10,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,Government‑Backed AI4Peat Mapping Tool Allegedly Misidentifies Granite Outcrops and Quarries as Peat
+1164,2024-05-06,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Healthcare AI Model Med‑Gemini Allegedly Produces Non‑Existent 'Basilar Ganglia' Term in Published Output
+1172,2024-12-26,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI Bug in Deployed Service Reportedly Allowed Potential Access to Other Users' Prompts and Responses
+1173,2025-06-23,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Gemini Reportedly Exhibits Repetitive Self-Deprecating Responses Attributed to Bug
+1174,2025-02-26,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft Copilot Reportedly Able to Access Cached Data from Since-Private GitHub Repositories
+1176,2025-08-01,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft's Windows Recall Allegedly Stores Passwords and Social Security Numbers in Preview Mode
+1178,2025-07-21,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Gemini CLI Reportedly Deletes User Files After Misinterpreting Command Sequence
+1179,2025-06-30,mcdonald's,McDonald's Corporation,MCD,63908,LISTED,HIGH,both,crosswalk,UNSCORED,McDonald's McHire AI Recruitment Platform Reportedly Exposed Data of 64 Million Applicants via Default Login and API Vulnerability
+1180,2025-03-25,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Purported Meta AI Chatbot Persona 'Big sis Billie' Reportedly Engages in Romantic Roleplay and Provides Address, Linked to User's Fatal Fall"
+1181,2025-06-28,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,"Purported AI-Generated Video Reportedly Depicts Illegal Tiger Sales in Bagerhat, Bangladesh"
+1186,2025-07-31,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,"Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines and Archived"
+1187,2025-08-15,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,"Google AI Overviews and ChatGPT Reportedly Cited Fraudulent Cruise Hotline, Allegedly Enabling Successful Scam"
+1188,2025-06-25,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Multiple LLMs Reportedly Generated Responses Aligning with Purported CCP Censorship and Propaganda
+1200,2025-08-28,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI on Instagram Reportedly Facilitated Suicide and Eating Disorder Roleplay with Teen Accounts
+1205,2025-09-11,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Multiple Generative AI Systems Reportedly Amplify False Information During Charlie Kirk Assassination Coverage
+1210,2025-08-21,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Malicious Nx npm Packages Reportedly Weaponize AI Coding Agents for Data Exfiltration
+1211,2025-08-19,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"Google AI Overviews Reportedly Misrepresented Pizza Specials at Stefanina's in Wentzville, Missouri"
+1218,2025-07-04,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Microsoft 365 Copilot Vulnerability Allegedly Allowed File Access Without Audit Log Entry
+1219,2025-07-02,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta Platforms Users Report Being Wrongfully Locked Out After Purported AI Moderation Flags Accounts for Child Exploitation Content
+1220,2025-07-10,alibaba,Alibaba Group Holding,BABA,1577552,FOREIGN,MED,developer,crosswalk,UNSCORED,LAMEHUG Malware Reportedly Integrates Large Language Model for Real-Time Command Generation in a Purported APT28-Linked Cyberattack
+1223,2025-10-01,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Purportedly AI-Generated Deepfake Ads on Facebook Reportedly Impersonate Trump, Musk, Ocasio-Cortez, Warren, Sanders, and Leavitt to Promote Fraudulent Rebates"
+1224,2025-10-01,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Generated Deepfake Ads on Instagram Impersonate Gisele Bündchen and Other Celebrities in Brazilian Fraud Scheme
+1247,2025-04-28,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Meta AI Reportedly Generated Purportedly False Claims Linking Activist Robby Starbuck to January 6th Riot, Prompting Defamation Lawsuit"
+1248,2025-10-22,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"Google's Bard, Gemini, and Gemma AI Systems Allegedly Generated Defamatory Claims About Activist Robby Starbuck, Prompting Lawsuit"
+1251,2025-10-15,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Purportedly AI-Generated Hunting Regulation Errors Reportedly Lead to Idaho Citation and Multi-State Warnings from Wildlife Agencies
+1268,2025-11-06,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta's Automated Ad and Targeting Systems Reportedly Enabled Large-Scale Fraud Revenue
+1269,2025-10-27,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Autonomous Vehicle Reportedly Ran Over and Killed a Cat in San Francisco
+1277,2025-11-21,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,"Alleged Harmful Outputs and Data Exposure in Children's AI Products by FoloToy, Miko, and Character.AI"
+1279,2025-11-18,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,both,crosswalk,UNSCORED,Prominent AI Chatbots Allegedly Produced Incorrect UK Financial and ISA Guidance
+1300,2025-12-04,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,"Waymo Self-Driving Vehicles Reportedly Passed Stopped School Buses at Least 19 Times, Prompting NHTSA Probe"
+1302,2025-12-11,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Reported Viral AI-Generated Photo Purportedly Shows Donald Trump Using a Walker
+1316,2025-12-19,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"Google AI-Generated Search Summary Reportedly Falsely Implicated Canadian Musician in Sexual Offenses, Leading to Concert Cancellation"
+1326,2025-12-20,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxis Allegedly Contributed to Traffic Gridlock During San Francisco PG&E Power Outage
+1333,2026-01-03,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Generated Images and Videos Reportedly Spread Misinformation About Nicolás Maduro's Capture on X
+1337,2025-12-08,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxi Reportedly Transported Undetected Person Trapped in Trunk in Los Angeles
+1358,2026-01-24,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Altered Images Reportedly Distort Evidence After Minneapolis Shooting of ICU Nurse Alex Pretti
+1361,2026-01-23,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,"Waymo Autonomous Vehicle Reportedly Struck Child Near Elementary School in Santa Monica, California"
+1369,2026-02-07,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Generated Image Reportedly Circulated Ahead of Thai Election Depicting PM Anutin Charnvirakul Dining with Benjamin Mauerberger
+1376,2026-02-15,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,deployer,crosswalk,UNSCORED,Amazon Delivery Van Reportedly Became Stranded on Essex Mudflats After GPS Routed It Onto the Broomway
+1377,2026-02-13,bytedance,,,,FOREIGN,,both,crosswalk,UNSCORED,"Seedance 2.0 Reportedly Generated Viral Tom Cruise–Brad Pitt Fight Video, Prompting Hollywood IP and Likeness Complaints"
+1382,2026-01-02,tencent,,,,FOREIGN,,both,crosswalk,UNSCORED,Tencent's WeChat-Integrated Yuanbao Chatbot Reportedly Insulted User During Coding Debug Request
+1386,2026-01-23,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"NPR Host David Greene Alleged Google's NotebookLM Replicated His Voice Without Consent, Prompting Lawsuit"
+1393,2026-02-12,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Woolworths' Olive Chatbot Reportedly Generated 'Angry Mother' Anecdotes During Support Calls After Gemini Upgrade
+1395,2026-02-23,deepseek,,,,FOREIGN,,deployer,crosswalk,UNSCORED,"Anthropic Said DeepSeek, Moonshot, and MiniMax Used Fraudulent Accounts and Proxies to Illicitly Distill Claude Capabilities at Scale"
+1400,2025-10-24,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,West Midlands Police Reportedly Relied on Erroneous Copilot-Generated Intelligence in Maccabi Tel Aviv Away-Fan Ban Decision
+1401,2026-02-27,amazon,"Amazon.com, Inc.",AMZN,1018724,LISTED,HIGH,both,crosswalk,UNSCORED,Washington State DOL's AI Phone System Reportedly Failed to Provide Spanish-Language Service to Callers Requesting Spanish
+1414,2026-03-05,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Purported Gemini-Generated AI Images Reportedly Claimed U.S. Delta Force Soldiers Were Captured by the IRGC
+1418,2026-02-27,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI Smart Glasses Reportedly Exposed Intimate User Imagery and Video to Human Reviewers in Kenya
+1431,2025-09-29,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,"Google Gemini Reportedly Reinforced Delusions,  Allegedly Contributing to Florida User's Near-Harm Episode and Suicide"
+1433,2025-11-27,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Antigravity Reportedly Deleted User's Entire D: Drive While Clearing Project Cache
+1436,2022-06-23,integra-lifesciences,Integra LifeSciences Holdings,IART,917520,LISTED,MED,developer,crosswalk,UNSCORED,AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During June 2022 Sinus Procedure
+1460,2026-03-31,baidu,"Baidu, Inc.",BIDU,1329099,FOREIGN,MED,both,crosswalk,UNSCORED,"Baidu Apollo Go Robotaxis Stopped in Traffic During Reported System Failure in Wuhan, Stranding Some Passengers"
+1471,2026-03-18,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta Internal AI Agent Reportedly Gave Advice That Allegedly Exposed Sensitive Data to Unauthorized Employees
+1492,2026-02-28,palantir,Palantir Technologies Inc.,PLTR,1321655,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Enabled Targeting System Was Reportedly Implicated in Deadly U.S. Strike on Iranian Primary School
+1493,2026-03-17,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Gemini and Grok Reportedly Misidentified Authentic Minab School-Strike Graveyard Photo as Unrelated Disaster Imagery
+1507,2026-05-30,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Processing It with Google Gemini
+1510,2026-05-31,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta AI Support Bot Reportedly Enabled Takeovers of High-Profile Instagram Accounts
+1511,2026-01-30,x-(twitter),X Corp. (fmr Twitter),TWTR,1418091,DELISTED,HIGH,deployer,crosswalk,UNSCORED,Grok Reportedly Generated Images After X Users Asked It to Unredact Epstein-File Photos of Children and Women
+1512,2026-05-31,microsoft,Microsoft Corporation,MSFT,789019,LISTED,HIGH,developer,crosswalk,UNSCORED,The Sydney Morning Herald and The Age Removed an Opinion Article After Undisclosed Copilot Use
+1523,2026-05-14,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,developer,crosswalk,UNSCORED,Reported AI-Generated Videos Placed Kosovo Parliamentary Candidates in Purportedly Fabricated Campaign Scenes
+1528,2023-05-19,integra-lifesciences,Integra LifeSciences Holdings,IART,917520,LISTED,MED,developer,crosswalk,UNSCORED,AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During May 2023 Sinuplasty
+1534,2026-05-01,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Google Alleged Outsider Enterprise Used Gemini to Create Phishing Sites for Text-Message Scams
+1537,2025-02-16,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Two Waymo Robotaxis Allegedly Contributed to Bike-Lane Collision That Injured San Francisco Cyclist
+1538,2025-12-06,baidu,"Baidu, Inc.",BIDU,1329099,FOREIGN,MED,developer,crosswalk,UNSCORED,City of Zhuzhou in Hunan Suspended Hellobike Robotaxi Service After Vehicle Struck Two Pedestrians
+1539,2025-08-26,zoox,"Amazon.com, Inc.",AMZN,1018724,PARENT,MED,both,crosswalk,UNSCORED,Zoox Robotaxi Crossed Into Opposing Lane and Stopped Near Oncoming Traffic
+1540,2026-01-17,zoox,"Amazon.com, Inc.",AMZN,1018724,PARENT,MED,both,crosswalk,UNSCORED,"Zoox Robotaxi Reportedly Collided with Open Car Door, Allegedly Injuring San Francisco Street Ambassador"
+1541,2026-01-07,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,"Waymo Robotaxi Reportedly Entered Phoenix Light-Rail Tracks, Prompting Passenger to Exit"
+1543,2026-03-01,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxi Reportedly Obstructed Ambulance Responding to Austin Mass Shooting
+1544,2026-04-20,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxi Reportedly Entered Flooded San Antonio Roadway and Was Swept Into Waterway
+1546,2023-02-03,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,both,crosswalk,UNSCORED,Google Android Earthquake Alerts System Reportedly Underestimated Kahramanmaraş Earthquake and Failed to Send Urgent Warnings to Millions
+1547,2026-04-11,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxis Reportedly Entered Closed Freeway Construction Zones in Arizona and California
+1552,2026-06-19,tesla,"Tesla, Inc.",TSLA,1318605,LISTED,HIGH,developer,crosswalk,UNSCORED,Tesla Driver Reportedly Said Driver-Assistance Mode Was Engaged During Fatal Texas Home Crash
+1557,2025-01-17,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Former New York City Council Candidate Jonathan Rinaldi Allegedly Used AI to Create False Endorsements and Fabricated News Reports
+1559,2022-06-22,walmart,Walmart Inc.,WMT,104169,LISTED,HIGH,deployer,crosswalk,UNSCORED,Kalibrate Fuel Pricing Allegedly Enabled California Gas Station Operators to Coordinate Higher Pump Prices
+1567,2026-03-22,serve-robotics,Serve Robotics Inc.,SERV,1832483,LISTED,MED,both,crosswalk,UNSCORED,Serve Robotics Delivery Robot Reportedly Crashed into Chicago Bus Shelter After Failing to Detect Glass
+1572,2025-10-21,thomson-reuters,Thomson Reuters Corporation,TRI,1075124,FOREIGN,MED,developer,crosswalk,UNSCORED,Westlaw CoCounsel Reportedly Generated False Legal Quotations in United States v. Farris
+1575,2026-01-20,paypal,"PayPal Holdings, Inc.",PYPL,1633917,LISTED,HIGH,deployer,crosswalk,UNSCORED,Eightfold AI Hiring Tools Allegedly Secretly Scored Job Applicants for Employers
+1583,2026-07-04,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco
+1584,2026-05-20,meta,"Meta Platforms, Inc.",META,1326801,LISTED,HIGH,both,crosswalk,UNSCORED,Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave
+1588,2026-06-29,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked Worker in Myanmar
+1589,2024-04-01,google,Alphabet Inc.,GOOGL,1652044,LISTED,HIGH,developer,crosswalk,UNSCORED,Purportedly AI-Powered 007TG Platform Reportedly Used by Scam Networks Linked to $75 Million in Proceeds
+1599,2026-05-09,waymo,Alphabet Inc.,GOOGL,1652044,PARENT,MED,both,crosswalk,UNSCORED,Waymo Robotaxi Reportedly Remained Immobilized While Vandals Smashed Vehicle with Passenger Inside
+1602,2026-06-20,zoox,"Amazon.com, Inc.",AMZN,1018724,PARENT,MED,both,crosswalk,UNSCORED,"Zoox Autonomous Vehicle Reportedly Entered Smoke-Obscured Fire Scene, Prompting Heavy-Smoke Detection Recall"

@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the article and this reproducibility deposit."
+title: "The AI Incident Disclosure Shadow — reproducibility artifact"
+abstract: >-
+  Code, frozen SHA-256-pinned inputs, and the deterministic analysis pipeline that
+  regenerate every quantitative result, table, and figure in "The AI Incident
+  Disclosure Shadow: An Incident-Level Study Matching AIID-Recorded AI Failures to
+  U.S.-Listed Companies' Investor Disclosures, 2019-2026." Reproduction is 100%
+  offline and byte-stable; it measures disclosure behavior, not compliance.
+type: software
+authors:
+  - family-names: Chincholikar
+    given-names: Samir
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0007-2779-3492"
+  - family-names: Chawla
+    given-names: Robin
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0007-2807-3948"
+    email: "robin.chawla.cse14@iitbhu.ac.in"   # corresponding author
+repository-code: "https://github.com/samirrc2/ai-incident-disclosure-shadow"
+identifiers:
+  - type: doi
+    value: "10.24433/CO.2340354.v1"
+    description: "Code Ocean compute capsule"
+url: "https://doi.org/10.24433/CO.2340354.v1"
+license: MIT
+version: "1.0.0"
+date-released: "2026-08-12"
+keywords:
+  - artificial intelligence
+  - AI incidents
+  - AI Incident Database
+  - securities disclosure
+  - SEC EDGAR
+  - materiality
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "The AI Incident Disclosure Shadow: An Incident-Level Study Matching AIID-Recorded AI Failures to U.S.-Listed Companies' Investor Disclosures, 2019-2026"
+  authors:
+    - family-names: Chincholikar
+      given-names: Samir
+      orcid: "https://orcid.org/0009-0007-2779-3492"
+    - family-names: Chawla
+      given-names: Robin
+      orcid: "https://orcid.org/0009-0007-2807-3948"
+  journal: "Frontiers in Artificial Intelligence"
+  year: 2026

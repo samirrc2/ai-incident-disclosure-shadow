@@ -1,0 +1,87 @@
+{
+  "431": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Apple 10-K/10-Q in-window (2022-04 to 2023-04): 0 hits for 'facial recognition'. Incident (robbers using victims' Face ID to drain bank apps) is a crime story, not a product-defect/AI-harm family Apple discloses. No specific, legal, or same-family AI risk disclosure located."
+  },
+  "97": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Tesla FY2020 10-K (2021-02-08) and 10-Qs in-window carry Autopilot/ADAS risk-factor language (same tech/harm family). The specific perception error (red flag letters read as traffic light) is not referenced. Generic risk language only."
+  },
+  "124": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "UnitedHealth in-window (2019-10 to 2020-10): 0 hits for both 'algorithm' and 'artificial intelligence'. Optum/Impact Pro risk-score racial-bias study and any DFS inquiry not disclosed; no same-family AI risk language present. No disclosure located."
+  },
+  "640": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Alphabet in-window (2023-12 to 2024-12): FY2023 10-K + 10-Qs carry AI risk-factor language (autonomous/AI Other Bets). The specific Waymo double-collision with a tow truck / resulting software recall is not referenced. Generic risk language only."
+  },
+  "311": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Alphabet in-window (2020-05 to 2021-05): FY2020 10-K + 10-Qs carry AI/content-algorithm risk-factor language (same family). YouTube auto-moderation wrongful bans not referenced. Generic only."
+  },
+  "846": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Meta in-window (2021-10 to 2022-10): FY2021 10-K + 10-Qs carry AI/content-ranking risk-factor language. Honduras election disinformation amplification not referenced. Generic only."
+  },
+  "1179": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "McDonald's in-window (2025-06 to 2026-06): FY2025 10-K (2026-02-24) and 10-Qs contain 'artificial intelligence' risk-factor language. FTS for 'McHire' = 0 hits; the 64M-applicant data-exposure breach (third-party McHire/Paradox) is not disclosed. Generic AI risk only."
+  },
+  "256": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "SoundThinking/ShotSpotter FY2021 10-K (2022-03-29) risk factor: 'Real or perceived false positive gunshot alerts or failure...to generate alerts for actual gunfire could...damage our brand and reputation' (same detection-accuracy harm family). AI cited only as product tech; no litigation/DUI case disclosed. Generic risk language -> T3."
+  },
+  "142": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Meta in-window (2021-02 to 2022-02): FY2021 10-K + 10-Qs carry AI/content-moderation risk-factor language. Ad-moderation misclassification of adaptive-fashion products not referenced. Generic only."
+  },
+  "275": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Meta in-window (2020-06 to 2021-06): FY2020 10-K + 10-Qs carry AI/content-moderation risk-factor language. Moderation algorithm banning historical slavery evidence not referenced. Generic only."
+  },
+  "1277": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Meta in-window (2025-11 to 2026-11): FY2025 10-K + 10-Qs carry AI (incl. AI-safety) risk-factor language. Incident concerns third-party children's AI products (FoloToy, Miko, Character.AI), not Meta itself; not referenced. Only loosely same-family generic AI risk language."
+  },
+  "168": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Meta in-window (2022-03 to 2023-03): FY2022 10-K + 10-Qs carry AI/recommendation-algorithm risk-factor language (same family). Collaborative-filtering popularity-bias research finding not referenced. Generic only."
+  },
+  "549": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "McDonald's in-window (2023-01 to 2024-01): 0 hits for 'artificial intelligence'; only 1 'algorithm' hit in a Dec-2023 investor-update 8-K exhibit (not risk language). AI-recruitment-chatbot failure not disclosed and no same-family AI risk-factor language in filings. No disclosure located."
+  },
+  "1376": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Amazon in-window (2026-02 to 2027-02): FY2025 10-K/10-Qs carry AI risk-factor language. The single delivery-van GPS-routing incident (Broomway mudflats) is not referenced; only generic, loosely same-family AI/algorithmic risk language exists."
+  },
+  "711": {
+    "code": "T1",
+    "confidence": "high",
+    "evidence": "Tesla FY2024 10-K (2025-01-30) risk factors flag Autopilot/FSD-engaged accidents as 'the subject of significant public attention' and NHTSA's Standing General Order crash-reporting; FTS confirms 'requests for information' + 'Department of Justice' appear in the FY2024 10-K and multiple in-window 10-Qs' contingencies (Tesla's standard DOJ/NHTSA Autopilot-investigation disclosure). Same subject as the NHTSA Autopilot probe -> T1."
+  },
+  "596": {
+    "code": "T1",
+    "confidence": "high",
+    "evidence": "GM FY2023 10-K (2024-01-30) names the Oct-2023 Cruise pedestrian incident ('pedestrian being thrown into the path of a Cruise AV'), Cruise's voluntary AV-operations pause, the California DMV permit suspension, and investigations opened by CA DMV, CPUC, NHTSA, DOJ and SEC. Directly references this AV-safety incident -> T1."
+  },
+  "161": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Facebook FY2019 10-K (2020-01-30) + 10-Qs carry AI/advertising-algorithm risk-factor language. FTS in-window: 0 hits for 'Fair Housing', 'civil rights', and 'Department of Housing and Urban Development' -> the HUD/ad-delivery discrimination matter is not disclosed as a legal proceeding. Generic same-family risk language only -> T3."
+  }
+}

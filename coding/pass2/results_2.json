@@ -1,0 +1,87 @@
+{
+  "83": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "MSFT FY2021 10-K (acc 0001564590-21-039151, filed 2021-07-29, in window) contains AI-offerings risk factor: phrases 'AI algorithms' and 'reputational harm or liability' confirmed via FTS (Microsoft's 'Issues in the use of AI ... AI algorithms may be flawed ... datasets ... biased' risk factor). Same-family AI/algorithm risk language present; the spam-filter incident is not named."
+  },
+  "622": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "GM in-window filings (window 2023-12-18..2024-12-18). FTS for 'chatbot', 'artificial intelligence', 'machine learning', 'algorithm' restricted to 8-K/10-K/10-Q for CIK 0001467858 all returned 0 hits; 'artificial intelligence' appears only in DEF 14A proxy (out of scope). FY2023 10-K carries no same-family AI/chatbot risk language. Dealer chatbot incident weakly tied to GM. No disclosure located."
+  },
+  "501": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "UNH in-window filings (2019-06-03..2020-06-03). FTS for 'nH Predict', 'artificial intelligence', and 'algorithm' for CIK 0000731766 all returned 0 hits. The naviHealth/nH Predict length-of-stay algorithm litigation (Estate of Lokken) postdates the window (filed 2023). No AI/algorithm risk language and no event reference located."
+  },
+  "733": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "GM FY2024 10-K (acc 0001467858-25-000032, filed 2025-01-28, in window) read directly: risk factors and legal proceedings contain no mention of driver/telematics data collection or sale, Smart Driver/OnStar data monetization, LexisNexis, insurer data sharing, class actions, or the FTC driver-data matter. The only AI reference is to hiring AI/ML talent for autonomous-vehicle development, not same-family (driver-data scoring/privacy). FTS 'LexisNexis' 0 hits. No disclosure located."
+  },
+  "578": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Meta FY2023 10-K (acc 0001326801-24-000012, filed 2024-02-02, in window) risk factors expressly address third-party misuse of Meta's generative-AI models: 'we cannot guarantee that third parties will not use such AI technologies for improper purposes, including through the dissemination of illegal, inaccurate, defamatory or harmful content ... activities that threaten people's safety.' Same-family AI-misuse risk language; the LLaMA NSFW/violent-content incident is not named."
+  },
+  "149": {
+    "code": "T1",
+    "confidence": "high",
+    "evidence": "Zillow 8-K exhibit 99.3 (acc 0001617640-21-000085, filed 2021-11-02, in window) shareholder letter announces winding down Zillow Offers and attributes it to the home-price forecasting model: 'We have been unable to accurately forecast future home prices ... This home price forecasting volatility has also contributed to significant capacity and demand planning challenges.' Directly references THIS incident (Zillow Offers shutdown due to predictive-pricing model inaccuracy). Also repeated in the in-window FY2021 10-K and subsequent 10-Qs."
+  },
+  "1559": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Walmart in-window filings (2022-06-22..2023-06-22). FTS for 'Kalibrate' and 'artificial intelligence' restricted to 10-K for CIK 0000104169 returned 0 hits. No same-family AI/pricing-algorithm risk language located and incident (Kalibrate fuel-pricing antitrust, tied to CA gas-station operators) not referenced. Match to Walmart is tenuous. No disclosure located."
+  },
+  "1176": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "MSFT in-window filings (2025-08-01..2026-08-01) carrying 'artificial intelligence': FY2026 10-K (acc 0001193125-26-323660, filed 2026-07-29) and three 10-Qs (2025-10-29, 2026-01-28, 2026-04-29). Microsoft's standing AI/privacy risk-factor language (AI in offerings, data privacy) is same-family for the Windows Recall (AI feature storing passwords/SSNs) incident, which is not named."
+  },
+  "533": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2021 10-K (acc 0000950170-22-000796, filed 2022-02-07, in window) risk factors read directly: 'our vehicles have been involved and we expect in the future will be involved in accidents ... where Autopilot or FSD features are engaged ... the subject of significant public attention' and 'claims and regulatory scrutiny arising from or related to misuse or claimed failures of such new technologies.' Same-family Autopilot/FSD/AI risk language; the specific FSD traffic-light-truck misidentification is not named."
+  },
+  "620": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Tesla FY2021/FY2022 10-Ks (in window) contain Autopilot/FSD AI risk language but no same-family risk language about manufacturing robots/automation injuring workers (confirmed via direct read of FY2021 10-K: 'does not contain explicit discussion of robots or automation injuring workers'). The industrial-robot injury is not an AI-feature failure and is not named. No same-family AI disclosure located."
+  },
+  "145": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2021 10-K (acc 0000950170-22-000796, filed 2022-02-07, in window 2021-07-23..2022-07-23) carries Autopilot/FSD/AI risk-factor language (accidents where Autopilot engaged; misuse/claimed failures of new technologies). Same-family AI/Autopilot risk language; the specific Autopilot 'moon as stop light' misidentification is not named."
+  },
+  "471": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Facebook FY2019 10-K (acc 0001326801-20-000013, filed 2020-01-30, in window) contains 'artificial intelligence' and Facebook's standing content-moderation/harmful-content risk-factor language (removal of hate speech and harmful content, reliance on AI systems and reviewers). Same-family risk language; the Ethiopia hate-speech/ethnic-violence incident is not named. (Kenyan litigation postdates window.)"
+  },
+  "997": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Meta FY2023 10-K (acc 0001326801-24-000012, filed 2024-02-02, in window 2023-02-28..2024-02-28) risk factors address AI-related IP risk: generative-AI efforts 'subject us to risks related to ... intellectual property infringement or misappropriation' and 'other parties may have ... patents or other proprietary rights.' Same-family AI training-data/IP risk language; the LibGen pirated-books copyright suit (Kadrey v. Meta) is not named as such."
+  },
+  "525": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2019 10-K (acc 0001564590-20-004475, filed 2020-02-13, in window 2019-07-06..2020-07-06) contains 'artificial intelligence' (FTS confirmed) and Tesla's Autopilot/autonomous-driving product-liability and accident risk-factor language. Same-family AI/Autopilot risk language; the specific self-driving city-street crash is not named."
+  },
+  "889": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2024 10-K (acc 0001628280-25-003063, filed 2025-01-30, in window) contains 'artificial intelligence' and Tesla's Autopilot/FSD/autonomy risk-factor language (accidents, misuse/claimed failures of new technologies, NHTSA scrutiny). Same-family AI/autonomy risk language; the specific 'Actually Smart Summon' parking-lot collisions are not named."
+  },
+  "796": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Meta FY2024 10-K (acc 0001326801-25-000017, filed 2025-01-30, in window 2024-06-01..2025-06-01) contains 'artificial intelligence' and Meta's standing content-moderation / harmful-content / AI risk-factor language. Same-family risk language; the specific incident (moderation system flagging wildfire emergency updates as spam) is not named."
+  },
+  "228": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Apple FY2019 10-K (window 2019-02-01..2020-02-01). FTS for 'artificial intelligence' and 'machine learning' restricted to 10-K for CIK 0000320193 both returned 0 hits. No same-family AI/algorithm/mapping-accuracy risk language and no reference to the Apple Maps unpaved-road routing incident. No disclosure located."
+  }
+}

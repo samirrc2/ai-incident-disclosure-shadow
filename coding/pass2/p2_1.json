@@ -1,0 +1,138 @@
+[
+ {
+  "incident_id": "431",
+  "incident_date": "2022-04-20",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "title": "Robbers Accessed Drugged Gay Men's Bank Accounts Using Their Phones' Facial Recognition"
+ },
+ {
+  "incident_id": "97",
+  "incident_date": "2020-10-22",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla Autopilot Mistakes Red Letters on Flag for Red Traffic Lights"
+ },
+ {
+  "incident_id": "124",
+  "incident_date": "2019-10-24",
+  "CIK": "731766",
+  "matched_company": "UnitedHealth Group Inc.",
+  "ticker": "UNH",
+  "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs"
+ },
+ {
+  "incident_id": "640",
+  "incident_date": "2023-12-11",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "title": "Waymo Software Flaw Reportedly Leads to Double Collision with Tow Truck"
+ },
+ {
+  "incident_id": "311",
+  "incident_date": "2020-05-02",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "title": "YouTube Auto-Moderation Mistakenly Banned Women of Sex Tech Conference"
+ },
+ {
+  "incident_id": "846",
+  "incident_date": "2021-10-06",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Social Media Algorithms Amplified Disinformation Campaign in Honduras Election"
+ },
+ {
+  "incident_id": "1179",
+  "incident_date": "2025-06-30",
+  "CIK": "63908",
+  "matched_company": "McDonald's Corporation",
+  "ticker": "MCD",
+  "title": "McDonald's McHire AI Recruitment Platform Reportedly Exposed Data of 64 Million Applicants via Default Login and API Vulnerability"
+ },
+ {
+  "incident_id": "256",
+  "incident_date": "2021-11-07",
+  "CIK": "1351636",
+  "matched_company": "SoundThinking, Inc.",
+  "ticker": "SSTI",
+  "title": "DUI Arrest Case Allegedly Based Only on ShotSpotter's Alert"
+ },
+ {
+  "incident_id": "142",
+  "incident_date": "2021-02-11",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook's Advertisement Moderation System Allegedly Routinely Misidentified Adaptive Fashion Products as Medical Equipment and Blocked Their Sellers"
+ },
+ {
+  "incident_id": "275",
+  "incident_date": "2020-06-11",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook\u2019s Moderation Algorithm Banned Users for Historical Evidence of Slavery"
+ },
+ {
+  "incident_id": "1277",
+  "incident_date": "2025-11-21",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Alleged Harmful Outputs and Data Exposure in Children's AI Products by FoloToy, Miko, and Character.AI"
+ },
+ {
+  "incident_id": "168",
+  "incident_date": "2022-03-01",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Collaborative Filtering Prone to Popularity Bias, Resulting in Overrepresentation of Popular Items in the Recommendation Outputs"
+ },
+ {
+  "incident_id": "549",
+  "incident_date": "2023-01-05",
+  "CIK": "63908",
+  "matched_company": "McDonald's Corporation",
+  "ticker": "MCD",
+  "title": "Fast Food Chains' AI Chatbots Failed to Assist Job Applicants with Scheduling Interviews"
+ },
+ {
+  "incident_id": "1376",
+  "incident_date": "2026-02-15",
+  "CIK": "1018724",
+  "matched_company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "title": "Amazon Delivery Van Reportedly Became Stranded on Essex Mudflats After GPS Routed It Onto the Broomway"
+ },
+ {
+  "incident_id": "711",
+  "incident_date": "2024-04-26",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "NHTSA Opens New Probe into Tesla\u2019s Autopilot Following More than a Dozen Fatal Accidents"
+ },
+ {
+  "incident_id": "596",
+  "incident_date": "2023-10-17",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "title": "Cruise's Autonomous Vehicles Allegedly Engaging in Risky Behavior Near Pedestrians"
+ },
+ {
+  "incident_id": "161",
+  "incident_date": "2019-04-03",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook's Ad Delivery Reportedly Excluded Audience along Racial and Gender Lines"
+ }
+]

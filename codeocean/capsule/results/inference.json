@@ -1,0 +1,86 @@
+{
+  "N": 307,
+  "clopper_pearson": {
+    "T1_specific": [
+      0.013,
+      0.0036,
+      0.033
+    ],
+    "T1T2_substantive": [
+      0.0228,
+      0.0092,
+      0.0464
+    ],
+    "shadow_T3T4": [
+      0.9772,
+      0.9536,
+      0.9908
+    ],
+    "T4_none": [
+      0.0717,
+      0.0455,
+      0.1065
+    ]
+  },
+  "permutation_tests": {
+    "by_role": {
+      "chi2": 10.434,
+      "p_mc_exact": 0.0234
+    },
+    "by_severity": {
+      "chi2": 1.349,
+      "p_mc_exact": 0.6056
+    },
+    "B": 20000,
+    "note": "Monte-Carlo exact permutation p-values (chi2 statistic) \u2014 robust to the sparse (7) positive count; complement the Fisher/asymptotic values."
+  },
+  "match_funnel": {
+    "window_incidents": 1389,
+    "classification": {
+      "named non-crosswalk entity": 400,
+      "generic/individual/non-corporate only": 398,
+      "US-listed (primary)": 307,
+      "private firm": 243,
+      "foreign US-listed / foreign-private": 26,
+      "delisted-was-listed": 15
+    },
+    "primary_yield_pct": 0.221,
+    "note": "The ~22% of window incidents with any corporate entity is dominated by private AI labs (OpenAI/Anthropic/xAI) and generic/individual actors (deepfake creators, scammers); the US-listed primary yield is 307/1389."
+  },
+  "right_censoring": {
+    "snapshot_date": "2026-07-27",
+    "n_censored_incomplete_window": 55,
+    "n_complete_window": 252,
+    "shadow_complete_window": [
+      0.9722,
+      0.9436,
+      0.9888
+    ],
+    "shadow_full_sample": [
+      0.9772,
+      0.9536,
+      0.9908
+    ],
+    "note": "Incidents whose incident_date+12mo exceeds the snapshot have a right-censored search window; restricting to complete-window incidents leaves the shadow essentially unchanged."
+  },
+  "plausibly_material": {
+    "severe_tier": {
+      "n": 42,
+      "shadow": [
+        0.9524,
+        0.8384,
+        0.9942
+      ],
+      "substantive_k": 2
+    },
+    "top5_issuers": {
+      "n": 254,
+      "shadow": [
+        0.9882,
+        0.9659,
+        0.9976
+      ]
+    },
+    "note": "Even restricting to CSET-severe incidents (physical/large-scale harm) or to the five largest, most-scrutinized issuers, incident-specific disclosure stays near zero and the shadow >=95%."
+  }
+}

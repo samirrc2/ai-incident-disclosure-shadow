@@ -1,0 +1,229 @@
+{
+  "161": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "In-window annuals are Facebook FY2018 10-K (0001326801-19-000009) and FY2019 10-K (0001326801-20-000013, fb-12312019x10k.htm, 2020-01-30), whose Item 1A carries family-level advertising and content risk language ('changes reduce our ability to effectively target ads... adversely affected our advertising business'; 'spamming, spreading misinformation, or other objectionable ends') plus generic government-investigation/FTC-consent-order language. No in-window 10-K/10-Q/8-K names the housing/employment ad-delivery discrimination matter: efts q=\"housing\" ciks=0001326801 2019-04-03..2020-06-30 returns only the 2020 DEF 14A, and the FY2021 contingencies note (R19.htm) shows no fair-housing/HUD/DOJ ad-discrimination matter. The HUD charge (Mar 2019) and DOJ Special-Ad-Audience settlement (Jun 2022) are never disclosed as legal proceedings within the window.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"housing\" ciks=0001326801 2019-04-03..2020-06-30 (only DEF 14A, no periodic filing)", "FY2021 R19 contingencies note review (no fair-housing/HUD/DOJ matter)", "FY2019 10-K Item 1A advertising/ad-targeting risk review"],
+    "rationale": "Ad-delivery skew along racial/gender lines surfaces only as family-level advertising + objectionable-content + generic government-scrutiny risk language; the specific fair-housing/HUD ad-discrimination matter is not named in any in-window periodic filing. Conservative T3 (medium: a live regulatory matter existed but was not disclosed as such in-window)."
+  },
+  "471": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2019 10-K (0001326801-20-000013) and FY2020 10-K (0001326801-21-000014, fb-20201231.htm) carry harmful/objectionable-content and reliance-on-automated-systems risk language ('spreading misinformation, or other objectionable ends'; FY2020: reliance on AI for content review, 'misinformation or other illicit or objectionable material on our platforms'). No filing names Ethiopia or the ethnic-violence hate-speech failure; the related litigation (Kenyan court, Dec 2022) is non-US and outside the window.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2019/FY2020 10-K Item 1A hate-speech/objectionable-content risk review", "q=\"Ethiopia\" ciks=0001326801 (no periodic-filing incident hit)"],
+    "rationale": "Hate-speech/automated-moderation failure captured only by family-level harmful-content risk language; the specific Ethiopia event is not named. T3."
+  },
+  "522": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2019 10-K (fb-12312019x10k.htm) Item 1A carries News Feed ranking-algorithm risk language ('we update our News Feed ranking algorithm to optimize the user experience') and advertising/ad-targeting risk language ('changes reduce our ability to effectively target ads'). No filing references the political-ad-delivery price/alignment findings.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2019 10-K Item 1A ad-delivery/algorithm risk review", "q=\"political ad\" ciks=0001326801 (no incident-specific hit)"],
+    "rationale": "Political ad-delivery algorithm behavior captured only by family-level advertising + ranking-algorithm risk language; event not named. T3."
+  },
+  "417": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2019 10-K (0001326801-20-000013) and FY2020 10-K carry News Feed ranking-algorithm and objectionable/harmful-content risk language ('News Feed ranking algorithm'; 'misinformation or other illicit or objectionable material'). No filing references internal research that feed algorithms exposed low-digital-literacy users to disturbing content.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2019/FY2020 10-K Item 1A News Feed algorithm / harmful-content risk review"],
+    "rationale": "Feed-algorithm harm to vulnerable users captured only by family-level ranking-algorithm + harmful-content risk language; event not named. T3."
+  },
+  "414": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2019 10-K (in-window) and FY2020 10-K carry reliance-on-AI and objectionable-content risk language (FY2020: reliance on 'artificial intelligence to perform tasks', 'illicit or objectionable material'). No filing references the vulgar Burmese-English machine-translation of the Chinese president's name; no legal proceeding exists.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2019/FY2020 10-K Item 1A automated-systems/objectionable-content risk review", "q=\"translation\" ciks=0001326801 (no incident-specific hit)"],
+    "rationale": "Automated-translation gaffe (no legal consequence) captured only by family-level reliance-on-AI / objectionable-content risk language; event not named. Despite the batch severity tag, no legal/regulatory proceeding = T3, not T2."
+  },
+  "268": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (0001326801-21-000014) carries reliance-on-AI content-review and objectionable-content risk language. No filing references the concern that automated permanent removal of terrorism/extremist content without archival hindered criminal investigations.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated content-removal / content-review risk review"],
+    "rationale": "Automated content-removal side-effect captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "317": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (fb-20201231.htm) explicitly ties automated moderation to COVID-19 and remote-work AI reliance: 'the necessity to rely more heavily on artificial intelligence to perform tasks'; 'negative publicity in connection with our handling of misinformation... including in connection with the COVID-19 pandemic'. No filing references the anti-spam-filter bug blocking legitimate COVID news.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A COVID / AI-reliance / spam-filter risk review"],
+    "rationale": "Anti-spam false-positive on COVID posts captured squarely by the family-level COVID/AI-reliance risk language; specific bug not named. T3."
+  },
+  "215": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (0001326801-21-000014) states adverse impacts from 'limitations on our safety, security, and content review efforts while our workforce is working remotely, such as the necessity to rely more heavily on artificial intelligence to perform tasks' — directly the same family as inadequate AI moderation shifting burden to human reviewers. No filing names the moderator working-conditions demands (the US Scola PTSD settlement, May 2020, is not disclosed as a material legal proceeding).",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A AI-reliance / content-review risk review", "FY2021 R19 contingencies review (no moderator-conditions matter)"],
+    "rationale": "Inadequate-AI-moderation / moderator-conditions issue captured by family-level reliance-on-AI content-review risk language; event and moderator settlement not named as legal proceedings. T3."
+  },
+  "275": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries reliance-on-AI content-review and objectionable-content (nudity/enforcement) risk language. No filing references the erroneous ban of the 1890s Aboriginal-slavery photo.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated-moderation / content-review risk review"],
+    "rationale": "Automated over-removal (historical nudity) captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "113": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (fb-20201231.htm) carries reliance-on-AI and objectionable/offensive-content risk language. No filing references the AI 'Primates' mislabel on a video of Black men; no legal proceeding exists.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A AI / objectionable-content risk review", "q=\"primates\" ciks=0001326801 (no hit)"],
+    "rationale": "AI image-classification error (offensive label, no legal consequence) captured only by family-level AI/objectionable-content risk language; event not named. T3."
+  },
+  "213": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries advertising and automated-detection/misinformation risk language ('effectively target ads'; 'misinformation... including... elections'). No filing references researcher findings on uneven political-ad detection error rates.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A political-ad / election-integrity risk review"],
+    "rationale": "Political-ad-detection performance captured only by family-level advertising + election-integrity risk language; event not named. T3."
+  },
+  "415": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries reliance-on-AI and objectionable-content risk language. No filing references the offensive Thai-English machine-translation during the King of Thailand broadcast; no legal proceeding.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated-systems / objectionable-content risk review"],
+    "rationale": "Automated-translation error captured only by family-level reliance-on-AI / objectionable-content risk language; event not named. T3."
+  },
+  "331": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries ranking/recommendation-algorithm risk language (News Feed ranking) and content-integrity risk language. No filing references the Instagram related-hashtags bug affecting political hashtags.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A algorithm / content-ranking risk review", "q=\"hashtags\" ciks=0001326801 (no hit)"],
+    "rationale": "Instagram recommendation-algorithm bug captured only by family-level ranking/recommendation risk language; event not named. T3."
+  },
+  "282": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries reliance-on-AI content-review and objectionable/sexual-content-enforcement risk language. No filing references the onion-ad misclassification as sexual content.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated ad-moderation / objectionable-content risk review"],
+    "rationale": "Automated ad-moderation false-positive captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "84": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K explicitly addresses misinformation handling around COVID-19 and elections ('negative publicity in connection with our handling of misinformation... including in connection with the COVID-19 pandemic and elections'). No filing references the Avaaz study finding 42% of false posts unlabeled.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A COVID/election misinformation-labeling risk review"],
+    "rationale": "Misinformation-labeling shortfall captured squarely by the family-level COVID/election misinformation risk language; study/event not named. T3."
+  },
+  "82": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries misinformation-handling and objectionable-content risk language. No filing references the #LekkiMassacre / #EndSARS content mislabeled as false.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A misinformation-labeling / content risk review", "q=\"Lekki\" ciks=0001326801 (no hit)"],
+    "rationale": "Fact-check mislabeling captured only by family-level misinformation-handling risk language; event not named. T3."
+  },
+  "996": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "No disclosure located in window. Incident window is 2020-10-25..2021-10-25; LLaMA did not exist until Feb 2023 and the authors' copyright suits (e.g. Kadrey v. Meta) were filed mid-2023. efts q=\"LLaMA\" ciks=0001326801 first appears 2023-07-26 (earnings 8-K 0001326801-23-000089), all out of window. Meta's FY2020/FY2021 10-Ks carry no generative-AI-training / training-data-copyright risk language (that risk factor first appears in FY2023 filings); only unrelated generic IP-litigation boilerplate exists, which is not the same tech family as AI-training copyright.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"LLaMA\" ciks=0001326801 (earliest 2023-07-26, out of window)", "q=\"Books3\" ciks=0001326801 (no hit)", "FY2020/FY2021 10-K Item 1A review (no AI-training/copyright risk language)"],
+    "rationale": "The Books3/LLaMA training-data copyright matter post-dates the window entirely (model and lawsuits are 2023) and has no same-family AI-training-copyright risk language in any in-window filing. T4."
+  },
+  "220": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (0001326801-21-000014) ties heavier reliance on AI (with less human review) to content/ad enforcement during the remote-work/COVID period ('rely more heavily on artificial intelligence to perform tasks') and carries advertising risk language. No filing references the erroneous blocking of small-business ads.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A AI-reliance / ad-moderation risk review"],
+    "rationale": "Automated ad-blocking false-positive captured squarely by family-level reliance-on-AI content/ad-enforcement risk language; event not named. T3."
+  },
+  "318": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "In-window annual is FY2020 10-K (fb-20201231.htm); it carries advertising, recommendation, and content-enforcement risk language. No filing references gun/military-gear ad recommendations continuing after the post-Capitol pause.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A ad-recommendation / enforcement risk review"],
+    "rationale": "Ad-recommendation enforcement gap captured only by family-level advertising/recommendation risk language; event not named. T3."
+  },
+  "363": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries reliance-on-AI content-review and objectionable-content risk language. No filing references the automated flag of 'Plymouth Hoe' as misogynistic.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated-moderation risk review"],
+    "rationale": "Automated-moderation false-positive captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "141": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries reliance-on-automated-systems and content-enforcement risk language (including IP/copyright-enforcement obligations). No filing references the police officer exploiting Instagram's automated copyright (DMCA) detection.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated content/IP-enforcement risk review"],
+    "rationale": "Automated copyright-detection behavior (no Meta legal consequence) captured only by family-level automated-enforcement risk language; event not named. T3."
+  },
+  "142": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (in-window; incident 2021-02-11) carries reliance-on-AI content/ad-review and objectionable-content risk language. No filing references adaptive-fashion products misclassified as medical equipment.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A automated ad-moderation risk review"],
+    "rationale": "Automated ad-classification error captured only by family-level ad-moderation risk language; event not named. T3."
+  },
+  "143": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K carries reliance-on-AI content-review and harmful/objectionable-content risk language. No filing references the failure to moderate small-language (Balkan) content.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A AI content-moderation risk review"],
+    "rationale": "Language-coverage moderation gap captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "129": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (in-window) carries reliance-on-AI content-review and hate-speech/objectionable-content risk language; the subsequent FY2021 10-K (0001326801-22-000018) risk factors acknowledge the September-2021 former-employee scrutiny generically but do not name specific internal findings. No filing quantifies or names the internal-document finding that automated tools removed only a small fraction of hate speech.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020 10-K Item 1A AI-moderation / hate-speech risk review", "FY2021 10-K Item 1A former-employee-scrutiny language (generic, not naming this finding)"],
+    "rationale": "Internal-document hate-speech-removal shortfall captured only by family-level automated-moderation risk language (and generic former-employee-scrutiny language); the specific finding is not named. T3."
+  },
+  "534": {
+    "code": "T2",
+    "confidence": "high",
+    "evidence": "FY2021 10-K Commitments & Contingencies note (0001326801-22-000018, R19.htm, filed 2022-02-03): 'Beginning in September 2021, we became subject to government investigations and requests relating to a former employee's allegations and release of internal company documents concerning, among other things, our algorithms, advertising and user metrics, and content enforcement practices,' and 'Beginning on October 27, 2021, multiple putative class actions were filed in federal court in the United States against us and certain of our directors and officers alleging violations of securities laws.' efts confirms 'securities class action' in this 10-K and the Q1-2022 10-Q (0001326801-22-000057). The disclosure frames the consequence purely as securities-law litigation/government investigations, not as an AI-safety incident. 'Ohio' itself appears only in proxy/shareholder-proposal exhibits, so the specific Ohio AG (OPERS) action is captured within this collectively-disclosed securities-litigation wave rather than named.",
+    "accounting_channel": {
+      "filing_item": "FY2021 10-K Note 'Commitments and Contingencies' (R19.htm) — securities class actions and government investigations arising from the September-2021 former-employee allegations; not framed as an AI matter.",
+      "booked_impact": "no — no loss reserve or accrual disclosed; company states the suits are 'without merit' and it is 'vigorously defending them.' No incident-specific charge (distinct from the booked 2019 $5B FTC privacy settlement, which is a separate matter)."
+    },
+    "specific_queries": ["q=\"securities class action\" ciks=0001326801 2021-11-01..2022-06-30 (FY2021 10-K + Q1-2022 10-Q)", "q=\"Ohio\" ciks=0001326801 2021-04..2022-06 (only proxy/PX14A6G, not periodic filings)", "FY2021 10-K R19 contingencies note review"],
+    "rationale": "The Ohio AG securities-fraud suit (algorithms harming children → securities-law violation) surfaces in filings as its legal consequence: the FY2021 10-K discloses the securities class actions and government investigations tied to the former-employee algorithm/content allegations, framed as securities/financial-law matters without AI-safety framing. T2."
+  },
+  "359": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (in-window; incident 2021-05-23) carries reliance-on-AI content-moderation and objectionable-content risk language; FY2021 10-K continues the same family language. No filing references the wrongful blocking of pro-Palestinian content during the Israeli-Palestinian conflict.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020/FY2021 10-K Item 1A automated-moderation error risk review"],
+    "rationale": "Automated-moderation error on conflict-related content captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "343": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (in-window) and FY2021 10-K carry reliance-on-AI content-review and hate-speech/harassment/objectionable-content risk language. No filing references the failure to proactively remove racist abuse of Black footballers.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020/FY2021 10-K Item 1A hate-speech / harassment moderation risk review"],
+    "rationale": "Reactive hate-speech moderation failure captured only by family-level content-moderation risk language; event not named. T3."
+  },
+  "362": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2020 10-K (in-window; incident 2021-07-20) and FY2021 10-K carry reliance-on-AI content-review and objectionable-content risk language. No filing references the mistaken flagging of gardening-group 'hoe'/anti-bug language.",
+    "accounting_channel": null,
+    "specific_queries": ["FY2020/FY2021 10-K Item 1A automated-moderation false-positive risk review"],
+    "rationale": "Automated-moderation false-positive captured only by family-level content-moderation risk language; event not named. T3."
+  }
+}

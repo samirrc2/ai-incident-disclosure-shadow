@@ -1,0 +1,72 @@
+[
+ {
+  "incident_id": "149",
+  "incident_date": "2021-11-02",
+  "CIK": "1617640",
+  "matched_company": "Zillow Group, Inc.",
+  "ticker": "ZG",
+  "pass1_code": "T1",
+  "title": "Zillow Shut Down Zillow Offers Division Allegedly Due to Predictive Pricing Tool's Insufficient Accuracy",
+  "description": "Zillow's AI-powered predictive pricing tool Zestimate was allegedly not able to accurately forecast housing prices three to six months in advance due to rapid market changes, prompting division shutdown and layoff of a f"
+ },
+ {
+  "incident_id": "534",
+  "incident_date": "2021-04-29",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T2",
+  "title": "Facebook Alleged in Lawsuit Misleading Public about Effects of Algorithms on Children",
+  "description": "Facebook was alleged in a lawsuit by the Ohio Attorney General purposely misleading the public about the control of its algorithms and their negative effects on children's well-being, which violated securities law."
+ },
+ {
+  "incident_id": "596",
+  "incident_date": "2023-10-17",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "pass1_code": "T1",
+  "title": "Cruise's Autonomous Vehicles Allegedly Engaging in Risky Behavior Near Pedestrians",
+  "description": "Cruise's driverless vehicles are under federal investigation for possibly failing to exhibit due caution around crosswalks and pedestrians, with reports including one severe injury incident."
+ },
+ {
+  "incident_id": "711",
+  "incident_date": "2024-04-26",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "pass1_code": "T2",
+  "title": "NHTSA Opens New Probe into Tesla\u2019s Autopilot Following More than a Dozen Fatal Accidents",
+  "description": "The NHTSA has linked Tesla's Autopilot to over a dozen fatalities and hundreds of crashes, prompting a new investigation into the adequacy of Tesla's December recall of 2 million vehicles. The probe reports that Tesla\u2019s "
+ },
+ {
+  "incident_id": "726",
+  "incident_date": "2023-10-02",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "pass1_code": "T1",
+  "title": "A Self-Driving Cruise Robot Taxi Reportedly Struck and Dragged a Pedestrian 20 Feet",
+  "description": "Cruise has settled for between $8 million and $12 million with a pedestrian dragged by one of its autonomous vehicles in October 2023. The incident, where the pedestrian was initially hit by a human-driven car and then d"
+ },
+ {
+  "incident_id": "733",
+  "incident_date": "2024-06-09",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "pass1_code": "T2",
+  "title": "Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Driver Data",
+  "description": "The insurance industry allegedly uses AI and telematics to score drivers based on behaviors tracked by automakers and apps like Life360. Data, often collected without clear consent, may affect insurance rates and raises "
+ },
+ {
+  "incident_id": "997",
+  "incident_date": "2023-02-28",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T1",
+  "title": "Meta and OpenAI Accused of Using LibGen\u2019s Pirated Books to Train AI Models",
+  "description": "Court records reveal that Meta employees allegedly discussed pirating books to train LLaMA 3, citing cost and speed concerns with licensing. Internal messages suggest Meta accessed LibGen, a repository of over 7.5 millio"
+ }
+]

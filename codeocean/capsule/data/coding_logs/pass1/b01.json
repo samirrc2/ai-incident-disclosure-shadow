@@ -1,0 +1,230 @@
+{
+  "_baseline": {
+    "note": "T3 baseline for Alphabet (CIK 1652044). FIRST fiscal year carrying AI-harm/algorithm risk-factor language = FY2018 10-K (accession 0001652044-19-000004, goog10-kq42018.htm, filed 2019-02-05): 'new products and services, including those that incorporate or utilize artificial intelligence and machine learning, can raise new or exacerbate existing ethical, technological, legal, and other challenges, which may negatively affect our brands and demand for our products and services and adversely affect our revenues and operating results.' This generic AI/ML ethical/reputational risk factor persists FY2019 (0001652044-20-000008, goog10-k2019.htm), FY2020 (0001652044-21-000010, goog-20201231.htm), FY2021 (0001652044-22-000019), and FY2022 (0001652044-23-000016, goog-20221231.htm). It MATURES into explicit generative-AI harmful-content language in the FY2023 10-K (0001652044-24-000022, goog-20231231.htm, filed 2024-01-31): 'Our evolving AI-related efforts may give rise to risks related to harmful content, inaccuracies, discrimination, intellectual property infringement or misappropriation, defamation, data privacy, cybersecurity, and other issues'; '...could subject us to competitive harm, regulatory action, legal liability... and brand or reputational harm'; 'Unintended consequences, uses, or customization of our AI tools and systems may negatively affect human rights, privacy, employment, or other social concerns...'. Item 3 Legal Proceedings / Legal Matters note is antitrust-dominated (Epic v. Google, DOJ/state antitrust, EC) and names NO lawsuit/regulatory action tied to any incident in this batch => no T2. Bard appears only as routine product description ('Bard allows users to collaborate with experimental AI...'); Waymo+recall appears only in FY2024/FY2025 10-Ks (outside every incident window) => no T1. Every incident below has an in-window 10-K carrying same-family AI/ML risk language, so T3 floor applies; none rise to T1/T2, none fall to T4.",
+    "webfetch_budget_used": 9
+  },
+  "305": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2019-02-01 to 2020-02-01. In-window FY2018 10-K (0001652044-19-000004, filed 2019-02-05) carries AI/ML ethical/brand risk language; FY2019 10-K (0001652044-20-000008, edge) continues it. YouTube's recommendation algorithm driving misinformation is squarely within the 'AI/ML raise ethical challenges... negatively affect our brands' family. No filing names this advocacy-group allegation; Legal Matters is antitrust-only; 'recommendation' full-text hits are proxy/board noise.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"recommendation\" forms=10-K,10-Q,8-K ciks=0001652044 -> only proxy/board-recommendation hits, no YouTube-algorithm litigation"],
+    "rationale": "Recommendation-algorithm harm covered by generic AI/ML risk factor; event not named; no legal proceeding disclosed."
+  },
+  "281": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2019-02-04 to 2020-02-04. In-window FY2018 10-K (filed 2019-02-05) and FY2019 10-K (filed 2020-02-04, edge) carry AI/ML ethical/brand risk language. Content-moderation algorithm failing to remove suicide/self-harm content sits within the AI/ML technological-and-content-quality risk family. No specific disclosure; Legal Matters antitrust-only (severity_tier T2-moderate is the incident's harm rating, not a disclosed legal proceeding).",
+    "accounting_channel": null,
+    "specific_queries": ["baseline risk-factor read (FY2018/FY2019 10-K)"],
+    "rationale": "Moderation-algorithm failure covered by generic AI/ML content risk language; event not named; no disclosed litigation."
+  },
+  "89": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2019-03-15 to 2020-03-15. FY2018 10-K (2019-02-05) predates window; in-window FY2019 10-K (0001652044-20-000008, filed 2020-02-04) carries the AI/ML 'ethical, technological, legal, regulatory... challenges... negatively affect our brands' risk factor. Christchurch/radicalization allegation about YouTube's recommendation algorithm fits the family. Not named in any filing; Legal Matters antitrust-only (no radicalization/Section-230 case named; Gonzalez-type matters not in Alphabet Legal Proceedings).",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"recommendation\" -> no radicalization litigation hits"],
+    "rationale": "Recommendation-algorithm radicalization harm covered by generic AI/ML risk factor via in-window FY2019 10-K; event not named."
+  },
+  "311": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2020-05-02 to 2021-05-02. In-window FY2020 10-K (0001652044-21-000010, goog-20201231.htm, filed 2021-02-03) carries the AI/ML ethical/brand risk factor. Auto-moderation false-positive (banning a conference) is within the AI content-moderation risk family. No specific disclosure; Legal Matters antitrust-only.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2020 10-K risk-factor read"],
+    "rationale": "Automated-moderation error covered by generic AI/ML risk language; event not named."
+  },
+  "367": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2020-06-17 to 2021-06-17. In-window FY2020 10-K (goog-20201231.htm, filed 2021-02-03) carries the AI/ML ethical-challenges/brand risk factor covering embedded model bias. iGPT/SimCLR bias is a research finding on Google-adjacent models; falls within the AI/ML 'ethical challenges' family. Not named; no litigation disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2020 10-K risk-factor read"],
+    "rationale": "Model-bias research finding covered by generic AI/ML ethical risk language; event not named."
+  },
+  "144": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2020-06-28 to 2021-06-28. In-window FY2020 10-K (goog-20201231.htm, filed 2021-02-03) carries the AI/ML ethical/brand risk factor. YouTube AI hate-speech detector falsely banning chess creators is within the AI content-moderation risk family. Not named in any filing; Legal Matters antitrust-only (severity_tier T1-limited is the incident harm rating, not a disclosure code).",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2020 10-K risk-factor read"],
+    "rationale": "AI moderation false-positive covered by generic AI/ML risk language; event not specifically disclosed."
+  },
+  "81": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2020-10-21 to 2021-10-21. In-window FY2020 10-K (filed 2021-02-03) carries the AI/ML ethical-challenges risk factor covering algorithmic bias. Chest X-ray classifier bias is an academic study of Google-associated AI; fits the AI/ML 'ethical challenges' family but is tangential to Alphabet's core products. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2020 10-K risk-factor read"],
+    "rationale": "Third-party research on AI bias covered by generic AI/ML ethical risk language; event not named; Alphabet role tangential."
+  },
+  "348": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2020-11-01 to 2021-11-01. In-window FY2020 10-K (goog-20201231.htm, filed 2021-02-03) carries the AI/ML ethical/brand risk factor. YouTube recommendation allegedly pushing election-fraud content fits the recommendation/content-algorithm risk family. Not named; 'recommendation' full-text hits are proxy noise; Legal Matters antitrust-only.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"recommendation\" -> no relevant litigation"],
+    "rationale": "Recommendation-algorithm harm covered by generic AI/ML risk language; event not named."
+  },
+  "347": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2021-05-06 to 2022-05-06. In-window FY2021 10-K (0001652044-22-000019, filed 2022-02-02) continues the AI/ML ethical/technological-challenges risk factor; Alphabet also carries Other Bets/Waymo autonomous-technology risk language. Waymo driving away from support crew is an AV autonomy-reliability event within the AI/ML technological-challenge family. Not named; Waymo+recall appears only in FY2024/FY2025 10-Ks (outside window); no litigation disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Waymo\" \"recall\" ciks=0001652044 -> hits only in FY2024/FY2025 10-Ks, outside this window"],
+    "rationale": "Waymo AV autonomy incident covered by generic AI/ML + Other Bets technological risk language; event not named."
+  },
+  "401": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2021-06-03 to 2022-06-03. In-window FY2021 10-K (0001652044-22-000019, filed 2022-02-02) carries the AI/ML ethical/brand risk factor. Google's knowledge-graph 'ugliest language' featured-answer result is an algorithmic-output harm within the AI/ML content-quality/ethical family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2021 10-K risk-factor read"],
+    "rationale": "Algorithmic featured-answer harm covered by generic AI/ML risk language; event not named."
+  },
+  "400": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2022-02-23 to 2023-02-23. In-window FY2021 10-K (2022-02-02) and FY2022 10-K (0001652044-23-000016, goog-20221231.htm, filed 2023-02-03) carry AI/ML ethical-challenge and content-quality risk language. Search returning fewer abortion-clinic results in rural/TRAP areas is a search-algorithm equity harm within the family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2021/FY2022 10-K risk-factor read"],
+    "rationale": "Search-algorithm disparity covered by generic AI/ML + content-quality risk language; event not named."
+  },
+  "465": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2022-03-03 to 2023-03-03. In-window FY2021 10-K (2022-02-02) and FY2022 10-K (goog-20221231.htm, filed 2023-02-03) carry AI/ML ethical/technological risk language. LAION-5B private-medical-photos finding concerns a third-party web-scraped dataset used in AI research; Alphabet role is peripheral, but data-privacy/AI-training harm fits the AI/ML risk family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2022 10-K risk-factor read"],
+    "rationale": "AI-training-data privacy harm covered by generic AI/ML risk language; event not named; Alphabet role peripheral (dataset is third-party)."
+  },
+  "285": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2022-07-18 to 2023-07-18. In-window FY2022 10-K (goog-20221231.htm, filed 2023-02-03) carries AI/ML ethical/content risk language; in-window FY2023 10-K edge. Google Lens offensive mistranslation is an ML accuracy/quality harm within the AI/ML content family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2022 10-K risk-factor read"],
+    "rationale": "ML mistranslation covered by generic AI/ML accuracy/content risk language; event not named."
+  },
+  "372": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Window 2022-07-22 to 2023-07-22. In-window FY2022 10-K (goog-20221231.htm, filed 2023-02-03) carries AI/ML technological-challenge risk language plus generic product-security/defect risk factors. Pixel 6a fingerprint false-accept is a biometric-ML security defect; fits the AI/ML technological family only loosely (security/hardware defect more than AI-harm), but same-family language is present so T3 over T4. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2022 10-K risk-factor read"],
+    "rationale": "Biometric-ML security defect loosely covered by generic AI/ML technological + product-security risk language; event not named. Low confidence due to marginal family fit."
+  },
+  "303": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2022-08-21 to 2023-08-21. In-window FY2022 10-K (goog-20221231.htm, filed 2023-02-03) carries AI/ML ethical/technological risk language; FY2023 10-K edge. Automated CSAM-detection false-positive (wrongly flagging a parent's photo) is an AI-classifier error with account/legal consequences to the user, within the AI/ML risk family. Not named in any filing; no COPPA/CSAM litigation named in Legal Matters (antitrust-only).",
+    "accounting_channel": null,
+    "specific_queries": ["Legal Matters review (FY2023 10-K) -> no CSAM/child-safety case named"],
+    "rationale": "AI CSAM-classifier false-positive covered by generic AI/ML risk language; event not named; no disclosed legal proceeding."
+  },
+  "1546": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2023-02-03 to 2024-02-03. In-window FY2022 10-K (goog-20221231.htm, filed 2023-02-03, edge) and FY2023 10-K (0001652044-24-000022, goog-20231231.htm, filed 2024-01-31) carry AI/ML risk language; FY2023 adds explicit AI 'inaccuracies... and other issues' language. Android Earthquake Alerts underestimating the Kahramanmaras quake is an ML-detection accuracy failure within the family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2023 10-K risk-factor read"],
+    "rationale": "ML earthquake-detection underestimation covered by generic + FY2023 AI-inaccuracy risk language; event not named."
+  },
+  "467": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-02-07 to 2024-02-07. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries explicit generative-AI risk language: 'Our evolving AI-related efforts may give rise to risks related to harmful content, inaccuracies... and other issues.' Bard's promo-video factual error (causing a temporary share drop) is squarely the AI-inaccuracy/reputational-harm family, but Bard appears in the 10-K only as a routine product ('Bard allows users to collaborate with experimental AI...'), never naming this incident. No 8-K or Legal Matters reference.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Bard\" ciks=0001652044 -> Bard only as product in FY2023 10-K + shareholder proposals; no incident disclosure"],
+    "rationale": "High-profile Bard inaccuracy covered by FY2023 generative-AI inaccuracy/reputational risk language; incident not specifically named (Bard = product mention) => T3 not T1."
+  },
+  "553": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-05-03 to 2024-05-03. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries generative-AI harmful-content/IP/inaccuracy risk language. Edward Hopper knowledge-panel AI-generated image is a generative-AI content/IP harm within the family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2023 10-K risk-factor read"],
+    "rationale": "Generative-AI image in knowledge panel covered by FY2023 AI harmful-content/IP risk language; event not named."
+  },
+  "554": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2023-05-21 to 2024-05-21. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries generative-AI harmful-content/IP-infringement risk language. Vermeer AI-generated top search result is a generative-AI content/IP harm within the family. Not named; no IP litigation named in Legal Matters (antitrust-only) despite incident severity_tier T2-moderate (harm rating, not a disclosed proceeding).",
+    "accounting_channel": null,
+    "specific_queries": ["Legal Matters review (FY2023 10-K) -> no AI-image IP case named"],
+    "rationale": "Generative-AI search-result image covered by FY2023 AI harmful-content/IP risk language; event not named; no disclosed proceeding."
+  },
+  "587": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-05-22 to 2024-05-22. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries AI 'discrimination' and harmful-content risk language. Image-recognition primate-labeling avoidance (Photos legacy bias) is an algorithmic-bias harm squarely within the family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2023 10-K risk-factor read"],
+    "rationale": "Image-recognition bias covered by FY2023 AI discrimination/harmful-content risk language; event not named."
+  },
+  "581": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2023-06-24 to 2024-06-24. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries AI harmful-content and brand/reputational risk language, plus content-quality/spam risk factors. Google Ads serving on AI-generated misinformation content farms is a content-quality/monetization-integrity harm within the family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2023 10-K risk-factor read"],
+    "rationale": "Ads on AI misinformation sites covered by generic content-quality + AI harmful-content risk language; event not named."
+  },
+  "574": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "Window 2023-07-05 to 2024-07-05. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries generative-AI inaccuracy/harmful-content risk language. However this incident is primarily G/O Media publishing AI-generated articles; Alphabet's connection is peripheral (Google as AI-ecosystem developer). Same-family AI risk language present so T3 over T4, but Alphabet is not the principal actor. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2023 10-K risk-factor read"],
+    "rationale": "Third-party (G/O Media) AI-article incident loosely covered by FY2023 AI inaccuracy risk language; Alphabet role peripheral; event not named. Low confidence due to attenuated Alphabet nexus."
+  },
+  "609": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-08-16 to 2024-08-16. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries AI 'inaccuracies... and other issues' and harmful-content risk language. Search AI's false geography featured-snippet ('no African country begins with K') is an AI-inaccuracy content harm within the family. Not named; no litigation.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline FY2023 10-K risk-factor read"],
+    "rationale": "Search-AI factual error covered by FY2023 AI-inaccuracy/harmful-content risk language; event not named."
+  },
+  "614": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-11-02 to 2024-11-02. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries generative-AI inaccuracy, defamation, and reputational-harm risk language. Bard generating false allegations against consulting firms (Australian inquiry) is squarely the AI-inaccuracy/defamation family, but Bard appears only as a routine product; incident not named.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Bard\" -> Bard as product only; no incident disclosure"],
+    "rationale": "Bard defamatory hallucination covered by FY2023 AI inaccuracy/defamation risk language; incident not named (Bard = product mention) => T3."
+  },
+  "640": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2023-12-11 to 2024-12-11. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries AI/ML technological-challenge and 'inaccuracies... and other issues' risk language plus Other Bets/Waymo autonomous-technology risk. Waymo double tow-truck collision and software recall is an AV-autonomy defect within the family. FY2024 10-K's 'Waymo'+'recall' language is filed 2025-02-05, OUTSIDE this window; the in-window FY2023 10-K does not name the recall. No litigation disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Waymo\" \"recall\" -> hits only FY2024 (2025-02-05) & FY2025 10-Ks, outside window; in-window FY2023 10-K silent on recall"],
+    "rationale": "Waymo AV software recall covered by generic AI/ML + Other Bets technological risk language; the specific recall is not named in any in-window filing => T3 not T1."
+  },
+  "623": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Window 2023-12-12 to 2024-12-12. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries generative-AI inaccuracy/harmful-content and legal-liability risk language. Bard generating fake legal citations (Michael Cohen case) is squarely the AI-hallucination/inaccuracy family, but Bard appears only as a routine product; incident not named.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Bard\" -> Bard as product only; no incident disclosure"],
+    "rationale": "Bard fabricated-citation hallucination covered by FY2023 AI inaccuracy risk language; incident not named (Bard = product mention) => T3."
+  },
+  "853": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2024-02-03 to 2025-02-03. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries AI/ML technological-challenge risk language plus Other Bets/Waymo autonomous-technology risk. Passengers feeling trapped during a Waymo sensor obstruction is an AV-autonomy/safety event within the family. Not named; no litigation disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Waymo\" \"recall\" -> no in-window incident-specific disclosure"],
+    "rationale": "Waymo AV sensor-obstruction incident covered by generic AI/ML + Other Bets technological risk language; event not named."
+  },
+  "647": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Window 2024-02-06 to 2025-02-06. In-window FY2023 10-K (goog-20231231.htm, filed 2024-01-31) carries AI/ML technological-challenge risk language plus Other Bets/Waymo autonomous-technology risk; FY2024 10-K (filed 2025-02-05, edge) broadens Waymo safety/recall language but does not name this specific collision. Waymo failing to detect an obscured cyclist (collision, minor injuries) is an AV-perception safety defect within the family. No litigation disclosed for this event.",
+    "accounting_channel": null,
+    "specific_queries": ["efts q=\"Waymo\" \"recall\" -> FY2024/FY2025 10-K Waymo/recall language generic, not naming this collision"],
+    "rationale": "Waymo AV perception/collision incident covered by generic AI/ML + Other Bets technological risk language; event not specifically named => T3."
+  }
+}

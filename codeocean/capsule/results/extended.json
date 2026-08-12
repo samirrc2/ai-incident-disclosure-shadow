@@ -1,0 +1,491 @@
+{
+  "N": 307,
+  "concentration": {
+    "n_issuers": 21,
+    "HHI": 0.1813,
+    "HHI_interpretation": "1/nissuers=0.0476 (min); 1.0 (max)",
+    "top_issuers": [
+      [
+        "Alphabet Inc.",
+        86
+      ],
+      [
+        "Meta Platforms, Inc.",
+        81
+      ],
+      [
+        "Tesla, Inc.",
+        36
+      ],
+      [
+        "Microsoft Corporation",
+        35
+      ],
+      [
+        "Amazon.com, Inc.",
+        16
+      ],
+      [
+        "General Motors Company",
+        14
+      ],
+      [
+        "Apple Inc.",
+        9
+      ],
+      [
+        "SoundThinking, Inc.",
+        4
+      ],
+      [
+        "McDonald's Corporation",
+        4
+      ],
+      [
+        "UnitedHealth Group Inc.",
+        3
+      ]
+    ],
+    "top2_share": 0.544,
+    "top5_share": 0.827
+  },
+  "robustness_concentration": {
+    "full_shadow": 0.9772,
+    "LOIO_min": 0.9683,
+    "LOIO_max": 0.9863,
+    "LOIO_by_issuer": {
+      "Meta Platforms, Inc.": 0.9779,
+      "Alphabet Inc.": 0.9683,
+      "Microsoft Corporation": 0.9743,
+      "Tesla, Inc.": 0.9779,
+      "The Goldman Sachs Group Inc.": 0.9771,
+      "Amazon.com, Inc.": 0.9759,
+      "Zillow Group, Inc.": 0.9804,
+      "UnitedHealth Group Inc.": 0.977,
+      "Uber Technologies, Inc.": 0.977,
+      "General Motors Company": 0.9863,
+      "Apple Inc.": 0.9765,
+      "SoundThinking, Inc.": 0.9769,
+      "Serve Robotics Inc.": 0.977,
+      "Walmart Inc.": 0.977,
+      "McDonald's Corporation": 0.9769,
+      "Workday, Inc.": 0.9771,
+      "Snap Inc.": 0.977,
+      "The Cigna Group": 0.9771,
+      "PayPal Holdings, Inc.": 0.977,
+      "Integra LifeSciences Holdings": 0.977,
+      "Palantir Technologies Inc.": 0.9771
+    },
+    "drop_top2": {
+      "issuers": [
+        "Alphabet Inc.",
+        "Meta Platforms, Inc."
+      ],
+      "n": 140,
+      "shadow": 0.9643
+    },
+    "drop_top5": {
+      "issuers": [
+        "Alphabet Inc.",
+        "Amazon.com, Inc.",
+        "Meta Platforms, Inc.",
+        "Microsoft Corporation",
+        "Tesla, Inc."
+      ],
+      "n": 53,
+      "shadow": 0.9245
+    }
+  },
+  "clustered_inference": {
+    "shadow_incidentlevel_wilson": [
+      0.9772,
+      0.9537,
+      0.9889
+    ],
+    "shadow_issuer_cluster_bootstrap": {
+      "mean": 0.9753,
+      "ci95": [
+        0.9389,
+        0.9959
+      ],
+      "B": 10000,
+      "seed": 42
+    },
+    "T1_issuer_cluster_bootstrap": {
+      "mean": 0.0144,
+      "ci95": [
+        0.0,
+        0.0404
+      ]
+    },
+    "issuer_level_mean_shadow": 0.9397,
+    "note": "Issuer-clustered bootstrap resamples the 21 issuers with replacement; widens vs incident-level Wilson. GLMM not estimated (only 7 substantive positives -> separation)."
+  },
+  "formal_tests": {
+    "by_severity": [
+      "chi2",
+      0.5095,
+      0.066,
+      {
+        "T2-moderate": [
+          1,
+          49
+        ],
+        "T3-severe": [
+          2,
+          40
+        ],
+        "T1-limited": [
+          4,
+          211
+        ]
+      }
+    ],
+    "by_role": [
+      "chi2",
+      0.0054,
+      0.184,
+      {
+        "both": [
+          5,
+          230
+        ],
+        "developer": [
+          0,
+          58
+        ],
+        "deployer": [
+          2,
+          12
+        ]
+      }
+    ],
+    "by_parent": [
+      "fisher_exact",
+      0.2917,
+      0.026,
+      {
+        "LISTED": [
+          5,
+          255
+        ],
+        "PARENT": [
+          2,
+          45
+        ]
+      }
+    ],
+    "year_trend_cochran_armitage": {
+      "z": -0.282,
+      "p": 0.7779,
+      "succ_by_year": {
+        "2019": 0,
+        "2020": 0,
+        "2021": 2,
+        "2022": 0,
+        "2023": 3,
+        "2024": 2,
+        "2025": 0,
+        "2026": 0
+      },
+      "n_by_year": {
+        "2019": 21,
+        "2020": 29,
+        "2021": 37,
+        "2022": 35,
+        "2023": 47,
+        "2024": 47,
+        "2025": 60,
+        "2026": 31
+      }
+    }
+  },
+  "formal_tests_note": "Only 7 substantive (T1+T2) positives -> tests are low-powered; non-significant results indicate 'no detectable difference', not evidence of equality.",
+  "issuer_level": {
+    "table": {
+      "Alphabet Inc.": {
+        "n": 86,
+        "T1": 0,
+        "T2": 0,
+        "T3": 86,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Meta Platforms, Inc.": {
+        "n": 81,
+        "T1": 1,
+        "T2": 1,
+        "T3": 78,
+        "T4": 1,
+        "shadow": 0.975,
+        "has_substantive": true
+      },
+      "Tesla, Inc.": {
+        "n": 36,
+        "T1": 0,
+        "T2": 1,
+        "T3": 34,
+        "T4": 1,
+        "shadow": 0.972,
+        "has_substantive": true
+      },
+      "Microsoft Corporation": {
+        "n": 35,
+        "T1": 0,
+        "T2": 0,
+        "T3": 30,
+        "T4": 5,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Amazon.com, Inc.": {
+        "n": 16,
+        "T1": 0,
+        "T2": 0,
+        "T3": 14,
+        "T4": 2,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "General Motors Company": {
+        "n": 14,
+        "T1": 2,
+        "T2": 1,
+        "T3": 10,
+        "T4": 1,
+        "shadow": 0.786,
+        "has_substantive": true
+      },
+      "Apple Inc.": {
+        "n": 9,
+        "T1": 0,
+        "T2": 0,
+        "T3": 5,
+        "T4": 4,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "SoundThinking, Inc.": {
+        "n": 4,
+        "T1": 0,
+        "T2": 0,
+        "T3": 4,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "McDonald's Corporation": {
+        "n": 4,
+        "T1": 0,
+        "T2": 0,
+        "T3": 3,
+        "T4": 1,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "UnitedHealth Group Inc.": {
+        "n": 3,
+        "T1": 0,
+        "T2": 0,
+        "T3": 1,
+        "T4": 2,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Uber Technologies, Inc.": {
+        "n": 3,
+        "T1": 0,
+        "T2": 0,
+        "T3": 3,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Serve Robotics Inc.": {
+        "n": 3,
+        "T1": 0,
+        "T2": 0,
+        "T3": 2,
+        "T4": 1,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Walmart Inc.": {
+        "n": 2,
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 2,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Snap Inc.": {
+        "n": 2,
+        "T1": 0,
+        "T2": 0,
+        "T3": 2,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "PayPal Holdings, Inc.": {
+        "n": 2,
+        "T1": 0,
+        "T2": 0,
+        "T3": 2,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Integra LifeSciences Holdings": {
+        "n": 2,
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 2,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "The Goldman Sachs Group Inc.": {
+        "n": 1,
+        "T1": 0,
+        "T2": 0,
+        "T3": 1,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Zillow Group, Inc.": {
+        "n": 1,
+        "T1": 1,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "shadow": 0.0,
+        "has_substantive": true
+      },
+      "Workday, Inc.": {
+        "n": 1,
+        "T1": 0,
+        "T2": 0,
+        "T3": 1,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "The Cigna Group": {
+        "n": 1,
+        "T1": 0,
+        "T2": 0,
+        "T3": 1,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      },
+      "Palantir Technologies Inc.": {
+        "n": 1,
+        "T1": 0,
+        "T2": 0,
+        "T3": 1,
+        "T4": 0,
+        "shadow": 1.0,
+        "has_substantive": false
+      }
+    },
+    "n_issuers_with_substantive": 4,
+    "pct_issuers_with_substantive": 0.19
+  },
+  "by_category": {
+    "autonomous_vehicle": {
+      "n": 66,
+      "T1": 2,
+      "T2": 1,
+      "T3": 63,
+      "T4": 0,
+      "substantive": 3
+    },
+    "copyright_ip": {
+      "n": 10,
+      "T1": 1,
+      "T2": 0,
+      "T3": 6,
+      "T4": 3,
+      "substantive": 1
+    },
+    "discrimination_bias": {
+      "n": 16,
+      "T1": 0,
+      "T2": 1,
+      "T3": 14,
+      "T4": 1,
+      "substantive": 1
+    },
+    "privacy_surveillance": {
+      "n": 11,
+      "T1": 0,
+      "T2": 0,
+      "T3": 10,
+      "T4": 1,
+      "substantive": 0
+    },
+    "misinformation_content": {
+      "n": 70,
+      "T1": 0,
+      "T2": 0,
+      "T3": 70,
+      "T4": 0,
+      "substantive": 0
+    },
+    "safety_physical": {
+      "n": 19,
+      "T1": 0,
+      "T2": 0,
+      "T3": 14,
+      "T4": 5,
+      "substantive": 0
+    },
+    "employment_hiring": {
+      "n": 11,
+      "T1": 1,
+      "T2": 0,
+      "T3": 7,
+      "T4": 3,
+      "substantive": 1
+    },
+    "generative_error": {
+      "n": 57,
+      "T1": 0,
+      "T2": 0,
+      "T3": 53,
+      "T4": 4,
+      "substantive": 0
+    },
+    "other": {
+      "n": 47,
+      "T1": 0,
+      "T2": 1,
+      "T3": 41,
+      "T4": 5,
+      "substantive": 1
+    }
+  },
+  "retrieval_validation": {
+    "audited": 40,
+    "false_negatives_found": 0,
+    "false_negative_rate": 0.0,
+    "rule_of_three_upper95": 0.075,
+    "interpretation": "0 missed disclosures in the audited sample; upper 95% bound ~3/n."
+  },
+  "window_robustness": {
+    "substantive_6mo": 3,
+    "substantive_12mo": 7,
+    "substantive_18mo": 7,
+    "substantive_24mo": 7,
+    "shadow_6mo": 0.9902,
+    "shadow_12mo": 0.9772,
+    "shadow_18mo": 0.9772,
+    "shadow_24mo": 0.9772,
+    "note": "Substantive disclosures fall in the fiscal-year 10-K ~9-11 months post-incident; robust to lengthening (12=18=24), only shortening to 6mo drops 4 of 7 into T3."
+  }
+}

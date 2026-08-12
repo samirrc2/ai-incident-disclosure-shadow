@@ -1,0 +1,107 @@
+{
+  "1588": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Alphabet does not name this Myanmar forced-scamming/'KT platform' event in any filing (the platform is not a Google product; Google's linkage is tangential). Same-family generative-AI misuse/harm risk language is present. Alphabet FY2025 10-K (accession 0001652044-26-000018, filed 2026-02-05): 'Issues in the development and use of AI may result in reputational harm and increased liability exposure' and 'Unintended consequences, uses, or customization of our AI tools and systems may negatively affect human rights, privacy, employment, or other social concerns, which may result in claims, lawsuits, brand or reputational harm, and increased regulatory scrutiny.' The in-window Q2 2026 10-Q (0001652044-26-000071, filed 2026-07-23) continues to carry 'artificial intelligence' risk discussion. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22artificial+intelligence%22 forms=10-Q ciks=0001652044 startdt=2026-06-01 enddt=2026-08-03 -> hit 0001652044-26-000071 (Q2 2026 10-Q)",
+      "FY2025 10-K risk-factor read: AI misuse/harm + liability language confirmed"
+    ],
+    "rationale": "Alphabet carries generative-AI harm/misuse risk language (matured AI-harm family from FY2018 baseline). The specific KT-platform trafficking/scam event is not disclosed and is not attributable to a Google product; only same-family AI-misuse risk language exists -> GENERIC-RISK-LANGUAGE, event not named."
+  },
+  "1583": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "The July 4 2026 Waymo robotaxi firework fire (unoccupied, no injuries) is not named in any Alphabet filing. Waymo is named in Alphabet FY2025 10-K (0001652044-26-000018, filed 2026-02-05) and Q1 2026 10-Q (0001652044-26-000048); Other Bets/transportation and AI-product risk language present, though autonomous-vehicle-specific safety/liability language is limited. In-window filing is the Q2 2026 10-Q (0001652044-26-000071, filed 2026-07-23), which carries continued AI/technology risk language. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22Waymo%22 forms=10-K,10-Q ciks=0001652044 startdt=2026-01-01 enddt=2026-08-03 -> hits: FY2025 10-K 0001652044-26-000018, Q1 2026 10-Q 0001652044-26-000048",
+      "efts q=%22artificial+intelligence%22 forms=10-Q ciks=0001652044 -> Q2 2026 10-Q 0001652044-26-000071 (in-window)"
+    ],
+    "rationale": "Minor no-injury Waymo vehicle fire; not specifically disclosed. Alphabet names Waymo and carries same-family autonomous/AI-product risk language, but no event-specific disclosure -> GENERIC-RISK-LANGUAGE. Confidence medium because AV-specific safety/liability language is thin."
+  },
+  "550": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Individual crash (Autopilot, school bus, Hollister NC) not named in filings. In-window 10-K is Tesla FY2023 (accession 0001628280-24-002390, tsla-20231231.htm, filed 2024-01-29), which carries same-family Autopilot/FSD safety+regulatory risk language: 'our vehicles have been involved and we expect in the future will be involved in accidents resulting in death or personal injury, and such accidents where Autopilot, Enhanced Autopilot or FSD Capability features are engaged are the subject of significant public attention, especially in light of NHTSA's Standing General Order...' and 'We have experienced, and we expect to continue to face, claims and regulatory scrutiny arising from or related to misuse or claimed failures... of such new technologies.' Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22Autopilot%22 forms=10-K ciks=0001318605 startdt=2023-06-01 enddt=2024-03-31 -> FY2023 10-K 0001628280-24-002390",
+      "FY2023 10-K risk-factor read confirming Autopilot/FSD accident + NHTSA language"
+    ],
+    "rationale": "Tesla carries Autopilot/FSD safety+regulatory risk language every year from FY2019. This specific crash is not named; only same-family risk language present -> GENERIC-RISK-LANGUAGE."
+  },
+  "540": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FSD Beta pedestrian/crosswalk non-yield event not named in filings. In-window 10-K = Tesla FY2023 (0001628280-24-002390, filed 2024-01-29) carrying the Autopilot/FSD accident + NHTSA Standing General Order + 'misuse or claimed failures... of such new technologies' risk language (quoted under incident 550). Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "Shares FY2023 10-K baseline (efts q=%22Autopilot%22 forms=10-K ciks=0001318605 2023-06/2024-03 -> 0001628280-24-002390)"
+    ],
+    "rationale": "Same-family Autopilot/FSD risk language present in in-window 10-K; specific FSD Beta event not disclosed -> GENERIC-RISK-LANGUAGE."
+  },
+  "560": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Autopilot rear-end into parked Freightliner (PA Turnpike) not named in filings. In-window 10-K = Tesla FY2023 (0001628280-24-002390, filed 2024-01-29), same-family Autopilot/FSD accident + NHTSA risk language (quoted under 550). Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "Shares FY2023 10-K baseline (0001628280-24-002390)"
+    ],
+    "rationale": "Individual Autopilot crash not disclosed; same-family risk language present -> GENERIC-RISK-LANGUAGE."
+  },
+  "711": {
+    "code": "T2",
+    "confidence": "medium-high",
+    "evidence": "NHTSA's April 2024 probe into Autopilot (examining adequacy of Tesla's December 2023 recall of ~2M vehicles). Tesla's in-window FY2024 10-K (accession 0001628280-25-003063, tsla-20241231.htm, filed 2025-01-30) discloses the NHTSA/regulatory and DOJ Autopilot matters as legal/contingency items: EDGAR full-text search confirms this 10-K contains 'Department of Justice' co-occurring with 'Autopilot' (efts q=%22Department+of+Justice%22+%22Autopilot%22 forms=10-K ciks=0001318605 2024-01/2025-03 -> hits 0001628280-24-002390 and 0001628280-25-003063), and the FY2024 10-K also matches 'recall'+'Autopilot' (efts q=%22recall%22+%22Autopilot%22 -> 0001628280-25-003063), consistent with disclosure of the December 2023 Autopilot recall and ongoing NHTSA investigations/DOJ document requests in Legal Proceedings / Commitments & Contingencies. Risk factors additionally reference NHTSA's Standing General Order on ADAS crash reporting.",
+    "accounting_channel": "Item 3 Legal Proceedings and Commitments & Contingencies note (ASC 450 loss contingencies) - NHTSA Autopilot investigations, December 2023 Autopilot recall (OTA update), and DOJ document requests/subpoenas relating to Autopilot/FSD.",
+    "specific_queries": [
+      "efts q=%22Department+of+Justice%22+%22Autopilot%22 forms=10-K ciks=0001318605 startdt=2024-01-01 enddt=2025-03-31 -> FY2024 10-K 0001628280-25-003063 (and FY2023)",
+      "efts q=%22recall%22+%22Autopilot%22 forms=10-K ciks=0001318605 2025 -> 0001628280-25-003063"
+    ],
+    "rationale": "The event itself is a NHTSA regulatory investigation/recall-adequacy probe. Tesla discloses the NHTSA Autopilot investigations, the December 2023 recall, and DOJ requests as legal/regulatory contingencies (NHTSA/recalls/DOJ bucket) -> LEGAL-PROCEEDINGS. Coded T2 rather than T1 because disclosure is framed as regulatory/legal contingency (generic NHTSA/DOJ Autopilot investigations) rather than a specifically-narrated incident."
+  },
+  "707": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Autopilot crash into parked Fullerton CA police vehicle not named in filings. In-window 10-K = Tesla FY2024 (0001628280-25-003063, tsla-20241231.htm, filed 2025-01-30), which carries same-family Autopilot/FSD risk language: 'our vehicles have been involved and we expect in the future will be involved in accidents resulting in death or personal injury, and such accidents where Autopilot, Enhanced Autopilot or FSD (Supervised) features are engaged are the subject of significant public attention, especially in light of NHTSA's Standing General Order...' Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22Autopilot%22 forms=10-K ciks=0001318605 -> FY2024 10-K 0001628280-25-003063; risk-factor read confirmed"
+    ],
+    "rationale": "Individual Autopilot crash not disclosed; same-family Autopilot/FSD risk language present in in-window 10-K -> GENERIC-RISK-LANGUAGE."
+  },
+  "889": {
+    "code": "T3",
+    "confidence": "medium-high",
+    "evidence": "'Actually Smart Summon'-linked parking-lot collisions and the associated NHTSA inquiry are not specifically named as a legal/safety matter in filings. Where 'Actually Smart Summon' does appear (Q3 2025 8-K earnings exhibit 0001628280-25-045861 and Q3 2025 10-Q 0001628280-25-045968) it is a product/revenue reference only ('mentioned in the Financial Summary... lower one-time FSD revenue recognition YoY'), not a NHTSA/legal disclosure. In-window 10-K = Tesla FY2024 (0001628280-25-003063, filed 2025-01-30) carries the general Autopilot/FSD safety+NHTSA risk language. The specific Smart Summon investigation is not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22Smart+Summon%22 forms=10-K,10-Q,8-K ciks=0001318605 startdt=2025-01-01 enddt=2026-02-28 -> 8-K 0001628280-25-045861, 10-Q 0001628280-25-045968 (product/revenue context only)",
+      "FY2024 10-K Autopilot/FSD + NHTSA risk language baseline (0001628280-25-003063)"
+    ],
+    "rationale": "Smart Summon appears only as a product/revenue item; the NHTSA collision probe is not specifically disclosed. Only same-family generic Autopilot/FSD risk language covers it -> GENERIC-RISK-LANGUAGE. Conservative T3 (not T2) because no legal proceeding names this event."
+  },
+  "940": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Cybertruck FSD crash into pole (Reno NV) not named in filings. In-window 10-K = Tesla FY2025 (accession 0001628280-26-003952, filed 2026-01-29; efts q=%22Autopilot%22 forms=10-K,10-Q ciks=0001318605 2026 confirms Autopilot present), which continues the same-family Autopilot/FSD safety+NHTSA risk language. Event not named. (FY2024 10-K filed 2025-01-30 pre-dates the 2025-02-17 incident and is out of window.)",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22Autopilot%22 forms=10-K,10-Q ciks=0001318605 startdt=2026-01-01 enddt=2026-08-03 -> FY2025 10-K 0001628280-26-003952 (in-window)"
+    ],
+    "rationale": "Individual FSD crash not disclosed; in-window FY2025 10-K carries same-family Autopilot/FSD risk language -> GENERIC-RISK-LANGUAGE."
+  },
+  "1552": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Fatal Katy TX home crash (driver-assist reportedly engaged, June 19 2026) not named in filings. FY2026 10-K (in-window) not yet filed as of 2026-08-03; the in-window quarterly is Tesla Q2 2026 10-Q (accession 0001628280-26-049270, filed 2026-07-23), which carries Autopilot language (efts q=%22Autopilot%22 forms=10-K,10-Q ciks=0001318605 2026 -> hit). The standing FY2025 10-K (0001628280-26-003952, filed 2026-01-29) carries the Autopilot/FSD safety+NHTSA risk language. Event not named.",
+    "accounting_channel": null,
+    "specific_queries": [
+      "efts q=%22Autopilot%22 forms=10-K,10-Q ciks=0001318605 startdt=2026-01-01 enddt=2026-08-03 -> Q2 2026 10-Q 0001628280-26-049270 (in-window), FY2025 10-K 0001628280-26-003952"
+    ],
+    "rationale": "Recent fatal driver-assist crash not specifically disclosed; in-window Q2 2026 10-Q and standing FY2025 10-K carry same-family Autopilot/FSD risk language -> GENERIC-RISK-LANGUAGE."
+  }
+}

@@ -1,0 +1,16 @@
+# The AI Incident Disclosure Shadow — Python dependencies. Python 3.12+.
+#   pip install -r requirements.txt
+#
+# Core — needed to REPRODUCE every result, table, and figure from the frozen data
+# (this is the only path most users need; it is offline and free):
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+pytest>=8.0            # runs the claim-verifier tests
+
+# Data-gathering path only — NOT needed for reproduction. These drive the original
+# AIID parse and point-in-time SEC EDGAR full-text search that produced the frozen
+# coded table (data/disclosure_coding.csv):
+# requests>=2.31
+# python-dateutil>=2.8
+# tqdm>=4.65

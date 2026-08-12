@@ -1,0 +1,245 @@
+{
+  "_meta": {
+    "company": "Alphabet Inc.",
+    "cik": "1652044",
+    "baseline_filings_examined": [
+      "FY2025 10-K, accession 0001652044-26-000018, goog-20251231.htm, filed 2026-02-05 (covers all incidents Jan-Dec 2025)",
+      "Q1 2026 10-Q, accession 0001652044-26-000048, filed 2026-04-30 (covers Jan-Mar 2026 incidents)"
+    ],
+    "baseline_ai_risk_language": "FY2025 10-K Item 1A Risk Factors contain broad same-family AI risk language: 'Issues in the development and use of AI may result in reputational harm and increased liability exposure.'; 'Our evolving AI-enabled products and services may give rise to risks related to harmful content, inaccuracies, discrimination, intellectual property infringement or misappropriation, violation of rights of publicity, defamation, data privacy, cybersecurity, minor protection, and other issues.'; 'Unintended consequences, uses, or customization of our AI tools and systems may negatively affect human rights, privacy, employment, or other social concerns, which may result in claims, lawsuits, brand or reputational harm, and increased regulatory scrutiny.' Autonomous-vehicle risk is addressed via Waymo ('now providing fully autonomous, paid ride-hailing services') and Other Bets emerging-technology risk.",
+    "legal_proceedings_finding": "Item 3 Legal Proceedings / contingencies and the risk-factor litigation discussion name ONLY antitrust/competition matters individually (DOJ Search final judgment Dec 2025; adtech E.D. Va. April 2025 mixed decision; Texas-led adtech case). No AI-product-liability, defamation, publicity-rights, chatbot, deepfake, data-privacy-incident, or Waymo/NHTSA matter is individually named.",
+    "fts_confirmations": {
+      "Starbuck": "0 hits (incident 1248 defamation suit not disclosed)",
+      "NotebookLM": "1 hit but only in FY2024 10-K (0001652044-25-000014, filed 2025-02-05) as a generic product mention predating the Jan-2026 Greene lawsuit; the incident/litigation itself not disclosed (1386)",
+      "Gavalas": "0 hits (incident 1431 wrongful-death suit not disclosed)",
+      "NHTSA": "0 hits (no Waymo regulatory probe individually named — 1300, 1361, etc.)",
+      "Antigravity": "0 hits (incident 1433 not disclosed)",
+      "Outsider Enterprise": "0 hits (incident 1534 not disclosed)"
+    },
+    "coding_summary": "Every incident in this batch maps to a risk family expressly covered by Alphabet's generic AI and autonomous-vehicle risk language (harmful content, inaccuracies, defamation, violation of rights of publicity, IP, cybersecurity/data privacy, AI security threats, unintended AI-tool consequences, and Waymo/AV safety+regulatory risk), but no incident is named and none appears in Legal Proceedings. All coded T3 GENERIC-RISK-LANGUAGE. Confidence is high for 2025 incidents (fully covered by the FY2025 10-K with FTS-confirmed non-disclosure) and medium for later-2026 incidents whose forward 12-month disclosure window (FY2026 10-K, due ~Feb 2027) remains open, though same-family risk language is already present in contemporaneous 2026 filings."
+  },
+  "1211": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K (0001652044-26-000018) risk factor: AI products 'may give rise to risks related to harmful content, inaccuracies ... defamation ... and other issues' and 'reputational harm and increased liability exposure.' AI Overviews false restaurant specials fall squarely within 'inaccuracies'/'harmful content'. Legal Proceedings name only antitrust matters; no such event disclosed.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline 10-K risk-factor read; generic AI-inaccuracy family confirmed, no per-incident FTS needed"],
+    "rationale": "Google AI Overviews inaccuracy; covered by generic 'inaccuracies/harmful content' AI risk language, event not named. T3."
+  },
+  "1210": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K risk factors: 'Features that rely on AI may be susceptible to unanticipated security threats' and AI risks include 'cybersecurity' and 'data privacy'. Malicious Nx npm packages weaponizing AI coding agents fall within AI-security-threat family. Not named in filings.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI security-threat / cybersecurity family"],
+    "rationale": "Third-party supply-chain attack weaponizing AI coding agents; same-family AI security risk language present, event not named. T3."
+  },
+  "1205": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K risk factors cover AI 'harmful content, inaccuracies ... defamation' and reputational harm. Generative-AI amplification of false information during Kirk coverage falls within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI harmful-content/inaccuracy family"],
+    "rationale": "AI misinformation event; generic AI harmful-content/inaccuracy language present, not named. T3."
+  },
+  "1431": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'Gavalas' = 0 hits; not in Legal Proceedings. FY2025 10-K risk factors: AI 'unintended consequences ... may result in claims, lawsuits, brand or reputational harm' and AI risks include 'harmful content' and 'minor protection.' Wrongful-death/self-harm chatbot claim covered by generic language, litigation not named.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"Gavalas\" -> 0 hits", "baseline Legal Proceedings read -> only antitrust named"],
+    "rationale": "Wrongful-death suit alleging Gemini reinforced delusions; specific litigation not disclosed (FTS 0), but same-family 'unintended consequences/lawsuits/harmful content' AI language present. T3."
+  },
+  "1251": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K risk factors: AI 'inaccuracies' and 'harmful content' plus resulting 'increased regulatory scrutiny.' AI-generated hunting-regulation errors and multi-state agency warnings fall within inaccuracy family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI-inaccuracy family"],
+    "rationale": "AI search-result inaccuracy leading to citation; generic AI-inaccuracy language present, event not named. T3."
+  },
+  "1248": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'Starbuck' = 0 hits; not in Legal Proceedings (only antitrust named). FY2025 10-K risk factors expressly list 'defamation' and 'violation of rights of publicity' among AI-enabled-product risks, and note AI issues 'may result in claims, lawsuits.' Defamation suit covered by generic language, not named.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"Starbuck\" -> 0 hits", "baseline Legal Proceedings read -> only antitrust named"],
+    "rationale": "Defamation lawsuit over Bard/Gemini/Gemma outputs; specific suit not disclosed (FTS 0) but 'defamation'/'claims, lawsuits' AI risk language present. T3."
+  },
+  "1269": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K discloses Waymo fully autonomous ride-hailing operations and Other Bets emerging-technology risk (offerings 'may not be successful'). Autonomous-vehicle safety incidents fall within this family. No specific incident/NHTSA matter named (FTS 'NHTSA' = 0).",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"NHTSA\" -> 0 hits", "baseline Waymo/AV risk read"],
+    "rationale": "Waymo AV struck/killed a cat; generic Waymo/AV risk framing present, event not named. T3."
+  },
+  "1433": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'Antigravity' = 0 hits. FY2025 10-K risk factors: AI risks include 'inaccuracies' and 'unintended consequences, uses, or customization of our AI tools and systems' that 'may result in claims, lawsuits, brand or reputational harm.' AI IDE deleting a drive falls within AI-tool unintended-consequence family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"Antigravity\" -> 0 hits", "baseline read; AI-tool unintended-consequences family"],
+    "rationale": "Google Antigravity IDE destructive command; product/event not disclosed (FTS 0) but generic AI-tool unintended-consequences language present. T3."
+  },
+  "1300": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'NHTSA' = 0 hits; probe not individually named. FY2025 10-K covers Waymo autonomous ride-hailing and emerging-technology risk with 'increased regulatory scrutiny' language. Waymo passing stopped school buses / NHTSA probe within AV safety+regulatory family.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"NHTSA\" -> 0 hits", "baseline Waymo/AV risk read"],
+    "rationale": "Waymo school-bus violations and NHTSA probe; generic AV safety/regulatory risk present, matter not named. T3."
+  },
+  "1337": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K Waymo autonomous ride-hailing operations and Other Bets emerging-technology risk. Robotaxi failing to detect trapped occupant is an AV-operation/safety event within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline Waymo/AV risk read"],
+    "rationale": "Waymo transported undetected person in trunk; generic AV operational-risk framing present, event not named. T3."
+  },
+  "1302": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K risk factors: AI-enabled products give rise to 'harmful content ... violation of rights of publicity, defamation' risks; SynthID relates to AI content authenticity. Viral AI-generated image (SynthID-detected) is within AI harmful/synthetic-content family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI synthetic-content/harmful-content family"],
+    "rationale": "AI-generated deepfake image bearing Google SynthID; generic AI harmful/synthetic-content language present, event not named. T3."
+  },
+  "1316": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K risk factors expressly list 'defamation' and 'inaccuracies' among AI-enabled-product risks. AI search summary falsely implicating a musician is squarely defamation/inaccuracy family. Not named; no such litigation in Legal Proceedings.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI defamation/inaccuracy family; Legal Proceedings read"],
+    "rationale": "AI search summary defamatory inaccuracy; generic 'defamation/inaccuracies' AI language present, event not named. T3."
+  },
+  "1326": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FY2025 10-K Waymo autonomous ride-hailing operations and emerging-technology risk. Robotaxi behavior during a power outage causing gridlock is an AV operational event within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline Waymo/AV risk read"],
+    "rationale": "Waymo fleet contributing to gridlock during outage; generic AV operational-risk framing present, event not named. T3."
+  },
+  "1333": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Jan-2026 incident; forward FY2026 10-K window open (due ~Feb 2027). Same-family AI risk language present in FY2025 10-K and Q1 2026 10-Q: AI 'harmful content' and synthetic-media/publicity risks. AI-generated Maduro misinformation within this family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI synthetic/harmful-content family"],
+    "rationale": "AI-generated misinformation images; generic AI harmful/synthetic-content language present, event not named; 2026 forward window still open. T3."
+  },
+  "1541": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Jan-2026 incident; forward FY2026 10-K window open. Waymo AV operational/safety and emerging-technology risk language present in FY2025 10-K and Q1 2026 10-Q. Robotaxi entering light-rail tracks is an AV operational/safety event within this family. Not named (FTS 'NHTSA' = 0).",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"NHTSA\" -> 0 hits", "baseline Waymo/AV risk read"],
+    "rationale": "Waymo AV entered light-rail tracks; generic AV operational-risk framing present, event not named. T3."
+  },
+  "1361": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Jan-2026 incident; forward window open. FTS 'NHTSA' = 0 hits; probe not named. FY2025 10-K / Q1 2026 10-Q carry Waymo AV safety and 'increased regulatory scrutiny' emerging-technology risk language. Robotaxi striking a child (NHTSA filing) within AV safety+regulatory family.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"NHTSA\" -> 0 hits", "baseline Waymo/AV risk read"],
+    "rationale": "Waymo AV struck a child near a school; generic AV safety/regulatory risk framing present, incident/NHTSA matter not named. T3."
+  },
+  "1386": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FTS 'NotebookLM' returns only a generic FY2024 10-K product mention predating this Jan-2026 lawsuit; the voice-cloning suit itself is not disclosed. FY2025 10-K risk factors expressly list 'violation of rights of publicity' among AI-enabled-product risks. Litigation not named (not in Legal Proceedings); 2026 forward window open.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"NotebookLM\" -> 1 hit, FY2024 10-K product mention only (not the incident)", "Legal Proceedings read -> only antitrust named"],
+    "rationale": "Publicity-rights suit over NotebookLM synthetic voice; specific litigation not disclosed, but 'violation of rights of publicity' AI risk language present. T3."
+  },
+  "1358": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Jan-2026 incident; forward window open. Same-family AI language present: AI 'harmful content' and synthetic-media risks. AI-altered images distorting evidence within this family; not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI synthetic/harmful-content family"],
+    "rationale": "AI-altered images distorting evidence; generic AI harmful/synthetic-content language present, event not named. T3."
+  },
+  "1369": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Feb-2026 incident; forward window open. FY2025 10-K / Q1 2026 10-Q carry AI harmful/synthetic-content and reputational-harm language; SynthID-flagged AI image within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI synthetic/harmful-content family"],
+    "rationale": "SynthID-flagged AI-generated political image; generic AI synthetic-content language present, event not named. T3."
+  },
+  "1393": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Feb-2026 incident; forward window open. FY2025 10-K risk factors: AI-enabled products risk 'harmful content, inaccuracies' and reputational harm. Chatbot fabricating personal anecdotes after Gemini upgrade within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI harmful-content/inaccuracy family"],
+    "rationale": "Gemini-powered chatbot hallucinated anecdotes; generic AI harmful-content/inaccuracy language present, event not named. T3."
+  },
+  "1543": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Mar-2026 incident; forward FY2026 window open. FY2025 10-K / Q1 2026 10-Q Waymo AV operational and emerging-technology risk language present. Robotaxi briefly obstructing an ambulance is an AV operational event within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline Waymo/AV risk read"],
+    "rationale": "Waymo briefly obstructed ambulance; generic AV operational-risk framing present, event not named. T3."
+  },
+  "1414": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Mar-2026 incident; forward window open. Same-family AI harmful/synthetic-content and reputational-harm language present. Purported Gemini-generated propaganda images (Gemini markers) within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI synthetic/harmful-content family"],
+    "rationale": "Purported Gemini-generated disinformation images; generic AI synthetic-content language present, event not named. T3."
+  },
+  "1493": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Mar-2026 incident; forward window open. FY2025 10-K risk factors: AI 'inaccuracies' and 'harmful content.' Gemini giving false provenance for an authentic photo within inaccuracy family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI-inaccuracy family"],
+    "rationale": "Gemini false image-provenance inaccuracy; generic AI-inaccuracy language present, event not named. T3."
+  },
+  "1547": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Apr-2026 incident; disclosable window covered by Q2 2026 10-Q / FY2026 10-K (forward window open). Waymo AV operational/safety and emerging-technology risk language present in prior filings. Robotaxis entering closed construction zones within AV safety family. Not named (FTS 'NHTSA' = 0).",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"NHTSA\" -> 0 hits", "baseline Waymo/AV risk read"],
+    "rationale": "Waymo AVs entered closed freeway construction zones; generic AV safety/regulatory framing present, event not named; forward window open. T3."
+  },
+  "1544": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Apr-2026 incident; forward window open. Waymo AV operational/safety risk language present. Robotaxi entering flooded roadway and swept into waterway is an AV operational event within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline Waymo/AV risk read"],
+    "rationale": "Waymo AV swept into waterway; generic AV operational-risk framing present, event not named. T3."
+  },
+  "1534": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FTS 'Outsider Enterprise' = 0 hits. May-2026 matter; Google is plaintiff (civil suit against a phishing network misusing Gemini). FY2025 10-K risk factors address AI misuse/'harmful content' and cybersecurity; the affirmative lawsuit is not a disclosed liability and is not named. Same-family AI-misuse/security language present.",
+    "accounting_channel": null,
+    "specific_queries": ["q=\"Outsider Enterprise\" -> 0 hits", "baseline read; AI-misuse/security family"],
+    "rationale": "Google-initiated suit over adversarial Gemini misuse for phishing; matter not disclosed (FTS 0) but generic AI-misuse/cybersecurity risk language present. T3."
+  },
+  "1599": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "May-2026 incident; forward window open. Waymo AV operational/safety risk language present in prior filings. Robotaxi remaining immobilized during vandalism with passenger inside is an AV operational/safety event within this family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline Waymo/AV risk read"],
+    "rationale": "Waymo AV immobilized during vandalism; generic AV operational-risk framing present, event not named. T3."
+  },
+  "1507": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "May-2026 incident; forward window open. FY2025 10-K risk factors: AI risks include 'data privacy' and 'cybersecurity'; third parties processing student data via Gemini falls within AI-data-privacy family. Not named.",
+    "accounting_channel": null,
+    "specific_queries": ["baseline read; AI data-privacy/cybersecurity family"],
+    "rationale": "Alleged CBSE student-data privacy violation via Gemini processing by a third party; generic AI data-privacy risk language present, event not named. T3."
+  }
+}

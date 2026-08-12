@@ -1,0 +1,122 @@
+[
+ {
+  "incident_id": "1588",
+  "incident_date": "2026-06-29",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "role": "developer",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "google",
+  "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked Worker in Myanmar",
+  "description": "AP reported that traffickers at Myanmar's Tai Chang scam compound forced a man named Safeer Mohammed Koorimannil to use the AI-powered KT platform to impersonate women and target thousands of people online. The system reportedly supported the scam conversation"
+ },
+ {
+  "incident_id": "1583",
+  "incident_date": "2026-07-04",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "waymo",
+  "title": "Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco",
+  "description": "An unoccupied Waymo robotaxi reportedly drove over a small firework near the 1200 block of Connecticut Street in San Francisco on July 4, 2026, and caught fire. No passengers were aboard and no injuries were reported. Waymo said it coordinated with the San Fra"
+ },
+ {
+  "incident_id": "550",
+  "incident_date": "2023-03-17",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla Allegedly on Autopilot Struck High School Student Exiting School Bus",
+  "description": "A 17-year-old student in Hollister, North Carolina who exited the school bus and was walking across the street to his house was hit by a 2022 Tesla Model Y allegedly operating on Autopilot mode, suffering a fractured neck and a broken leg."
+ },
+ {
+  "incident_id": "540",
+  "incident_date": "2023-05-15",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla Failed to Yield to Detected Pedestrian on Crosswalk, Reportedly Violated Traffic Law",
+  "description": "A Tesla on FSD Beta 11.4.1 was shown on video not yielding to a pedestrian detected by the car, reportedly violating the state law sign which was also in the video saying vehicles having to yield to pedestrian within crosswalk."
+ },
+ {
+  "incident_id": "560",
+  "incident_date": "2023-06-23",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla on Autopilot Struck Parked Work Truck on Highway in Pennsylvania",
+  "description": "A 2016 Tesla on Autopilot crashed into the rear of a parked 2007 Freightliner truck providing traffic control on the Pennsylvania Turnpike highway."
+ },
+ {
+  "incident_id": "711",
+  "incident_date": "2024-04-26",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "NHTSA Opens New Probe into Tesla\u2019s Autopilot Following More than a Dozen Fatal Accidents",
+  "description": "The NHTSA has linked Tesla's Autopilot to over a dozen fatalities and hundreds of crashes, prompting a new investigation into the adequacy of Tesla's December recall of 2 million vehicles. The probe reports that Tesla\u2019s driver-assist system led to avoidable cr"
+ },
+ {
+  "incident_id": "707",
+  "incident_date": "2024-06-13",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "developer",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla Reportedly in Autopilot Mode Hits Parked Police Vehicle in Fullerton, California",
+  "description": "A Tesla reportedly in self-driving mode crashed into a parked patrol vehicle in Fullerton, California while the officer was responding to a fatal DUI crash. The officer narrowly escaped injury. The driver reports having been distracted by a cellphone and havin"
+ },
+ {
+  "incident_id": "889",
+  "incident_date": "2025-01-07",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla's 'Actually Smart Summon' Feature Reportedly Linked to Multiple Parking Lot Collisions",
+  "description": "Tesla's \"Actually Smart Summon\" feature, a remote parking system controlled via a smartphone app, reportedly failed to detect obstacles such as cars, walls, and parking signs, resulting in at least 16 collision incidents. The NHTSA is investigating safety conc"
+ },
+ {
+  "incident_id": "940",
+  "incident_date": "2025-02-17",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "both",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla Cybertruck Operating in Full Self-Driving Mode Reportedly Crashes into Pole in Nevada After Failing to Merge",
+  "description": "A Tesla Cybertruck operating in Full Self-Driving (FSD) mode reportedly crashed into a pole in Reno, Nevada, after failing to merge out of a lane that was ending. The driver, who was required to remain in control, stated that unknown mechanical issues caused t"
+ },
+ {
+  "incident_id": "1552",
+  "incident_date": "2026-06-19",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "role": "developer",
+  "severity_tier": "UNSCORED",
+  "entity_slug": "tesla",
+  "title": "Tesla Driver Reportedly Said Driver-Assistance Mode Was Engaged During Fatal Texas Home Crash",
+  "description": "On June 19, 2026, Michael Butler's Tesla Model 3 reportedly left the roadway in Katy, Texas, and struck a home at high speed, killing resident Martha Avila. Butler reportedly told investigators that an automated driving-assistance system was engaged. Tesla's A"
+ }
+]

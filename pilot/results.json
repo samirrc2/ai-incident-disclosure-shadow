@@ -1,0 +1,871 @@
+{
+  "N": 307,
+  "distribution": {
+    "T1": 4,
+    "T2": 3,
+    "T3": 278,
+    "T4": 22
+  },
+  "headline": {
+    "T1_specific": {
+      "k": 4,
+      "n": 307,
+      "rate": 0.013,
+      "ci95": [
+        0.0051,
+        0.033
+      ]
+    },
+    "T1T2_substantive": {
+      "k": 7,
+      "n": 307,
+      "rate": 0.0228,
+      "ci95": [
+        0.0111,
+        0.0463
+      ]
+    },
+    "T3_generic_only": {
+      "k": 278,
+      "n": 307,
+      "rate": 0.9055,
+      "ci95": [
+        0.8676,
+        0.9334
+      ]
+    },
+    "T4_no_disclosure": {
+      "k": 22,
+      "n": 307,
+      "rate": 0.0717,
+      "ci95": [
+        0.0478,
+        0.1061
+      ]
+    },
+    "shadow_T3plusT4": {
+      "k": 300,
+      "n": 307,
+      "rate": 0.9772,
+      "ci95": [
+        0.9537,
+        0.9889
+      ]
+    }
+  },
+  "by_severity": {
+    "T1-limited": {
+      "n": 215,
+      "T1": {
+        "k": 3,
+        "n": 215,
+        "rate": 0.014,
+        "ci95": [
+          0.0048,
+          0.0402
+        ]
+      },
+      "T1T2": {
+        "k": 4,
+        "n": 215,
+        "rate": 0.0186,
+        "ci95": [
+          0.0073,
+          0.0469
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 211,
+        "n": 215,
+        "rate": 0.9814,
+        "ci95": [
+          0.9531,
+          0.9927
+        ]
+      },
+      "T4": {
+        "k": 15,
+        "n": 215,
+        "rate": 0.0698,
+        "ci95": [
+          0.0427,
+          0.1119
+        ]
+      },
+      "dist": {
+        "T1": 3,
+        "T2": 1,
+        "T3": 196,
+        "T4": 15
+      }
+    },
+    "T2-moderate": {
+      "n": 50,
+      "T1": {
+        "k": 0,
+        "n": 50,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0714
+        ]
+      },
+      "T1T2": {
+        "k": 1,
+        "n": 50,
+        "rate": 0.02,
+        "ci95": [
+          0.0035,
+          0.105
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 49,
+        "n": 50,
+        "rate": 0.98,
+        "ci95": [
+          0.895,
+          0.9965
+        ]
+      },
+      "T4": {
+        "k": 3,
+        "n": 50,
+        "rate": 0.06,
+        "ci95": [
+          0.0206,
+          0.1622
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 1,
+        "T3": 46,
+        "T4": 3
+      }
+    },
+    "T3-severe": {
+      "n": 42,
+      "T1": {
+        "k": 1,
+        "n": 42,
+        "rate": 0.0238,
+        "ci95": [
+          0.0042,
+          0.1232
+        ]
+      },
+      "T1T2": {
+        "k": 2,
+        "n": 42,
+        "rate": 0.0476,
+        "ci95": [
+          0.0132,
+          0.1579
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 40,
+        "n": 42,
+        "rate": 0.9524,
+        "ci95": [
+          0.8421,
+          0.9868
+        ]
+      },
+      "T4": {
+        "k": 4,
+        "n": 42,
+        "rate": 0.0952,
+        "ci95": [
+          0.0377,
+          0.2207
+        ]
+      },
+      "dist": {
+        "T1": 1,
+        "T2": 1,
+        "T3": 36,
+        "T4": 4
+      }
+    }
+  },
+  "by_year": {
+    "2019": {
+      "n": 21,
+      "T1": {
+        "k": 0,
+        "n": 21,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.1546
+        ]
+      },
+      "T1T2": {
+        "k": 0,
+        "n": 21,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.1546
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 21,
+        "n": 21,
+        "rate": 1.0,
+        "ci95": [
+          0.8454,
+          1.0
+        ]
+      },
+      "T4": {
+        "k": 3,
+        "n": 21,
+        "rate": 0.1429,
+        "ci95": [
+          0.0498,
+          0.3464
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 18,
+        "T4": 3
+      }
+    },
+    "2020": {
+      "n": 29,
+      "T1": {
+        "k": 0,
+        "n": 29,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.117
+        ]
+      },
+      "T1T2": {
+        "k": 0,
+        "n": 29,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.117
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 29,
+        "n": 29,
+        "rate": 1.0,
+        "ci95": [
+          0.883,
+          1.0
+        ]
+      },
+      "T4": {
+        "k": 5,
+        "n": 29,
+        "rate": 0.1724,
+        "ci95": [
+          0.076,
+          0.3455
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 24,
+        "T4": 5
+      }
+    },
+    "2021": {
+      "n": 37,
+      "T1": {
+        "k": 1,
+        "n": 37,
+        "rate": 0.027,
+        "ci95": [
+          0.0048,
+          0.1382
+        ]
+      },
+      "T1T2": {
+        "k": 2,
+        "n": 37,
+        "rate": 0.0541,
+        "ci95": [
+          0.015,
+          0.177
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 35,
+        "n": 37,
+        "rate": 0.9459,
+        "ci95": [
+          0.823,
+          0.985
+        ]
+      },
+      "T4": {
+        "k": 3,
+        "n": 37,
+        "rate": 0.0811,
+        "ci95": [
+          0.028,
+          0.213
+        ]
+      },
+      "dist": {
+        "T1": 1,
+        "T2": 1,
+        "T3": 32,
+        "T4": 3
+      }
+    },
+    "2022": {
+      "n": 35,
+      "T1": {
+        "k": 0,
+        "n": 35,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0989
+        ]
+      },
+      "T1T2": {
+        "k": 0,
+        "n": 35,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0989
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 35,
+        "n": 35,
+        "rate": 1.0,
+        "ci95": [
+          0.9011,
+          1.0
+        ]
+      },
+      "T4": {
+        "k": 6,
+        "n": 35,
+        "rate": 0.1714,
+        "ci95": [
+          0.081,
+          0.3268
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 29,
+        "T4": 6
+      }
+    },
+    "2023": {
+      "n": 47,
+      "T1": {
+        "k": 3,
+        "n": 47,
+        "rate": 0.0638,
+        "ci95": [
+          0.0219,
+          0.1716
+        ]
+      },
+      "T1T2": {
+        "k": 3,
+        "n": 47,
+        "rate": 0.0638,
+        "ci95": [
+          0.0219,
+          0.1716
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 44,
+        "n": 47,
+        "rate": 0.9362,
+        "ci95": [
+          0.8284,
+          0.9781
+        ]
+      },
+      "T4": {
+        "k": 3,
+        "n": 47,
+        "rate": 0.0638,
+        "ci95": [
+          0.0219,
+          0.1716
+        ]
+      },
+      "dist": {
+        "T1": 3,
+        "T2": 0,
+        "T3": 41,
+        "T4": 3
+      }
+    },
+    "2024": {
+      "n": 47,
+      "T1": {
+        "k": 0,
+        "n": 47,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0756
+        ]
+      },
+      "T1T2": {
+        "k": 2,
+        "n": 47,
+        "rate": 0.0426,
+        "ci95": [
+          0.0117,
+          0.1425
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 45,
+        "n": 47,
+        "rate": 0.9574,
+        "ci95": [
+          0.8575,
+          0.9883
+        ]
+      },
+      "T4": {
+        "k": 0,
+        "n": 47,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0756
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 2,
+        "T3": 45,
+        "T4": 0
+      }
+    },
+    "2025": {
+      "n": 60,
+      "T1": {
+        "k": 0,
+        "n": 60,
+        "rate": 0.0,
+        "ci95": [
+          -0.0,
+          0.0602
+        ]
+      },
+      "T1T2": {
+        "k": 0,
+        "n": 60,
+        "rate": 0.0,
+        "ci95": [
+          -0.0,
+          0.0602
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 60,
+        "n": 60,
+        "rate": 1.0,
+        "ci95": [
+          0.9398,
+          1.0
+        ]
+      },
+      "T4": {
+        "k": 0,
+        "n": 60,
+        "rate": 0.0,
+        "ci95": [
+          -0.0,
+          0.0602
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 60,
+        "T4": 0
+      }
+    },
+    "2026": {
+      "n": 31,
+      "T1": {
+        "k": 0,
+        "n": 31,
+        "rate": 0.0,
+        "ci95": [
+          -0.0,
+          0.1103
+        ]
+      },
+      "T1T2": {
+        "k": 0,
+        "n": 31,
+        "rate": 0.0,
+        "ci95": [
+          -0.0,
+          0.1103
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 31,
+        "n": 31,
+        "rate": 1.0,
+        "ci95": [
+          0.8897,
+          1.0
+        ]
+      },
+      "T4": {
+        "k": 2,
+        "n": 31,
+        "rate": 0.0645,
+        "ci95": [
+          0.0179,
+          0.2072
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 29,
+        "T4": 2
+      }
+    }
+  },
+  "by_role": {
+    "both": {
+      "n": 235,
+      "T1": {
+        "k": 3,
+        "n": 235,
+        "rate": 0.0128,
+        "ci95": [
+          0.0044,
+          0.0369
+        ]
+      },
+      "T1T2": {
+        "k": 5,
+        "n": 235,
+        "rate": 0.0213,
+        "ci95": [
+          0.0091,
+          0.0488
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 230,
+        "n": 235,
+        "rate": 0.9787,
+        "ci95": [
+          0.9512,
+          0.9909
+        ]
+      },
+      "T4": {
+        "k": 14,
+        "n": 235,
+        "rate": 0.0596,
+        "ci95": [
+          0.0358,
+          0.0975
+        ]
+      },
+      "dist": {
+        "T1": 3,
+        "T2": 2,
+        "T3": 216,
+        "T4": 14
+      }
+    },
+    "deployer": {
+      "n": 14,
+      "T1": {
+        "k": 1,
+        "n": 14,
+        "rate": 0.0714,
+        "ci95": [
+          0.0127,
+          0.3147
+        ]
+      },
+      "T1T2": {
+        "k": 2,
+        "n": 14,
+        "rate": 0.1429,
+        "ci95": [
+          0.0401,
+          0.3994
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 12,
+        "n": 14,
+        "rate": 0.8571,
+        "ci95": [
+          0.6006,
+          0.9599
+        ]
+      },
+      "T4": {
+        "k": 3,
+        "n": 14,
+        "rate": 0.2143,
+        "ci95": [
+          0.0757,
+          0.4759
+        ]
+      },
+      "dist": {
+        "T1": 1,
+        "T2": 1,
+        "T3": 9,
+        "T4": 3
+      }
+    },
+    "developer": {
+      "n": 58,
+      "T1": {
+        "k": 0,
+        "n": 58,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0621
+        ]
+      },
+      "T1T2": {
+        "k": 0,
+        "n": 58,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0621
+        ]
+      },
+      "shadow_T3T4": {
+        "k": 58,
+        "n": 58,
+        "rate": 1.0,
+        "ci95": [
+          0.9379,
+          1.0
+        ]
+      },
+      "T4": {
+        "k": 5,
+        "n": 58,
+        "rate": 0.0862,
+        "ci95": [
+          0.0374,
+          0.1864
+        ]
+      },
+      "dist": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 53,
+        "T4": 5
+      }
+    }
+  },
+  "by_company": {
+    "Alphabet Inc.": {
+      "n": 86
+    },
+    "Meta Platforms, Inc.": {
+      "n": 81
+    },
+    "Tesla, Inc.": {
+      "n": 36
+    },
+    "Microsoft Corporation": {
+      "n": 35
+    },
+    "Amazon.com, Inc.": {
+      "n": 16
+    },
+    "General Motors Company": {
+      "n": 14
+    },
+    "Apple Inc.": {
+      "n": 9
+    },
+    "SoundThinking, Inc.": {
+      "n": 4
+    },
+    "McDonald's Corporation": {
+      "n": 4
+    },
+    "UnitedHealth Group Inc.": {
+      "n": 3
+    },
+    "Uber Technologies, Inc.": {
+      "n": 3
+    },
+    "Serve Robotics Inc.": {
+      "n": 3
+    },
+    "Walmart Inc.": {
+      "n": 2
+    },
+    "Snap Inc.": {
+      "n": 2
+    },
+    "PayPal Holdings, Inc.": {
+      "n": 2
+    },
+    "Integra LifeSciences Holdings": {
+      "n": 2
+    },
+    "The Goldman Sachs Group Inc.": {
+      "n": 1
+    },
+    "Zillow Group, Inc.": {
+      "n": 1
+    },
+    "Workday, Inc.": {
+      "n": 1
+    },
+    "The Cigna Group": {
+      "n": 1
+    },
+    "Palantir Technologies Inc.": {
+      "n": 1
+    }
+  },
+  "accounting_channel": [
+    {
+      "incident_id": "149",
+      "company": "Zillow Group, Inc.",
+      "code": "T1",
+      "filing_item": "8-K Item 8.01 (Other Events) narrative winding down Zillow Offers, with the associated inventory write-down reported alongside Item 2.02 (Results of Operations) results / earnings release. NOTE: contrary to the task's reference guess, this 8-K is captioned under Items 2.02 and 8.01, NOT Item 2.05 (Costs Associated with Exit or Disposal Activities); the Homes-segment inventory write-down is the accounting vehicle.",
+      "booked_impact": "yes -- ~$304 million Q3-2021 Homes-segment inventory write-down (lower-of-cost-or-net-realizable-value adjustment on homes bought above current expected selling prices), with a further $240-265 million of losses guided for Q4-2021; Homes-segment Q3-2021 loss of $421.6M.",
+      "title": "Zillow Shut Down Zillow Offers Division Allegedly Due to Predictive Pr"
+    },
+    {
+      "incident_id": "534",
+      "company": "Meta Platforms, Inc.",
+      "code": "T2",
+      "filing_item": "FY2021 10-K Note 'Commitments and Contingencies' (R19.htm) \u2014 securities class actions and government investigations arising from the September-2021 former-employee allegations; not framed as an AI matter.",
+      "booked_impact": "no \u2014 no loss reserve or accrual disclosed; company states the suits are 'without merit' and it is 'vigorously defending them.' No incident-specific charge (distinct from the booked 2019 $5B FTC privacy settlement, which is a separate matter).",
+      "title": "Facebook Alleged in Lawsuit Misleading Public about Effects of Algorit"
+    },
+    {
+      "incident_id": "596",
+      "company": "General Motors Company",
+      "code": "T1",
+      "filing_item": "10-K Item 1A (Risk Factors) / Item 1 (Business, AV strategy) -- disclosed alongside the October 2023 Cruise incident cluster; not carried as a standalone Legal Proceedings item.",
+      "booked_impact": "no incident/investigation-specific reserve disclosed; the accompanying booked charge for the broader Cruise pause is the $478M FY2023 'Cruise restructuring' special item (see incident 726).",
+      "title": "Cruise's Autonomous Vehicles Allegedly Engaging in Risky Behavior Near"
+    },
+    {
+      "incident_id": "711",
+      "company": "Tesla, Inc.",
+      "code": "T2",
+      "filing_item": "",
+      "booked_impact": "",
+      "title": "NHTSA Opens New Probe into Tesla\u2019s Autopilot Following More than a Doz"
+    },
+    {
+      "incident_id": "726",
+      "company": "General Motors Company",
+      "code": "T1",
+      "filing_item": "10-K Item 1 (Business/AV strategy) and Item 1A (Risk Factors); charge in Q4/FY2023 earnings 8-K special-items/EBIT-adjusted reconciliation and FY2023 10-K restructuring note (NOTE: the incident is NOT in the Legal Proceedings/Commitments & Contingencies note).",
+      "booked_impact": "yes -- $478 million 'Cruise restructuring' charge (Q4 and full-year 2023), described as non-cash restructuring, supplier-related and employee-separation charges 'resulting from Cruise voluntarily pausing its driverless, supervised and manual AV operations'; recorded as an EBIT-adjusted special item, not as an incident-specific legal reserve (no reserve for the investigations/settlement disclosed in the contingencies note).",
+      "title": "A Self-Driving Cruise Robot Taxi Reportedly Struck and Dragged a Pedes"
+    },
+    {
+      "incident_id": "733",
+      "company": "General Motors Company",
+      "code": "T2",
+      "filing_item": "10-Q Note: Commitments, Contingencies and Uncertainties (litigation matters) -- FTC consent order + OnStar Smart Driver privacy class actions and state AG suits.",
+      "booked_impact": "no -- FTC matter resolved via an injunctive administrative consent order (5-year ban on sharing/selling geolocation and driver-behavior data, per the FTC action); privacy class actions and state enforcement suits ongoing with no material reserve quantified in the disclosure.",
+      "title": "Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Dri"
+    },
+    {
+      "incident_id": "997",
+      "company": "Meta Platforms, Inc.",
+      "code": "T1",
+      "filing_item": "",
+      "booked_impact": "",
+      "title": "Meta and OpenAI Accused of Using LibGen\u2019s Pirated Books to Train AI Mo"
+    }
+  ],
+  "booked_impact_among_disclosed": {
+    "T1T2_total": 7,
+    "with_booked_impact": 2
+  },
+  "robustness": {
+    "b_exclude_pre2021": {
+      "filter": "incident_date>=2021-01-01",
+      "k": 250,
+      "n": 257,
+      "rate": 0.9728,
+      "ci95": [
+        0.9449,
+        0.9867
+      ]
+    },
+    "c_exclude_parent_only": {
+      "filter": "listing_status==LISTED (drop PARENT subsidiary maps)",
+      "k": 255,
+      "n": 260,
+      "rate": 0.9808,
+      "ci95": [
+        0.9558,
+        0.9918
+      ]
+    },
+    "c_parent_only_subset": {
+      "filter": "listing_status==PARENT",
+      "k": 45,
+      "n": 47,
+      "rate": 0.9574,
+      "ci95": [
+        0.8575,
+        0.9883
+      ]
+    },
+    "full_sample_shadow": {
+      "k": 300,
+      "n": 307,
+      "rate": 0.9772,
+      "ci95": [
+        0.9537,
+        0.9889
+      ]
+    }
+  },
+  "robustness_note": "Window-length sensitivity (6/12/24 mo) and coder-1-vs-resolved are computed on the reliability subsample in extended (kappa) once pass-2 raw-filing coding completes; primary coding uses the pre-registered 12-month window.",
+  "cyber_benchmark": {
+    "regime_start": "2023-12-18",
+    "as_of": "2026-05-21",
+    "item_1_05_material_issuers": 29,
+    "item_8_01_voluntary_issuers": 50,
+    "both": 5,
+    "total_filings": 79,
+    "total_issuers": 74,
+    "framing": "disclosure-under-mandate (count of filings under a legal duty); NOT a cyber shadow rate"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "The AI Incident Disclosure Shadow: incident-to-filing dataset, coding logs, and analysis code (2019-2026)",
+  "upload_type": "dataset",
+  "description": "Annotated dataset and reproducible pipeline matching AIID-recorded AI incidents to U.S.-listed issuers' SEC filings, with a four-tier disclosure taxonomy (T1-T4), coding logs, independent double-coding, hashed pre-registration, and analysis scripts. Measures disclosure behavior, not compliance.",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": ["AI incidents","securities disclosure","SEC filings","AI governance","materiality","risk factors","corporate transparency"],
+  "creators": [{"name": "Chincholikar, Samir"}],
+  "related_identifiers": [
+    {"relation": "isDerivedFrom", "identifier": "10.1609/aaai.v35i17.17817", "scheme": "doi"}
+  ]
+}

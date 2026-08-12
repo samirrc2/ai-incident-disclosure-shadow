@@ -1,0 +1,138 @@
+[
+ {
+  "incident_id": "363",
+  "incident_date": "2021-01-15",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook's Automated Moderation Mistakenly Flagged Landmark's Name as Offensive"
+ },
+ {
+  "incident_id": "646",
+  "incident_date": "2024-02-22",
+  "CIK": "1564408",
+  "matched_company": "Snap Inc.",
+  "ticker": "SNAP",
+  "title": "Snapchat's Algorithm Alleged to Link Minor with Sex Offenders"
+ },
+ {
+  "incident_id": "996",
+  "incident_date": "2020-10-25",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Meta Allegedly Used Books3, a Dataset of 191,000 Pirated Books, to Train LLaMA AI"
+ },
+ {
+  "incident_id": "398",
+  "incident_date": "2022-08-15",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla Autopilot Misidentified On-Road Horse-Drawn Carriage"
+ },
+ {
+  "incident_id": "726",
+  "incident_date": "2023-10-02",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "title": "A Self-Driving Cruise Robot Taxi Reportedly Struck and Dragged a Pedestrian 20 Feet"
+ },
+ {
+  "incident_id": "534",
+  "incident_date": "2021-04-29",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook Alleged in Lawsuit Misleading Public about Effects of Algorithms on Children"
+ },
+ {
+  "incident_id": "102",
+  "incident_date": "2020-03-23",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "Personal voice assistants struggle with black voices, new study shows"
+ },
+ {
+  "incident_id": "968",
+  "incident_date": "2022-02-24",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformation"
+ },
+ {
+  "incident_id": "614",
+  "incident_date": "2023-11-02",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "title": "Google Bard Allegedly Generates False Allegations Against Consulting Firms Used in Research Presented in Australian Parliamentary Inquiry"
+ },
+ {
+  "incident_id": "838",
+  "incident_date": "2024-04-25",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "Microsoft Copilot Allegedly Provides Unsafe Medical Advice with High Risk of Severe Harm"
+ },
+ {
+  "incident_id": "560",
+  "incident_date": "2023-06-23",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla on Autopilot Struck Parked Work Truck on Highway in Pennsylvania"
+ },
+ {
+  "incident_id": "1512",
+  "incident_date": "2026-05-31",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "The Sydney Morning Herald and The Age Removed an Opinion Article After Undisclosed Copilot Use"
+ },
+ {
+  "incident_id": "463",
+  "incident_date": "2022-11-15",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "title": "Apple Devices Mistook Skiing Activities, Dialed False Distress Emergency Calls "
+ },
+ {
+  "incident_id": "963",
+  "incident_date": "2025-03-05",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "title": "Google Reports Alleged Gemini-Generated Terrorism and Child Exploitation to Australian eSafety Commission"
+ },
+ {
+  "incident_id": "967",
+  "incident_date": "2025-03-06",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "title": "Amazon and Google AI Allegedly Promote Mein Kampf as 'a True Work of Art' in Search Results"
+ },
+ {
+  "incident_id": "141",
+  "incident_date": "2021-02-05",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "California Police Turned on Music to Allegedly Trigger Instagram\u2019s DCMA to Avoid Being Live-Streamed"
+ },
+ {
+  "incident_id": "1401",
+  "incident_date": "2026-02-27",
+  "CIK": "1018724",
+  "matched_company": "Amazon.com, Inc.",
+  "ticker": "AMZN",
+  "title": "Washington State DOL's AI Phone System Reportedly Failed to Provide Spanish-Language Service to Callers Requesting Spanish"
+ }
+]

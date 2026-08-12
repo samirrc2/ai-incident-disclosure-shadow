@@ -1,0 +1,133 @@
+{
+  "350": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "IMPORTANT CIK CORRECTION: the batch lists Serve Robotics under CIK 1826681, but data.sec.gov/submissions/CIK0001826681.json resolves to 'Palladyne AI Corp.' (formerly Sarcos Technology & Robotics, ticker PDYN). The correct CIK for Serve Robotics Inc. /DE/ (SERV) is 0001832483 (confirmed via efts display_names). All Serve incidents coded against 0001832483. Serve only became an SEC reporter around its Aug-2023 reverse merger. Incident window is 2022-09-13 to 2023-09-13; the earliest in-window Serve filing carrying 'artificial intelligence' / autonomous-robot risk language is the post-merger Super 8-K of 2023-08-04 (0001213900-23-063662); the S-1 (0001213900-23-077089) was filed 2023-09-15, two days after window close. No in-window filing names the crime-scene rolling episode.",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" ciks=0001832483 (35 hits; earliest 2023-08-04 8-K)", "efts display_names lookup q=\"Serve Robotics\" -> CIK 0001832483 (batch CIK 1826681 = Palladyne AI)", "CIK0001826681 submissions.json -> 'Palladyne AI Corp.' (wrong entity)"],
+    "rationale": "Trivial operational episode (delivery robot filmed rolling through a taped-off crime scene), no legal/financial consequence. Serve had essentially just become a reporting company; the only in-window filing carries family-level autonomous-robot/AI risk language but never names the event. T3, medium (thin window, near Serve's reporting debut)."
+  },
+  "881": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Serve Robotics (correct CIK 0001832483). Incident window 2024-12-27 to 2025-12-27. In-window filings include the FY2024 10-K (0001832483-25-000010, 2025-03-06) plus multiple 2025 8-Ks, all within the 35-hit 'artificial intelligence' corpus; Serve's risk factors address autonomous sidewalk-robot operation, accidents/collisions, and related liability at the family level. The low-speed Waymo-vs-Serve-bot collision is not named in any filing (a targeted efts 'collision' query was cut off by a session rate-limit, but no incident-specific disclosure surfaced and the event is immaterial).",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" ciks=0001832483 -> FY2024 10-K 0001832483-25-000010 in window", "\"collision\" ciks=0001832483 (rate-limited before completion)"],
+    "rationale": "Minor low-speed collision between a Waymo robotaxi and a Serve delivery bot; no litigation or material loss. Captured only by Serve's family-level autonomous-robot/AI operational-risk language; event not named. T3."
+  },
+  "1567": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Serve Robotics (correct CIK 0001832483). Incident 2026-03-22; window runs to 2027 but filings exist only through the present (2026-08-03). The FY2025 10-K (0001832483-26-000010, 2026-03-12) was filed 10 days BEFORE the incident (just pre-window); the in-window filing is the Q1 2026 10-Q (0001832483-26-000019, 2026-05-07), which sits in Serve's 'artificial intelligence' corpus and carries autonomous-robot safety/accident risk language. Neither the Chicago bus-shelter crash nor the three-sensor-failure detail is named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" ciks=0001832483 -> Q1-2026 10-Q 0001832483-26-000019 (2026-05-07) in window; FY2025 10-K 2026-03-12 just pre-incident", "recent-filing enumeration for Serve 2026"],
+    "rationale": "Operational sidewalk-robot crash into a glass bus shelter (sensor detection failure); no disclosed legal/financial consequence. Only family-level autonomous-robot/AI risk language present in the in-window 10-Q; event not named. T3, medium (recent event, limited post-incident filing runway)."
+  },
+  "364": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Walmart (CIK 0000104169). Incident window 2020-04-15 to 2021-04-15. efts 'artificial intelligence' in Walmart 10-Ks in that window = 0 hits; 'algorithm' = 0 hits. Walmart's FY2020/FY2021 10-Ks carry no same-family AI/algorithm/computer-vision risk language. The Everseen bagging-/theft-detection false-positive story was a Bloomberg report with no lawsuit or regulatory action, and is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" ciks=0000104169 forms=10-K 2020-04..2021-04 (0 hits)", "\"algorithm\" ciks=0000104169 2020-04..2021-04 (0 hits)"],
+    "rationale": "No disclosure located and no same-family AI/algorithm risk language in the in-window Walmart 10-Ks; purely a press-reported operational matter with no legal or accounting consequence. T4."
+  },
+  "1559": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Walmart (CIK 0000104169). efts 'Kalibrate' in Walmart filings = 0 hits; 'artificial intelligence' in Walmart 10-Ks for the incident window (2022-06-22 to 2023-06-22) = 0 hits. Walmart is at most a peripheral fuel retailer relative to this third-party fuel-pricing-software antitrust theory; the underlying complaint is dated 2026 (well outside the incident window), and no same-family algorithmic-pricing/antitrust AI risk language appears in the in-window Walmart 10-K.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Kalibrate\" ciks=0000104169 (0 hits)", "\"artificial intelligence\" ciks=0000104169 forms=10-K 2022-06..2023-06 (0 hits)"],
+    "rationale": "Third-party Kalibrate fuel-pricing algorithm antitrust matter with only tangential Walmart involvement; not named, no same-family AI/algorithmic-pricing risk language in the in-window filing, and the operative complaint post-dates the window. T4."
+  },
+  "539": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Snap (CIK 0001564408). 'My AI' appears in 11 in-window filings including the FY2023 10-K (0001564408-24-000019, 2024-02-07), where My AI is described in Item 1 ('our AI-powered chatbot') and covered by generic new-product risk language in Item 1A: new products/initiatives 'may be costly, difficult to operate and monetize, increase regulatory scrutiny and product liability and litigation risk.' The 10-K does not carry a dedicated My-AI child-safety risk factor and does not name the March-2023 report of My AI giving unsafe advice to a test user posing as a 13-year-old.",
+    "accounting_channel": null,
+    "specific_queries": ["\"My AI\" ciks=0001564408 2023-03..2024-03 (11 hits incl. FY2023 10-K)", "FY2023 10-K Item 1/1A My-AI product + new-product risk-language review"],
+    "rationale": "My AI is named as a product and wrapped in family-level generative-AI/new-product regulatory-and-litigation risk language, but the specific child-safety failure is not disclosed. T3."
+  },
+  "646": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Snap (CIK 0001564408). FY2023 10-K (0001564408-24-000019) contains 'personal injury' (efts confirms 1 hit) and platform-safety/minors risk language, but efts 'adolescent' = 0 hits (Snap does not reference the social-media adolescent personal-injury MDL by that term), and the specific matter (a court's Section 230 ruling on Quick Add allegedly connecting a minor with sex offenders) is not named. A confirmatory efts 'products liability' query was cut off by a session rate-limit. The surfaced disclosure is family-level product/personal-injury litigation and minor-safety risk language rather than a named pending proceeding.",
+    "accounting_channel": null,
+    "specific_queries": ["\"personal injury\" ciks=0001564408 forms=10-K 2024-02 (1 hit in FY2023 10-K)", "\"adolescent\" ciks=0001564408 (0 hits)", "\"products liability\" ciks=0001564408 (rate-limited)"],
+    "rationale": "Conservative T3: Snap carries same-family platform-safety-of-minors and product/personal-injury litigation risk language, but the specific Quick Add/Section 230 case is not individually named; evidence did not confirm it as an itemized pending legal proceeding (which would raise it toward T2). T3, medium."
+  },
+  "748": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "PayPal (CIK 0001633917). The in-window FY2024 10-K (0001633917-25-000019, 2025-02-04) carries 'artificial intelligence' risk language (same family: PayPal's use of AI/ML and generative-AI in its products and customer interactions). The June-2024 episode of PayPal's generative-AI assistant erroneously reporting a declined transaction is an immaterial consumer-support glitch and is not named in any filing.",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" ciks=0001633917 forms=10-K 2024-06..2025-06 (1 hit: FY2024 10-K 0001633917-25-000019)"],
+    "rationale": "Family-level AI-product risk language is present in the in-window 10-K; the specific chatbot error is not disclosed and carried no legal/financial consequence. T3."
+  },
+  "1575": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "PayPal (CIK 0001633917). efts 'Eightfold' in PayPal filings = 0 hits. This is a proposed class action against the third-party vendor Eightfold AI over its hiring platform; PayPal appears only as an employer-customer. PayPal's 10-Ks consistently carry generic AI/ML risk language (confirmed present in the FY2024 10-K; PayPal's FY2025 10-K / 2026 10-Qs are the in-window annual/quarterly filings for this 2026-01-20 incident and follow the same template), but nothing on third-party hiring/employment AI, and the vendor/suit is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Eightfold\" ciks=0001633917 (0 hits)", "\"artificial intelligence\" ciks=0001633917 (generic AI risk language present in PayPal 10-Ks)"],
+    "rationale": "Vendor-tool employment-AI class action only loosely connected to PayPal's own disclosures; PayPal has family-level AI/algorithmic-decisioning risk language but nothing on hiring AI, and neither Eightfold nor the suit is named. Coded T3 on the presence of same-broad-family AI risk language (low confidence; arguably T4 given how removed it is from PayPal's disclosed AI use)."
+  },
+  "1436": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Integra LifeSciences (CIK 0000917520). Incident window 2022-06-23 to 2023-06-23. efts 'TruDi' in Integra filings first appears 2023-12-13 (0000917520-23-000077, the 8-K announcing the Acclarent acquisition) -- AFTER this window closes; at the June-2022 incident date the TruDi Navigation System was an Acclarent (Johnson & Johnson MedTech) product, not Integra's. efts 'artificial intelligence' in Integra 10-Ks 2022-06..2024-05 = 0 hits. No in-window filing references TruDi, the patient (Erin Ralph) stroke, or the litigation, and no same-family AI/algorithmic-navigation risk language exists.",
+    "accounting_channel": null,
+    "specific_queries": ["\"TruDi\" ciks=0000917520 (14 hits; earliest 2023-12-13, after this window)", "\"artificial intelligence\" ciks=0000917520 forms=10-K 2022-06..2024-05 (0 hits)"],
+    "rationale": "At the incident date the device belonged to Acclarent/J&J, not Integra; no in-window Integra filing mentions TruDi or the incident and there is no same-family AI risk language. T4."
+  },
+  "1528": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Integra LifeSciences (CIK 0000917520). Incident window 2023-05-19 to 2024-05-19. Within this window 'TruDi' surfaces in Integra filings only in M&A context -- the 2023-12-13 8-K (0000917520-23-000077) announcing the Acclarent acquisition (closed 2024) and the acquisition-agreement exhibit EX-2.1C (0000917520-24-000022, 2024-02-28) -- as an acquired product line, not as risk language and not naming the May-2023 stroke (patient Donna Fernihough) or the litigation. efts 'artificial intelligence' in Integra 10-Ks over the window = 0 hits; no same-family AI/algorithmic-navigation risk language.",
+    "accounting_channel": null,
+    "specific_queries": ["\"TruDi\" ciks=0000917520 (in-window hits are the acquisition 8-K 2023-12-13 and EX-2.1C 2024-02-28, M&A context)", "\"artificial intelligence\" ciks=0000917520 forms=10-K 2023-05..2024-05 (0 hits)"],
+    "rationale": "TruDi is named in-window only as an acquired product in Integra's Acclarent-acquisition disclosures -- not as AI/navigation risk language and not tied to the stroke incident or litigation; the harm occurred pre-acquisition under Acclarent/J&J. No same-family AI risk language. T4 (medium: the product is named, but not in any risk/incident channel)."
+  },
+  "92": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Goldman Sachs (CIK 0000886982). The FY2019 10-K (0001193125-20-043853, 2020-02-21) carries 'fair lending' risk language (efts: 1 hit) -- the same-family consumer-credit/algorithmic-underwriting fair-lending regulatory-risk channel. 'Apple Card' appears in in-window quarterly-earnings 8-Ks (e.g., 2019-10-15, 2020-04-15, 2020-07-15) as a consumer-platform product, but efts 'Apple Card' inside the FY2019 10-K = 0 hits, i.e., the Apple Card gender-discrimination allegations and the NY Department of Financial Services inquiry are not named as a legal proceeding in the 10-K.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Apple Card\" ciks=0000886982 (product mentions in earnings 8-Ks; 0 hits inside the FY2019 10-K)", "\"fair lending\" ciks=0000886982 2019-11..2020-11 (1 hit: FY2019 10-K)", "\"Department of Financial Services\" ciks=0000886982 (generic supervisory references, not tied to Apple Card)"],
+    "rationale": "The specific Apple Card gender-bias episode/DFS inquiry is not named in Goldman's filings; only same-family fair-lending/consumer-credit underwriting risk language is present in the in-window 10-K. T3."
+  },
+  "149": {
+    "code": "T1",
+    "confidence": "high",
+    "evidence": "Zillow Group (CIK 0001617640). 8-K filed 2021-11-02 (0001617640-21-000085), covering Item 2.02 (Results of Operations) and Item 8.01 (Other Events). It explicitly announces winding down Zillow Offers/the Homes segment and states the reason verbatim: 'We've determined the unpredictability in forecasting home prices far exceeds what we anticipated and continuing to scale Zillow Offers would result in too much earnings and balance-sheet volatility' -- i.e., the failure of the predictive home-pricing tool. It discloses a Q3-2021 'write-down of inventory of approximately $304 million within the Homes segment as a result of purchasing homes in Q3 at higher prices than the company's current estimates of future selling prices,' plus guidance of 'an additional $240 million to $265 million of losses to be recognized in Q4,' and an ~25% workforce reduction. The accompanying earnings exhibit shows a nine-month inventory valuation adjustment of $304.4M and a Homes-segment Q3 loss of $421.6M.",
+    "accounting_channel": {
+      "filing_item": "8-K Item 8.01 (Other Events) narrative winding down Zillow Offers, with the associated inventory write-down reported alongside Item 2.02 (Results of Operations) results / earnings release. NOTE: contrary to the task's reference guess, this 8-K is captioned under Items 2.02 and 8.01, NOT Item 2.05 (Costs Associated with Exit or Disposal Activities); the Homes-segment inventory write-down is the accounting vehicle.",
+      "booked_impact": "yes -- ~$304 million Q3-2021 Homes-segment inventory write-down (lower-of-cost-or-net-realizable-value adjustment on homes bought above current expected selling prices), with a further $240-265 million of losses guided for Q4-2021; Homes-segment Q3-2021 loss of $421.6M."
+    },
+    "specific_queries": ["\"Zillow Offers\" ciks=0001617640 2021-11-02..2022-11-02 (20 hits; the 2021-11-02 8-K 0001617640-21-000085 is the wind-down announcement)", "8-K body q32021991.htm -> Items 2.02 & 8.01, wind-down rationale + write-down", "earnings exhibit q32021992.htm -> $304.4M nine-month inventory valuation adjustment, $421.6M Homes Q3 loss"],
+    "rationale": "Clear T1 disclosed-specific: the 8-K names the Zillow Offers shutdown, attributes it explicitly to the predictive pricing tool's inability to forecast home prices, and books a ~$304M inventory write-down plus $240-265M of guided Q4 losses -- the key accounting-channel incident of this batch (recorded as a Homes-segment inventory write-down under Items 2.02/8.01, not Item 2.05)."
+  },
+  "489": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Workday (CIK 0001327811). FY2020 10-K (0001327811-20-000022, 2020-03-03) carries same-family AI/ML risk language: '...machine learning and artificial intelligence present emerging ethical issues, and if we enable or offer solutions on this front that are controversial, due to their impact, or perceived impact, on human rights, privacy, employment, or in other social contexts, we may experience brand or reputational harm, competitive harm, or legal liability.' efts 'Mobley' in Workday filings = 0 hits; the Mobley hiring-bias suit is not named.",
+    "accounting_channel": null,
+    "specific_queries": ["\"Mobley\" ciks=0001327811 (0 hits)", "\"artificial intelligence\" ciks=0001327811 forms=10-K 2019-06..2020-06 (1 hit: FY2020 10-K)", "FY2020 10-K Item 1A AI/ML 'emerging ethical issues... employment... legal liability' review"],
+    "rationale": "Workday's own AI/ML risk factor squarely names the employment/bias harm family and legal-liability exposure, but the Mobley lawsuit itself is never named. Textbook T3."
+  },
+  "591": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Cigna (CIK 0001739940). FY2023 10-K (0001739940-24-000005, 2024-02-29) carries same-family risk language: 'risks related to our use of artificial intelligence and machine learning' (cautionary-statement risk list). efts 'PxDx' returns only a single filing -- a DEF 14A filed 2026-03-13 (0001739940-26-000023), well outside the incident window (2023-07-24 to 2024-07-24) -- so the PxDx procedure-to-diagnosis algorithm and the Kisting-Leung California class action over automated claim denials are not named in any in-window filing.",
+    "accounting_channel": null,
+    "specific_queries": ["\"PxDx\" ciks=0001739940 (1 hit, a 2026-03-13 DEF 14A -- out of window)", "\"artificial intelligence\" ciks=0001739940 forms=10-K 2023-07..2024-07 (1 hit: FY2023 10-K)", "\"automated\" ciks=0001739940 (FY2023 10-K + Q3-2023 10-Q; no PxDx/claim-denial-suit framing)"],
+    "rationale": "Cigna carries family-level AI/ML risk language, but PxDx and the automated-claim-denial class action are not named in-window (PxDx first surfaces only in a 2026 proxy). Consistent with the pilot's 'not disclosed' read. T3, medium (Legal Proceedings text not exhaustively retrieved, but PxDx is confirmed absent from all in-window filings)."
+  },
+  "1492": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Palantir (CIK 0001321655). Incident 2026-02-28. The in-window quarterly filing is the Q1 2026 10-Q (0001321655-26-000028, filed 2026-05-04), which states its risk factors are incorporated by reference to the FY2025 10-K (filed 2026-02-17, i.e., 11 days before the incident and just outside the window) rather than restated; the 10-Q reports no pending legal matter expected to be material. Palantir's referenced risk factors carry its standard family-level language on controversial government/defense/military use of its platforms and associated reputational/human-rights harm and AI (AIP) risk. The 10-Q does not mention any 2026 strike, Iran, or a school.",
+    "accounting_channel": null,
+    "specific_queries": ["\"artificial intelligence\" ciks=0001321655 forms=10-K,10-Q 2026-02-28..2026-08-03 (1 hit: Q1-2026 10-Q 0001321655-26-000028)", "Q1-2026 10-Q pltr-20260331.htm -> risk factors incorporated by reference to FY2025 10-K (2026-02-17); no Iran/school/strike named"],
+    "rationale": "A classified/contested military-targeting strike would not be named in Palantir filings; the in-window 10-Q carries (by reference) only family-level defense/military-use controversy and AI risk language. T3, medium (in-window risk factors are incorporated by reference to a 10-K filed just before the incident)."
+  }
+}

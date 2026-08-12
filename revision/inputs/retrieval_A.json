@@ -1,0 +1,202 @@
+[
+ {
+  "incident_id": "333",
+  "incident_date": "2021-03-17",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "pass1_code": "T3",
+  "title": "Tesla on Autopilot Crashed Parked Michigan Police Car on Interstate",
+  "description": "A Tesla Model Y on Autopilot collided with a parked Michigan State Police (MSP) car which had its emergency lights on, in Eaton County, Michigan, although no one was injured."
+ },
+ {
+  "incident_id": "161",
+  "incident_date": "2019-04-03",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Facebook's Ad Delivery Reportedly Excluded Audience along Racial and Gender Lines",
+  "description": "Facebook's housing and employment ad delivery process allegedly resulted in skews in exposure for some users along demographic lines such as gender and racial identity."
+ },
+ {
+  "incident_id": "645",
+  "incident_date": "2024-02-21",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "pass1_code": "T3",
+  "title": "Seeming Pattern of Gemini Bias and Sociotechnical Training Failures Harm Google's Reputation",
+  "description": "Google's Gemini chatbot faced many reported bias issues upon release, leading to a variety of problematic outputs like racial inaccuracies and political biases, including regarding Chinese and Indian politics. It also re"
+ },
+ {
+  "incident_id": "580",
+  "incident_date": "2023-06-12",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Alleged Gender Discrimination in Facebook Job Ads Algorithm",
+  "description": "Facebook's ad delivery algorithm allegedly disproportionately showed job advertisements to one gender. Despite claims of non-discrimination, the algorithm's actions seem to perpetuate societal biases, which in turn could"
+ },
+ {
+  "incident_id": "550",
+  "incident_date": "2023-03-17",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "pass1_code": "T3",
+  "title": "Tesla Allegedly on Autopilot Struck High School Student Exiting School Bus",
+  "description": "A 17-year-old student in Hollister, North Carolina who exited the school bus and was walking across the street to his house was hit by a 2022 Tesla Model Y allegedly operating on Autopilot mode, suffering a fractured nec"
+ },
+ {
+  "incident_id": "400",
+  "incident_date": "2022-02-23",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "pass1_code": "T3",
+  "title": "Google Search Returned Fewer Results for Abortion Services in Rural Areas",
+  "description": "Google Search reportedly returned fewer abortion clinics for searches from poorer and rural areas, particularly ones with Targeted Regulation of Abortion Providers (TRAP) laws."
+ },
+ {
+  "incident_id": "318",
+  "incident_date": "2021-01-13",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Facebook Recommended Military Gear Ads Despite Pause on Weapons Accessories Ads",
+  "description": "Facebook\u2019s algorithmic recommendations reportedly continued showing advertisements for gun accessories and military gear, despite Facebook\u2019s halt on weapons accessories ads following the US Capitol attack."
+ },
+ {
+  "incident_id": "256",
+  "incident_date": "2021-11-07",
+  "CIK": "1351636",
+  "matched_company": "SoundThinking, Inc.",
+  "ticker": "SSTI",
+  "pass1_code": "T3",
+  "title": "DUI Arrest Case Allegedly Based Only on ShotSpotter's Alert",
+  "description": "A car stop resulting in a DUI arrest of its driver was allegedly based solely on a ShotSpotter alert, the reliability of which came into question by public defenders, who subpoenaed the company to assess its gunshot aler"
+ },
+ {
+  "incident_id": "1180",
+  "incident_date": "2025-03-25",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Purported Meta AI Chatbot Persona 'Big sis Billie' Reportedly Engages in Romantic Roleplay and Provides Address, Linked to User's Fatal Fall",
+  "description": "Reuters reported that a cognitively impaired New Jersey man, Thongbue Wongbandue, died after rushing to meet \"Big sis Billie,\" a purported Meta AI chatbot on Facebook Messenger that allegedly assured him it was real, exp"
+ },
+ {
+  "incident_id": "141",
+  "incident_date": "2021-02-05",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "California Police Turned on Music to Allegedly Trigger Instagram\u2019s DCMA to Avoid Being Live-Streamed",
+  "description": "A police officer in Beverly Hills played copyrighted music on his phone when realizing that his interactions were being recorded on a livestream, allegedly hoping the Instagram's automated copyright detection system to e"
+ },
+ {
+  "incident_id": "145",
+  "incident_date": "2021-07-23",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "pass1_code": "T3",
+  "title": "Tesla's Autopilot Misidentified the Moon as Yellow Stop Light",
+  "description": "Tesla's Autopilot was shown on video by its owner mistaking the moon for a yellow stop light, allegedly causing the vehicle to keep slowing down."
+ },
+ {
+  "incident_id": "275",
+  "incident_date": "2020-06-11",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Facebook\u2019s Moderation Algorithm Banned Users for Historical Evidence of Slavery",
+  "description": "Facebook\u2019s automated content moderation was acknowledged by a company spokesperson to have erroneously censored and banned Australian users from posting an article containing a 1890s photo of Aboriginal men in chains ove"
+ },
+ {
+  "incident_id": "533",
+  "incident_date": "2021-06-02",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "pass1_code": "T3",
+  "title": "Tesla FSD Misidentified Truck Hauling Traffic Lights as Trail of Traffic Lights",
+  "description": "A Tesla driver posted on Twitter his Tesla FSD's \"glitch,\" misidentifying deactivated traffic lights being carried by a truck as a constant trail of traffic lights while traveling at high speed on a highway."
+ },
+ {
+  "incident_id": "563",
+  "incident_date": "2023-08-14",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "pass1_code": "T3",
+  "title": "Cruise Robotaxi Initially Blamed for Ambulance Delay in Case Where Patient Later Died; Subsequent Reports Clear Cruise of Fault",
+  "description": "In an initial report, a Cruise robotaxi was said to have delayed a San Francisco ambulance transporting Sammy Davis, a critically injured 69-year-old hit by a city bus. Davis later died. Subsequent clarification revealed"
+ },
+ {
+  "incident_id": "1523",
+  "incident_date": "2026-05-14",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Reported AI-Generated Videos Placed Kosovo Parliamentary Candidates in Purportedly Fabricated Campaign Scenes",
+  "description": "Videos reported as AI-fabricated circulated on Facebook during Kosovo's June 2026 parliamentary campaign, placing Albin Kurti, Vjosa Osmani, Lumir Abdixhiku, and other candidates in staged scenes of party camaraderie and"
+ },
+ {
+  "incident_id": "168",
+  "incident_date": "2022-03-01",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Collaborative Filtering Prone to Popularity Bias, Resulting in Overrepresentation of Popular Items in the Recommendation Outputs",
+  "description": "Collaborative filtering prone to popularity bias, resulting in overrepresentation of popular items in the recommendation outputs."
+ },
+ {
+  "incident_id": "473",
+  "incident_date": "2023-02-08",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "pass1_code": "T3",
+  "title": "Bing Chat's Initial Prompts Revealed by Early Testers Through Prompt Injection",
+  "description": "Early testers of Bing Chat successfully used prompt injection to reveal its built-in initial instructions, which contains a list of statements governing ChatGPT's interaction with users."
+ },
+ {
+  "incident_id": "1178",
+  "incident_date": "2025-07-21",
+  "CIK": "1652044",
+  "matched_company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "pass1_code": "T3",
+  "title": "Google Gemini CLI Reportedly Deletes User Files After Misinterpreting Command Sequence",
+  "description": "Product manager Anuraag Gupta reported that Google's Gemini CLI AI coding assistant permanently deleted his files after misinterpreting a failed directory creation command. The tool allegedly proceeded as if the director"
+ },
+ {
+  "incident_id": "539",
+  "incident_date": "2023-03-11",
+  "CIK": "1564408",
+  "matched_company": "Snap Inc.",
+  "ticker": "SNAP",
+  "pass1_code": "T3",
+  "title": "Snapchat's My AI Reported for Lacking Protection for Children",
+  "description": "Snapchat's ChatGPT-powered My AI was reported for lacking safeguards for children, such as telling a user who tested the chatbot by pretending to sign up as a 13-year-old girl to lie to her parents about having a romanti"
+ },
+ {
+  "incident_id": "1247",
+  "incident_date": "2025-04-28",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "pass1_code": "T3",
+  "title": "Meta AI Reportedly Generated Purportedly False Claims Linking Activist Robby Starbuck to January 6th Riot, Prompting Defamation Lawsuit",
+  "description": "Conservative activist Robby Starbuck reportedly filed a defamation lawsuit against Meta, alleging its Meta AI chatbot published false statements claiming he participated in the Jan. 6 Capitol riot, was arrested, denied t"
+ }
+]

@@ -1,0 +1,31 @@
+incident_id,matched_company,ticker,CIK,incident_date,severity_tier,event_short,specific_terms
+TBD-01,General Motors Company,GM,1467858,2023-10-02,T3-severe,GM Cruise robotaxi dragged pedestrian; permit suspended,Cruise|robotaxi|pedestrian
+TBD-02,"Tesla, Inc.",TSLA,1318605,2021-08-13,T3-severe,NHTSA opens Autopilot defect probe (PE21-020),Autopilot|NHTSA|self-driving
+TBD-03,"Tesla, Inc.",TSLA,1318605,2023-12-13,T3-severe,Recall of ~2M vehicles over Autopilot safeguards,full self-driving|recall|Autopilot
+TBD-04,UnitedHealth Group Inc.,UNH,731766,2023-11-14,T3-severe,nH Predict/naviHealth algorithm care-denial lawsuit,nH Predict|naviHealth|algorithm
+TBD-05,The Cigna Group,CI,1739940,2023-03-25,T3-severe,PxDx algorithm mass claim denials (ProPublica),PxDx|algorithm|claims
+TBD-06,UnitedHealth Group Inc.,UNH,731766,2019-10-24,T3-severe,Optum care-management algorithm racial bias (Science),algorithm|bias
+TBD-07,"Zillow Group, Inc.",ZG,1617640,2021-11-02,T3-severe,Zillow Offers algorithmic iBuying wind-down; writedown,Zillow Offers|algorithm|iBuying
+TBD-08,"Tesla, Inc.",TSLA,1318605,2022-02-16,T2-moderate,NHTSA phantom-braking investigation,phantom braking|Autopilot
+TBD-09,The Goldman Sachs Group Inc.,GS,886982,2019-11-08,T2-moderate,Apple Card credit-limit gender-bias allegation,Apple Card|algorithm|credit
+TBD-10,"Meta Platforms, Inc.",META,1326801,2022-06-21,T2-moderate,DOJ/HUD ad-delivery discrimination settlement,advertising|discrimination|housing
+TBD-11,"Amazon.com, Inc.",AMZN,1018724,2020-06-10,T2-moderate,Rekognition police facial-recognition moratorium,Rekognition|facial recognition
+TBD-12,Rite Aid Corporation,RAD,84129,2023-12-19,T2-moderate,FTC bans Rite Aid facial-recognition use,facial recognition|FTC
+TBD-13,"Workday, Inc.",WDAY,1327811,2023-02-21,T2-moderate,Mobley v. Workday hiring-algorithm bias suit,Mobley|algorithm|discrimination
+TBD-14,"X Corp. (fmr Twitter, Inc.)",TWTR,1418091,2020-09-19,T2-moderate,Twitter image-cropping saliency bias,image cropping|algorithm|saliency
+TBD-15,"Meta Platforms, Inc.",META,1326801,2021-09-14,T2-moderate,Instagram teen mental-health harms (internal research),Instagram|well-being|teen
+TBD-16,Alphabet Inc.,GOOGL,1652044,2024-02-21,T2-moderate,Gemini image generation historical inaccuracies,Gemini|image
+TBD-17,Microsoft Corporation,MSFT,789019,2023-02-16,T2-moderate,Bing/Sydney erratic chatbot behavior,Bing|chatbot|Copilot
+TBD-18,Wells Fargo & Company,WFC,72971,2022-03-10,T2-moderate,Mortgage-refinance algorithm racial disparity,algorithm|mortgage|refinanc
+TBD-19,Microsoft Corporation,MSFT,789019,2024-01-25,T2-moderate,Designer used to make nonconsensual deepfakes,Designer|deepfake|nonconsensual
+TBD-20,"Tesla, Inc.",TSLA,1318605,2019-10-01,T2-moderate,Smart Summon parking-lot collisions,Smart Summon|Autopilot
+TBD-21,McDonald's Corporation,MCD,63908,2024-06-17,T1-limited,AI drive-thru order errors; IBM pilot ended,drive-thru|automated order|IBM
+TBD-22,Microsoft Corporation,MSFT,789019,2023-10-31,T1-limited,MSN AI-generated news errors/poll,MSN|AI-generated
+TBD-23,Alphabet Inc.,GOOGL,1652044,2023-02-08,T1-limited,Bard demo factual error,Bard|chatbot
+TBD-24,"Meta Platforms, Inc.",META,1326801,2022-11-17,T1-limited,Galactica science LLM withdrawn,Galactica
+TBD-25,Snap Inc.,SNAP,1564408,2023-08-15,T1-limited,My AI chatbot rogue story/behavior,My AI|chatbot
+TBD-26,"Amazon.com, Inc.",AMZN,1018724,2021-12-28,T1-limited,Alexa suggests unsafe challenge to child,Alexa|voice assistant
+TBD-27,"Meta Platforms, Inc.",META,1326801,2022-08-05,T1-limited,BlenderBot offensive/false outputs,BlenderBot|chatbot
+TBD-28,"Tesla, Inc.",TSLA,1318605,2023-04-06,T2-moderate,Employees shared in-car camera footage (privacy),camera|privacy|footage
+TBD-29,Alphabet Inc.,GOOGL,1652044,2019-09-04,T2-moderate,YouTube COPPA children's-data FTC settlement,COPPA|children|YouTube
+TBD-30,Microsoft Corporation,MSFT,789019,2022-11-03,T2-moderate,GitHub Copilot open-source code litigation,Copilot|open source|litigation

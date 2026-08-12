@@ -1,0 +1,56 @@
+{
+  "pass2_subsample_n": 68,
+  "cohens_kappa": 0.726,
+  "observed_agreement": 0.853,
+  "expected_agreement": 0.463,
+  "gate": "PASS (>=0.70)",
+  "n_disagreements": 10,
+  "resolutions": {
+    "1376": {
+      "resolved_code": "T4",
+      "rationale": "Amazon's in-window AI-harm risk language does not clearly cover a GPS/navigation logistics failure; weak same-family fit -> conservative T4. (T3/T4: no effect on shadow.)"
+    },
+    "1401": {
+      "resolved_code": "T4",
+      "rationale": "WA-DOL-deployed AI phone system; Amazon's nexus is AWS-vendor only; no Amazon disclosure nexus -> T4. (No effect on shadow.)"
+    },
+    "386": {
+      "resolved_code": "T4",
+      "rationale": "Adopt pass-2: Amazon FY2019 10-K carries no worker-monitoring/algorithm risk factor ('AI' only in business text); time-off-task not same-family -> T4. (No effect on shadow.)"
+    },
+    "83": {
+      "resolved_code": "T4",
+      "rationale": "Defer to pass-1 dedicated Microsoft baseline (multi-year reads): AI-harm risk factor debuts FY2023; FY2021 'AI' mention is business/competitive, not harm-family -> T4. (No effect on shadow.)"
+    },
+    "881": {
+      "resolved_code": "T4",
+      "rationale": "CIK error found by pass-2 (1826681=Palladyne AI, not Serve Robotics); Serve is the victim and would not self-disclose -> T4. Crosswalk CIK corrected; flagged low-confidence. (No effect on shadow.)"
+    },
+    "997": {
+      "resolved_code": "T1",
+      "rationale": "Keep pass-1: 'Kadrey' returns 13 hits across Meta 10-K/10-Qs; the specific AI-training-copyright matter (LibGen/LLaMA) is named -> disclosed-specific."
+    },
+    "534": {
+      "resolved_code": "T2",
+      "rationale": "Keep pass-1: FY2021 10-K Contingencies note discloses the securities class actions arising from the algorithm/metrics allegations, framed as securities law without AI-incident framing -> T2."
+    },
+    "646": {
+      "resolved_code": "T2",
+      "rationale": "Adopt pass-2: Snap discloses product-liability litigation involving minors (+ My AI FTC->DOJ referral) in generic product-liability terms without recommendation-algorithm framing -> T2."
+    },
+    "711": {
+      "resolved_code": "T2",
+      "rationale": "Keep pass-1: Tesla discloses NHTSA Autopilot investigations generally (regulatory-risk framing), not this specific April-2024 probe as a narrated incident -> T2 (reserve T1 for uniquely-named events e.g. Cruise)."
+    },
+    "733": {
+      "resolved_code": "T4",
+      "rationale": "Adopt pass-2: the OnStar FTC consent order/privacy suits are disclosed only in a Q1-2025 filing, OUTSIDE the incident's 12-month window; nothing in-window -> T4. (Window-sensitivity example.)"
+    }
+  },
+  "headline_stability": {
+    "shadow_pass1_pct": 97.7,
+    "shadow_resolved_pct": 97.7,
+    "substantive_pass1": 7,
+    "substantive_resolved": 7
+  }
+}

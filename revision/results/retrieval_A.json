@@ -1,0 +1,142 @@
+{
+  "333": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["Autopilot (CIK+window: 8 filings, generic product term)", "Michigan (2 hits, both EX-21.1 subsidiary list / state-of-incorporation, not incident)"]
+  },
+  "161": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"Housing and Urban Development\" (0 hits)", "HUD (0 hits)", "\"ad targeting\" (4 hits in 2019 10-Qs/10-K, generic risk-factor language only; no HUD/discrimination legal-proceedings reference and no reference to the ad-delivery-skew study)"]
+  },
+  "645": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["Gemini (7 hits, all generic product/business mentions of Gemini in earnings 8-Ks and 10-K/10-Q; no reference to the image-generation bias controversy)"]
+  },
+  "580": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"ad delivery\" (1 hit, FY2023 10-K, generic business/risk term; no gender-job-ads or discrimination-litigation reference)"]
+  },
+  "550": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"school bus\" (0 hits)"]
+  },
+  "400": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["abortion (0 hits)"]
+  },
+  "318": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"weapons accessories\" (0 hits)"]
+  },
+  "256": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["subpoena (0 hits for SoundThinking/ShotSpotter in window; specific DUI case not referenced)"]
+  },
+  "1180": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["Billie (0 hits; no reference to 'Big sis Billie' persona or the fatal-fall matter)"]
+  },
+  "141": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"Beverly Hills\" (0 hits)"]
+  },
+  "145": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["moon (0 hits, confirmed after transient 500 errors; no Autopilot moon/stop-light anecdote)"]
+  },
+  "275": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["Aboriginal (0 hits)"]
+  },
+  "533": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"traffic lights\" (0 hits)"]
+  },
+  "563": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["ambulance (0 hits; the specific Aug-2023 ambulance-delay incident is not named, though GM/Cruise made broader Cruise disclosures tied to the later Oct-2023 pedestrian incident)"]
+  },
+  "1523": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["Kosovo (0 hits; short window 2026-05-14 to 2026-08-03)"]
+  },
+  "168": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"collaborative filtering\" (0 hits)"]
+  },
+  "473": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"Bing Chat\" (2 hits, FY2023 10-K and Q1 FY2024 10-Q, generic product mentions; no prompt-injection/leaked-instructions reference)"]
+  },
+  "1178": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"Gemini CLI\" (0 hits)"]
+  },
+  "539": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"My AI\" (11 hits, generic product/feature mentions in Snap investor letters and reports; no child-safety incident reference)"]
+  },
+  "1247": {
+    "pass1_code": "T3",
+    "audit_verdict": "HOLDS",
+    "revised_code": "T3",
+    "missed_disclosure": "none",
+    "queries_tried": ["\"Robby Starbuck\" (0 hits)", "Starbuck (transient 500s; broader 'Robby Starbuck' confirms no defamation-lawsuit reference in filings)"]
+  }
+}

@@ -1,0 +1,138 @@
+[
+ {
+  "incident_id": "83",
+  "incident_date": "2020-10-22",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "AI Spam Filters Allegedly Block Legitimate Emails Based on Biased Keyword Detection"
+ },
+ {
+  "incident_id": "622",
+  "incident_date": "2023-12-18",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "title": "Chevrolet Dealer Chatbot Agrees to Sell Tahoe for $1"
+ },
+ {
+  "incident_id": "501",
+  "incident_date": "2019-06-03",
+  "CIK": "731766",
+  "matched_company": "UnitedHealth Group Inc.",
+  "ticker": "UNH",
+  "title": "Length of Stay False Diagnosis Cut Off Insurer's Payment for Treatment of Elderly Woman"
+ },
+ {
+  "incident_id": "733",
+  "incident_date": "2024-06-09",
+  "CIK": "1467858",
+  "matched_company": "General Motors Company",
+  "ticker": "GM",
+  "title": "Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Driver Data"
+ },
+ {
+  "incident_id": "578",
+  "incident_date": "2023-06-26",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Alleged Exploitation of Meta's Open-Source LLaMA Model for NSFW and Violent Content"
+ },
+ {
+  "incident_id": "149",
+  "incident_date": "2021-11-02",
+  "CIK": "1617640",
+  "matched_company": "Zillow Group, Inc.",
+  "ticker": "ZG",
+  "title": "Zillow Shut Down Zillow Offers Division Allegedly Due to Predictive Pricing Tool's Insufficient Accuracy"
+ },
+ {
+  "incident_id": "1559",
+  "incident_date": "2022-06-22",
+  "CIK": "104169",
+  "matched_company": "Walmart Inc.",
+  "ticker": "WMT",
+  "title": "Kalibrate Fuel Pricing Allegedly Enabled California Gas Station Operators to Coordinate Higher Pump Prices"
+ },
+ {
+  "incident_id": "1176",
+  "incident_date": "2025-08-01",
+  "CIK": "789019",
+  "matched_company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "title": "Microsoft's Windows Recall Allegedly Stores Passwords and Social Security Numbers in Preview Mode"
+ },
+ {
+  "incident_id": "533",
+  "incident_date": "2021-06-02",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla FSD Misidentified Truck Hauling Traffic Lights as Trail of Traffic Lights"
+ },
+ {
+  "incident_id": "620",
+  "incident_date": "2021-11-10",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "A Robot at a Tesla Factory in Texas Allegedly Injured an Engineer"
+ },
+ {
+  "incident_id": "145",
+  "incident_date": "2021-07-23",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla's Autopilot Misidentified the Moon as Yellow Stop Light"
+ },
+ {
+  "incident_id": "471",
+  "incident_date": "2019-06-22",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook Allegedly Failed to Police Hate Speech Content That Contributed to Ethnic Violence in Ethiopia"
+ },
+ {
+  "incident_id": "997",
+  "incident_date": "2023-02-28",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Meta and OpenAI Accused of Using LibGen\u2019s Pirated Books to Train AI Models"
+ },
+ {
+  "incident_id": "525",
+  "incident_date": "2019-07-06",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla Vehicle Running on Self-Driving Mode Crashes on City Streets"
+ },
+ {
+  "incident_id": "889",
+  "incident_date": "2025-01-07",
+  "CIK": "1318605",
+  "matched_company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "title": "Tesla's 'Actually Smart Summon' Feature Reportedly Linked to Multiple Parking Lot Collisions"
+ },
+ {
+  "incident_id": "796",
+  "incident_date": "2024-06-01",
+  "CIK": "1326801",
+  "matched_company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "title": "Facebook's Content Moderation System Flagged and Removed Emergency Updates as Spam During Wildfires"
+ },
+ {
+  "incident_id": "228",
+  "incident_date": "2019-02-01",
+  "CIK": "320193",
+  "matched_company": "Apple Inc.",
+  "ticker": "AAPL",
+  "title": "Apple Maps Allegedly Directed Ski Trip Couple Onto Unpaved Road in the Mountains"
+ }
+]

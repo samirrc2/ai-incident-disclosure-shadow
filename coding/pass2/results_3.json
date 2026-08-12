@@ -1,0 +1,87 @@
+{
+  "1436": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "EDGAR FTS for 'TruDi' in CIK 0000917520 (Integra) 8-K/10-K/10-Q over [2022-06-23,2023-06-23] = 0 hits. FTS for 'artificial intelligence' in Integra 10-K in window = 0 hits. No AI/algorithm same-family risk-factor language; product not named; no litigation disclosed for the patient stroke. No disclosure located."
+  },
+  "1528": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Same as 1436 for the May 2023 sinuplasty incident. 'TruDi' and 'artificial intelligence' return 0 hits in Integra (CIK 917520) window filings; Integra 10-K risk factors carry product-liability language but no AI/algorithm family framing. No disclosure located."
+  },
+  "313": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "FTS 'BlenderBot' in Meta (CIK 1326801) window [2022-08-25,2023-08-25] = 0 hits (event not named). Meta FY2022 10-K (meta-20221231.htm, filed 2023-02-02, in window) contains 'artificial intelligence' risk-factor language. Same-family AI risk language present; specific chatbot incident not named."
+  },
+  "696": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Meta AI ad-platform overspending (window 2024-02-14 to 2025-02-14). Meta FY2023 10-K (filed Feb 2024, in window) carries AI/algorithm risk-factor language; the specific ad-platform performance issue is not named. Same-family generic AI risk language."
+  },
+  "1224": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "FTS 'deepfake' in Meta window [2025-10-01,2026-08-03] = 0 hits. Meta FY2025 10-K (meta-20251231.htm, filed 2026-01-29, in window) contains 'artificial intelligence' risk-factor language covering harmful/AI-generated content on its platforms. Deepfake celebrity-ad fraud scheme not named; same-family AI/content risk language present."
+  },
+  "1584": {
+    "code": "T3",
+    "confidence": "low",
+    "evidence": "AI-assisted layoff/protected-leave discrimination (incident 2026-05-20). In-window Meta filings (10-Q meta-20260630.htm filed 2026-07-30 and 8-K filed 2026-07-29) contain 'artificial intelligence'. Same-family generic AI risk language present in window; the employment-discrimination event is not named. Borderline (AI-in-HR vs product-AI framing)."
+  },
+  "540": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla (CIK 1318605) FY2023 10-K (tsla-20231231.htm, filed 2024-01-29, in window [2023-05-15,2024-05-15]) mentions Autopilot and carries risk-factor language on Autopilot/FSD accidents ('accidents... where Autopilot or FSD features are engaged are the subject of significant public attention'). Specific May 2023 crosswalk pedestrian event not named; no specific proceeding disclosed. Same-family autonomous/AI risk language."
+  },
+  "291": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla FY2021 10-K (tsla-20211231.htm, filed 2022-02, in window [2021-05-28,2022-05-28]) risk factors discuss Autopilot/FSD marketing, regulatory restrictions, and accidents in AI-framed language. The 'misled customers about Autopilot/FSD capabilities' allegation is not named; CA DMV complaint (Jul 2022) falls outside window. Same-family AI/autonomy risk language; AI framing present so not T2."
+  },
+  "271": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "Tesla Model 3 Autopilot motorcyclist fatality, Utah (2022-07-24). In-window Tesla 10-Q/10-K/8-K filings mention Autopilot; risk factors describe Autopilot/FSD accident and liability risk generically. Specific Utah crash not named in any filing. Same-family autonomous-driving risk language."
+  },
+  "293": {
+    "code": "T3",
+    "confidence": "high",
+    "evidence": "GM (CIK 1467858) FY2022 10-K (gm-20221231.htm, filed 2023-01-31, in window) contains extensive Cruise autonomous-vehicle risk-factor language ('accidents... associated with our autonomous driving systems... could be subject to liability, reputational harm, government scrutiny and further regulation'). The specific June 2022 SF intersection collision is not named; no specific Cruise proceeding disclosed in window. Same-family AV/AI risk language."
+  },
+  "386": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Amazon (CIK 1018724) FY2019 10-K (amzn-20191231x10k.htm, in window [2019-07-03,2020-07-03]): 'artificial intelligence' appears only in business/overview text, NOT in risk factors; no risk-factor language on algorithms, automated systems, or worker-productivity/'time off task' monitoring. 'Time off Task' FTS = 0 hits. No same-family AI/algorithm risk-factor language. No disclosure located."
+  },
+  "528": {
+    "code": "T3",
+    "confidence": "medium",
+    "evidence": "Amazon FY2023 10-K (amzn-20231231.htm, filed 2024-02-02, in window [2023-04-08,2024-04-08]) risk factors carry AI/algorithm family language (IP-infringement claims from AI use; reputational/ethical concerns re 'development and use of artificial intelligence and machine learning'). The algorithmic-pricing book-price event is not named. Same-family algorithm/AI risk language present."
+  },
+  "127": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Microsoft (CIK 789019) FY2020 10-K (msft-10k_20200630.htm, in window [2020-06-06,2021-06-06]): 'artificial intelligence' present but no risk factor addressing AI/algorithmic bias, flawed automated outputs, or reputational harm from automated content selection. MSN photo-selection algorithm event not named; no same-family AI/algorithm risk-factor language. No disclosure located."
+  },
+  "240": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Microsoft FY2021 10-K (msft-10k_20210630.htm, in window [2021-06-29,2022-06-29]): no dedicated AI/algorithm risk factor and no dedicated open-source-licensing risk factor (open source only mentioned in business section). 'Copilot' FTS in window = 0 hits. GitHub Copilot copyright class action filed Nov 2022 (outside window). No same-family AI-framed risk-factor language; no in-window proceeding. No disclosure located."
+  },
+  "292": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Apple (CIK 320193) FY2021 10-K: 'artificial intelligence' = 0 hits and 'machine learning' = 0 hits in window [2021-09-01,2022-09-01] filings. Apple never disclosed its autonomous-vehicle program; no AV/AI risk-factor language and no named event. No disclosure located."
+  },
+  "881": {
+    "code": "T4",
+    "confidence": "high",
+    "evidence": "Waymo collides with Serve Robotics delivery bot (2024-12-27). NOTE CIK MISMATCH: given CIK 0001826681 resolves in EDGAR to Palladyne AI Corp (ticker PDYN), not Serve Robotics (SERV; actual CIK ~0001836833). Under the specified CIK the in-window 10-K (pdyn-20241231.htm) is unrelated to this incident. 'Waymo' FTS = 0 hits. Serve is the victim (bot struck by a Waymo) and would not disclose this as its own material AI event. No disclosure located for the specified CIK."
+  },
+  "364": {
+    "code": "T4",
+    "confidence": "medium",
+    "evidence": "Walmart (CIK 104169) FY2021 10-K (in window [2020-04-15,2021-04-15]): 'artificial intelligence' = 0 hits in 10-K. Missed-scan/bagging-detection AI event affecting workers not named; no AI/algorithm same-family risk-factor language located. No disclosure located."
+  }
+}
