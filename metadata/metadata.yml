@@ -11,7 +11,7 @@ description: >
   permutation, Fisher, Cochran-Armitage), inter-coder reliability (Cohen's kappa, PABAK,
   Gwet's AC1), the incident-firm map, and all publication figures - 100% offline and
   byte-stable across runs. Measures disclosure behavior, not legal compliance.
-  Code Ocean DOI: https://doi.org/10.24433/CO.2340354.v1
+  Code Ocean DOI: https://doi.org/10.24433/CO.2340354.v2
 authors:
   - name: "Samir Chincholikar"
     affiliation: "Independent Researcher"

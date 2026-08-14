@@ -8,7 +8,7 @@ article are openly available on GitHub, archived on Zenodo, and packaged as an
 executable Code Ocean capsule:
 
 - **Source repository:** https://github.com/samirrc2/ai-incident-disclosure-shadow
-- **Executable capsule (Code Ocean):** https://doi.org/10.24433/CO.2340354.v1
+- **Executable capsule (Code Ocean):** https://doi.org/10.24433/CO.2340354.v2
 - **Archive (Zenodo):** https://doi.org/10.5281/zenodo.\<ID\>  *(insert minted DOI on release)*
 
 > Chincholikar, S. & Chawla, R. (2026). *The AI Incident Disclosure Shadow —

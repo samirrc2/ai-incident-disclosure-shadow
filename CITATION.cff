@@ -21,9 +21,9 @@ authors:
 repository-code: "https://github.com/samirrc2/ai-incident-disclosure-shadow"
 identifiers:
   - type: doi
-    value: "10.24433/CO.2340354.v1"
+    value: "10.24433/CO.2340354.v2"
     description: "Code Ocean compute capsule"
-url: "https://doi.org/10.24433/CO.2340354.v1"
+url: "https://doi.org/10.24433/CO.2340354.v2"
 license: MIT
 version: "1.0.0"
 date-released: "2026-08-12"

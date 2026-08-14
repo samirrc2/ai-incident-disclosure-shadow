@@ -1,7 +1,7 @@
 # Pinned environment for the fully-offline reproduction of
 # "The AI Incident Disclosure Shadow." No API keys or network are required.
 # This matches the audited Code Ocean capsule environment
-# (https://doi.org/10.24433/CO.2340354.v1).
+# (https://doi.org/10.24433/CO.2340354.v2).
 FROM python:3.12-slim
 
 ARG DEBIAN_FRONTEND=noninteractive

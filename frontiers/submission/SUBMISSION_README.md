@@ -15,7 +15,7 @@ folder holds the submission-only extras (individual figures + cover letter).
 | Figures (individual, in order) | `Figure1.png` … `Figure4.png` |
 | Cover letter | `cover_letter.pdf` |
 
-The manuscript has **4 figures and 6 tables** and already embeds all figures/tables at the end,
+The manuscript has **4 figures and 5 tables** and already embeds all figures/tables at the end,
 so the PDF is complete on its own.
 
 ## Author / corresponding author

@@ -6,7 +6,7 @@ inputs in `data/` and `coding/`. No API keys, network, or paid services are used
 ## Pinned stack
 
 `Dockerfile` mirrors the audited Code Ocean capsule
-(https://doi.org/10.24433/CO.2340354.v1): a Python 3.12 base plus a minimal pinned
+(https://doi.org/10.24433/CO.2340354.v2): a Python 3.12 base plus a minimal pinned
 analysis stack — `numpy==2.2.6`, `scipy==1.14.1`, `matplotlib==3.9.2`, `pytest==8.3.3`.
 Exact versions are also listed in `../environment.txt`.
 
