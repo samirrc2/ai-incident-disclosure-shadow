@@ -9,6 +9,17 @@ __pycache__/
 venv/
 /results/
 
+# Scratch / packaging artifacts — never publish these
+_to_delete/
+_sync.tgz
+_sync_tmp/
+*.tgz
+*.tar.gz
+codeocean_capsule_*.zip
+_capsule_*.tgz
+_COMMITMSG.txt
+_gold_list.txt
+
 # LaTeX build artifacts
 *.aux
 *.bbl

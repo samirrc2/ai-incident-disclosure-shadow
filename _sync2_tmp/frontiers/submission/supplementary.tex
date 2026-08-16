@@ -1,3 +1,44 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\pagestyle{plain}
+\begin{document}
+
+{\large\bfseries Supplementary Material}
+
+\vspace{8pt}
+
+\section*{Supplementary Table S1}
+
+The 40 incidents for which an external CSET AI Harm Taxonomy classification was
+available. For these incidents the CSET severity classification was preserved
+rather than assigned under the study rubric (see Materials and Methods,
+``Severity of incidents''). CSET values are reproduced verbatim from the
+released taxonomy; nothing is inferred. The remaining incidents were assigned
+Severe/Moderate/Limited under the pre-specified study rubric and are not listed
+here.
+
+\vspace{6pt}
+
+{\footnotesize
+\begin{longtable}{@{}r p{9.2cm} l@{}}
+\toprule
+AIID incident ID & CSET classification (harm level; tangible harm) & Study severity \\
+\midrule
+\endfirsthead
+\toprule
+AIID incident ID & CSET classification (harm level; tangible harm) & Study severity \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\emph{continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
 81 & none; no tangible harm, near-miss, or issue & Moderate \\
 82 & none; no tangible harm, near-miss, or issue & Moderate \\
 83 & none; no tangible harm, near-miss, or issue & Moderate \\
@@ -38,3 +79,7 @@
 576 & none; no tangible harm, near-miss, or issue & Moderate \\
 583 & none; no tangible harm, near-miss, or issue & Moderate \\
 614 & none; no tangible harm, near-miss, or issue & Moderate \\
+\end{longtable}
+}
+
+\end{document}

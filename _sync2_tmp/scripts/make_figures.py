@@ -98,4 +98,13 @@ fig.savefig(FIG/"fig3.png",bbox_inches="tight"); plt.close(fig)
 # Note: the CSET AI-Harm severity subset (40 incidents) is presented as Supplementary
 # Table S1, not a figure. Onset years are documented in the coding logs.
 
+# ---------- Single source of truth: mirror the same PNGs into the submission
+# folder as Figure{1..4}.png so the portal copies can never drift from the
+# manuscript copies. Any re-run refreshes both sets identically. ----------
+import shutil
+SUB=ROOT/"frontiers"/"submission"; SUB.mkdir(parents=True,exist_ok=True)
+for i in (1,2,3,4):
+    shutil.copyfile(FIG/f"fig{i}.png", SUB/f"Figure{i}.png")
+
 print("wrote figures to", FIG, ":", *[p.name for p in sorted(FIG.glob('*.png'))])
+print("mirrored to", SUB, ": Figure1.png Figure2.png Figure3.png Figure4.png")

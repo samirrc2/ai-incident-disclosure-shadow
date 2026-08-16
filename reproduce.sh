@@ -22,7 +22,16 @@ export PYTHONHASHSEED=0 MPLBACKEND=Agg
 
 echo "== reproduce: offline · \$0 · no network =="
 
-# ---- (0) dependency preflight ------------------------------------------------
+# ---- (0a) use a local pinned virtualenv if one exists ------------------------
+# If you created ./.venv (python3 -m venv .venv && .venv/bin/pip install -r
+# requirements.txt), use it automatically so the system python is never touched.
+if [ -z "${VIRTUAL_ENV:-}" ] && [ -f ".venv/bin/activate" ]; then
+  # shellcheck disable=SC1091
+  . .venv/bin/activate
+  echo "  [venv] using $(command -v python3)"
+fi
+
+# ---- (0b) dependency preflight -----------------------------------------------
 # On a clean machine the system python may lack the pinned analysis stack. Fail
 # fast with an actionable message rather than a bare ModuleNotFoundError deep in
 # the run. To reproduce exactly, install the pinned versions first:
