@@ -1,0 +1,9 @@
+[
+  "tests/test_reproducibility.py::test_coded_table_shape",
+  "tests/test_reproducibility.py::test_extended_concentration_and_tests",
+  "tests/test_reproducibility.py::test_extended_reliability",
+  "tests/test_reproducibility.py::test_headline_results",
+  "tests/test_reproducibility.py::test_resolution_regenerated",
+  "tests/test_reproducibility.py::test_retrieval_validation_zero_false_negatives",
+  "tests/test_reproducibility.py::test_window_robustness_monotone"
+]

@@ -1,0 +1,3 @@
+The AI Incident Disclosure Shadow: An Incident-Level Study Matching AIID-Recorded AI Failures to U.S.-Listed Companies' Investor Disclosures, 2019–2026
+
+Reproducibility artifact for the Frontiers in Artificial Intelligence (AI in Finance) submission: code, frozen SHA-256-pinned inputs, and the deterministic offline pipeline that regenerates every quantitative result, table, and figure. Large raw AIID snapshot tracked with Git LFS.
