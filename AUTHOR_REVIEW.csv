@@ -1,0 +1,777 @@
+source_file,incident_id,field,proposed_value,confidence,rationale
+data/t3_split.csv,82,t3_split,T3a,high,incident families app=[content-moderation] harm=[misinformation-content|service-quality]; filing matched app=[content-moderation] harm=[misinformation-content]
+data/t3_split.csv,84,t3_split,T3b,medium,incident families app=[content-moderation|predictive-scoring] harm=[misinformation-content|service-quality]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,81,t3_split,T3a,high,incident families app=[vision-biometric] harm=[discrimination-bias]; filing matched app=[vision-biometric] harm=[discrimination-bias]
+data/t3_split.csv,97,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[service-quality]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,92,t3_split,T3a,high,incident families app=[predictive-scoring] harm=[discrimination-bias]; filing matched app=[predictive-scoring] harm=[discrimination-bias]
+data/t3_split.csv,89,t3_split,T3b,medium,incident families app=[recommender-ranking] harm=[]; filing matched app=[recommender-ranking] harm=[]
+data/t3_split.csv,105,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[harmful-content-minors|physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,113,t3_split,T3b,low,incident families app=[content-moderation] harm=[misinformation-content]; filing matched app=[] harm=[]
+data/t3_split.csv,116,t3_split,T3b,low,incident families app=[predictive-scoring] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,129,t3_split,T3b,medium,incident families app=[content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,144,t3_split,T3a,high,incident families app=[content-moderation] harm=[misinformation-content]; filing matched app=[content-moderation] harm=[misinformation-content]
+data/t3_split.csv,160,t3_split,T3b,low,incident families app=[recommender-ranking|speech-nlp] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,161,t3_split,T3a,high,incident families app=[ads-targeting] harm=[discrimination-bias]; filing matched app=[ads-targeting] harm=[discrimination-bias]
+data/t3_split.csv,168,t3_split,T3a,high,incident families app=[recommender-ranking] harm=[discrimination-bias]; filing matched app=[recommender-ranking] harm=[discrimination-bias]
+data/t3_split.csv,153,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,145,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[service-quality]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,141,t3_split,T3b,medium,incident families app=[] harm=[ip-copyright]; filing matched app=[] harm=[ip-copyright]
+data/t3_split.csv,125,t3_split,T3b,medium,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,156,t3_split,T3b,medium,incident families app=[recommender-ranking] harm=[harmful-content-minors]; filing matched app=[recommender-ranking] harm=[]
+data/t3_split.csv,143,t3_split,T3b,medium,incident families app=[content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,157,t3_split,T3b,low,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,139,t3_split,T3b,medium,incident families app=[recommender-ranking] harm=[misinformation-content]; filing matched app=[recommender-ranking] harm=[]
+data/t3_split.csv,142,t3_split,T3a,high,incident families app=[ads-targeting|content-moderation] harm=[misinformation-content|service-quality]; filing matched app=[ads-targeting|content-moderation] harm=[service-quality]
+data/t3_split.csv,159,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,163,t3_split,T3b,medium,incident families app=[] harm=[discrimination-bias|service-quality]; filing matched app=[] harm=[discrimination-bias]
+data/t3_split.csv,203,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,213,t3_split,T3b,medium,incident families app=[ads-targeting] harm=[service-quality]; filing matched app=[ads-targeting] harm=[]
+data/t3_split.csv,175,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,178,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,220,t3_split,T3b,medium,incident families app=[ads-targeting|content-moderation] harm=[]; filing matched app=[ads-targeting] harm=[]
+data/t3_split.csv,221,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety|service-quality]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,181,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[harmful-content-minors|physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,209,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,215,t3_split,T3b,medium,incident families app=[content-moderation] harm=[harmful-content-minors|service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,208,t3_split,T3b,low,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,211,t3_split,T3b,low,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,187,t3_split,T3b,medium,incident families app=[ads-targeting|autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,218,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,197,t3_split,T3b,medium,incident families app=[content-moderation|recommender-ranking] harm=[misinformation-content]; filing matched app=[content-moderation|recommender-ranking] harm=[]
+data/t3_split.csv,230,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,271,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,268,t3_split,T3b,medium,incident families app=[content-moderation] harm=[]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,255,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,253,t3_split,T3b,low,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,256,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,265,t3_split,T3b,low,incident families app=[] harm=[discrimination-bias|misinformation-content|service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,278,t3_split,T3a,high,incident families app=[generative-llm] harm=[discrimination-bias]; filing matched app=[generative-llm] harm=[discrimination-bias]
+data/t3_split.csv,275,t3_split,T3b,medium,incident families app=[content-moderation] harm=[rights-legal]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,285,t3_split,T3b,medium,incident families app=[speech-nlp] harm=[]; filing matched app=[speech-nlp] harm=[]
+data/t3_split.csv,293,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,347,t3_split,T3b,low,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,291,t3_split,T3b,medium,incident families app=[ads-targeting|autonomous-vehicle|predictive-scoring] harm=[misinformation-content]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,318,t3_split,T3b,medium,incident families app=[ads-targeting|recommender-ranking] harm=[]; filing matched app=[ads-targeting|recommender-ranking] harm=[]
+data/t3_split.csv,319,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety|service-quality]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,305,t3_split,T3a,high,incident families app=[recommender-ranking] harm=[misinformation-content]; filing matched app=[recommender-ranking] harm=[misinformation-content]
+data/t3_split.csv,282,t3_split,T3a,high,incident families app=[ads-targeting|content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[service-quality]
+data/t3_split.csv,313,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,333,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,304,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,331,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,337,t3_split,T3b,medium,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,348,t3_split,T3b,medium,incident families app=[recommender-ranking] harm=[]; filing matched app=[recommender-ranking] harm=[]
+data/t3_split.csv,311,t3_split,T3b,medium,incident families app=[content-moderation] harm=[discrimination-bias]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,317,t3_split,T3b,medium,incident families app=[speech-nlp] harm=[service-quality]; filing matched app=[] harm=[service-quality]
+data/t3_split.csv,303,t3_split,T3b,medium,incident families app=[] harm=[harmful-content-minors|misinformation-content|service-quality]; filing matched app=[] harm=[harmful-content-minors|misinformation-content|service-quality]
+data/t3_split.csv,343,t3_split,T3b,medium,incident families app=[content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,281,t3_split,T3a,high,incident families app=[content-moderation|recommender-ranking] harm=[harmful-content-minors|service-quality]; filing matched app=[content-moderation] harm=[harmful-content-minors]
+data/t3_split.csv,322,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,367,t3_split,T3a,high,incident families app=[generative-llm] harm=[discrimination-bias|ip-copyright]; filing matched app=[generative-llm] harm=[discrimination-bias]
+data/t3_split.csv,393,t3_split,T3b,medium,incident families app=[content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,363,t3_split,T3b,medium,incident families app=[content-moderation] harm=[]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,400,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,395,t3_split,T3a,high,incident families app=[vision-biometric] harm=[privacy-surveillance]; filing matched app=[vision-biometric] harm=[privacy-surveillance]
+data/t3_split.csv,354,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,353,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,362,t3_split,T3b,medium,incident families app=[content-moderation] harm=[]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,359,t3_split,T3a,high,incident families app=[content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[service-quality]
+data/t3_split.csv,372,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,386,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content|privacy-surveillance]; filing matched app=[] harm=[privacy-surveillance]
+data/t3_split.csv,389,t3_split,T3b,low,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,398,t3_split,T3b,medium,incident families app=[autonomous-vehicle|vision-biometric] harm=[service-quality]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,399,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,401,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,360,t3_split,T3b,medium,incident families app=[generative-llm|robotics-automation|vision-biometric] harm=[privacy-surveillance]; filing matched app=[] harm=[privacy-surveillance]
+data/t3_split.csv,414,t3_split,T3b,low,incident families app=[speech-nlp] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,415,t3_split,T3b,medium,incident families app=[speech-nlp] harm=[]; filing matched app=[speech-nlp] harm=[]
+data/t3_split.csv,416,t3_split,T3b,medium,incident families app=[ads-targeting] harm=[discrimination-bias]; filing matched app=[] harm=[discrimination-bias]
+data/t3_split.csv,417,t3_split,T3b,medium,incident families app=[recommender-ranking] harm=[physical-safety]; filing matched app=[recommender-ranking] harm=[]
+data/t3_split.csv,419,t3_split,T3b,medium,incident families app=[content-moderation] harm=[service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,427,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,434,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[harmful-content-minors|physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,436,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,446,t3_split,T3b,low,incident families app=[] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,447,t3_split,T3b,medium,incident families app=[speech-nlp] harm=[]; filing matched app=[speech-nlp] harm=[]
+data/t3_split.csv,459,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,460,t3_split,T3b,low,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,465,t3_split,T3b,medium,incident families app=[] harm=[ip-copyright]; filing matched app=[] harm=[ip-copyright]
+data/t3_split.csv,467,t3_split,T3b,medium,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,468,t3_split,T3b,low,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[] harm=[]
+data/t3_split.csv,470,t3_split,T3b,medium,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,471,t3_split,T3b,low,incident families app=[] harm=[discrimination-bias|service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,473,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,475,t3_split,T3b,low,incident families app=[robotics-automation] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,477,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,489,t3_split,T3b,low,incident families app=[] harm=[discrimination-bias]; filing matched app=[] harm=[]
+data/t3_split.csv,503,t3_split,T3b,low,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,504,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,511,t3_split,T3b,low,incident families app=[recommender-ranking] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,522,t3_split,T3b,medium,incident families app=[ads-targeting] harm=[]; filing matched app=[ads-targeting] harm=[]
+data/t3_split.csv,525,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,528,t3_split,T3b,medium,incident families app=[predictive-scoring] harm=[]; filing matched app=[predictive-scoring] harm=[]
+data/t3_split.csv,533,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[service-quality]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,539,t3_split,T3b,medium,incident families app=[generative-llm] harm=[harmful-content-minors]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,540,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety|service-quality]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,550,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,552,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,553,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,554,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,560,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,563,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,570,t3_split,T3b,low,incident families app=[content-moderation] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,571,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,574,t3_split,T3b,medium,incident families app=[generative-llm] harm=[service-quality]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,576,t3_split,T3b,medium,incident families app=[ads-targeting|generative-llm] harm=[]; filing matched app=[ads-targeting|generative-llm] harm=[]
+data/t3_split.csv,578,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,580,t3_split,T3b,medium,incident families app=[ads-targeting|predictive-scoring] harm=[discrimination-bias]; filing matched app=[] harm=[discrimination-bias]
+data/t3_split.csv,581,t3_split,T3a,high,incident families app=[ads-targeting|generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,583,t3_split,T3a,high,incident families app=[recommender-ranking] harm=[harmful-content-minors]; filing matched app=[recommender-ranking] harm=[harmful-content-minors]
+data/t3_split.csv,587,t3_split,T3a,high,incident families app=[content-moderation|vision-biometric] harm=[discrimination-bias|misinformation-content]; filing matched app=[vision-biometric] harm=[discrimination-bias]
+data/t3_split.csv,591,t3_split,T3b,low,incident families app=[predictive-scoring] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,595,t3_split,T3b,low,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,608,t3_split,T3b,low,incident families app=[recommender-ranking] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,609,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,612,t3_split,T3a,high,incident families app=[generative-llm] harm=[physical-safety]; filing matched app=[generative-llm] harm=[physical-safety]
+data/t3_split.csv,614,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,621,t3_split,T3b,medium,incident families app=[] harm=[discrimination-bias]; filing matched app=[] harm=[discrimination-bias]
+data/t3_split.csv,623,t3_split,T3a,high,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,637,t3_split,T3b,medium,incident families app=[vision-biometric] harm=[physical-safety]; filing matched app=[vision-biometric] harm=[]
+data/t3_split.csv,638,t3_split,T3a,high,incident families app=[autonomous-vehicle|predictive-scoring] harm=[physical-safety|service-quality]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,640,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,645,t3_split,T3b,medium,incident families app=[generative-llm] harm=[discrimination-bias]; filing matched app=[] harm=[discrimination-bias]
+data/t3_split.csv,646,t3_split,T3b,medium,incident families app=[] harm=[harmful-content-minors]; filing matched app=[] harm=[harmful-content-minors]
+data/t3_split.csv,647,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[harmful-content-minors|physical-safety|service-quality]; filing matched app=[] harm=[harmful-content-minors|physical-safety]
+data/t3_split.csv,654,t3_split,T3a,high,incident families app=[generative-llm] harm=[discrimination-bias]; filing matched app=[generative-llm] harm=[discrimination-bias]
+data/t3_split.csv,655,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,674,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,684,t3_split,T3b,low,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content]; filing matched app=[] harm=[]
+data/t3_split.csv,686,t3_split,T3a,high,incident families app=[generative-llm] harm=[discrimination-bias]; filing matched app=[generative-llm] harm=[discrimination-bias]
+data/t3_split.csv,693,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content|service-quality]; filing matched app=[] harm=[service-quality]
+data/t3_split.csv,696,t3_split,T3b,medium,incident families app=[ads-targeting] harm=[]; filing matched app=[ads-targeting] harm=[]
+data/t3_split.csv,700,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,707,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,710,t3_split,T3b,medium,incident families app=[content-moderation] harm=[misinformation-content]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,712,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,714,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,718,t3_split,T3b,low,incident families app=[speech-nlp] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,723,t3_split,T3b,medium,incident families app=[] harm=[discrimination-bias|harmful-content-minors]; filing matched app=[] harm=[harmful-content-minors]
+data/t3_split.csv,731,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,734,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,743,t3_split,T3b,medium,incident families app=[generative-llm|predictive-scoring] harm=[privacy-surveillance]; filing matched app=[] harm=[privacy-surveillance]
+data/t3_split.csv,744,t3_split,T3a,high,incident families app=[generative-llm] harm=[service-quality]; filing matched app=[generative-llm] harm=[service-quality]
+data/t3_split.csv,748,t3_split,T3b,medium,incident families app=[generative-llm] harm=[misinformation-content|service-quality]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,750,t3_split,T3b,medium,incident families app=[generative-llm] harm=[service-quality]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,758,t3_split,T3b,medium,incident families app=[content-moderation] harm=[harmful-content-minors|physical-safety|service-quality]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,770,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors|misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,773,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,778,t3_split,T3b,low,incident families app=[] harm=[discrimination-bias|service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,788,t3_split,T3a,high,incident families app=[recommender-ranking] harm=[harmful-content-minors]; filing matched app=[recommender-ranking] harm=[harmful-content-minors]
+data/t3_split.csv,789,t3_split,T3b,medium,incident families app=[content-moderation] harm=[]; filing matched app=[content-moderation] harm=[]
+data/t3_split.csv,791,t3_split,T3b,low,incident families app=[] harm=[harmful-content-minors|service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,794,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[service-quality]; filing matched app=[autonomous-vehicle] harm=[service-quality]
+data/t3_split.csv,796,t3_split,T3a,high,incident families app=[content-moderation] harm=[privacy-surveillance|service-quality]; filing matched app=[content-moderation] harm=[service-quality]
+data/t3_split.csv,803,t3_split,T3a,high,incident families app=[generative-llm|recommender-ranking] harm=[misinformation-content]; filing matched app=[generative-llm|recommender-ranking] harm=[misinformation-content]
+data/t3_split.csv,838,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,845,t3_split,T3b,low,incident families app=[generative-llm] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,846,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,853,t3_split,T3b,low,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,854,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,857,t3_split,T3b,medium,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,859,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content|service-quality]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,861,t3_split,T3b,low,incident families app=[] harm=[harmful-content-minors|misinformation-content]; filing matched app=[] harm=[]
+data/t3_split.csv,873,t3_split,T3a,high,incident families app=[recommender-ranking] harm=[harmful-content-minors]; filing matched app=[recommender-ranking] harm=[harmful-content-minors]
+data/t3_split.csv,881,t3_split,T3a,high,incident families app=[autonomous-vehicle|robotics-automation] harm=[physical-safety]; filing matched app=[autonomous-vehicle|robotics-automation] harm=[physical-safety]
+data/t3_split.csv,885,t3_split,T3a,high,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content]; filing matched app=[generative-llm|predictive-scoring] harm=[misinformation-content]
+data/t3_split.csv,889,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety|service-quality]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,892,t3_split,T3b,low,incident families app=[] harm=[misinformation-content]; filing matched app=[] harm=[]
+data/t3_split.csv,934,t3_split,T3b,low,incident families app=[speech-nlp] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,939,t3_split,T3b,medium,incident families app=[] harm=[privacy-surveillance]; filing matched app=[] harm=[privacy-surveillance]
+data/t3_split.csv,940,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,952,t3_split,T3b,low,incident families app=[speech-nlp] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,956,t3_split,T3a,high,incident families app=[generative-llm] harm=[ip-copyright]; filing matched app=[generative-llm] harm=[ip-copyright]
+data/t3_split.csv,957,t3_split,T3a,high,incident families app=[recommender-ranking] harm=[physical-safety|service-quality]; filing matched app=[recommender-ranking] harm=[physical-safety|service-quality]
+data/t3_split.csv,963,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors|physical-safety]; filing matched app=[generative-llm] harm=[harmful-content-minors|physical-safety]
+data/t3_split.csv,967,t3_split,T3b,low,incident families app=[generative-llm|recommender-ranking] harm=[misinformation-content|service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,975,t3_split,T3b,medium,incident families app=[generative-llm] harm=[harmful-content-minors]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,981,t3_split,T3b,low,incident families app=[speech-nlp] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,993,t3_split,T3b,low,incident families app=[] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,995,t3_split,T3b,medium,incident families app=[generative-llm|predictive-scoring] harm=[ip-copyright]; filing matched app=[] harm=[ip-copyright]
+data/t3_split.csv,1020,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors]; filing matched app=[generative-llm] harm=[harmful-content-minors]
+data/t3_split.csv,1040,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors]; filing matched app=[generative-llm] harm=[harmful-content-minors]
+data/t3_split.csv,1097,t3_split,T3b,low,incident families app=[recommender-ranking] harm=[physical-safety|service-quality]; filing matched app=[] harm=[service-quality]
+data/t3_split.csv,1101,t3_split,T3b,medium,incident families app=[generative-llm|recommender-ranking] harm=[]; filing matched app=[generative-llm|recommender-ranking] harm=[]
+data/t3_split.csv,1106,t3_split,T3b,medium,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1108,t3_split,T3b,medium,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1123,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1128,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1157,t3_split,T3b,medium,incident families app=[generative-llm] harm=[harmful-content-minors|physical-safety]; filing matched app=[] harm=[harmful-content-minors|physical-safety]
+data/t3_split.csv,1158,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1159,t3_split,T3b,low,incident families app=[] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,1164,t3_split,T3b,low,incident families app=[generative-llm] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,1172,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1173,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1174,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1176,t3_split,T3b,medium,incident families app=[generative-llm] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,1178,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1179,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1180,t3_split,T3a,high,incident families app=[generative-llm] harm=[physical-safety]; filing matched app=[generative-llm] harm=[physical-safety]
+data/t3_split.csv,1181,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1186,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1187,t3_split,T3b,low,incident families app=[generative-llm|predictive-scoring] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1188,t3_split,T3b,low,incident families app=[generative-llm] harm=[misinformation-content|rights-legal]; filing matched app=[] harm=[]
+data/t3_split.csv,1200,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors]; filing matched app=[generative-llm] harm=[harmful-content-minors]
+data/t3_split.csv,1205,t3_split,T3a,high,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content|service-quality]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,1210,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1211,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,1218,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1219,t3_split,T3a,high,incident families app=[content-moderation] harm=[harmful-content-minors|service-quality]; filing matched app=[content-moderation] harm=[harmful-content-minors|service-quality]
+data/t3_split.csv,1223,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1224,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1247,t3_split,T3a,high,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,1248,t3_split,T3a,high,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content]; filing matched app=[generative-llm|predictive-scoring] harm=[misinformation-content]
+data/t3_split.csv,1251,t3_split,T3a,high,incident families app=[generative-llm|recommender-ranking] harm=[service-quality]; filing matched app=[generative-llm|recommender-ranking] harm=[service-quality]
+data/t3_split.csv,1268,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1269,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,1277,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors]; filing matched app=[generative-llm] harm=[harmful-content-minors]
+data/t3_split.csv,1279,t3_split,T3b,low,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content|service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,1300,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,1302,t3_split,T3a,high,incident families app=[content-moderation|generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,1316,t3_split,T3b,medium,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,1326,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[service-quality]; filing matched app=[autonomous-vehicle] harm=[service-quality]
+data/t3_split.csv,1333,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,1337,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,1358,t3_split,T3b,low,incident families app=[] harm=[physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,1361,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[harmful-content-minors|physical-safety]; filing matched app=[autonomous-vehicle] harm=[harmful-content-minors|physical-safety]
+data/t3_split.csv,1369,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1386,t3_split,T3b,low,incident families app=[] harm=[privacy-surveillance]; filing matched app=[] harm=[]
+data/t3_split.csv,1393,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1400,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1414,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1418,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1431,t3_split,T3a,high,incident families app=[generative-llm] harm=[harmful-content-minors|physical-safety|service-quality]; filing matched app=[generative-llm] harm=[harmful-content-minors|physical-safety|service-quality]
+data/t3_split.csv,1433,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1471,t3_split,T3b,low,incident families app=[] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1492,t3_split,T3b,low,incident families app=[] harm=[harmful-content-minors|physical-safety]; filing matched app=[] harm=[]
+data/t3_split.csv,1493,t3_split,T3a,high,incident families app=[generative-llm|predictive-scoring] harm=[misinformation-content|service-quality]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,1507,t3_split,T3a,high,incident families app=[generative-llm] harm=[privacy-surveillance]; filing matched app=[generative-llm] harm=[privacy-surveillance]
+data/t3_split.csv,1510,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1512,t3_split,T3b,low,incident families app=[generative-llm] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1523,t3_split,T3a,high,incident families app=[generative-llm] harm=[misinformation-content]; filing matched app=[generative-llm] harm=[misinformation-content]
+data/t3_split.csv,1534,t3_split,T3b,medium,incident families app=[generative-llm] harm=[]; filing matched app=[generative-llm] harm=[]
+data/t3_split.csv,1537,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,1539,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,1540,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/t3_split.csv,1541,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,1543,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,1544,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,1546,t3_split,T3b,low,incident families app=[] harm=[service-quality]; filing matched app=[] harm=[]
+data/t3_split.csv,1547,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,1552,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,1557,t3_split,T3b,medium,incident families app=[] harm=[misinformation-content]; filing matched app=[] harm=[misinformation-content]
+data/t3_split.csv,1567,t3_split,T3a,high,incident families app=[robotics-automation] harm=[physical-safety|service-quality]; filing matched app=[robotics-automation] harm=[physical-safety]
+data/t3_split.csv,1575,t3_split,T3b,low,incident families app=[] harm=[privacy-surveillance]; filing matched app=[] harm=[]
+data/t3_split.csv,1583,t3_split,T3a,high,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[autonomous-vehicle] harm=[physical-safety]
+data/t3_split.csv,1584,t3_split,T3b,low,incident families app=[predictive-scoring] harm=[]; filing matched app=[] harm=[]
+data/t3_split.csv,1588,t3_split,T3b,low,incident families app=[] harm=[discrimination-bias]; filing matched app=[] harm=[]
+data/t3_split.csv,1589,t3_split,T3b,medium,incident families app=[speech-nlp] harm=[]; filing matched app=[speech-nlp] harm=[]
+data/t3_split.csv,1599,t3_split,T3b,medium,incident families app=[autonomous-vehicle|generative-llm] harm=[]; filing matched app=[autonomous-vehicle] harm=[]
+data/t3_split.csv,1602,t3_split,T3b,medium,incident families app=[autonomous-vehicle] harm=[physical-safety]; filing matched app=[] harm=[physical-safety]
+data/attribution.csv,82,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,84,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,81,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,83,attribution_basis,mentioned-only,low,comparative study or audit naming 2 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,97,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,92,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,89,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,105,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,113,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,102,attribution_basis,mentioned-only,low,comparative study or audit naming 5 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,116,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,129,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,144,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,160,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,161,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,168,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,153,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,145,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,141,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,125,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,156,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,143,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,157,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,139,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,142,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,149,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,124,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,159,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,127,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,163,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,203,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,213,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,175,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,178,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,220,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,221,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,181,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,209,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,215,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,208,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,211,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,187,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,218,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,197,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,230,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,228,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,240,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,271,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,268,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,255,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,253,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,256,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,265,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,278,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,275,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,285,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,293,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,347,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,350,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,291,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,292,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,318,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,319,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,305,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,282,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,313,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,333,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,304,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,331,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,337,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,348,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,311,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,317,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,303,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,343,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,281,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,322,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,364,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,367,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,393,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,363,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,400,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,395,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,354,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,353,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,362,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,359,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,372,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,386,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,389,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,398,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,399,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,401,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,360,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,414,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,415,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,416,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,417,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,419,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,427,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,431,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,434,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,436,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,446,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,447,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,459,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,460,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,463,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,465,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,467,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,468,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,470,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,471,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,473,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,475,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,477,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,489,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,501,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,503,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,504,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,511,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,522,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,525,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,528,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,533,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,534,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,539,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,540,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,549,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,550,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,552,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,553,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,554,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,560,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,563,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,570,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,571,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,574,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,576,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,578,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,580,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,581,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,583,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,587,attribution_basis,mentioned-only,low,comparative study or audit naming 4 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,591,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,595,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,596,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,608,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,609,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,612,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,614,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,620,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,621,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,622,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,623,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,637,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,638,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,640,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,645,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,646,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,647,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,654,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,655,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,674,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,684,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,686,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,693,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,696,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,700,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,707,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,710,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,711,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,712,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,714,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,718,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,723,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,726,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,731,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,733,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,734,attribution_basis,mentioned-only,low,comparative study or audit naming 3 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,743,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,744,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,748,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,750,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,758,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,770,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,773,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,778,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,788,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,789,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,791,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,794,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,796,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,803,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,838,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,845,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,846,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,853,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,854,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,857,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,859,attribution_basis,mentioned-only,low,comparative study or audit naming 2 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,861,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,873,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,881,attribution_basis,mentioned-only,high,"the harm-producing system was Waymo's robotaxi (Alphabet); the Serve Robotics delivery bot was the object struck, so Serve is the harmed party rather than the developer or operator of the system that produced the harm"
+data/attribution.csv,885,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,889,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,892,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,934,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,939,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,940,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,952,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,956,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,957,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,963,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,967,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,968,attribution_basis,mentioned-only,low,comparative study or audit naming 3 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,975,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,981,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,993,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,995,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,996,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,997,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1020,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1040,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1097,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1101,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1106,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1108,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1123,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1128,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1157,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1158,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1159,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1164,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1172,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1173,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1174,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1176,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1178,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1179,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1180,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1181,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1186,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1187,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1188,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1200,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1205,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1210,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1211,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1218,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1219,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1223,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1224,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1247,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1248,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1251,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1268,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1269,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1277,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1279,attribution_basis,mentioned-only,low,comparative study or audit naming 3 listed vendors; no single deployment event attributable to this issuer
+data/attribution.csv,1300,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1302,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1316,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1326,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1333,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1337,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1358,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1361,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1369,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1376,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,1386,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1393,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1400,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1401,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1414,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1418,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1431,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1433,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1436,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1471,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1492,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1493,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1507,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1510,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1512,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1523,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1528,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1534,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1537,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1539,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1540,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1541,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1543,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1544,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1546,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1547,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1552,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1557,attribution_basis,developer,medium,AIID arrays: role=developer
+data/attribution.csv,1559,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,1567,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1575,attribution_basis,deployer-operator,medium,AIID arrays: role=deployer
+data/attribution.csv,1583,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1584,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1588,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1589,attribution_basis,platform-venue,medium,third-party-generated content or third-party misuse distributed through the issuer's platform; the harm-producing system was not the issuer's own deployment decision
+data/attribution.csv,1599,attribution_basis,both,medium,AIID arrays: role=both
+data/attribution.csv,1602,attribution_basis,both,medium,AIID arrays: role=both
+data/crosswalk_review.csv,305,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,281,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,89,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,159,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,501,REVIEW_verdict,FIX,high,as-of-incident-date check: the listed parent did not control the named entity on the incident date (see asofdate.csv); incident leaves the corrected sample
+data/crosswalk_review.csv,279,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,105,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,124,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,371,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,322,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,117,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,102,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,311,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,255,REVIEW_verdict,OK-note,medium,"IPO as ShotSpotter, Inc.; renamed SoundThinking April 2023 — same registrant and CIK, so pre-rename incidents map correctly"
+data/crosswalk_review.csv,367,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,113,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,144,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,224,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,331,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,103,REVIEW_verdict,OK-note,medium,"Twitter, Inc. was still listed on the incident date (delisted 2022-10-27); excluded under the blanket delisted-issuer rule. Conservative over-exclusion: it removes an eligible incident rather than admitting an ineligible one"
+data/crosswalk_review.csv,366,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,84,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,348,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,133,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,132,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,141,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,286,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,265,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,347,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,240,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,343,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,438,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,149,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,256,REVIEW_verdict,OK-note,medium,"IPO as ShotSpotter, Inc.; renamed SoundThinking April 2023 — same registrant and CIK, so pre-rename incidents map correctly"
+data/crosswalk_review.csv,300,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,187,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,203,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,181,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,400,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,185,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,427,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,175,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,389,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,178,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,253,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,293,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,460,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1436,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,398,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,303,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,313,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,397,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,350,REVIEW_verdict,FIX,high,issuer was not an SEC periodic-report filer at the incident date — became an SEC reporting company at its August 2023 reverse merger; no periodic-report history before that date; incident leaves the corrected sample
+data/crosswalk_review.csv,399,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,411,REVIEW_verdict,OK-excluded,high,NYSE-listed until the 27 October 2022 take-private
+data/crosswalk_review.csv,447,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,446,REVIEW_verdict,OK-note,medium,"IPO as ShotSpotter, Inc.; renamed SoundThinking April 2023 — same registrant and CIK, so pre-rename incidents map correctly"
+data/crosswalk_review.csv,453,REVIEW_verdict,OK-excluded,high,NYSE-listed until the 27 October 2022 take-private
+data/crosswalk_review.csv,459,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,679,REVIEW_verdict,OK-excluded,high,NYSE-listed until the 27 October 2022 take-private
+data/crosswalk_review.csv,608,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,997,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1528,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,560,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,581,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,595,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,563,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,758,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,726,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,570,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,596,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,614,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,731,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,619,REVIEW_verdict,OK-excluded,high,NYSE-listed until the October 2023 Chapter 11 delisting
+data/crosswalk_review.csv,655,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,637,REVIEW_verdict,OK-note,medium,"IPO as ShotSpotter, Inc.; renamed SoundThinking April 2023 — same registrant and CIK, so pre-rename incidents map correctly"
+data/crosswalk_review.csv,853,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,647,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,641,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,719,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,712,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,704,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,788,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,790,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,821,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,742,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,760,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,756,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,761,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,794,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,762,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,770,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,775,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,854,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,859,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,862,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,869,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,881,REVIEW_verdict,OK-note,medium,became an SEC reporting company at its August 2023 reverse merger; no periodic-report history before that date
+data/crosswalk_review.csv,885,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1537,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,956,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,981,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1001,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1026,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1159,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1072,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,1108,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1106,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1188,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1220,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1539,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1200,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1572,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1269,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1300,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1538,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1337,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1326,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1382,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1541,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1540,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1575,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1361,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1511,REVIEW_verdict,OK-excluded,high,"private successor to Twitter, Inc.; files no periodic reports"
+data/crosswalk_review.csv,1393,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1377,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1395,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1543,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1493,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1567,REVIEW_verdict,OK-note,medium,became an SEC reporting company at its August 2023 reverse merger; no periodic-report history before that date
+data/crosswalk_review.csv,1460,REVIEW_verdict,OK-excluded,high,foreign private issuer (20-F/6-K); correctly outside the domestic-filer sample
+data/crosswalk_review.csv,1547,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1544,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1599,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1584,REVIEW_verdict,OK,medium,"direct slug-to-registrant match, high confidence; CIK verified in the coding record"
+data/crosswalk_review.csv,1602,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/crosswalk_review.csv,1583,REVIEW_verdict,OK,medium,subsidiary-to-listed-parent mapping; parent control confirmed as of the incident date at revision
+data/asofdate.csv,89,asof_verdict,ok,medium,parent control from 2006-11-13 (asserted): Google completed the YouTube acquisition
+data/asofdate.csv,144,asof_verdict,ok,medium,parent control from 2006-11-13 (asserted): Google completed the YouTube acquisition
+data/asofdate.csv,141,asof_verdict,ok,medium,parent control from 2012-04-09 (asserted): Facebook announced/completed the Instagram acquisition (closed Sep 2012)
+data/asofdate.csv,124,asof_verdict,ok,medium,parent control from 2011-01-01 (asserted): UnitedHealth Group in-house brand consolidation
+data/asofdate.csv,175,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,181,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,240,asof_verdict,ok,medium,parent control from 2018-10-26 (asserted): Microsoft completed the GitHub acquisition
+data/asofdate.csv,253,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,265,asof_verdict,ok-internal,medium,"parent control from internal (asserted): Uber in-house service, launched 2014"
+data/asofdate.csv,293,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,347,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,305,asof_verdict,ok,medium,parent control from 2006-11-13 (asserted): Google completed the YouTube acquisition
+data/asofdate.csv,331,asof_verdict,ok,medium,parent control from 2012-04-09 (asserted): Facebook announced/completed the Instagram acquisition (closed Sep 2012)
+data/asofdate.csv,348,asof_verdict,ok,medium,parent control from 2006-11-13 (asserted): Google completed the YouTube acquisition
+data/asofdate.csv,311,asof_verdict,ok,medium,parent control from 2006-11-13 (asserted): Google completed the YouTube acquisition
+data/asofdate.csv,281,asof_verdict,ok,medium,parent control from 2006-11-13 (asserted): Google completed the YouTube acquisition
+data/asofdate.csv,389,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,427,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,447,asof_verdict,ok,medium,parent control from 2012-04-09 (asserted): Facebook announced/completed the Instagram acquisition (closed Sep 2012)
+data/asofdate.csv,459,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,460,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,501,asof_verdict,FLAG-parent-did-not-own,high,"parent control from 2020-05-01 (verified): Optum/UnitedHealth acquisition of naviHealth announced May 2020. naviHealth was majority-owned by Clayton, Dubilier & Rice from 1 August 2018 (CD&R ~55%, Cardinal Health ~45%), having been Cardinal Health-controlled from August 2015. This is the only parent relationship in the crosswalk established after the 2019 start of the study window, and therefore the only one on which the check can bind"
+data/asofdate.csv,563,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,595,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,596,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,608,asof_verdict,ok,high,"parent control from 2020-05-01 (verified): Optum/UnitedHealth acquisition of naviHealth announced May 2020. naviHealth was majority-owned by Clayton, Dubilier & Rice from 1 August 2018 (CD&R ~55%, Cardinal Health ~45%), having been Cardinal Health-controlled from August 2015. This is the only parent relationship in the crosswalk established after the 2019 start of the study window, and therefore the only one on which the check can bind"
+data/asofdate.csv,614,asof_verdict,ok-internal,medium,"parent control from internal (asserted): Google in-house product, launched Mar 2023"
+data/asofdate.csv,647,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,726,asof_verdict,ok,medium,parent control from 2016-05-12 (asserted): GM completed the Cruise Automation acquisition
+data/asofdate.csv,794,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,853,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,854,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1269,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1300,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1326,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1337,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1361,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1537,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1539,asof_verdict,ok,medium,parent control from 2020-06-26 (asserted): Amazon completed the Zoox acquisition
+data/asofdate.csv,1540,asof_verdict,ok,medium,parent control from 2020-06-26 (asserted): Amazon completed the Zoox acquisition
+data/asofdate.csv,1541,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1543,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1544,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1547,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1583,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1599,asof_verdict,ok,medium,parent control from 2009-01-01 (asserted): Google self-driving project; Waymo formed as an Alphabet subsidiary Dec 2016 and Alphabet controlled the programme throughout
+data/asofdate.csv,1602,asof_verdict,ok,medium,parent control from 2020-06-26 (asserted): Amazon completed the Zoox acquisition
+data/t2_adjudication.csv,733,adjudicated_code,T1,high,"GM's Q1-2025 10-Q contingencies note names the product and the conduct: 'the collection and use of certain consumer data obtained through our former OnStar Smart Driver product', alongside the resolved FTC consent order. Under the codebook's own T1 rule the absence of AI framing is not disqualifying where the product and factual circumstances identify the event, and they do here. Recoded T1."
+data/t2_adjudication.csv,711,adjudicated_code,T2,medium,"Tesla's FY2024 10-K discloses NHTSA Autopilot investigations, the December 2023 recall of approximately 2 million vehicles, and DOJ document requests as legal and regulatory contingencies. It identifies the system and the regulator but not the April 2024 recall-adequacy probe as a distinct event, so the legal-consequence reading stands. A reasonable coder could call this T1; the alternative is carried in the range reported in Section 4.1."
+data/t2_adjudication.csv,534,adjudicated_code,T2,high,"Meta's FY2021 10-K discloses the September-2021 government investigations and the securities class actions collectively, without naming the Ohio Attorney General action or the underlying algorithm-and-minors allegations as an event. The consequence is disclosed, the incident is not. T2 stands."
+data/disclosure_coding.csv,350,disclosure_code,T3,high,"the coding log (coding/results) records T3 with a written rationale; the analytical CSV carries T4. Treated as a transcription error in the CSV. Both tiers are inside the shadow, so the headline is unaffected; Table 1 tier counts shift by one"
+frontiers/manuscript.tex,-,title,"AI Incident Disclosure Shadow: SEC Filing Visibility of AIID-Recorded AI Incidents at U.S.-Listed Issuers, 2019-2026",medium," selected title; keeps 'Disclosure Shadow', replaces 'Investor Disclosures' with SEC-filing wording, and signals the AIID-recorded conditional denominator. Two alternatives are listed in the response letter"
+frontiers/manuscript.tex,-,generative_ai_statement,expanded to cover revision-stage recoding proposals produced by an AI system under author review,medium,the authors must confirm this is how they wish to describe the revision workflow before submission
+frontiers/manuscript.tex,-,severity_label,sev_limited / sev_moderate / sev_severe,high,the original severity values T1-limited/T2-moderate/T3-severe collide with the disclosure codes T1-T4 in the same table; renamed in all derived outputs

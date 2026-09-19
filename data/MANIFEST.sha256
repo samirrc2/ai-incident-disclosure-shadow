@@ -54,3 +54,12 @@ cb24660d69012ab454f66cb57630162bf7b44bdfc603e0403664ac6cf247a8d5  coding/results
 d938e2f4edbe8a4fe4de9e18825f5fc78de92c491bb8a94699c5f327a53bf978  coding/results/b14.json
 # Upstream snapshot (referenced by hash; incidents.csv is extracted from it):
 fa13c2093c09ce039a9576ef7d69ef892b4e5e8dd47fd0b3b73badab7643d2f7  data/raw/backup-20260727110451.tar.bz2
+
+# Inputs that no script can regenerate: the second coder's returned codings,
+# the adjudication record, and the retrieval / alternative-window audit samples.
+b014f7f73b0e35682d673b0a0993a04e6c8c774d0e5238091f6369af64dc3cc9  data/entity_audit_return.csv
+9da11a629e32f09dd9306f59a38f75000d89cc4c67bc60a010a26f8d8260fd6e  data/entity_audit_adjudication.csv
+19d1163b407301c2f31b1a31ce353c778e95c546ba01fbd678731361bb1bd450  data/retrieval_A.json
+12d62a625aca02a6d0b6192772c0d7e578fbf4216804d9976b647f7b253ee832  data/retrieval_B.json
+0d1c679120836aff433e16c750b5d495e6c30faebfaf9b3cd4e5a973d02949ba  data/retrieval_validation_sample.json
+70acaff414b71a8fc2bc738973e0baf4d5759cd1b2b02a58123f84862b6b79cb  data/altwindow_substantive.json

@@ -5,16 +5,17 @@ materials in a repository, then cite and link them from the article.)*
 
 All data and code required to reproduce every number, table, and figure in this
 article are openly available in a published, deterministic, executable Code Ocean
-capsule (MIT and CC0), with the source repository to be made public on acceptance:
+capsule (MIT and CC0), alongside a public source repository:
 
-- **Executable capsule (Code Ocean):** https://doi.org/10.24433/CO.2340354.v2
-  — opens in the browser with no login; `/data`, `/code`, `/results`, and a
-  one-click "Reproducible Run".
+- **Study repository (GitHub):** https://github.com/samirrc2/ai-incident-disclosure-shadow
+  — `data`, `scripts`, `results`; one command rebuilds and verifies every reported number.
+- **Executable capsule (Code Ocean):** submitted; the DOI will be added at proof stage.
 - **Source repository:** https://github.com/samirrc2/ai-incident-disclosure-shadow
-  — made public upon acceptance.
+  — public.
 
-The Code Ocean capsule DOI is the citable, version-pinned archive of record and is
-the deposit cited in the manuscript's Data Availability statement and reference list.
+The repository is the archive of record for this version. A version-pinned Code Ocean
+capsule containing the same material has been submitted and its DOI will be added at
+proof stage.
 
 ## The deposit contains
 

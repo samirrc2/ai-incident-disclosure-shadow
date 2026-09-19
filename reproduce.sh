@@ -75,11 +75,32 @@ python3 scripts/analysis.py       # headline distribution + Wilson CIs + strata
 python3 scripts/extended.py       # concentration/HHI, clustered bootstrap, tests
 python3 scripts/reliability.py    # Cohen's kappa, PABAK, Gwet AC1, confusion
 python3 scripts/inference.py      # Clopper-Pearson + Monte-Carlo exact permutation
-python3 scripts/make_figures.py   # the four publication figures -> frontiers/figures/
+
+# ---- (2b) revision analyses --------------------------------------------------
+# Everything added in response to review. Order matters: each step consumes the
+# outputs of the ones above it.
+python3 scripts/t3_split.py          # T3 -> T3a / T3b relatedness split
+python3 scripts/cocandidates.py      # co-candidate issuers + tie-break variants
+python3 scripts/asofdate.py          # as-of-date ownership for parent-linked incidents
+python3 scripts/crosswalk_review.py  # row-by-row verdicts on the 137-row crosswalk
+python3 scripts/attribution.py       # attribution basis for all 307 incidents
+python3 scripts/t2_adjudicate.py     # adjudication of the three T2 codes
+python3 scripts/severity_power.py    # exact power and MDE for the severity contrast
+python3 scripts/role_loo.py          # leave-one-positive-out on the role contrast
+python3 scripts/entity_audit_sample.py   # the blind 80-incident sample (seed 42, deterministic)
+python3 scripts/entity_reliability.py data/entity_audit_return.csv
+python3 scripts/tables.py            # every table -> results/tables.json
+python3 scripts/make_figures.py      # figures -> frontiers/figures/ + submission/
+python3 scripts/make_tables_tex.py   # typeset table bodies
+python3 scripts/supplementary.py     # frontiers/submission/supplementary.tex
+python3 scripts/author_review.py      # AUTHOR_REVIEW.csv, cited in the manuscript
+python3 scripts/family_triggers.py   # the word behind every family match, for audit
+python3 scripts/number_audit.py      # ledger: every number -> script -> output
 
 # ---- (3) independent verification of every reported number -------------------
 python3 scripts/check_claims.py
 python3 scripts/check_claims_ext.py
 python3 scripts/audit_manuscript.py    # manuscript-wide numerical consistency audit
+python3 scripts/verify_all.py     # standing checks: every number tied back to an output
 
 echo "OK: reproduced. Key result: shadow (T3+T4) = 97.7% (Clopper-Pearson 95% CI [95.4, 99.1]); T1 specific = 1.3%."

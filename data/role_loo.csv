@@ -1,0 +1,24 @@
+perturbation,incident_id,issuer,chi2_3way,p_3way,chi2_2x2,p_2x2
+"none (baseline, adjudicated)",-,-,10.434,0.0242,1.669,0.3552
+drop,149,"Zillow Group, Inc.",3.416,0.2191,1.431,0.3634
+one tier down,149,"Zillow Group, Inc.",10.434,0.0242,1.669,0.3552
+reclassify to T3,149,"Zillow Group, Inc.",3.16,0.2236,1.425,0.365
+drop,534,"Meta Platforms, Inc.",12.3,0.017,1.431,0.3709
+one tier down,534,"Meta Platforms, Inc.",12.344,0.0172,1.425,0.3649
+reclassify to T3,534,"Meta Platforms, Inc.",12.344,0.0172,1.425,0.3649
+drop,596,General Motors Company,12.3,0.0187,1.431,0.3676
+one tier down,596,General Motors Company,10.434,0.0242,1.669,0.3552
+reclassify to T3,596,General Motors Company,12.344,0.0162,1.425,0.3628
+drop,711,"Tesla, Inc.",12.3,0.0189,1.431,0.3677
+one tier down,711,"Tesla, Inc.",12.344,0.0176,1.425,0.3631
+reclassify to T3,711,"Tesla, Inc.",12.344,0.0176,1.425,0.3631
+drop,726,General Motors Company,12.3,0.0191,1.431,0.3688
+one tier down,726,General Motors Company,10.434,0.0242,1.669,0.3552
+reclassify to T3,726,General Motors Company,12.344,0.0174,1.425,0.368
+drop,733,General Motors Company,3.416,0.2194,1.431,0.3651
+one tier down,733,General Motors Company,10.434,0.0242,1.669,0.3552
+reclassify to T3,733,General Motors Company,3.16,0.2248,1.425,0.365
+drop,997,"Meta Platforms, Inc.",12.3,0.0176,1.431,0.3602
+one tier down,997,"Meta Platforms, Inc.",10.434,0.0242,1.669,0.3552
+reclassify to T3,997,"Meta Platforms, Inc.",12.344,0.0179,1.425,0.3665
+promote one developer-only T3 incident to T1,81,Alphabet Inc.,7.915,0.0537,0.219,0.7079

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """reliability — confusion, per-tier one-vs-rest kappa, PABAK, Gwet's AC1,
 IPW-projected agreement to the full sample, and severity-rubric-vs-CSET agreement.
-Deterministic. No network. Output revision/results/reliability_ext.json/.md.
+Deterministic. No network. Output results/reliability_ext.json/.md.
 """
 import csv, json, glob, math
 from collections import Counter
@@ -10,7 +10,8 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import DATA, ROOT
 csv.field_size_limit(10_000_000)
-REV=ROOT/"revision"/"results"
+REV=ROOT/"results"
+REV.mkdir(parents=True, exist_ok=True)   # a clean checkout has no results/
 CATS=["T1","T2","T3","T4"]
 
 rows=list(csv.DictReader(open(DATA/"disclosure_coding.csv")))

@@ -9,7 +9,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import DATA, ROOT
 csv.field_size_limit(10_000_000)
-REV=ROOT/"revision"/"results"
+REV=ROOT/"results"
 rows=list(csv.DictReader(open(DATA/"disclosure_coding.csv")))
 E=json.load(open(REV/"extended.json")); RL=json.load(open(REV/"reliability_ext.json"))
 N=len(rows); fails=[]

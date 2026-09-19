@@ -27,8 +27,8 @@ shadow rate by severity, Fig. 3 = issuer Pareto, Fig. 4 = disclosure tier by yea
 
 ## Before you click submit
 1. Data availability is already final: the published Code Ocean capsule
-   (https://doi.org/10.24433/CO.2340354.v2) is the archive of record and is cited in
-   the manuscript. Make the GitHub repo public on acceptance (no Zenodo DOI is used).
+   (the Code Ocean capsule (submitted; DOI at proof stage)) is the archive of record and is cited in
+   the manuscript. The GitHub repo is already public (no Zenodo DOI is used).
 2. Enter word count and figure/table counts on the portal's first-page fields
    (4 figures, 4 tables, 1 supplementary table).
 3. Upload `supplementary.pdf` in the portal's Supplementary Material slot.

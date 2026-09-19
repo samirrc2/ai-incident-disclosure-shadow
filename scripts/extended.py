@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """extended — concentration, clustered inference, formal tests, issuer-level, categories,
 retrieval-validation and window-robustness summaries. Deterministic (seed 42). No network.
-Outputs revision/results/extended.json and .md.
+Outputs results/extended.json and .md.
 """
 from __future__ import annotations
 import csv, json, math, random
@@ -14,8 +14,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import DATA, ROOT
 csv.field_size_limit(10_000_000)
 RNG = np.random.default_rng(42)
-REV = ROOT/"revision"/"results"
+REV = ROOT/"results"
 
+REV.mkdir(parents=True, exist_ok=True)   # a clean checkout has no results/
 def wilson(k,n,z=1.96):
     if n==0: return (0.0,0.0,0.0)
     p=k/n; d=1+z*z/n; c=p+z*z/(2*n); h=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))
@@ -180,7 +181,7 @@ if (REV/"altwindow.json").exists():
         "shadow_6mo":shadow_at(s6),"shadow_12mo":shadow_at(7),"shadow_18mo":shadow_at(s18),"shadow_24mo":shadow_at(s24),
         "note":"Substantive disclosures fall in the fiscal-year 10-K ~9-11 months post-incident; robust to lengthening (12=18=24), only shortening to 6mo drops 4 of 7 into T3."}
 
-(REV.parent/"results"/"extended.json").write_text(json.dumps(R,indent=2,default=str))
+(ROOT/"results"/"extended.json").write_text(json.dumps(R,indent=2,default=str))
 # markdown
 L=["# Extended Analysis (revision)","",
  f"## Concentration\n- Issuers: {R['concentration']['n_issuers']}; HHI = **{R['concentration']['HHI']}** "
@@ -221,5 +222,5 @@ if "window_robustness" in R:
     L+=["## Window robustness (shadow rate)",
      f"- 6mo {w['shadow_6mo']*100:.1f}% · 12mo {w['shadow_12mo']*100:.1f}% · 18mo {w['shadow_18mo']*100:.1f}% · 24mo {w['shadow_24mo']*100:.1f}%",
      f"- _{w['note']}_"]
-(REV.parent/"results"/"extended.md").write_text("\n".join(L)+"\n")
+(ROOT/"results"/"extended.md").write_text("\n".join(L)+"\n")
 print("\n".join(L))

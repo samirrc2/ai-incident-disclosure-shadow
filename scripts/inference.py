@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """inference — rarity-aware inference + robustness for the revision (reviewer-proofing).
 Deterministic (seed 42). No network. Reads the frozen coded table + extracted incidents.
-Outputs revision/results/inference.json/.md.
+Outputs results/inference.json/.md.
 Adds: Clopper-Pearson exact CIs; Monte-Carlo exact (permutation) tests for the r x 2 stratum tables;
 the 1,389 -> 307 match-yield funnel; right-censoring robustness; plausibly-material subset.
 """
@@ -17,7 +17,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from crosswalk import CROSSWALK
 csv.field_size_limit(10_000_000)
 RNG = np.random.default_rng(42)
-REV = ROOT/"revision"/"results"
+REV = ROOT/"results"
+REV.mkdir(parents=True, exist_ok=True)   # a clean checkout has no results/
 SNAPSHOT_DATE = "2026-07-27"
 
 rows=list(csv.DictReader(open(DATA/"disclosure_coding.csv")))

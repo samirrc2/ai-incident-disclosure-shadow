@@ -29,3 +29,22 @@ _gold_list.txt
 *.out
 *.toc
 *-eps-converted-to.pdf
+
+# Referee correspondence and internal revision process. The repository is public;
+# these are not ours to publish.
+docs/reviewer_1_report.txt
+docs/reviewer_2_report.txt
+docs/revision_log.md
+docs/author_rewrite_v1.txt
+docs/denominator_language.csv
+docs/deployer_language.csv
+docs/investor_language.csv
+docs/shadow_usage.csv
+docs/deployer_claim.csv
+
+# The Code Ocean capsule is assembled from this repository by
+# scripts/build_capsule.sh; it is a build product, not a source.
+codeocean/capsule_v3/
+
+# Generated but not included by the manuscript
+frontiers/tables/

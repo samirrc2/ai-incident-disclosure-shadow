@@ -1,0 +1,39 @@
+metadata_version: 1
+name: "The AI Incident Disclosure Shadow"
+description: >
+  Reproducibility artifact for the Frontiers in Artificial Intelligence manuscript
+  "The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings."
+
+  From a frozen, SHA-256-pinned AI Incident Database snapshot and the frozen
+  disclosure-coding logs, the capsule regenerates every result in the article: entity
+  resolution (N = 307 incidents, 21 issuers), the four-tier disclosure distribution with
+  Clopper-Pearson intervals, the T3a/T3b relatedness split, attribution-basis coding,
+  as-of-date ownership checks, the row-by-row crosswalk review, a blind second-coder audit
+  of issuer matching, exact power calculations, a leave-one-positive-out role analysis,
+  issuer-clustered bootstrap and window robustness, inter-coder reliability (Cohen's kappa,
+  PABAK, Gwet's AC1), and all publication figures.
+
+  The run then applies 73 standing checks that tie every number in the manuscript back to a
+  regenerated output, and fails if any check fails. It is fully offline and byte-stable
+  across runs. The capsule regenerates results; it does not typeset the paper. It measures
+  disclosure behaviour, not legal compliance.
+
+authors:
+  - name: "Samir Chincholikar"
+    affiliation: "Independent Researcher"
+    orcid: "0009-0007-2779-3492"
+  - name: "Robin Chawla"
+    affiliation: "Independent Researcher"
+    orcid: "0009-0007-2807-3948"
+corresponding_author:
+  name: "Robin Chawla"
+  email: "robin.chawla.cse14@iitbhu.ac.in"
+  institution: "Independent Researcher"
+keywords:
+  - artificial intelligence incidents
+  - securities disclosure
+  - SEC EDGAR
+  - AI governance
+  - materiality
+  - reproducibility
+license: MIT

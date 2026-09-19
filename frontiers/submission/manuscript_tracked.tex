@@ -1,0 +1,747 @@
+%%% Frontiers in Artificial Intelligence — Original Research
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL manuscript_v1_as_submitted.tex   Sat Sep 19 12:01:35 2026
+%DIF ADD ../manuscript.tex                Sat Sep 19 15:50:08 2026
+%%% Uses the Frontiers Harvard (author-date) template (FrontiersinHarvard.cls).
+%%% Compile: pdflatex; bibtex; pdflatex; pdflatex  (Frontiers-Harvard.bst + references.bib)
+
+\documentclass[utf8]{FrontiersinHarvard}
+\usepackage{url,hyperref,lineno,microtype,subcaption}
+%DIF 7a7-12
+% Long URLs in the reference list otherwise set as one unbreakable box and run %DIF > 
+% past the right margin. Allow breaks at the characters URLs actually contain. %DIF > 
+\makeatletter %DIF > 
+\def\UrlBreaks{\do\/\do\-\do\.\do\_\do\?\do\&\do\=\do\#\do\:\do\@\do\%} %DIF > 
+\makeatother %DIF > 
+\setlength{\Urlmuskip}{0mu plus 3mu} %DIF > 
+%DIF -------
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{longtable}
+\usepackage[singlespacing]{setspace}
+\linenumbers
+\raggedbottom
+
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+\def\firstAuthorLast{Chincholikar {and} Chawla}
+\def\Authors{Samir Chincholikar\,$^{1}$, Robin Chawla\,$^{2,*}$}
+\def\Address{$^{1}$Independent Researcher, New York, NY, United States \\ $^{2}$Independent Researcher, New York, NY, United States}
+\def\corrAuthor{Robin Chawla}
+\def\corrEmail{robin.chawla.cse14@iitbhu.ac.in}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}} %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+\lstset{extendedchars=\true,inputencoding=utf8}
+
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\setlength{\tabcolsep}{3pt}
+\emergencystretch=3em
+\begin{document}
+\onecolumn
+\firstpage{1}
+
+\title[The AI Incident Disclosure Shadow]{The AI Incident Disclosure Shadow: \DIFdelbegin \DIFdel{An Incident-Level Study Matching AIID-Recorded }\DIFdelend \DIFaddbegin \DIFadd{Tracking }\DIFaddend AI \DIFdelbegin \DIFdel{Failures to }\DIFdelend \DIFaddbegin \DIFadd{Incidents into }\DIFaddend U.S. \DIFdelbegin \DIFdel{-Listed Companies' Investor Disclosures, 2019--2026}\DIFdelend \DIFaddbegin \DIFadd{Securities Filings}\DIFaddend }
+
+\author[\firstAuthorLast ]{\Authors}
+\address{}
+\correspondance{}
+\extraAuth{}
+
+\maketitle
+
+\begin{abstract}
+\section{}
+\DIFdelbegin \DIFdel{Publicly traded companies are increasingly developing and deploying }\DIFdelend \DIFaddbegin \DIFadd{A growing public record documents real-world harms involving }\DIFaddend artificial intelligence (AI) systems \DIFdelbegin \DIFdel{, and there is a growing public record of incidents in which those systems have caused or contributed to real-world harms. But whether they are subsequently reported to investors through }\DIFdelend \DIFaddbegin \DIFadd{developed or deployed by public companies, but whether those incidents become identifiable in subsequent }\DIFaddend securities filings has not been systematically measured. \DIFdelbegin \DIFdel{This study connects all incidents in the }\DIFdelend \DIFaddbegin \DIFadd{We match 2019--2026 }\DIFaddend AI Incident Database (AIID) \DIFdelbegin \DIFdel{from 2019--2026 }\DIFdelend \DIFaddbegin \DIFadd{incidents }\DIFaddend (n = 1{,}389) to \DIFdelbegin \DIFdel{organizations identified as developers or deployers of the systems in question. Incidents involving }\DIFdelend U.S.-listed \DIFdelbegin \DIFdel{issuers filing domestic periodic reports result in an analytical sample of }\DIFdelend \DIFaddbegin \DIFadd{domestic periodic-report filers, yielding }\DIFaddend 307 incidents \DIFdelbegin \DIFdel{spanning }\DIFdelend \DIFaddbegin \DIFadd{involving }\DIFaddend 21 issuers. For each incident, we \DIFdelbegin \DIFdel{analyze the }\DIFdelend \DIFaddbegin \DIFadd{examine }\DIFaddend Forms 8-K, 10-K \DIFdelbegin \DIFdel{, }\DIFdelend and 10-Q filed \DIFdelbegin \DIFdel{within the subsequent }\DIFdelend \DIFaddbegin \DIFadd{during the following }\DIFaddend 12 months and \DIFdelbegin \DIFdel{classify them into four levels of disclosure : }\DIFdelend \DIFaddbegin \DIFadd{code the strongest disclosure as }\DIFaddend incident-specific \DIFdelbegin \DIFdel{disclosure }\DIFdelend (T1), \DIFdelbegin \DIFdel{legal-proceedings-only disclosure }\DIFdelend \DIFaddbegin \DIFadd{disclosure of a directly related legal consequence without identifying the incident }\DIFaddend (T2), generic risk \DIFdelbegin \DIFdel{disclosure on }\DIFdelend \DIFaddbegin \DIFadd{language addressing }\DIFaddend the same technology or harm \DIFdelbegin \DIFdel{, but without reference to the incident }\DIFdelend \DIFaddbegin \DIFadd{family }\DIFaddend (T3), or no related disclosure \DIFaddbegin \DIFadd{located }\DIFaddend (T4). \DIFdelbegin \DIFdel{Only }\DIFdelend \DIFaddbegin \DIFadd{Under the pre-registered coding, there are }\DIFaddend 4 \DIFdelbegin \DIFdel{of 307 incidentsreceived incident-specific disclosure (}\DIFdelend \DIFaddbegin \DIFadd{T1, 3 T2, 278 T3 and 22 T4 incidents. Incident-specific disclosure therefore occurs in }\DIFaddend 1.3\% \DIFdelbegin \DIFdel{; }\DIFdelend \DIFaddbegin \DIFadd{of incidents (}\DIFaddend Clopper--Pearson 95\% CI, 0.4--3.3), \DIFdelbegin \DIFdel{and 7 of 307 incidents received either incident-specific or legal-consequence disclosure (}\DIFdelend \DIFaddbegin \DIFadd{while T1+T2 substantive disclosure occurs in }\DIFaddend 2.3\% \DIFdelbegin \DIFdel{; 95\% CI, }\DIFdelend \DIFaddbegin \DIFadd{(}\DIFaddend 0.9--4.6) \DIFaddbegin \DIFadd{as an upper bound}\DIFaddend . The remaining \DIFaddbegin \DIFadd{300 incidents (}\DIFaddend 97.7\%\DIFdelbegin \DIFdel{(95\% CI: }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend 95.4--99.1) \DIFdelbegin \DIFdel{constitutes what we refer to as }\DIFdelend \DIFaddbegin \DIFadd{form }\DIFaddend the AI incident disclosure shadow\DIFdelbegin \DIFdel{, with 278 incidents (90.6\%) associated with generic risk languagebut no }\DIFdelend \DIFaddbegin \DIFadd{: no }\DIFaddend incident-specific \DIFdelbegin \DIFdel{disclosure. We find no detectable association between substantive disclosure and incident severity (Monte Carlo exact p = 0.61), but there are differences depending on whether the issuer is named as the system's deployer or developer (exact p = 0.02). Results are robust to alternative disclosure windows, issuer-concentration checks, and an independent full-filing audit of 40 incidents finds no missed substantive disclosures}\DIFdelend \DIFaddbegin \DIFadd{or directly related legal-consequence disclosure was identifiable in the specified filing universe. Among T3 incidents, only 84 match both the incident's AI application family and harm family, while 194 match only one. In all, 70.4\% of all incidents (64.9--75.4) therefore have at most weakly related filing language}\DIFaddend . \DIFaddbegin \DIFadd{In exploratory analyses, no severity gradient is detectable and the apparent association with issuer role is fragile to specification and single-case changes. }\DIFaddend The seven \DIFdelbegin \DIFdel{incidents that were substantively disclosed are concentrated among cases with }\DIFdelend \DIFaddbegin \DIFadd{substantive cases cluster around }\DIFaddend financial-statement \DIFaddbegin \DIFadd{effects }\DIFaddend or formal legal \DIFaddbegin \DIFadd{and regulatory }\DIFaddend consequences, including \DIFdelbegin \DIFdel{two that came with booked charges }\DIFdelend \DIFaddbegin \DIFadd{reported financial impacts }\DIFaddend of approximately \$304 million and \$478 million. These \DIFdelbegin \DIFdel{findings document a substantial gap between publicly reported AI incidents and incident-specific investor disclosure. The study measures disclosure incidence, }\DIFdelend \DIFaddbegin \DIFadd{estimates are conditional on AIID recording and issuer resolvability and measure visibility in Forms 8-K, 10-K and 10-Q, }\DIFaddend not legal compliance \DIFdelbegin \DIFdel{, and provides an incident-level baseline to assess changes in corporate AI transparency}\DIFdelend \DIFaddbegin \DIFadd{or all investor-facing communication}\DIFaddend .
+
+\tiny
+\keyFont{ \section{Keywords:} artificial intelligence incidents, securities disclosure, SEC filings, AI governance, corporate transparency, materiality, risk disclosure }
+
+\keyFont{ \section{Word count:} $\approx$10,100 (main text, per Frontiers' definition); Figures: 4; Tables: 8; Supplementary tables: 9; Supplementary figures: 1 }
+\end{abstract}
+
+\section{Introduction}
+
+Artificial intelligence (AI) systems are increasingly embedded in products, services, operational processes, and financial decision-making. AI's growing economic relevance and the increasing dependence of firms on algorithmic systems have been illustrated by research that documented the expanding role of AI in financial-market prediction, portfolio management, automated financial services, and auditing. At the same time, AI deployment can result in operational, legal, reputational and financial harms when systems perform unexpectedly, produce inaccurate outputs, discriminate among users or contribute to other adverse outcomes. As the economic importance of these systems grows, a critical capital markets question arises: When a publicly traded company is implicated in a reported AI incident, does that incident appear in the \DIFdelbegin \DIFdel{information provided to investors}\DIFdelend \DIFaddbegin \DIFadd{company's subsequent SEC filings}\DIFaddend ?
+
+This question is different from the wider literature on the effect of AI on financial performance, forecasting, investment decisions or organizational efficiency. Previous research has largely focused on using AI to improve financial prediction, portfolio allocation, advisory services, and audit processes. Much less is known about the reverse information channel, namely how firms communicate the adverse consequences of their own development or deployment of AI to capital-market participants. The increasing availability of public incident repositories enables the monitoring of AI-related failures independent of corporate securities filings. This creates an opportunity to compare an external record of incidents with the information \DIFdelbegin \DIFdel{that firmsdisclose to investors}\DIFdelend \DIFaddbegin \DIFadd{contained in firms' subsequent SEC filings}\DIFaddend .
+
+This study fills the gap at the incident level. We link incidents reported in the AI Incident Database (AIID) from 2019 to 2026 to U.S.-listed companies identified as developers or deployers of the systems in question. We then look at Forms 8-K, 10-K and 10-Q filed during the 12 months following each incident. Rather than a binary outcome, we distinguish four observable disclosure states: incident-specific disclosure (T1), disclosure of a related legal or regulatory consequence without specifically identifying the underlying AI incident (T2), generic risk language describing the same technology or harm family without identifying the event (T3), and no related disclosure found (T4). This structure enables us to separate incident-specific \DIFdelbegin \DIFdel{investor communication }\DIFdelend \DIFaddbegin \DIFadd{SEC filing disclosure }\DIFaddend from the much broader corpus of generic corporate risk language.
+
+In the absence of an incident-specific disclosure or disclosure of a directly related legal consequence in the relevant securities filings, we describe such incidents as falling within the \DIFdelbegin \textbf{\DIFdel{AI incident disclosure shadow}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{AI incident disclosure shadow}}\DIFaddend . Importantly, the concept is descriptive rather than legal. The fact that an incident is included in AIID does not imply that the incident was material under securities law, that there was a disclosure obligation or that an issuer failed to comply with a legal obligation. The study therefore asks an empirical disclosure-incidence question: conditional on an externally documented AI incident involving a U.S.-listed issuer, how frequently is that event identifiable in subsequent \DIFdelbegin \DIFdel{investor disclosures}\DIFdelend \DIFaddbegin \DIFadd{SEC filings}\DIFaddend ?
+
+The analysis is based on three expectations. First, if securities disclosure operates through a materiality gate rather than a full incident-reporting system, incident-specific disclosure should be rare relative to the \DIFdelbegin \DIFdel{number }\DIFdelend \DIFaddbegin \DIFadd{volume }\DIFaddend of publicly documented AI incidents (\DIFdelbegin \textbf{\DIFdel{H1}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{H1}\DIFaddend ). Second, substantive disclosure should be more concentrated among incidents associated with observable financial-statement effects or formal legal and regulatory consequences (\DIFdelbegin \textbf{\DIFdel{H2}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{H2}\DIFaddend ). This \DIFdelbegin \DIFdel{hypothesis refers to an empirical association and does not assume that either channel causes disclosure individually}\DIFdelend \DIFaddbegin \DIFadd{is an associational expectation, not a causal claim}\DIFaddend . Third, \DIFdelbegin \DIFdel{if the public's perception of harm severity alone is insufficient to }\DIFdelend \DIFaddbegin \DIFadd{as an exploratory expectation, substantive disclosure need not increase monotonically with incident severity if perceived harm alone does not }\DIFaddend determine whether an \DIFdelbegin \DIFdel{incident exceeds the }\DIFdelend \DIFaddbegin \DIFadd{event crosses a }\DIFaddend firm's disclosure threshold \DIFdelbegin \DIFdel{, then substantive disclosure does not need to increase monotonically with incident severity (}\textbf{\DIFdel{H3}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{(H3). H3 is treated as exploratory rather than confirmatory because the sample contains only seven substantive disclosures (Section~\ref{sec:sev-results}}\DIFaddend ).
+
+This study makes several contributions. First, it provides an incident-level measure of the association between externally recorded AI \DIFdelbegin \DIFdel{failures }\DIFdelend \DIFaddbegin \DIFadd{incidents }\DIFaddend and subsequent securities disclosure. Second, the four-tier taxonomy distinguishes incident-specific disclosure from legal-consequence disclosure, generic coverage of same-family risks, and full non-detection\DIFdelbegin \DIFdel{--- }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend avoiding a dichotomous classification that would equate materially different disclosure patterns. Third, the analysis examines whether substantive disclosure (or lack thereof) varies by incident severity and whether the company was a developer or deployer. Separately, the financial and legal characteristics of the small number of substantively disclosed cases are analyzed. Finally, the study stresses reproducibility based on a documented entity-matching process, filing-level search records, independent reliability checks, robustness tests, a hashed pre-analysis plan and an archived replication package. Together, these features provide a baseline against which one can assess how corporate communication on AI incidents might evolve as AI governance and incident-reporting regimes develop.
+
+\DIFaddbegin \DIFadd{The reported rates are conditional on three selection steps: an incident is recorded in AIID, an involved organization is identifiable, and that organization is resolvable to a U.S.-listed domestic filer under the study protocol. The estimates therefore describe disclosure among AIID-recorded, issuer-matchable incidents rather than corporate AI incidents generally. Section~\ref{sec:estimand} formalizes this estimand and the associated selection mechanism.
+}
+
+\DIFaddend \section{Related work}
+
+\DIFdelbegin \textbf{\DIFdel{AI in the firm and capital markets.}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{AI in the firm and capital markets.}} \DIFaddend There is a rapidly growing literature on the adoption of artificial intelligence by firms, and its implications for financial decision-making and capital markets. Recent studies in this journal include AI-based stock-price forecasting \citep{Rohan2026}, reinforcement-learning approaches to portfolio management \citep{YangPortfolio2026}, the adoption of automated and hybrid robo advisory services \citep{Verma2026}, and the use of AI to improve the quality of audit and reduce costs in banking and financial services \citep{Johri2026}. Related work associates corporate AI adoption with outcomes such as ESG performance, stock-price crash risk \citep{Shen2025,YangCrash2026}, and, in governance literature, develops frameworks for responsible AI adoption and risk management \citep{Madanchian2025}. Cumulatively, this literature indicates that AI is becoming more economically relevant but it largely discusses adoption, performance, efficiency and governance. It provides relatively little evidence of what happens to \DIFdelbegin \DIFdel{investor }\DIFdelend \DIFaddbegin \DIFadd{SEC filing }\DIFaddend disclosure after a documented adverse event involving an AI system. We address this downside information channel directly.
+
+\DIFdelbegin \textbf{\DIFdel{Regulation of materiality and disclosure.}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{Regulation of materiality and disclosure.}} \DIFaddend Securities disclosure is not a complete incident reporting system. The disclosure of information is partly related to materiality, which has traditionally been defined in terms of whether there is a substantial likelihood that a reasonable investor would consider the information important, with contingent events being assessed in terms of both probability and magnitude \citep{TSC1976,Basic1988}. Empirical evidence also demonstrates that disclosure mandates operate within broader institutional and enforcement environments, and can have meaningful impacts on corporate reporting behavior \citep{ChristensenHailLeuz2016,LeuzWysocki2016}. These principles motivate an important distinction for the present study: an external observation of an AI incident does not establish that disclosure of the incident was required under securities law. We thus assess whether the reported incidents are mentioned in later filings, without making legal determinations about specific issuers or events.
+
+\DIFdelbegin \textbf{\DIFdel{Voluntary disclosure and risk factor text.}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{Voluntary disclosure and risk factor text.}} \DIFaddend The existing literature indicates that disclosures of corporate risk factors convey information that investors find relevant \citep{Campbell2014,KravetMuslu2013} and that more specific disclosures are more informative than generalized disclosures \citep{Hope2016}. More generally, the filings-text literature shows how text analysis can be used to identify and classify corporate risks at scale \citep{LoughranMcDonald2011,BaoDatta2014}. The voluntary-disclosure theory provides an alternative explanation of why firms might not disclose all adverse information. Classical models predict incentives for more disclosure \citep{Grossman1981,Milgrom1981}, but proprietary costs, reputational concerns, uncertainty and managerial incentives may interrupt this process \citep{Dye1985,Verrecchia2001,HealyPalepu2001}. Also, empirical evidence indicates that managers may selectively disclose bad news or delay the disclosure of bad news \citep{Skinner1994,KothariShuWysocki2009,Beyer2010}. We add to this literature by relating it to realized AI incidents. We differentiate between incident-specific disclosure and generic risk language that refers to the same technology or harm category, but without naming the underlying event.
+
+\DIFdelbegin \textbf{\DIFdel{Cybersecurity disclosure: the closest analog.}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{Cybersecurity disclosure: the closest analog, and where the analogy stops.}} \DIFaddend The closest empirical analogy is cybersecurity disclosure. Prior studies have documented publicly observable cybersecurity events preceding corporate disclosures, showing market impacts of announced breaches and disparities between actual cybersecurity events and cyber risk disclosures in securities filings \citep{Campbell2003,KannanReesSridhar2007,Gordon2006,Gordon2010,WangKannanUlmer2013}. Other work finds evidence that cyber-attacks can be under-reported in relation to events observable through other information channels \citep{Amir2018}. The conceptual parallel is \DIFdelbegin \DIFdel{important}\DIFdelend \DIFaddbegin \DIFadd{real}\DIFaddend : both cybersecurity and AI generate operational events that \DIFdelbegin \DIFdel{could }\DIFdelend \DIFaddbegin \DIFadd{can }\DIFaddend be publicly visible outside the issuer's own reporting system\DIFaddbegin \DIFadd{, which is what makes an external incident denominator possible in either setting}\DIFaddend . We adopt \DIFdelbegin \DIFdel{this }\DIFdelend \DIFaddbegin \DIFadd{that }\DIFaddend design for AI by constructing an incident-level denominator \DIFdelbegin \DIFdel{using }\DIFdelend \DIFaddbegin \DIFadd{from }\DIFaddend an external incident database \DIFdelbegin \DIFdel{, then examine the ability to identify }\DIFdelend \DIFaddbegin \DIFadd{and then examining whether }\DIFaddend each matched event \DIFdelbegin \DIFdel{in subsequent investor filings .
+}\DIFdelend \DIFaddbegin \DIFadd{is identifiable in subsequent periodic and current reports.
+}\DIFaddend 
+
+\DIFdelbegin \textbf{\DIFdel{AI harms, audits and incident reporting.}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{The closest disclosure analog is cybersecurity, but important differences limit the comparison. Material cybersecurity incidents have a dedicated U.S. reporting architecture under Form 8-K Item 1.05 and Regulation S-K Item 106 \mbox{%DIFAUXCMD
+\citep{SEC2023Cyber}}\hskip0pt%DIFAUXCMD
+, while state breach-notification rules provide an additional reporting layer \mbox{%DIFAUXCMD
+\citep{RomanoskyTelangAcquisti2011}}\hskip0pt%DIFAUXCMD
+. Cyber incidents also tend to have more clearly defined event boundaries. No comparable U.S. AI-incident reporting duty applied during the study period, although voluntary risk-management frameworks existed \mbox{%DIFAUXCMD
+\citep{NIST2023AIRMF} }\hskip0pt%DIFAUXCMD
+and the EU AI Act introduces serious-incident reporting for high-risk systems \mbox{%DIFAUXCMD
+\citep{EUAIAct2024}}\hskip0pt%DIFAUXCMD
+. AI harms can also be diffuse, without the affected-person counts or remediation costs common in breach analysis, and responsibility may be distributed across a model developer, deployer and platform \mbox{%DIFAUXCMD
+\citep{Cobbe2023,OECD2024}}\hskip0pt%DIFAUXCMD
+. These differences motivate the entity-resolution and attribution procedures in Section~\ref{sec:entity}. In this sample, incidents that reach filings do so primarily through reported financial effects or formal legal and regulatory processes rather than through an incident-reporting duty. Cybersecurity therefore supplies the design template (an external event record compared with later filings) but not the expected disclosure rate or the attribution procedure required for AI incidents.
+}
+
+\textit{\DIFadd{AI harms, audits and incident reporting.}} \DIFaddend Another set of literatures detail taxonomies of AI harms and frameworks for auditing artificial intelligence systems \citep{Weidinger2022,Raji2020,Bommasani2021,CostanzaChock2022}, and incident repositories such as AIID and related classification efforts have cataloged harms that have already occurred \citep{McGregor2021,OECD2024}. Further research in other safety-critical domains has shown that recorded incident rates can be significantly driven by reporting incentives, institutional design and the availability of confidential or non-punitive reporting channels \citep{Barach2000,Classen2011,Macrae2016}. These literatures emphasize the significance of documenting realized harms, but they do not answer whether externally recorded AI incidents subsequently become \DIFdelbegin \DIFdel{visible to investors}\DIFdelend \DIFaddbegin \DIFadd{identifiable in issuers' SEC filings}\DIFaddend . We directly measure that connection by matching incident records to issuer filings and differentiate between incident-specific communication, disclosure of related legal consequences, generic same-family risk coverage, and cases in which no related disclosure is found.
+
+\section{Materials and methods}
+
+\subsection{Study design and universe of incidents}
+The study uses an incident-level design that links externally documented AI incidents to subsequent securities disclosures by U.S.-listed companies. The incident universe is taken from a full snapshot of the AI Incident Database (AIID) as of 27 July 2026. The archived source file contains 1{,}597 incident records, of which 1{,}389 have incident dates between 2019 and 2026 and thus constitute the initial study population. We kept the source snapshot with a SHA-256 hash so that the underlying incident universe can be verified independently.
+
+The unit of analysis is the single AI incident. Each AIID record was reviewed to identify the organization(s) described as developing, deploying, operating, or otherwise directly associated with the AI system in question. Then, organizations were aligned to publicly-listed issuers and where needed, resolved to corporate parents. If at least one of the implicated organizations could be linked to a U.S.-listed domestic issuer that files periodic reports with the U.S. Securities and Exchange Commission (SEC), the incident was included in the analytical sample.
+
+The procedure resulted in 307 matched incidents for 21 issuers (Figure~\ref{fig:flow}). The remaining AIID incidents were excluded because they involved private companies (n = 243), organizations that could not be resolved with sufficient confidence (n = 400), generic or individual actors rather than identifiable firms (n = 398), foreign-listed issuers that fell outside the study's scope (n = 26), or \DIFdelbegin \DIFdel{companies that had been delisted during the relevant period }\DIFdelend \DIFaddbegin \DIFadd{issuers excluded under the study's delisted-issuer rule }\DIFaddend (n = 15). The matched sample is concentrated at a handful of large technology firms: Alphabet accounted for 86 incidents, Meta for 81, Tesla for 36, and Microsoft for 35. The issuer-level Herfindahl--Hirschman Index was 0.18. The robustness analysis explicitly accounts for issuer concentration, which may affect estimates at the incident level.
+
+\DIFdelbegin \subsection{\DIFdel{Entity resolution and issuer matching}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdel{The entity resolution process began with the organizations named in each AIIDincident and progressed to the corresponding publicly listed corporate entity. When an incident cited a subsidiary, product, platform, or acquired company, the record was linked to the publicly listed parent if it was possible to confirm the ownership relationship with enough confidence for the date of the incident. During matching, we also recorded the issuer's role in the incident --- whether the company was identified as a developer of the AI system, as a deployer or operator, or as both. }%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{To validate recurring organization-to-issuer mappings and corporate-parent relationships }\DIFdelend \DIFaddbegin \subsubsection{\DIFadd{Estimand and selection mechanism}}\label{sec:estimand}
+\DIFadd{The quantity estimated is
+}\begin{quote}
+\DIFadd{$\Pr(\text{substantive disclosure in Forms 8-K, 10-K or 10-Q within 12 months} \mid$ the incident is recorded in AIID, the organization involved is identifiable in that record, and that organization is conservatively resolvable to a U.S.-listed domestic periodic-report filer under the study protocol$)$.
+}\end{quote}
+\DIFadd{Three selection layers stand between the population of AI incidents involving listed companies and this denominator. (i) }\emph{\DIFadd{Publicity}}\DIFadd{: AIID is media-derived, so an incident must have attracted enough public attention to be recorded. Internal failures, failures receiving little public coverage, and failures resolved without public reporting are therefore not systematically represented. (ii) }\emph{\DIFadd{Organizational identifiability}}\DIFadd{: the AIID record must name an organization as developer or deployer, and 398 window incidents name only generic or individual actors. (iii) }\emph{\DIFadd{Resolvability}}\DIFadd{: the named organization must map to a U.S.-listed domestic filer with sufficient confidence, which excludes private firms (243), organizations that could not be resolved confidently (400), foreign private issuers (26) and issuers excluded under the study's delisted-issuer rule (15). Supplementary Table~S4 sets out the exclusions stage by stage, with the sub-reason at each stage and the arithmetic reconciling 1}{\DIFaddend ,\DIFdelbegin \DIFdel{a human-validation crosswalk was constructed with }\DIFdelend \DIFaddbegin }\DIFadd{389 window incidents to the 307 analysed.
+}
+
+\DIFadd{The reported rates should not be generalized to all corporate AI incidents because the denominator is selected. Incidents absent from AIID or not resolvable to a listed issuer are unobserved, and the design does not identify the direction or magnitude of the resulting selection bias. The estimand is therefore interpreted only for the AIID-recorded, issuer-matchable population described above.
+}
+
+\subsection{\DIFadd{Entity Resolution and Issuer Matching}}\label{sec:entity}
+\textit{\DIFadd{Attribution criterion.}} \DIFadd{We begin with the organizations in AIID's }\texttt{\DIFadd{deployers}} \DIFadd{and }\texttt{\DIFadd{developers}} \DIFadd{fields and map them, through a curated slug-to-registrant crosswalk, to U.S.-listed domestic filers. The developer/deployer role variable therefore inherits AIID's attribution rather than independently establishing responsibility. It does not by itself distinguish direct operation, platform hosting or incidental mention. Section~\ref{sec:attrib} adds a separate attribution-basis classification.
+}
+
+\textit{\DIFadd{One issuer per incident.}} \DIFadd{When multiple named organizations map to listed registrants, the protocol retains one issuer using the following ordering: domestic filer, domestic parent of a subsidiary, delisted issuer, then foreign private issuer; remaining ties follow AIID ordering, with deployers before developers. Twenty-seven of the 307 incidents have at least two listed-issuer candidates, 22 have at least two domestic candidates, and the maximum is five candidates for a single incident (Supplementary Table~S3). Sensitivity analyses that instead favor the named developer or the listed parent change the selected issuer for 2 and 5 incidents respectively; because the alternative issuer's filings were never searched, those incidents are dropped rather than recoded, which is why the corresponding rows of Table~\ref{tab:rob} report N = 305 and N = 302.
+}
+
+\textit{\DIFadd{Subsidiaries and as-of-date ownership.}} \DIFadd{Forty-seven incidents map to a listed parent through a subsidiary, product or platform slug, most commonly Waymo (17) or Cruise (12). Each parent relationship is checked as of the incident date against dated ownership records. Forty-four relationships hold, two involve in-house products with no acquisition date, and one fails: incident 501 predates UnitedHealth Group's acquisition of naviHealth. Each ownership date is recorded with its source in the replication package.
+}
+
+\textit{\DIFadd{Crosswalk review.}} \DIFadd{The 137-row validation crosswalk was reviewed row by row, with a verdict and note recorded for each mapping. Of the }\DIFaddend 137 rows\DIFdelbegin \DIFdel{. The process identified and corrected two incident-level mapping errors prior to finalizing the analytical dataset. We also examined high-frequency firm names that did not match, to determine whether the matching procedure systematically excluded other U. S.
+-listed issuers . The audit did not identify any additional issuer that could be added with sufficient confidence. }\DIFdelend \DIFaddbegin \DIFadd{, 88 mappings stand, 40 exclusions as foreign or delisted are confirmed, 7 stand with a qualification, and 2 require correction. Together with two additional cases that fail the final as-of-date issuer check, these corrections yield a robustness sample of N = 303 (Table~\ref{tab:rob}). Incident 103, involving Twitter while it was still listed, remains excluded under the study's blanket delisted-issuer rule. This is conservative because it removes rather than adds an otherwise eligible incident.
+}\DIFaddend 
+
+\DIFaddbegin \textit{\DIFadd{A coding-log discrepancy.}} \DIFadd{Comparing the analytical table against the per-incident coding logs finds one disagreement in 307 records: incident 350 carries T4 in the analytical table and T3 in the coding log, where a written rationale supports T3. Both tiers sit inside the shadow, so no reported rate changes, but the tier counts in Table~\ref{tab:dist} shift by one incident under the log value, and that variant is reported in Table~\ref{tab:rob}.
+}
+
+\textit{\DIFadd{Reliability of issuer matching.}} \DIFadd{A blind second coder independently re-derived the issuer for a stratified sample of 80 incidents (seed 42), deliberately oversampling difficult cases: all 27 incidents with multiple listed-issuer candidates, 30 mapped through a subsidiary or product, and all 13 from issuers contributing three or fewer incidents. Agreement on issuer identity is 82.5\%, with Cohen's $\kappa = 0.79$ and Gwet's AC1 $= 0.82$. All 14 disagreements occur among the multi-candidate cases and none involves a T1 or T2 incident. Adjudication favors the existing mapping in ten cases and the second coder's mapping in four. Those four reassigned incidents are incorporated into the corrected-sample robustness analysis (Supplementary Tables~S8--S9; Table~\ref{tab:rob}).
+}
+
+\DIFaddend Therefore \DIFdelbegin \DIFdel{, }\DIFdelend the 307 \DIFdelbegin \DIFdel{resulting }\DIFdelend incidents should be interpreted as the subset of AIID incidents that could be conservatively and reproducibly matched to U.S.-listed domestic issuers under the study protocol. The procedure does not establish that every AIID incident \DIFdelbegin \DIFdel{for }\DIFdelend \DIFaddbegin \DIFadd{involving }\DIFaddend a listed company was \DIFdelbegin \DIFdel{successfully identified, especially }\DIFdelend \DIFaddbegin \DIFadd{identified, particularly }\DIFaddend where organizational identities or parent relationships were ambiguous.
+
+\DIFaddbegin \subsubsection{\DIFadd{Basis for attribution}}\label{sec:attrib}
+\DIFadd{All 307 incidents are further classified by attribution basis to distinguish direct involvement from weaker association: }\emph{\DIFadd{developer}}\DIFadd{; }\emph{\DIFadd{deployer-operator}}\DIFadd{, where the issuer operated the system or made the deployment decision; }\emph{\DIFadd{both}}\DIFadd{; }\emph{\DIFadd{platform-venue}}\DIFadd{, where the issuer hosted third-party content or use but did not make the harm-producing deployment decision; and }\emph{\DIFadd{mentioned-only}}\DIFadd{, where no development, deployment or venue relationship is evident. The classification combines AIID fields, documented override rules and a reviewed case list. The distribution is reported in Table~\ref{tab:attrib}. Table~\ref{tab:rob} re-estimates the main outcome after dropping platform-venue cases and, separately, both platform-venue and mentioned-only cases.
+}
+
+\DIFaddend \subsection{Filing retrieval and disclosure window}\DIFaddbegin \label{sec:filings}
+\DIFaddend SEC filings were searched beginning on the date of each matched incident and continuing for 12 months. The primary search universe is the Forms 8-K, 10-Q, and 10-K of the matched issuer for that period. The 12-month window was selected to capture both current reports and at least one additional cycle of periodic reporting, while remaining within a consistent incident-centered observation period.
+
+Retrieval of filings was done via the issuer's Central Index Key (CIK) and deterministic filing URLs. Searches used three families of terms to identify (1) the specific system, product, organization or incident described in the AIID, (2) the relevant artificial intelligence technology or application, and (3) the type of harm or consequence associated with the event. Search terms were recorded at the incident level. In the Risk Factors and Legal Proceedings sections, we also reviewed the first annual report following each incident, even if keyword searches did not produce a clear incident-specific match.
+
+\DIFaddbegin \DIFadd{The search universe is deliberately restricted to Forms 8-K, 10-K and 10-Q. We do not search earnings calls, investor presentations, press releases not filed with the SEC, litigation dockets outside SEC filings, regulator announcements, corporate websites, product blogs or conference communications. An incident disclosed through one of those channels but not repeated in the specified forms is therefore coded as not identifiable in this study. The outcome is visibility in a defined SEC filing universe, not total investor-facing communication.
+}
+
+\DIFaddend Search results were rated in context rather than classified only by keyword occurrence. The candidate passages were read to see if the filing was about the underlying incident, a related legal or regulatory fallout or simply a more general category of technology risk. This distinction is central to the disclosure taxonomy below.
+
+\subsection{Disclosure classification}
+Each incident was classified into one of four, mutually exclusive disclosure tiers based on the strongest disclosure that occurred within the observation window.
+
+\DIFdelbegin \textbf{\DIFdel{T1 --- Incident-specific disclosure:}} %DIFAUXCMD
+\DIFdel{disclosure }\DIFdelend \DIFaddbegin \textit{\DIFadd{T1, incident-specific disclosure.}} \DIFadd{Disclosure }\DIFaddend is tied to the AIID incident by identifying the underlying event with sufficient factual specificity. The filing does not need to use the term ``artificial intelligence'' if the event, system, product, or factual circumstances identify the connection.
+
+\DIFdelbegin \textbf{\DIFdel{T2 --- Legal-proceedings-only disclosure:}} %DIFAUXCMD
+\DIFdel{the }\DIFdelend \DIFaddbegin \textit{\DIFadd{T2, legal-proceedings-only disclosure.}} \DIFadd{The }\DIFaddend filing reports a lawsuit, investigation, regulatory proceeding, settlement, contingency, or other formal legal consequence associated with the incident, but does not describe the underlying event as an AI incident with sufficient specificity to qualify as T1.
+
+\DIFdelbegin \textbf{\DIFdel{T3 --- Generic risk disclosure:}} %DIFAUXCMD
+\DIFdel{the }\DIFdelend \DIFaddbegin \textit{\DIFadd{T3, generic risk disclosure.}} \DIFadd{The }\DIFaddend issuer discloses the same technology or harm family implicated in the incident in the disclosure window, but does not identify the incident itself or a directly associated legal consequence.
+
+\DIFdelbegin \textbf{\DIFdel{T4 --- No related disclosure found:}} %DIFAUXCMD
+\DIFdel{no }\DIFdelend \DIFaddbegin \DIFadd{The T3 threshold carries most of the weight in the headline result, because T3 accounts for 278 of 307 incidents, so its operational content is specified here in full. A passage qualifies as T3 only if it names, at minimum, the }\emph{\DIFadd{class}} \DIFadd{of technology or the }\emph{\DIFadd{class}} \DIFadd{of harm implicated in the incident. The nine technology or application families and the nine harm families used are listed in Table~\ref{tab:families}.
+ Language that names neither class does not qualify: a statement about ``technology risks'', ``regulatory risks'', ``litigation risks'' or ``operational risks'' in the abstract is not T3, nor is any mention of artificial intelligence that is not tied to the implicated technology or harm class. Compensation-plan exhibits, subsidiary lists and promotional earnings-release language describing AI as an opportunity are excluded, as is the routine appearance of a product or segment name.
+}
+
+\DIFadd{Two qualifications apply to T3. First, the protocol does not test whether generic risk language was added after the incident. T3 therefore means that the same technology or harm family was discussed during the observation window, not that the language was written because of the incident. Second, the class-level threshold remains interpretive. Section~\ref{sec:t3split} therefore introduces a stricter split between language matching both the incident's technology and harm families and language matching only one. Worked coding examples are provided in Supplementary Table~S2.
+}
+
+\textit{\DIFadd{T4, no related disclosure found.}} \DIFadd{No }\DIFaddend incident-specific disclosure, related legal-consequence disclosure, or same-family generic risk language found in the filing universe examined per the protocol.
+
+T1 is the primary measure of incident-specific disclosure. A broader measure of \DIFdelbegin \textbf{\DIFdel{substantive disclosure}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{substantive disclosure}} \DIFaddend combines T1 and T2 because both provide investors with information traceable to the event or its formal consequence. \DIFdelbegin \textbf{\DIFdel{The AI incident disclosure shadow}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \textit{\DIFadd{The AI incident disclosure shadow}}\label{sec:shadowdef} \DIFaddend is T3+T4. This definition is descriptive: it refers to incidents for which no incident-specific disclosure and no disclosure of a directly related legal consequence could be found. This does not imply that disclosure was legally required.
+
+It is important to distinguish T3 from T4. T3 means the issuer \DIFdelbegin \DIFdel{was already discussing the relevant type of artificial intelligence (AI ) }\DIFdelend \DIFaddbegin \DIFadd{discussed the relevant class of AI }\DIFaddend technology or harm \DIFdelbegin \DIFdel{with investors but not }\DIFdelend \DIFaddbegin \DIFadd{during the observation window but did not identify }\DIFaddend the specific incident that occurred. T4 means no \DIFdelbegin \DIFdel{similar disclosure }\DIFdelend \DIFaddbegin \DIFadd{such language }\DIFaddend was found. \DIFdelbegin \DIFdel{We thus view }\DIFdelend T3 \DIFdelbegin \DIFdel{as }\DIFdelend \DIFaddbegin \DIFadd{is therefore }\DIFaddend generic-risk coverage \DIFdelbegin \DIFdel{without }\DIFdelend \DIFaddbegin \DIFadd{in the absence of }\DIFaddend incident-specific disclosure, \DIFdelbegin \DIFdel{rather than as }\DIFdelend \DIFaddbegin \DIFadd{and not }\DIFaddend evidence of intentional substitution of generic language for disclosure of the event.
+
+\DIFaddbegin \begin{quote}
+\textit{\DIFadd{Definition. AI incident disclosure shadow.}} \DIFadd{An incident for which neither incident-specific disclosure (T1) nor disclosure of a directly related formal legal consequence (T2) could be identified in the issuer's Forms 8-K, 10-K and 10-Q filed within the observation window, under this study's search and coding protocol. The term is descriptive. It does not imply that the incident was material, that a disclosure obligation existed, that any information was withheld, or that any issuer failed to comply with a legal requirement. It means only: not identifiable in the specified SEC filing universe under the stated protocol.
+}\end{quote}
+
+\DIFaddend \subsection{Coding procedure and reliability}
+In the first pass, all 307 incidents were coded using a pre-specified codebook and decision tree. Each classification was linked to the filing evidence supporting the assigned tier. Filing evidence included filing date, form type, filing location, search terms, and relevant passage where applicable.
+
+A second independent coding pass was performed on a stratified sample of 68 incidents. The reliability sample consisted of all T1 and T2 cases, 21 of 22 T4 cases, and a random sample of 40 T3 cases. This design intentionally oversampled the rare disclosure categories and the cases close to the substantive/non-substantive classification boundary.
+
+Raw agreement, Cohen's kappa \citep{Cohen1960}, prevalence-adjusted and bias-adjusted kappa (PABAK) and Gwet's AC1 \citep{Gwet2008} were used to evaluate agreement\DIFaddbegin \DIFadd{, and agreement is additionally reported one tier against the rest, because an aggregate coefficient can conceal a category that is unreliable on its own}\DIFaddend . We also calculated an inverse-probability-weighted agreement estimate to approximate agreement across the full incident distribution, considering that the reliability sample was stratified and not proportionally sampled. Discrepancies were noted and reconciled only after the independent coding comparison was completed.
+
+\subsection{Severity of incidents}\label{sec:sev}
+The potential relationship between incident severity and substantive disclosure was also examined. For the 40 incidents for which severity information was available via the CSET AI Harm taxonomy, the existing classification was preserved (Supplementary Table~S1). The other incidents were categorized as Severe, Moderate, or Limited based on a pre-specified harm-severity rubric that utilized the reported outcomes of the incident.
+
+The final sample consisted of 42 Severe, 50 Moderate and 215 Limited incidents. Severity is an indicative analytical measure rather than an authoritative or externally validated ranking of harm, as only a subset of incidents had an external CSET classification and the remaining severity assignments were based on the study rubric. Severity was not subject to a full independent second-coding exercise as was the primary disclosure coding\DIFdelbegin \DIFdel{; this }\DIFdelend \DIFaddbegin \DIFadd{. This }\DIFaddend limitation is taken into account in the interpretation of the severity analysis.
+
+\subsection{Statistical analysis}
+The main estimands are the proportions of incident cases classified as T1, T1+T2, T3, T4 and T3+T4. Rare disclosure outcomes are reported using exact Clopper--Pearson confidence intervals \citep{ClopperPearson1934}, and Wilson intervals \citep{Wilson1927} are used where appropriate for complementary descriptive estimates.
+
+At the company level, observations are not assumed to be fully independent, because multiple incidents are associated with the same issuers. Therefore the main incident-level estimates are complemented with a 10,000-resample issuer-clustered bootstrap. The clustered estimates are interpreted with caution (limited number of issuer clusters, 21) and are reported with the exact incident level intervals, not as a replacement for the latter.
+
+Monte Carlo exact permutation tests with 20,000 iterations were used to examine differences in substantive disclosure by severity categories and issuer roles. The asymptotic regression estimates based on the conventional approach are unstable due to sparse outcomes: there are only seven incidents in the sample that are either T1 or T2. Therefore, no confirmatory multivariable logistic model is considered the primary inferential analysis. The severity analysis tests whether the observed distribution of disclosure differs across severity groups. Failure to reject the null is interpreted as the absence of detectable evidence of a severity gradient rather than proof that severity and disclosure are exactly independent.
+
+\DIFaddbegin \DIFadd{The four tier proportions and the T3+T4 aggregate on the 307-incident sample are the pre-registered primary estimands. The T3a/T3b split, attribution-basis coding, as-of-date and crosswalk audits, alternative tie-breaks, severity power calculations, leave-one-positive-out role analysis and T2 adjudication are post-hoc where reported. None supersedes the pre-specified primary analysis.
+}
+
+\DIFaddend All statistical analyses were performed using deterministic scripts with a fixed random seed of 42. The final analytical data set was used to independently re-derive the reported statistics, tables and figures.
+
+\subsection{Robustness and retrieval audits}
+In several analyses we investigate the sensitivity of the main estimate to a number of design choices made in the study. Alternative 6-, 18-, and 24-month filing windows were used to recalculate disclosure classifications. To address right-censoring near the end of the study window, the analysis was also repeated restricting the sample to incidents with complete follow-up periods.
+
+Issuer concentration was assessed with leave-one-issuer-out analyses and by sequentially excluding the most incident-intensive issuers. These tests take into account whether the overall disclosure shadow is largely an artifact of a small number of companies accounting for a disproportionate share of incidents.
+
+A separate audit of retrievals was performed to determine whether substantive disclosures were missed by the structured filing-search process. Forty incidents (20 T3 and 20 T4) were randomly selected from the non-substantive categories. All relevant filings in the observation window of each selected incident were read in full without relying on the original keyword-search procedure. The audit found no missed T1 or T2 disclosures. With no misses among the 40 audited incidents, the exact one-sided 95\% upper confidence bound on the underlying miss rate is approximately 7.2\%. All seven T1 and T2 classifications were also manually rechecked against the underlying filings.
+
+\subsection{Reproducibility and research workflow}
+The analytical workflow was pre-registered through a hashed pre-analysis plan prior to final estimation detailing the core sample construction, disclosure taxonomy, primary estimands, procedures for assessing reliability, and procedures for assessing robustness. The replication package includes the 307-incident matched dataset, disclosure classifications, severity coding, issuer-matching crosswalk, filing-search records, disagreement log, pre-analysis documentation, and analysis code to reproduce the reported tables, figures, and statistical results. The researchers defined the disclosure codebook and classification rules, and all entity matches, filing evidence, incident classifications, and final statistical outputs were validated. Each of the reported disclosure classifications can be traced back to the underlying source filing. The main results were independently re-derived using the final data. A generative-AI system (Anthropic Claude, Opus-class model, accessed August 2026 via the Claude Agent SDK) assisted with software scaffolding, coding and code review, and minor grammar edits, under author validation; all study design, entity resolution, incident classification, and interpretation were performed by the authors (see the Generative AI Statement).
+
+\section{Results}
+
+\subsection{Primary disclosure outcomes}\DIFaddbegin \label{sec:primary}
+\DIFaddend The final analytical sample includes 307 \DIFaddbegin \DIFadd{AIID-recorded, issuer-matchable }\DIFaddend AI incidents involving 21 U.S.-listed issuers. \DIFdelbegin \DIFdel{Incident-specific disclosure was infrequent }\DIFdelend \DIFaddbegin \DIFadd{The four-tier distribution is the primary presentation }\DIFaddend (Table~\ref{tab:dist})\DIFdelbegin \DIFdel{. Only }\DIFdelend \DIFaddbegin \DIFadd{, and the aggregate follows it as a summary measure.
+}
+
+\DIFadd{Under the pre-registered coding, }\DIFaddend 4 incidents \DIFdelbegin \DIFdel{were classified as }\DIFdelend \DIFaddbegin \DIFadd{are }\DIFaddend T1, \DIFdelbegin \DIFdel{corresponding to }\DIFdelend \DIFaddbegin \DIFadd{3 are T2, 278 are T3 and 22 are T4. Incident-specific disclosure therefore occurs in 4 of 307 incidents, }\DIFaddend 1.3\% \DIFdelbegin \DIFdel{of the sample }\DIFdelend (Clopper--Pearson 95\% CI: 0.4--3.3\%). \DIFdelbegin \DIFdel{An additional 3 incidents were coded as }\DIFdelend \DIFaddbegin \DIFadd{Three further incidents are }\DIFaddend T2\DIFdelbegin \DIFdel{because while }\DIFdelend \DIFaddbegin \DIFadd{: }\DIFaddend a related legal or regulatory consequence \DIFdelbegin \DIFdel{was mentioned }\DIFdelend \DIFaddbegin \DIFadd{appears }\DIFaddend in the issuer's filings, \DIFdelbegin \DIFdel{the underlying AI incident was }\DIFdelend \DIFaddbegin \DIFadd{but the underlying incident is }\DIFaddend not described with \DIFdelbegin \DIFdel{sufficient specificity to be coded as }\DIFdelend \DIFaddbegin \DIFadd{the specificity }\DIFaddend T1 \DIFdelbegin \DIFdel{. Substantive disclosure was reported for }\DIFdelend \DIFaddbegin \DIFadd{requires. Generic same-family risk language without identification of the incident accounts for 278 incidents (90.6\%, 86.7--93.6), and no related language was located for 22 (7.2\%, 4.5--10.6).
+}
+
+\DIFadd{Substantive disclosure (T1+T2) occurs in }\DIFaddend 7 of 307 incidents\DIFdelbegin \DIFdel{or }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend 2.3\% (\DIFdelbegin \DIFdel{95\% CI: }\DIFdelend 0.9--4.6\DIFdelbegin \DIFdel{\%)when combining these categories. }\DIFdelend \DIFaddbegin \DIFadd{). Because T2 has no demonstrated inter-coder reliability (Section~\ref{sec:reliability}), T1 is the primary incident-specific measure and T1+T2 is treated as an upper bound. Re-adjudication of the three T2 cases moves the General Motors OnStar Smart Driver case from T2 to T1 and leaves two cases as T2, producing 5 T1 and 2 T2 without changing the substantive total. If the remaining two T2 cases were instead resolved to T3, the substantive count would fall to 5. Across all resolutions of T2, substantive disclosure is therefore bounded between 5 and 7 of 307 incidents (1.6--2.3\%).
+}\DIFaddend 
+
+\DIFdelbegin \DIFdel{Most events were instead associated with generic risk disclosure. Of these incidents, 278 (90.6\%)were categorized as T3, meaning the issuer disclosed risks associated with the same technology or harm family in the relevant time period without identifying the incident itself. An additional 22 incidents (7.2\%)were classified as T4, for which no related disclosure was identified under the study protocol.
+In total}\DIFdelend \DIFaddbegin \DIFadd{Aggregating the two non-substantive tiers}\DIFaddend , T3 and T4 \DIFaddbegin \DIFadd{together }\DIFaddend account for 300 of 307 \DIFdelbegin \DIFdel{events, yielding }\DIFdelend \DIFaddbegin \DIFadd{incidents, }\DIFaddend an AI incident disclosure shadow of 97.7\% (\DIFdelbegin \DIFdel{95\% CI: }\DIFdelend 95.4--99.1\DIFdelbegin \DIFdel{\%}\DIFdelend ). A bootstrap clustered by issuer \DIFdelbegin \DIFdel{gave a similar estimate of }\DIFdelend \DIFaddbegin \DIFadd{gives }\DIFaddend 97.5\% (\DIFdelbegin \DIFdel{95\% CI: }\DIFdelend 93.9--99.6\DIFdelbegin \DIFdel{\%). }%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{The composition of the disclosure shadow is important.
+The disclosure shadow is driven primarily by generic risk coverage rather than complete disclosure silence. In more than nine out of ten cases }\DIFdelend \DIFaddbegin \DIFadd{). Under the definition in Section~\ref{sec:shadowdef} this figure means only that no incident-specific or directly related legal-consequence disclosure could be identified in Forms 8-K}\DIFaddend , \DIFdelbegin \DIFdel{the filing language referred to the relevant class of technology or harm, but the specific incident was not identified}\DIFdelend \DIFaddbegin \DIFadd{10-K and 10-Q under this protocol.
+}
+
+\subsection{\DIFadd{How related is the generic language? The T3a/T3b split}}\label{sec:t3split}
+\DIFadd{Because T3 contains 278 incidents, we further distinguish generic language that matches both the incident's technology or application family and harm family (T3a) from generic language matching only one of the two (T3b). Ambiguous cases are assigned to T3b, making the stricter category conservative with respect to finding closely related generic coverage.
+}
+
+\DIFadd{Of the 278 T3 incidents, 84 are T3a (27.4\% of the full sample) and 194 are T3b (63.2\%)}\DIFaddend . Thus, \DIFdelbegin \DIFdel{the main result indicates a substantial difference between disclosure of general AI-related risk and disclosure of realized AI incidents. }\DIFdelend \DIFaddbegin \DIFadd{only 30.2\% of the generic-language mass matches both dimensions of the realized incident. Repeating the split with the narrower lexicon fixed before estimation yields 80 T3a cases rather than 84 (28.8\% versus 30.2\% of T3), indicating little sensitivity to this coding choice.
+}\DIFaddend 
+
+\DIFdelbegin \subsection{\DIFdel{Incident severity and substantive disclosure}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdel{Furthermore, substantive disclosure did not increase monotonically with the study's severity classification (Table~\ref{tab:sev}). Of the }\DIFdelend \DIFaddbegin \DIFadd{The T3a/T3b split does not affect the 97.7\% shadow rate because both categories remain outside T1 and T2. It does change the interpretation of the generic-language mass: if only T3a is treated as closely related generic coverage, 216 of 307 incidents, 70.4\% (64.9--75.4), have at most weakly related filing language, and 22 (7.2\%) have none. The full five-way distribution is reported in Table~\ref{tab:fiveway}.
+}
+
+\subsection{\DIFadd{Incident severity and substantive disclosure (exploratory)}}\label{sec:sev-results}
+\DIFadd{The severity analysis is exploratory because the sample contains only seven substantively disclosed incidents. Among }\DIFaddend 42 \DIFdelbegin \DIFdel{incidents classified as Severe, 2.4\% received }\DIFdelend \DIFaddbegin \DIFadd{Severe incidents, 2 are }\DIFaddend T1 \DIFdelbegin \DIFdel{disclosure and 4.8\% received either T1 }\DIFdelend or T2 \DIFdelbegin \DIFdel{disclosure, leaving 95.2\% in the disclosure shadow. Among }\DIFdelend \DIFaddbegin \DIFadd{(4.8\%, 95\% CI 0.6--16.2); among }\DIFaddend 50 Moderate incidents, \DIFdelbegin \DIFdel{none received T1 disclosure, }\DIFdelend \DIFaddbegin \DIFadd{1 is substantive (}\DIFaddend 2.0\%\DIFdelbegin \DIFdel{received T1 or T2 disclosure, and 98.0\% remained within the disclosure shadow. Of the }\DIFdelend \DIFaddbegin \DIFadd{, 0.1--10.6); and among }\DIFaddend 215 Limited incidents, \DIFdelbegin \DIFdel{1.4\% received T1 disclosure, }\DIFdelend \DIFaddbegin \DIFadd{4 are substantive (}\DIFaddend 1.9\%\DIFdelbegin \DIFdel{received }\DIFdelend \DIFaddbegin \DIFadd{, 0.5--4.7). The corresponding }\DIFaddend T1 \DIFdelbegin \DIFdel{or T2 disclosure, and 98.1\% remained in the shadow}\DIFdelend \DIFaddbegin \DIFadd{counts of 1, 1 and 3 are reported in Table~\ref{tab:sev}}\DIFaddend .
+
+A Monte Carlo exact permutation test \DIFdelbegin \DIFdel{found no statistically distinguishable distribution of substantive disclosure across the three }\DIFdelend \DIFaddbegin \DIFadd{finds no difference across }\DIFaddend severity groups (\DIFdelbegin \DIFdel{p = 0.61}\DIFdelend \DIFaddbegin \DIFadd{$p = 0.61$}\DIFaddend ; Figure~\ref{fig:sev})\DIFdelbegin \DIFdel{. Thus, the result offers no evidence for }\DIFdelend \DIFaddbegin \DIFadd{, but the test has little resolution. With seven substantive cases, power is 23.3\% for a threefold Severe-versus-Limited rate difference and 56.1\% for a fivefold difference. To achieve 80\% power against the observed 1.9\% Limited-group rate, the Severe-group rate would need to reach approximately 13\%, about seven times the Limited-group rate. The non-rejection therefore provides little information about the existence of a smaller severity gradient.
+}
+
+\DIFadd{The result is therefore stated narrowly: }\DIFaddend a severity gradient \DIFaddbegin \DIFadd{is not detectable }\DIFaddend in this sample\DIFdelbegin \DIFdel{. This should not be taken to mean that incident severity and disclosureare exactly independent, especially given the small number of substantive disclosures and the attendant limits on statistical power. }\DIFdelend \DIFaddbegin \DIFadd{, not that severity is unrelated to disclosure. Restricting the analysis to the 40 incidents with external CSET severity classifications leaves only one substantive case, so no inferential test is conducted for that subset. Its tier distribution is reported in Supplementary Table~S5.
+}\DIFaddend 
+
+\subsection{Issuer role and disclosure \DIFaddbegin \DIFadd{(descriptive)}\DIFaddend }
+\DIFdelbegin \DIFdel{We carried out a pre-specified secondary analysis to evaluate if the involvement of the issuer in the incident was related to disclosure. Substantive disclosure was unequally distributed between the developer and deployer roles (}\DIFdelend \DIFaddbegin \DIFadd{Because substantive cases are scarce, the role analysis is presented primarily descriptively. Under the adjudicated coding reported in Table~\ref{tab:role}, none of the 58 developer-only incidents receives T1 or T2 disclosure, the 14 deployer-only incidents contain 2 T1 disclosures, and the 235 dual-role incidents contain 3 T1 and 2 T2 disclosures.
+}
+
+\DIFadd{The three-level role contrast is statistically significant by }\DIFaddend Monte Carlo exact \DIFdelbegin \DIFdel{p = 0.02)}\DIFdelend \DIFaddbegin \DIFadd{permutation test ($\chi^2 = 10.434$, $p = 0.024$), whereas the two-by-two contrast between developer-only and any-deployer incidents is not ($\chi^2 = 1.669$, $p = 0.355$). The apparent association therefore depends on retaining the small deployer-only category rather than reflecting a general developer-versus-deployer divide.
+}
+
+\DIFadd{The three-level result is fragile in a leave-one-positive-out analysis (Supplementary Table~S6). Across 22 perturbations of the seven substantive cases, its $p$-value ranges from 0.016 to 0.225 and reaches or exceeds 0.05 in 5 cases. The two-by-two contrast never rejects. Dropping or reclassifying either deployer-only positive to T3 moves the three-level $p$-value to approximately 0.22, while promoting one developer-only T3 case to T1 moves it to 0.054}\DIFaddend .
+\DIFdelbegin \DIFdel{All four }\DIFdelend \DIFaddbegin 
+
+\DIFadd{The defensible descriptive result is narrower: all }\DIFaddend T1 \DIFdelbegin \DIFdel{disclosures featured an issuer as a deployer of the implicated system. No incident-specific T1 disclosure was made for any }\DIFdelend \DIFaddbegin \DIFadd{disclosures involve deployer-only or dual-role issuers, and none }\DIFaddend of the 58 developer-only \DIFdelbegin \DIFdel{role incidents .
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{Since only seven incidents are substantive disclosures, these role differences should be interpreted as descriptive evidence }\DIFdelend \DIFaddbegin \DIFadd{incidents receives T1 or T2 disclosure. Because this pattern rests on few positive cases and a specification choice, it is treated as hypothesis-generating }\DIFaddend rather than as \DIFdelbegin \DIFdel{estimates of a stable causal relationship between organizational role and disclosure.
+The result nevertheless suggests that the position of the issuer in the development and deployment chain may be relevant to whether an incident becomes identifiable in follow-up investor reporting.
+}\DIFdelend \DIFaddbegin \DIFadd{an estimated role effect.
+}\DIFaddend 
+
+\subsection{Characteristics of events with substantive disclosures}
+The seven T1 or T2 incidents were concentrated in cases with observable financial-statement effects or formal legal and regulatory consequences (Table~\ref{tab:acct}). Two T1 cases had large \DIFdelbegin \DIFdel{booked }\DIFdelend \DIFaddbegin \DIFadd{reported }\DIFaddend financial impacts. Zillow said it incurred roughly \$304 million in charges to wind down its algorithm-driven business of buying and selling homes, while General Motors \DIFdelbegin \DIFdel{said it incurred roughly }\DIFdelend \DIFaddbegin \DIFadd{reported a }\DIFaddend \$478 million \DIFdelbegin \DIFdel{in restructuring charges to suspend }\DIFdelend \DIFaddbegin \DIFadd{Cruise restructuring adjustment associated with the suspension and restructuring of }\DIFaddend its autonomous-vehicle \DIFdelbegin \DIFdel{business}\DIFdelend \DIFaddbegin \DIFadd{operations}\DIFaddend .
+
+The remaining substantive matters were primarily litigation, regulatory proceedings, investigations or related contingencies. These included incident-specific disclosures about legal proceedings and T2 cases where the filing described the resulting legal or regulatory matter but did not identify the underlying event as an AI incident. Conversely, two of the largest incident categories in the sample\DIFdelbegin \DIFdel{--- }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend misinformation or content-related incidents (n = 70) and generative-AI error incidents (n = 57) --- contained no substantive disclosures.
+
+This concentration is consistent with H2 in a descriptive sense, with substantive disclosures concentrated among incidents associated with recognized financial-statement or formal legal reporting channels. There is no evidence that these consequences led to disclosure and the small number of positive cases does not support a formal mechanism test.
+
+\subsection{Issuer concentration and temporal patterns}
+Disclosure of substance was not evenly spread among issuers. Of the 21 issuers in the analytical sample, only 4 had one or more T1 or T2 incidents. At the same time, the relatively high overall disclosure-shadow estimate is not solely driven by the companies contributing the largest numbers of incidents (Table~\ref{tab:rob}; Figure~\ref{fig:pareto}).
+
+In leave-one-issuer-out analysis, the estimated disclosure shadow ranged from 96.8\% to 98.6\%. Removing the two issuers with the most incidents, the shadow estimate fell to 96.4\% and removing the five issuers with the most incidents, the estimate was 92.5\%. Therefore, although issuer concentration does influence the magnitude of the estimate, the key finding is that the large majority of externally recorded incidents could not be identified via incident-specific or related legal-consequence disclosure.
+
+We also tested whether the substantive disclosure increased over the period of the study. No systematic time increase was found. A trend test indicated z = $-0.28$ (p = 0.78; Figure~\ref{fig:year}), providing no evidence that the probability of substantive disclosure increased across incident years represented in the sample.
+
+\subsection{Coding reliability and retrieval validation}\DIFdelbegin \DIFdel{Independent }\DIFdelend \DIFaddbegin \label{sec:reliability}
+\DIFadd{The independent }\DIFaddend second-coding exercise \DIFdelbegin \DIFdel{indicated an }\DIFdelend \DIFaddbegin \DIFadd{gave raw }\DIFaddend agreement of 85.3\% \DIFdelbegin \DIFdel{on the raw agreement }\DIFdelend across the stratified reliability sample\DIFdelbegin \DIFdel{. The }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend Cohen's kappa \DIFdelbegin \DIFdel{was }\DIFdelend 0.73, \DIFdelbegin \DIFdel{the }\DIFdelend prevalence-adjusted and bias-adjusted kappa \DIFdelbegin \DIFdel{was }\DIFdelend 0.71\DIFdelbegin \DIFdel{and the }\DIFdelend \DIFaddbegin \DIFadd{, and }\DIFaddend Gwet's AC1 \DIFdelbegin \DIFdel{was }\DIFdelend 0.82. The inverse-probability-weighted agreement estimate\DIFdelbegin \DIFdel{was 90.9\% (adjusted for intentional }\DIFdelend \DIFaddbegin \DIFadd{, adjusted for the deliberate }\DIFaddend oversampling of rare \DIFdelbegin \DIFdel{disclosure categories).
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{In the reliability sample, 10 disagreements were found between coders. Four crossed the main }\DIFdelend \DIFaddbegin \DIFadd{categories, was 90.9\%. Ten disagreements arose, four of them crossing the }\DIFaddend substantive/non-substantive \DIFdelbegin \DIFdel{divide separating }\DIFdelend \DIFaddbegin \DIFadd{boundary.
+}
+
+\DIFadd{Tier-specific agreement reveals one important weakness. Cohen's kappa is 0.73 for }\DIFaddend T1\DIFdelbegin \DIFdel{or }\DIFdelend \DIFaddbegin \DIFadd{, 0.76 for T3 and 0.79 for T4, but $-0.023$ for }\DIFaddend T2 \DIFdelbegin \DIFdel{from }\DIFdelend \DIFaddbegin \DIFadd{(Supplementary Table~S7): the second coder assigns the three pass-one T2 cases to T1, }\DIFaddend T3 \DIFdelbegin \DIFdel{or }\DIFdelend \DIFaddbegin \DIFadd{and }\DIFaddend T4\DIFdelbegin \DIFdel{. The remainder of the disagreements concerned distinctions within these larger groups. The results indicate substantial agreement, but also show that judgment is needed for classification near the boundary between legal-consequence disclosure and generic risk language. }\DIFdelend \DIFaddbegin \DIFadd{, respectively. T2 therefore has no demonstrated inter-coder reliability in this sample. For that reason, T1 is the primary incident-specific measure and T1+T2 is reported as an upper bound. All three T2 cases were also adjudicated against the codebook, with one moving to T1 (Section~\ref{sec:primary}).
+}\DIFaddend 
+
+The separate retrieval audit was a further check on the filing-search procedure. All relevant filings for 40 randomly selected non-substantive incidents (20 T3 and 20 T4 cases) were read in full and without searching. No previously missed T1 or T2 disclosures were found. The exact one-sided 95\% upper confidence bound on the underlying miss rate is approximately 7.2\%, with no misses among 40 audited incidents. All seven substantive disclosure cases were manually re-audited using the underlying filings.
+
+\subsection{Robustness to alternative specifications}
+The primary outcome is stable in comparison to other design choices (Table~\ref{tab:rob}). Re-estimating disclosure outcomes with 6-, 18-, and 24-month filing windows did not materially alter the finding that substantive disclosure was rare and that the large majority of incidents remained in the disclosure shadow. Similarly, restricting the analysis to those incidents with complete follow-up periods also yielded similar results, suggesting that right-censoring close to the end of the study period does not explain the primary estimate.
+
+\DIFdelbegin \DIFdel{All of the alternative }\DIFdelend \DIFaddbegin \DIFadd{Additional mapping and coding sensitivities are reported in Table~\ref{tab:rob}. The corrected N = 303 sample retains a 97.7\% shadow rate; excluding platform-venue incidents yields 97.6\%, and excluding both platform-venue and mentioned-only incidents yields 97.5\%. Alternative issuer tie-breaks leave the rate at 97.7\%, while dropping every incident for which the second coder selected a different issuer yields 97.6\%. T2 adjudication and the coding-log discrepancy likewise do not change the aggregate.
+}
+
+\DIFadd{Across alternative disclosure }\DIFaddend windows, issuer-concentration \DIFdelbegin \DIFdel{analyses}\DIFdelend \DIFaddbegin \DIFadd{tests}\DIFaddend , complete-follow-up \DIFdelbegin \DIFdel{restriction, independent coding exercise, and }\DIFdelend \DIFaddbegin \DIFadd{restrictions, the T3a/T3b split, attribution exclusions, issuer tie-breaks, corrected mappings and the search-independent }\DIFaddend full-filing \DIFdelbegin \DIFdel{retrieval auditpoint to the same empirical pattern: disclosure of }\DIFdelend \DIFaddbegin \DIFadd{audit, the qualitative result is unchanged: }\DIFaddend incident-specific or directly related \DIFdelbegin \DIFdel{legal consequences is not common among AIID incidents matched to U.S.-listed issuers}\DIFdelend \DIFaddbegin \DIFadd{legal-consequence disclosure is rare}\DIFaddend , while generic same-family risk \DIFdelbegin \DIFdel{disclosure is common }\DIFdelend \DIFaddbegin \DIFadd{language is common and usually matches the realized incident along only one of the two coded dimensions}\DIFaddend .
+
+\section{Discussion}
+
+This study provides incident-level evidence on whether publicly documented AI \DIFdelbegin \DIFdel{failures }\DIFdelend \DIFaddbegin \DIFadd{incidents }\DIFaddend involving U.S.-listed companies subsequently become identifiable in securities filings. Of the 307 AI incidents by 21 issuers, only four incidents had incident-specific disclosure, and only seven had incident-specific disclosure or disclosure of legal consequence that was directly related to the incident. The resulting coverage of the AI incident disclosure shadow is 97.7\% of the sample. Thus, the main finding is not that incident-specific disclosure is rare, but that realized AI incidents and \DIFdelbegin \DIFdel{investor-facing }\DIFdelend \DIFaddbegin \DIFadd{SEC filing }\DIFaddend disclosure often occupy different informational layers.
+
+\DIFdelbegin \DIFdel{The composition of this shadow is especially revealing. Most incidents were classified as T3 rather than T4. Specifically, }\DIFdelend \DIFaddbegin \DIFadd{Generic rather than absent risk language dominates the disclosure shadow. Of the 307 incidents, only 22 are T4 while }\DIFaddend 278 \DIFdelbegin \DIFdel{of 307 incidents were associated with filing language addressing the same technology or harm family without identifying the particular incident. Complete absence of related disclosure was less common by a wide margin. This pattern should not be viewed as evidence that issuers intentionally substituted disclosure of a particular event with generic language. The data do not reveal managerial intent , nor do they prove }\DIFdelend \DIFaddbegin \DIFadd{are T3. Yet the T3 split shows that this language is often only loosely related to the event as realized: 84 of 278 T3 incidents match both the technology or application family and the harm family, while 194 match only one. Under the stricter interpretation, 70.4\% of all incidents have at most weakly related filing language. The central pattern is therefore not corporate silence about AI risk, but a separation between broad class-level risk discussion and identification of realized incidents. This finding does not establish managerial intent or imply }\DIFaddend that generic language was \DIFdelbegin \DIFdel{written }\DIFdelend \DIFaddbegin \DIFadd{added }\DIFaddend in response to \DIFdelbegin \DIFdel{an incident. Instead, they point to a narrower empirical result: general coverage of AI-related risks is ubiquitous, even if the realized incidents remain individually unidentified in those filings .
+}\DIFdelend \DIFaddbegin \DIFadd{any specific event.
+}\DIFaddend 
+
+\DIFaddbegin \DIFadd{Several explanations for an incident's presence in the shadow do not imply inadequate or unlawful disclosure. An event may be immaterial, may have no financial or legal consequence, may involve the issuer only indirectly, or may already be public through a channel outside this study's filing universe. Fourteen incidents are classified as platform-venue and 8 as mentioned-only, illustrating how attribution can weaken even when an issuer appears in the incident record. More fundamentally, securities filings are not incident registers, and no general U.S. AI-incident reporting rule applied during the sample period. The shadow rate is consistent with these explanations and does not distinguish among them.
+}
+
+\DIFaddend This distinction helps to clarify the relationship between risk disclosure and actual events. Incident disclosure is retrospective, pertaining to a specific event that has occurred, whereas risk-factor reporting is generally prospective and categorical. So a filing can acknowledge that a class of AI-related harm may exist without identifying every instance in that class. The results show that this difference is not small in the current sample; it accounts for the vast majority of observed incidents. Therefore, corporate AI transparency research focusing on whether firms disclose AI-related risks may substantially overstate investors' ability to detect actual negative consequences from such disclosures.
+
+The seven substantively disclosed cases shed more light on what situations make an AI incident \DIFdelbegin \DIFdel{visible in investor reporting}\DIFdelend \DIFaddbegin \DIFadd{identifiable in an issuer's SEC filings}\DIFaddend . These cases are concentrated in incidents with financial statement effects or formal legal or regulatory consequences. Two incident-specific cases had associated \DIFdelbegin \DIFdel{booked charges }\DIFdelend \DIFaddbegin \DIFadd{reported financial impacts }\DIFaddend of approximately \$304 million and \$478 million, while several others emerged through litigation, regulatory proceedings, investigations or related contingencies. By contrast, large categories of misinformation, content-related harms, and generative-AI errors produced no substantive disclosures in the study sample.
+
+This pattern fits H2. The evidence supports an association, although not an identified mechanism. The study cannot tell if an issuer disclosed an incident in response to accounting recognition or legal proceedings. The T2 category is also characterized by the existence of a formal legal consequence in the filing, and so the legal component of this pattern should not be viewed as an independent causal test. The more persuasive evidence is the wider spread of positive cases around incidents that made their way into established financial-reporting or legal-reporting channels, including the two T1 cases with large \DIFdelbegin \DIFdel{booked charges}\DIFdelend \DIFaddbegin \DIFadd{reported financial impacts}\DIFaddend . To test these channels independently would require a larger sample and more substantive disclosures.
+
+The severity \DIFdelbegin \DIFdel{results further complicate a simple model in which more harmful AI incidents are necessarily more visible to investors. Substantive disclosure was present in 4.8\% of Severe incidents, 2.0\% of Moderate incidents, and 1.9\% of Limited incidents, but the exact test did not find the difference to be statistically distinguishable (p = 0.61). This result is consistent with H3 in the limited sense that the study does not find a monotonic severity gradient. It does not prove that severity has no bearing on disclosure. We observe only seven substantively meaningful disclosures, which severely limits the statistical power. The severity measure itself combines externally available classifications with a study-specific rubric. The result is better interpreted as indicating that the severity of observable harm alone does not clearly explain what incidents become identifiable in securities filings}\DIFdelend \DIFaddbegin \DIFadd{analysis supports only a limited conclusion: no gradient is detectable in this sample. With seven substantive disclosures, power is 23.3\% even for a threefold Severe-versus-Limited rate difference, and approximately a 7.2-fold difference would be required for 80\% power. The $p = 0.61$ result should therefore not be interpreted as evidence that severity is unimportant. The mixed severity measure (40 externally classified incidents and 267 coded under the study rubric) provides an additional reason to treat this analysis as exploratory}\DIFaddend .
+
+\DIFdelbegin \DIFdel{The secondary analysis on issuer role gives a different pattern. Disclosure differs for developer versus deployer (exact p = 0.02) and all four incident-specific }\DIFdelend \DIFaddbegin \DIFadd{Issuer role shows a tentative but weak pattern. All }\DIFaddend T1 disclosures \DIFdelbegin \DIFdel{are by issuersas deployers. None }\DIFdelend \DIFaddbegin \DIFadd{involve deployer-only or dual-role issuers, and none }\DIFaddend of the 58 developer-only incidents \DIFdelbegin \DIFdel{got }\DIFdelend \DIFaddbegin \DIFadd{receives }\DIFaddend T1 \DIFdelbegin \DIFdel{disclosure. One interpretation is that firms are more likely to suffer recognizable operational, accounting or legal consequences when they directly deploy an AI system than when they only are involved in its development. However, the current data do not isolate that mechanism and }\DIFdelend \DIFaddbegin \DIFadd{or T2 disclosure. Yet the association appears in }\DIFaddend the \DIFdelbegin \DIFdel{small number of positive cases makes the result more appropriate as a }\DIFdelend \DIFaddbegin \DIFadd{three-level specification ($p = 0.024$) but not in the developer-only-versus-any-deployer contrast ($p = 0.355$), and single-case perturbations move the three-level result across conventional significance thresholds. The evidence therefore supports a descriptive, }\DIFaddend hypothesis-generating \DIFdelbegin \DIFdel{finding than as a stable estimate of role effects}\DIFdelend \DIFaddbegin \DIFadd{pattern rather than a stable role effect}\DIFaddend .
+
+The results are consistent with a materiality-gated disclosure setting. Securities filings are not intended to be a complete repository of every operational incident related to a public company. An externally reported AI incident may be publicly salient without necessarily resulting in a financial impact, legal proceeding, or other consequence that results in identifiable \DIFdelbegin \DIFdel{investor }\DIFdelend \DIFaddbegin \DIFadd{SEC filing }\DIFaddend disclosure. Meanwhile, the absence of incident-specific disclosure means that investors who rely on periodic and current reports would not be able to reconstruct anything like the external incident record represented in AIID.
+
+This has implications for the research on corporate AI transparency. Recent finance research has largely focused on AI as a productive technology for improving financial-market prediction, portfolio management, automated financial services, and auditing. In the present study, the information flow is looked at in the reverse direction. Instead of asking how AI improves financial decisions, it asks what investors learn when artificial intelligence systems themselves are the source of an adverse event. The results indicate that this downside information channel is much narrower than the broader corporate discourse on AI-related risk.
+
+The \DIFaddbegin \DIFadd{T3 pattern is consistent with prior evidence that the informativeness of risk disclosure depends on content and specificity rather than presence alone. \mbox{%DIFAUXCMD
+\citet{WangKannanUlmer2013} }\hskip0pt%DIFAUXCMD
+make this point for cybersecurity disclosure, while \mbox{%DIFAUXCMD
+\citet{Hope2016} }\hskip0pt%DIFAUXCMD
+show more generally that specific risk-factor disclosures are more informative than generic ones. Here, broad AI-risk language is common, but it rarely identifies the realized event and usually matches it along only one coded dimension.
+}
+
+\DIFadd{The }\DIFaddend robustness checks further support the main descriptive finding. Even when issuers with the most incidents are excluded, and even when alternative 6-, 18-, and 24-month disclosure windows are used, and even when the analysis is restricted to incidents with a full follow-up period, the disclosure shadow remains large. Leave-one-issuer-out estimates range from 96.8\% to 98.6\%, and removal of the five largest incident contributors still produces a shadow estimate of 92.5\%. The results suggest that the main finding is not an artifact of a single issuer, a single observation window, or right-censoring toward the end of the sample period.
+
+The independent coding and retrieval exercises, which also highlight areas of uncertainty, provide further support. The second coding pass revealed a high level of agreement on many reliability statistics; however, four disagreements crossed the substantive/non-substantive divide. The full-filing audit of 40 randomly selected T3 and T4 incidents identified no missed substantive disclosure. However, observing zero misses in 40 does not mean that the miss rate is zero. The one-sided 95\% upper confidence bound is about 7.2\%. Hence the retrieval audit supports the search protocol without precluding the possibility that some obliquely worded disclosures are still missed.
+
+The results provide a useful baseline to compare future results against. Researchers can examine whether the relationship between externally reported incidents and \DIFdelbegin \DIFdel{investor-facing }\DIFdelend \DIFaddbegin \DIFadd{SEC filing }\DIFaddend disclosure changes as AI-specific governance and incident-reporting systems are developed. Current estimates describe a period in which the frequency of AI incidents was high enough to generate a large external record, but incident-specific securities disclosure was still rare. Repeating the same incident level design under future reporting regimes allows us to separate changes in general AI risk discussion from changes in the disclosure of realized events themselves.
+
+Most importantly, the AI incident disclosure shadow should not be seen as a sign of unlawful nondisclosure. This study does not make any determination as to whether any particular incident was legally material, whether an issuer had a duty to disclose it, or whether an issuer complied with applicable securities law. The contribution is empirical rather than adjudicative: for AI incidents independently recorded in AIID and matched to U.S.-listed issuers, a small minority became identifiable via incident-specific or directly related legal-consequence disclosure. This \DIFdelbegin \DIFdel{gap }\DIFdelend \DIFaddbegin \DIFadd{difference }\DIFaddend between the external incident record and \DIFdelbegin \DIFdel{investor-facing filings }\DIFdelend \DIFaddbegin \DIFadd{the issuer's periodic and current reports }\DIFaddend is the phenomenon documented here.
+
+\section{Limitations}
+
+\DIFdelbegin \DIFdel{There are some limitations to this study that should be taken into account when interpreting the results.
+First, the AI Incident Database is not a census of all AI-related failures. It is a media-derived repository. The database is biased toward events that have been made public, while internal events, events with limited media coverage, or events that cannot easily be attributed to a specific organization might be absent.Therefore, the analytical sample represents externally documented and matchable incidents rather than the total population of AI failures involving publicly listed companies. The estimated disclosure shadow should not be interpreted as a formal lower bound since the disclosure behavior of unrecorded incidents is unobservable.
+}\DIFdelend \DIFaddbegin \DIFadd{The results should be interpreted subject to several limitations.
+}\DIFaddend 
+
+\DIFdelbegin \DIFdel{Second, issuer matching necessarily involves judgment. During the study period, 1}%DIFDELCMD < {%%%
+\DIFdel{, }%DIFDELCMD < }%%%
+\DIFdel{389 AIID incidents were identified, of which 307 could be matched conservatively to 21 }\DIFdelend \DIFaddbegin \textit{\DIFadd{Conditional denominator.}} \DIFadd{The reported rates apply to incidents that entered AIID, named an identifiable organization and could be resolved to a }\DIFaddend U.S.-listed \DIFdelbegin \DIFdel{domestic issuers. Many records had unresolved organizational identities, uncertain relationships between developers, deployers, subsidiaries, and parent companies, or entities outside the scope of the study}\DIFdelend \DIFaddbegin \DIFadd{domestic filer (Section~\ref{sec:estimand}). AIID is media-derived rather than a census, so internal failures and failures receiving little public coverage are not systematically represented. The 97.7\% shadow rate is therefore not a population rate for corporate AI incidents, and the design does not identify the direction of selection bias}\DIFaddend .
+\DIFdelbegin \DIFdel{We tried to minimize mapping error through the use of a 137-row validation crosswalk }\DIFdelend \DIFaddbegin 
+
+\textit{\DIFadd{Filing universe.}} \DIFadd{The study measures visibility in Forms 8-K, 10-K }\DIFaddend and \DIFdelbegin \DIFdel{an additional audit of frequently occurring unresolved organizations, but it is possible that some eligible incidents were missed.
+The denominator generated should thus be understood as the reproducibly matchable samplegenerated by the study protocol rather than an exhaustive census of listed-company AI incidents}\DIFdelend \DIFaddbegin \DIFadd{10-Q, not investor-facing communication generally. Earnings calls, investor presentations, non-filed press releases, litigation dockets outside SEC filings, regulator announcements, corporate websites and conference communications are outside the search universe (Section~\ref{sec:filings}). An incident disclosed only through one of those channels is therefore correctly classified as not identifiable for this study, but not as information unavailable to investors.
+}
+
+\textit{\DIFadd{Issuer attribution.}} \DIFadd{Linking incidents to issuers requires judgment, especially when an AIID record names multiple firms or a product or subsidiary must be linked to a parent. Twenty-seven incidents have multiple listed-issuer candidates. As-of-date ownership checks, row-level crosswalk review, attribution-basis coding and alternative tie-breaks change the aggregate by no more than 0.2 percentage points. A blind second coder agrees on 82.5\% of an intentionally difficult 80-incident sample ($\kappa = 0.79$); all disagreements occur among multi-candidate cases and none involves T1 or T2. Residual uncertainty is therefore concentrated in attribution rather than the substantive-disclosure count.
+}
+
+\textit{\DIFadd{T2 reliability.}} \DIFadd{The legal-consequence-only category has no demonstrated inter-coder reliability in this sample: the second coder disagreed with all three pass-one T2 cases (Section~\ref{sec:reliability}). T1 is therefore treated as the primary incident-specific measure and T1+T2 as an upper bound, with the substantive count bounded across alternative resolutions of the T2 cases}\DIFaddend .
+
+\DIFdelbegin \DIFdel{Third, the }\DIFdelend \DIFaddbegin \textit{\DIFadd{Issuer concentration.}} \DIFadd{The }\DIFaddend matched sample is concentrated in a relatively small number of technology companies. Alphabet, Meta, Tesla and Microsoft account for a large share of the observations and only 21 issuers are represented in total. Leave-one-issuer-out analyses, sequential exclusion of the largest incident contributors and issuer-clustered bootstrap estimates suggest these firms are not the sole drivers of the main result. However, the small number of issuer clusters limits statistical inference and the extent to which the estimated disclosure rate can be generalized to the wider population of U.S.-listed companies.
+
+\DIFdelbegin \DIFdel{Fourth, there are still measurement errors }\DIFdelend \DIFaddbegin \textit{\DIFadd{Retrieval error.}} \DIFadd{Measurement error }\DIFaddend in filing retrieval \DIFaddbegin \DIFadd{remains possible}\DIFaddend . The language used to describe AI-related events varies greatly in media reports, corporate filings, legal proceedings and product documentation. The search protocol included incident-specific, technology-related and harm-related terms, and manual review of relevant sections of filings, but unusually indirect or oblique disclosures may have been missed. The independent full-filing audit of 40 randomly selected T3 and T4 incidents did not find any missed substantive disclosures. This provides support for the retrieval procedure. However, zero observed misses in 40 cases yields a one-sided 95\% upper confidence bound of approximately 7.2\%, so the audit cannot prove perfect retrieval sensitivity.
+
+\DIFdelbegin \DIFdel{Fifth, the }\DIFdelend \DIFaddbegin \textit{\DIFadd{Coding judgment.}} \DIFadd{The }\DIFaddend classification of disclosure involves an unavoidable element of judgment, especially at the boundary between disclosure of a legal consequence and general discussion of the same risk. There was substantial agreement in the independent second-coding exercise, but four disagreements crossed the primary substantive/non-substantive boundary. The full sample contains only seven substantive disclosures, so even a small number of classification differences can be proportionately important. Double coding of the entire sample would provide an even stronger reliability assessment.
+
+\DIFdelbegin \DIFdel{Sixth, the }\DIFdelend \DIFaddbegin \textit{\DIFadd{Severity.}} \DIFadd{The }\DIFaddend severity analysis is \DIFdelbegin \DIFdel{more exploratory than the main disclosure analysis. External CSET severity information was available for only }\DIFdelend \DIFaddbegin \DIFadd{exploratory and underpowered. Power is 23.3\% for a threefold Severe-versus-Limited difference, while 80\% power would require approximately a 7.2-fold difference. Only }\DIFaddend 40 \DIFdelbegin \DIFdel{of the 307 incidents . The remaining observations were classified using a pre-specified study rubric. Severity coding }\DIFdelend \DIFaddbegin \DIFadd{incidents have external CSET severity classifications; the remainder were coded using the study rubric, which }\DIFaddend was not independently double-coded\DIFdelbegin \DIFdel{in the same manner as the primary disclosure outcome. Therefore, the lack of a statistically discernible }\DIFdelend \DIFaddbegin \DIFadd{. The absence of a detectable }\DIFaddend severity gradient should \DIFdelbegin \DIFdel{be viewed with caution, especially as the limited power to distinguish differences across severity categories is driven by the small number of substantive disclosures}\DIFdelend \DIFaddbegin \DIFadd{therefore not be interpreted as evidence of no association}\DIFaddend .
+
+\DIFdelbegin \DIFdel{Seventh, the }\DIFdelend \DIFaddbegin \textit{\DIFadd{Disclosure window.}} \DIFadd{The }\DIFaddend 12-month disclosure window is a choice of research design, not a theoretically unique interval. Some consequences of AI incidents may be fast developing. Litigation, regulatory investigations, accounting effects or organizational responses may develop over substantially longer periods. The same general conclusion holds for 6-, 18-, and 24-month windows, but there is no fixed observation window that can capture all the possible pathways of disclosure.
+
+\DIFdelbegin \DIFdel{Finally, the number of substantive disclosures is limited, which constrains the analysis of mechanisms.
+Only seven }\DIFdelend \DIFaddbegin \textit{\DIFadd{T3 interpretation.}} \DIFadd{The distinction between related generic language and unrelated boilerplate remains a class-level judgment. Pre-incident presence of the same risk language was not tested, so T3 indicates only that the relevant technology or harm family was discussed during the observation window, not that the disclosure was added in response to the incident.
+}
+
+\textit{\DIFadd{Sparse outcomes.}} \DIFadd{Only seven incidents are }\DIFaddend T1 or T2\DIFdelbegin \DIFdel{cases would result in unstable and potentially misleading multivariable models}\DIFdelend \DIFaddbegin \DIFadd{, limiting multivariable inference about the determinants of substantive disclosure}\DIFaddend . The concentration of \DIFdelbegin \DIFdel{disclosure among incidents with }\DIFdelend \DIFaddbegin \DIFadd{substantive cases around }\DIFaddend financial-statement effects or formal legal \DIFdelbegin \DIFdel{consequences is thus descriptive and should not be construed as causalevidence that these channels independently generate disclosure}\DIFdelend \DIFaddbegin \DIFadd{and regulatory consequences is therefore descriptive rather than causal, and the issuer-role association remains sensitive to specification and individual cases}\DIFaddend .
+
+\DIFdelbegin \DIFdel{Future research could build on this designby using larger incident populations, more public-company jurisdictions, and longer observation periods. More positive disclosure cases would allow issuer-clustered multivariable modeling of the factors associated with disclosure. Another way to look at whether AI-related incidents that are reported externally but not disclosed have informationof value to investors is to connect incidents to market reactions. Cross-jurisdictional comparisons, such as those in jurisdictions with mandatory AI-incident reporting requirements, could also serve as a basis for evaluating whether new reporting regimes change the connection between realized AI harms and investor-facing disclosure. }\DIFdelend \DIFaddbegin \DIFadd{Three directions for future work follow naturally from the same incident-level design: broadening the investor-communication universe, expanding the sample enough to support multivariable analysis, and conducting cross-jurisdictional comparisons. Applying the taxonomy to earnings calls, investor presentations and press releases would distinguish non-disclosure to investors from non-repetition in periodic filings. Linking incidents to market reactions could also test whether externally reported but filing-invisible events contain investor-relevant information.
+}\DIFaddend 
+
+\DIFaddbegin \DIFadd{Regulatory change provides a particularly informative extension. Article 73 of the EU AI Act requires providers of high-risk AI systems to report serious incidents to national market-surveillance authorities \mbox{%DIFAUXCMD
+\citep{EUAIAct2024}}\hskip0pt%DIFAUXCMD
+, creating a mandatory incident record that can be compared with securities disclosure. Re-applying the same design under that regime, or under future U.S. AI-specific disclosure guidance, including an Item 1.05-style current-reporting approach analogous to the cybersecurity regime \mbox{%DIFAUXCMD
+\citep{SEC2023Cyber}}\hskip0pt%DIFAUXCMD
+, would test whether mandatory incident reporting narrows the gap between externally recorded events and incidents identifiable in securities filings. The estimates reported here provide a pre-regime baseline for such comparisons.
+}
+
+\DIFaddend \section{Conclusion}
+
+This study \DIFdelbegin \DIFdel{measures the extent to which publicly documented AI incidents involving }\DIFdelend \DIFaddbegin \DIFadd{links 307 AIID-recorded incidents involving 21 }\DIFaddend U.S.-listed \DIFdelbegin \DIFdel{companies become identifiable in subsequent securities filings. Among 307 AIID incidents associated with 21 issuers, only four received }\DIFdelend \DIFaddbegin \DIFadd{issuers to subsequent Forms 8-K, 10-K and 10-Q. Under the pre-registered coding, 4 incidents receive }\DIFaddend incident-specific disclosure and \DIFdelbegin \DIFdel{only seven received }\DIFdelend \DIFaddbegin \DIFadd{7 receive }\DIFaddend either incident-specific disclosure or disclosure of a directly related legal consequence. The resulting AI incident disclosure shadow \DIFdelbegin \DIFdel{encompasses }\DIFdelend \DIFaddbegin \DIFadd{covers 300 of 307 incidents (}\DIFaddend 97.7\%\DIFdelbegin \DIFdel{of the sample. }\DIFdelend \DIFaddbegin \DIFadd{). These are not population rates for corporate AI incidents, but conditional estimates for incidents recorded in AIID and resolvable to a listed filer.
+}\DIFaddend 
+
+The \DIFdelbegin \DIFdel{dominant pattern is not complete silence. Most incidents were accompanied by generic filing }\DIFdelend \DIFaddbegin \DIFadd{shadow is not simply an absence of AI-risk language. Generic }\DIFaddend language addressing the same technology or harm family \DIFdelbegin \DIFdel{without identifying }\DIFdelend \DIFaddbegin \DIFadd{accompanies 278 incidents, but only 84 of those cases match both dimensions of }\DIFaddend the realized event. \DIFdelbegin \DIFdel{This distinction matters because the presence of broad AI-risk disclosure does not necessarily provide investors with information about specific incidents that have already occurred. The findings therefore reveal a substantial separation between the external record of realized AI harms and the incident-level information observable in investor-facing filings}\DIFdelend \DIFaddbegin \DIFadd{On the stricter interpretation, 70.4\% of all incidents have at most weakly related filing language. Broad discussion of AI risk is therefore common even when the realized incident itself is not identifiable}\DIFaddend .
+
+\DIFdelbegin \DIFdel{Substantive disclosures were concentrated among a small number of incidents associated with }\DIFdelend \DIFaddbegin \DIFadd{The seven substantive cases cluster around }\DIFaddend financial-statement effects or formal legal and regulatory consequences, including \DIFdelbegin \DIFdel{two cases accompanied by substantial booked charges}\DIFdelend \DIFaddbegin \DIFadd{reported financial impacts of approximately \$304 million and \$478 million}\DIFaddend . By contrast, the \DIFdelbegin \DIFdel{analysis does not detect a clear relationship between the study's measure of incident severity and substantive disclosure. These patterns are consistent with a disclosure environment in which recognized financial and legal consequences may be more closely connected to investor reporting than publicly observable harm severity alone, although the small number of positive cases prevents causal identification of these mechanisms}\DIFdelend \DIFaddbegin \DIFadd{severity and issuer-role analyses are appropriately treated as exploratory: the former is underpowered, while the latter is sensitive to specification and single-case changes}\DIFaddend .
+
+The \DIFdelbegin \DIFdel{principal finding remains stable }\DIFdelend \DIFaddbegin \DIFadd{main descriptive result persists }\DIFaddend across alternative disclosure windows, issuer-concentration \DIFdelbegin \DIFdel{analyses, complete-follow-up restrictions, independent coding checks, }\DIFdelend \DIFaddbegin \DIFadd{tests, attribution exclusions, issuer tie-breaks, corrected mappings }\DIFaddend and a search-independent full-filing audit. \DIFdelbegin \DIFdel{At the same time, the study is bounded by the }\DIFdelend \DIFaddbegin \DIFadd{Its interpretation nevertheless remains bounded by AIID's }\DIFaddend media-derived \DIFdelbegin \DIFdel{nature of AIID, a relatively concentrated issuer sample, uncertainty in entity resolution and severity classification, and the possibility of missed or obliquely worded disclosures}\DIFdelend \DIFaddbegin \DIFadd{denominator, the limited SEC filing universe, residual ambiguity in multi-candidate issuer attribution and the lack of demonstrated reliability for T2}\DIFaddend .
+
+The AI incident disclosure shadow is a descriptive measure, not a determination of legal materiality or compliance. \DIFdelbegin \DIFdel{The study does not establish that any particular incident was required to be disclosed or that any issuer violated a disclosure obligation. Instead, it provides an incident-level baseline showing that, during the study period, }\DIFdelend \DIFaddbegin \DIFadd{It establishes a narrower fact: }\DIFaddend only a small fraction of externally \DIFdelbegin \DIFdel{documented AI incidents involving }\DIFdelend \DIFaddbegin \DIFadd{recorded AI incidents that can be matched to }\DIFaddend U.S.-listed \DIFdelbegin \DIFdel{companies became }\DIFdelend \DIFaddbegin \DIFadd{issuers are }\DIFaddend specifically identifiable in \DIFdelbegin \DIFdel{securities filings. As }\DIFdelend \DIFaddbegin \DIFadd{subsequent periodic and current reports. That incident-level baseline can be replicated as }\DIFaddend AI governance and incident-reporting regimes \DIFdelbegin \DIFdel{evolve, this framework provides a reproducible basis for measuring whether realized AI harms become more visible to investors}\DIFdelend \DIFaddbegin \DIFadd{develop}\DIFaddend .
+
+\section*{Conflict of Interest Statement}
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+\section*{Author Contributions}
+SC: Conceptualization, Methodology, Software, Data curation, Formal analysis, Writing -- original draft. RC: Conceptualization, Validation, Writing -- review \& editing, Supervision. Both authors approved the final version.
+
+\section*{Funding}
+This research received no external funding.
+
+\section*{Generative AI Statement}
+The authors declare that a generative-AI system (Anthropic Claude, Opus-class model, accessed August 2026 via the Claude Agent SDK) was used for software scaffolding, coding and code review, and minor grammar edits, in all cases under the authors' direction. It was not used for study design, data analysis, or interpretation of the results, and the authors take full responsibility for all content. No generative-AI system is listed as an author.
+
+\section*{Acknowledgments}
+Software scaffolding, coding and code review, and minor grammar edits were assisted by a generative-AI system (Anthropic Claude, Opus-class model, accessed August 2026 via the Claude Agent SDK) under author validation; see the Generative AI Statement. The corresponding author is responsible for the accuracy of all content, citations, and references.
+
+\section*{Ethics Statement}
+This study did not involve human participants or animals. It uses only publicly available records (the AI Incident Database and SEC EDGAR). The study measures disclosure behavior in the aggregate and makes no assertion that any named issuer violated a disclosure duty.
+
+\section*{Data Availability Statement}
+All data and code required to reproduce the study are openly available in \DIFdelbegin \DIFdel{a published, deterministic computational capsule on Code Ocean \mbox{%DIFAUXCMD
+\citep{Capsule2026} }\hskip0pt%DIFAUXCMD
+(}%DIFDELCMD < \url{https://doi.org/10.24433/CO.2340354.v2}%%%
+\DIFdelend \DIFaddbegin \DIFadd{the study repository (}\url{https://github.com/samirrc2/ai-incident-disclosure-shadow}\DIFaddend ; MIT and CC0). \DIFdelbegin \DIFdel{Within the capsule, the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend dataset is in the \texttt{\DIFdelbegin \DIFdel{/}\DIFdelend data} directory --- the primary file \texttt{data/disclosure\_coding.csv} holds the 307 matched incidents with their four-tier disclosure codes and severity, alongside the incident-to-issuer match table, the per-incident search records and coding logs, the independent-coding disagreement log, \DIFdelbegin \DIFdel{and }\DIFdelend the \DIFaddbegin \DIFadd{second-coder entity audit and its adjudication, and the }\DIFaddend hashed pre-registration\DIFdelbegin \DIFdel{; the }\DIFdelend \DIFaddbegin \DIFadd{. The }\DIFaddend analysis and verification scripts are in \texttt{\DIFdelbegin \DIFdel{/code}\DIFdelend \DIFaddbegin \DIFadd{scripts}\DIFaddend } and \DIFdelbegin \DIFdel{pre-computed outputs in }\DIFdelend \DIFaddbegin \DIFadd{the regenerated outputs in }\DIFaddend \texttt{\DIFdelbegin \DIFdel{/}\DIFdelend results}. \DIFdelbegin \DIFdel{The capsule reproduces }\DIFdelend \DIFaddbegin \DIFadd{A single command rebuilds }\DIFaddend every reported number, table \DIFdelbegin \DIFdel{, and figure offline. The source repository (}%DIFDELCMD < \url{https://github.com/samirrc2/ai-incident-disclosure-shadow}%%%
+\DIFdel{) will be made public upon acceptance}\DIFdelend \DIFaddbegin \DIFadd{and figure from the frozen inputs and then verifies them; each frozen input is checked against a recorded SHA-256 before the run proceeds. A deterministic computational capsule containing the same material has been submitted to Code Ocean and its DOI will be added at proof stage}\DIFaddend . The underlying AIID snapshot is publicly available from the Responsible AI Collaborative; the pinned version and its SHA-256 are recorded in the manifest.
+
+\bibliographystyle{Frontiers-Harvard}
+\bibliography{references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  TABLES (Frontiers: at end)  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DIFaddbegin \begin{table}[h!]
+\caption{\DIFaddFL{The technology or application families and the harm families used to operationalise the T3 threshold. A filing passage qualifies as T3 only if it names at least one family from either column; the T3a/T3b split of Section~\ref{sec:t3split} then distinguishes passages matching a family in both columns from those matching only one.}}
+\label{tab:families}
+\small
+\begin{center}
+\begin{tabular}{@{}p{0.44\textwidth}p{0.44\textwidth}@{}}
+\toprule
+\DIFaddFL{Technology or application family }& \DIFaddFL{Harm family }\\ \midrule
+\DIFaddFL{recommender and ranking systems }& \DIFaddFL{misinformation and content harms }\\
+\DIFaddFL{automated content moderation }& \DIFaddFL{discrimination and bias }\\
+\DIFaddFL{generative models and chatbots }& \DIFaddFL{privacy and surveillance }\\
+\DIFaddFL{autonomous vehicles and driver assistance }& \DIFaddFL{physical safety }\\
+\DIFaddFL{computer vision and biometrics }& \DIFaddFL{economic and financial harm }\\
+\DIFaddFL{speech and natural-language processing }& \DIFaddFL{intellectual property and training data }\\
+\DIFaddFL{advertising delivery and targeting }& \DIFaddFL{harms to minors and self-harm }\\
+\DIFaddFL{predictive scoring, pricing and eligibility decisions }& \DIFaddFL{service quality and error }\\
+\DIFaddFL{robotics and physical automation }& \DIFaddFL{legal rights and due process }\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+\DIFaddend 
+
+\begin{table}[h!]
+\caption{Four-tier disclosure distribution \DIFaddbeginFL \DIFaddFL{under the pre-registered coding }\DIFaddendFL (N = 307). \DIFaddbeginFL \DIFaddFL{The four tiers are the primary presentation; the two aggregates below the rule are summary measures. }\DIFaddendFL Intervals are Clopper--Pearson exact 95\%. \DIFaddbeginFL \DIFaddFL{The shadow aggregate means only that neither incident-specific nor directly related legal-consequence disclosure could be identified in Forms 8-K, 10-K and 10-Q under the study protocol.}\DIFaddendFL }
+\label{tab:dist}
+\DIFdelbeginFL %DIFDELCMD < \centering
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \begin{center}
+\DIFaddendFL \begin{tabular}{@{}llrl@{}}
+\toprule
+Tier & Meaning & n & Share (95\% CI) \\ \midrule
+T1 & \DIFdelbeginFL \DIFdelFL{Disclosed-specific        }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Incident-specific        }\DIFaddendFL & 4   & 1.3\% (0.4--3.3) \\
+T2 & \DIFdelbeginFL \DIFdelFL{Legal-proceedings-only    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Legal-consequence only   }\DIFaddendFL & 3   & 1.0\% (0.2--2.8) \\
+T3 & \DIFdelbeginFL \DIFdelFL{Generic-risk-language     }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Generic same-family risk language }\DIFaddendFL & 278 & 90.6\% (86.7--93.6) \\
+T4 & No \DIFaddbeginFL \DIFaddFL{related }\DIFaddendFL disclosure located     & 22  & 7.2\% (4.5--10.6) \\ \midrule
+\multicolumn{2}{@{}l}{\DIFdelbeginFL \DIFdelFL{Shadow }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Substantive }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{T3}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{T1}\DIFaddendFL +\DIFdelbeginFL \DIFdelFL{T4}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{T2}\DIFaddendFL )\DIFaddbeginFL \DIFaddFL{, upper bound}\DIFaddendFL } & \DIFaddbeginFL \DIFaddFL{7 }& \DIFaddFL{2.3\% (0.9--4.6) }\\
+\multicolumn{2}{@{}l}{\DIFaddFL{Shadow (T3+T4), summary measure}}  & \DIFaddendFL 300 & 97.7\% (95.4--99.1) \\
+\bottomrule
+\end{tabular}
+\DIFaddbeginFL \end{center}
+\DIFaddendFL \end{table}
+
+\begin{table}[h!]
+\caption{\DIFdelbeginFL \DIFdelFL{Disclosure by }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Five-way distribution under the T3 relatedness split, with adjudicated T2 codes (N = 307). T3a denotes generic filing language matching both the }\DIFaddendFL incident\DIFdelbeginFL \DIFdelFL{severity tier}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{'s technology or application family and its harm family; T3b matches only one}\DIFaddendFL . \DIFdelbeginFL \DIFdelFL{Monte-Carlo exact permutation test on substantive disclosure across }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{The primary shadow rate is invariant to the T3a/T3b and T3/T4 boundaries by construction, because all three }\DIFaddendFL tiers \DIFaddbeginFL \DIFaddFL{sit outside the substantive categories}\DIFaddendFL : \DIFdelbeginFL \DIFdelFL{p = 0.61}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{the split addresses the interpretation of the T3 mass, not the headline rate}\DIFaddendFL . \DIFaddbeginFL \DIFaddFL{Intervals are Clopper--Pearson exact 95\%. Post-hoc; not pre-specified.}\DIFaddendFL }
+\DIFaddbeginFL \label{tab:fiveway}
+\begin{center}
+\begin{tabular}{@{}llrl@{}}
+\toprule
+\DIFaddFL{Tier }& \DIFaddFL{Meaning }& \DIFaddFL{n }& \DIFaddFL{Share (95\% CI) }\\ \midrule
+\DIFaddFL{T1 }& \DIFaddFL{Incident-specific }& \DIFaddFL{5 }& \DIFaddFL{1.6\% (0.5--3.8) }\\
+\DIFaddFL{T2 }& \DIFaddFL{Legal-consequence only }& \DIFaddFL{2 }& \DIFaddFL{0.7\% (0.1--2.3) }\\
+\DIFaddFL{T3a }& \DIFaddFL{Generic, matches both families }& \DIFaddFL{84 }& \DIFaddFL{27.4\% (22.5--32.7) }\\
+\DIFaddFL{T3b }& \DIFaddFL{Generic, matches one family only }& \DIFaddFL{194 }& \DIFaddFL{63.2\% (57.5--68.6) }\\
+\DIFaddFL{T4 }& \DIFaddFL{No related disclosure located }& \DIFaddFL{22 }& \DIFaddFL{7.2\% (4.5--10.6) }\\
+\midrule
+\multicolumn{2}{@{}l}{\DIFaddFL{Substantive (T1+T2), upper bound}} & \DIFaddFL{7 }& \DIFaddFL{2.3\% (0.9--4.6) }\\
+\multicolumn{2}{@{}l}{\DIFaddFL{Shadow-broad (T3a+T3b+T4) = primary}} & \DIFaddFL{300 }& \DIFaddFL{97.7\% (95.4--99.1) }\\
+\multicolumn{2}{@{}l}{\DIFaddFL{Weakly-related-or-none (T3b+T4)}} & \DIFaddFL{216 }& \DIFaddFL{70.4\% (64.9--75.4) }\\
+\multicolumn{2}{@{}l}{\DIFaddFL{None located only (T4)}} & \DIFaddFL{22 }& \DIFaddFL{7.2\% (4.5--10.6) }\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{\DIFaddFL{Disclosure by incident severity, exact counts (adjudicated codes). Percentages with Clopper--Pearson exact 95\% intervals are given for T1 and for T1+T2 only; all intervals overlap. Monte-Carlo exact permutation test on substantive disclosure across tiers: p = 0.61. The design would require the Severe-group substantive rate to reach approximately 13\% to detect a difference from the Limited group at 80\% power, so this non-rejection carries little information. Exploratory.}}
+\DIFaddendFL \label{tab:sev}
+\DIFdelbeginFL %DIFDELCMD < \centering
+%DIFDELCMD < \begin{tabular}{@{}lrrrr@{}}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \small
+\begin{center}
+\begin{tabular}{@{}lrrrrrrll@{}}
+\DIFaddendFL \toprule
+Severity & n & T1 \DIFdelbeginFL \DIFdelFL{specific }\DIFdelendFL & \DIFdelbeginFL \DIFdelFL{T1+}\DIFdelendFL T2 & \DIFdelbeginFL \DIFdelFL{Shadow (T3+}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{T3a }& \DIFaddFL{T3b }& \DIFaddendFL T4 \DIFaddbeginFL & \DIFaddFL{T1 \% (95\% CI) }& \DIFaddFL{T1+T2 \% (95\% CI}\DIFaddendFL ) \\ \midrule
+Severe & 42 & \DIFaddbeginFL \DIFaddFL{1 }& \DIFaddFL{1 }& \DIFaddFL{19 }& \DIFaddFL{17 }& \DIFaddFL{4 }& \DIFaddendFL 2.4 \DIFdelbeginFL \DIFdelFL{\% }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(0.1--12.6) }\DIFaddendFL & 4.8 \DIFdelbeginFL \DIFdelFL{\% }%DIFDELCMD < & %%%
+\DIFdelFL{95.2\% }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(0.6--16.2) }\DIFaddendFL \\
+Moderate & 50 & \DIFdelbeginFL \DIFdelFL{0.0\% }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{1 }\DIFaddendFL & \DIFaddbeginFL \DIFaddFL{0 }& \DIFaddFL{20 }& \DIFaddFL{26 }& \DIFaddFL{3 }& \DIFaddendFL 2.0 \DIFdelbeginFL \DIFdelFL{\% }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(0.1--10.6) }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{98.0\% }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{2.0 (0.1--10.6) }\DIFaddendFL \\
+Limited & 215 & \DIFaddbeginFL \DIFaddFL{3 }& \DIFaddFL{1 }& \DIFaddFL{45 }& \DIFaddFL{151 }& \DIFaddFL{15 }& \DIFaddendFL 1.4 \DIFdelbeginFL \DIFdelFL{\% }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{(0.3--4.0) }\DIFaddendFL & 1.9 \DIFaddbeginFL \DIFaddFL{(0.5--4.7) }\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{\DIFaddFL{Attribution basis of the 307 incidents. }\emph{\DIFaddFL{platform-venue}} \DIFaddFL{denotes an issuer that hosted third-party content or third-party use where the harm-producing system was not the issuer's own deployment decision; }\emph{\DIFaddFL{mentioned-only}} \DIFaddFL{denotes an issuer named without an evident development, deployment or venue relationship, including cases where the issuer is the harmed party or one of several vendors in a comparative study. No incident coded platform-venue or mentioned-only received T1 or T2 disclosure. Every case, with the rule that produced it and a confidence flag, is enumerated in }\texttt{\DIFaddFL{AUTHOR\_REVIEW.csv}}\DIFaddFL{. Post-hoc; not pre-specified.}}
+\label{tab:attrib}
+\small
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\multicolumn{3}{@{}l}{\emph{\DIFaddFL{Panel A. Distribution of the 307 incidents}}}\\
+\DIFaddFL{Attribution basis }& \DIFaddFL{n }& \DIFaddFL{Share }\\ \midrule
+\DIFaddFL{developer }& \DIFaddFL{49 }& \DIFaddFL{16.0\% }\\
+\DIFaddFL{deployer-operator }& \DIFaddFL{14 }& \DIFaddFL{4.6}\DIFaddendFL \% \DIFaddbeginFL \\
+\DIFaddFL{both }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{98.1}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{222 }& \DIFaddFL{72.3}\DIFaddendFL \% \\
+\DIFaddbeginFL \DIFaddFL{platform-venue }& \DIFaddFL{14 }& \DIFaddFL{4.6\% }\\
+\DIFaddFL{mentioned-only }& \DIFaddFL{8 }& \DIFaddFL{2.6\% }\\
+\DIFaddendFL \bottomrule
+\end{tabular}
+\DIFaddbeginFL 
+
+\vspace{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\multicolumn{7}{@{}l}{\emph{\DIFaddFL{Panel B. Disclosure tier by attribution basis}}}\\
+\DIFaddFL{Attribution basis }& \DIFaddFL{n }& \DIFaddFL{T1 }& \DIFaddFL{T2 }& \DIFaddFL{T3a }& \DIFaddFL{T3b }& \DIFaddFL{T4 }\\ \midrule
+\DIFaddFL{developer }& \DIFaddFL{49 }& \DIFaddFL{0 }& \DIFaddFL{0 }& \DIFaddFL{13 }& \DIFaddFL{33 }& \DIFaddFL{3 }\\
+\DIFaddFL{deployer-operator }& \DIFaddFL{14 }& \DIFaddFL{2 }& \DIFaddFL{0 }& \DIFaddFL{2 }& \DIFaddFL{7 }& \DIFaddFL{3 }\\
+\DIFaddFL{both }& \DIFaddFL{222 }& \DIFaddFL{3 }& \DIFaddFL{2 }& \DIFaddFL{61 }& \DIFaddFL{143 }& \DIFaddFL{13 }\\
+\DIFaddFL{platform-venue }& \DIFaddFL{14 }& \DIFaddFL{0 }& \DIFaddFL{0 }& \DIFaddFL{5 }& \DIFaddFL{9 }& \DIFaddFL{0 }\\
+\DIFaddFL{mentioned-only }& \DIFaddFL{8 }& \DIFaddFL{0 }& \DIFaddFL{0 }& \DIFaddFL{3 }& \DIFaddFL{2 }& \DIFaddFL{3 }\\
+\bottomrule
+\end{tabular}
+
+\vspace{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\multicolumn{7}{@{}l}{\emph{\DIFaddFL{Panel C. Attribution basis by issuer, ten largest contributors}}}\\
+\DIFaddFL{Issuer }& \DIFaddFL{n }& \DIFaddFL{developer }& \DIFaddFL{deployer-op. }& \DIFaddFL{both }& \DIFaddFL{venue }& \DIFaddFL{mentioned }\\ \midrule
+\DIFaddFL{Alphabet Inc. }& \DIFaddFL{86 }& \DIFaddFL{21 }& \DIFaddFL{0 }& \DIFaddFL{57 }& \DIFaddFL{6 }& \DIFaddFL{2 }\\
+\DIFaddFL{Meta Platforms, Inc. }& \DIFaddFL{81 }& \DIFaddFL{5 }& \DIFaddFL{2 }& \DIFaddFL{67 }& \DIFaddFL{7 }& \DIFaddFL{0 }\\
+\DIFaddFL{Tesla, Inc. }& \DIFaddFL{36 }& \DIFaddFL{6 }& \DIFaddFL{0 }& \DIFaddFL{30 }& \DIFaddFL{0 }& \DIFaddFL{0 }\\
+\DIFaddFL{Microsoft Corporation }& \DIFaddFL{35 }& \DIFaddFL{6 }& \DIFaddFL{1 }& \DIFaddFL{23 }& \DIFaddFL{0 }& \DIFaddFL{5 }\\
+\DIFaddFL{Amazon.com, Inc. }& \DIFaddFL{16 }& \DIFaddFL{1 }& \DIFaddFL{3 }& \DIFaddFL{12 }& \DIFaddFL{0 }& \DIFaddFL{0 }\\
+\DIFaddFL{General Motors Company }& \DIFaddFL{14 }& \DIFaddFL{0 }& \DIFaddFL{1 }& \DIFaddFL{13 }& \DIFaddFL{0 }& \DIFaddFL{0 }\\
+\DIFaddFL{Apple Inc. }& \DIFaddFL{9 }& \DIFaddFL{1 }& \DIFaddFL{0 }& \DIFaddFL{7 }& \DIFaddFL{1 }& \DIFaddFL{0 }\\
+\DIFaddFL{SoundThinking, Inc. }& \DIFaddFL{4 }& \DIFaddFL{4 }& \DIFaddFL{0 }& \DIFaddFL{0 }& \DIFaddFL{0 }& \DIFaddFL{0 }\\
+\DIFaddFL{McDonald's Corporation }& \DIFaddFL{4 }& \DIFaddFL{0 }& \DIFaddFL{2 }& \DIFaddFL{2 }& \DIFaddFL{0 }& \DIFaddFL{0 }\\
+\DIFaddFL{UnitedHealth Group Inc. }& \DIFaddFL{3 }& \DIFaddFL{2 }& \DIFaddFL{0 }& \DIFaddFL{1 }& \DIFaddFL{0 }& \DIFaddFL{0 }\\
+\bottomrule
+\end{tabular}
+\end{center}
+\DIFaddendFL \end{table}
+
+\begin{table}[h!]
+\caption{\DIFdelbeginFL \DIFdelFL{All substantively disclosed incidents }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Issuer role against disclosure tier, exact counts }\DIFaddendFL (\DIFdelbeginFL \DIFdelFL{T1/T2}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{adjudicated codes}\DIFaddendFL )\DIFaddbeginFL \DIFaddFL{. The lower panel gives the two-by-two contrast the text describes. The three-way contrast rejects at conventional levels }\DIFaddendFL and \DIFdelbeginFL \DIFdelFL{their disclosure channel}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{the two-by-two does not; Supplementary Table~S6 reports the leave-one-positive-out fragility of both}\DIFaddendFL . \DIFaddbeginFL \DIFaddFL{Descriptive; hypothesis-generating.}\DIFaddendFL }
+\DIFaddbeginFL \label{tab:role}
+\small
+\begin{center}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\DIFaddFL{Role }& \DIFaddFL{n }& \DIFaddFL{T1 }& \DIFaddFL{T2 }& \DIFaddFL{T3a }& \DIFaddFL{T3b }& \DIFaddFL{T4 }\\ \midrule
+\DIFaddFL{developer-only }& \DIFaddFL{58 }& \DIFaddFL{0 }& \DIFaddFL{0 }& \DIFaddFL{15 }& \DIFaddFL{38 }& \DIFaddFL{5 }\\
+\DIFaddFL{deployer-only }& \DIFaddFL{14 }& \DIFaddFL{2 }& \DIFaddFL{0 }& \DIFaddFL{2 }& \DIFaddFL{7 }& \DIFaddFL{3 }\\
+\DIFaddFL{both }& \DIFaddFL{235 }& \DIFaddFL{3 }& \DIFaddFL{2 }& \DIFaddFL{67 }& \DIFaddFL{149 }& \DIFaddFL{14 }\\
+\midrule
+\multicolumn{7}{@{}l}{\emph{\DIFaddFL{Two-by-two contrast: substantive disclosure (T1 or T2) against all other tiers}}} \\
+\DIFaddFL{Developer-only }& \DIFaddFL{58 }& \multicolumn{5}{l}{\DIFaddFL{0 substantive, of which 0 are T1}} \\
+\DIFaddFL{Any deployer (deployer-only or both) }& \DIFaddFL{249 }& \multicolumn{5}{l}{\DIFaddFL{7 substantive, of which 5 are T1}} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\caption{\DIFaddFL{All substantively disclosed incidents and their disclosure channel, ordered T1 then T2 under the pre-registered coding. Where the adjudication of Section~\ref{sec:reliability} changed a code, both are shown as }\emph{\DIFaddFL{pre-registered}} \DIFaddFL{$\rightarrow$ }\emph{\DIFaddFL{adjudicated}}\DIFaddFL{; incident 733 is the one such case. Quantified financial impact records whether the filing carried a quantified financial item associated with the incident.}}
+\DIFaddendFL \label{tab:acct}
+\DIFdelbeginFL %DIFDELCMD < \centering
+%DIFDELCMD < \begin{tabular}{@{}llll@{}}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \small
+\begin{center}
+\begin{tabular}{@{}llllp{3.9cm}@{}}
+\DIFaddendFL \toprule
+\DIFaddbeginFL \DIFaddFL{AIID id }& \DIFaddendFL Issuer & Tier & Filing location & \DIFdelbeginFL \DIFdelFL{Booked }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Quantified financial }\DIFaddendFL impact \\ \midrule
+\DIFaddbeginFL \DIFaddFL{149 }& \DIFaddendFL Zillow Group & T1 & 8-K \DIFdelbeginFL \DIFdelFL{Item }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Items 2.02/}\DIFaddendFL 8.01 & Yes\DIFdelbeginFL \DIFdelFL{--- }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL $\approx$\$304M \DIFaddbeginFL \DIFaddFL{inventory }\DIFaddendFL write-down \\
+\DIFaddbeginFL \DIFaddFL{596 }& \DIFaddendFL General Motors & T1 & 10-K \DIFdelbeginFL \DIFdelFL{Item }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Items }\DIFaddendFL 1 \DIFdelbeginFL \DIFdelFL{/}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{and }\DIFaddendFL 1A & \DIFdelbeginFL \DIFdelFL{Yes --- \$478M restructuring }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{No incident-specific reserve }\DIFaddendFL \\
+\DIFaddbeginFL \DIFaddFL{726 }& \DIFaddendFL General Motors & T1 & 10-K \DIFdelbeginFL \DIFdelFL{Item }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Items }\DIFaddendFL 1 \DIFdelbeginFL \DIFdelFL{/}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{and }\DIFaddendFL 1A\DIFaddbeginFL \DIFaddFL{; 8-K special items }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{No incident-specific reserve }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes --- \$478M Cruise restructuring }\DIFaddendFL \\
+\DIFaddbeginFL \DIFaddFL{997 }& \DIFaddendFL Meta Platforms & T1 & Legal Proceedings\DIFdelbeginFL \DIFdelFL{(named suit ) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{, named suit }\DIFaddendFL & No \\
+\DIFaddbeginFL \DIFaddFL{534 }& \DIFaddendFL Meta Platforms & T2 & 10-K \DIFaddbeginFL \DIFaddFL{Commitments and }\DIFaddendFL Contingencies & No \\
+\DIFaddbeginFL \DIFaddFL{711 }& \DIFaddendFL Tesla & T2 & Legal Proceedings / \DIFdelbeginFL \DIFdelFL{regulatory }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{NHTSA, DOJ matters }\DIFaddendFL & No \\
+\DIFaddbeginFL \DIFaddFL{733 }& \DIFaddendFL General Motors & T2 \DIFaddbeginFL \DIFaddFL{$\rightarrow$ T1 }\DIFaddendFL & 10-Q \DIFaddbeginFL \DIFaddFL{Commitments and }\DIFaddendFL Contingencies & No \\
+\bottomrule
+\end{tabular}
+\DIFaddbeginFL \end{center}
+\DIFaddendFL \end{table}
+
+\begin{table}[h!]
+\caption{Robustness of the shadow rate\DIFdelbeginFL \DIFdelFL{(}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{. The first block reports the pre-registered analyses; the second reports post-hoc analyses that were not pre-specified. The two right-hand columns give the stricter aggregates that the }\DIFaddendFL T3 \DIFaddbeginFL \DIFaddFL{relatedness split makes available: T3b}\DIFaddendFL +T4 \DIFdelbeginFL \DIFdelFL{)}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{counts incidents whose filings carry at most weakly related language, and T4 counts those with none located}\DIFaddendFL . \DIFdelbeginFL \DIFdelFL{CIs }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Intervals }\DIFaddendFL are \DIFdelbeginFL \DIFdelFL{issuer-clustered bootstrap or }\DIFdelendFL Clopper--Pearson \DIFdelbeginFL \DIFdelFL{where shown}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{exact 95\% unless noted}\DIFaddendFL . \DIFaddbeginFL \DIFaddFL{The final row drops the 14 incidents a blind second coder maps to a different issuer.}\DIFaddendFL }
+\label{tab:rob}
+\DIFdelbeginFL %DIFDELCMD < \centering
+%DIFDELCMD < \begin{tabular}{@{}lrl@{}}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \small
+\begin{center}
+\begin{tabular}{@{}lrlrr@{}}
+\DIFaddendFL \toprule
+Specification & n & Shadow \DIFaddbeginFL \DIFaddFL{(95\% CI) }& \DIFaddFL{T3b+T4 }& \DIFaddFL{T4 }\DIFaddendFL \\ \midrule
+\DIFaddbeginFL \multicolumn{5}{@{}l}{\emph{\DIFaddFL{Pre-registered}}} \\
+\DIFaddendFL Full primary sample& 307 & 97.7\% (95.4--99.1) \DIFaddbeginFL & \DIFaddFL{216 }& \DIFaddFL{22 }\DIFaddendFL \\
+Issuer-clustered bootstrap              & 307 & 97.5\% (93.9--99.6) \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+Exclude pre-2021 incidents              & 257 & 97.3\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+Drop top-2 issuers                      & 140 & 96.4\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+Drop top-5 issuers                      & 53  & 92.5\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+Complete (non-right-censored) windows   & 252 & 97.2\% (94.4--98.9) \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+6-month window                          & 307 & 99.0\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+12-month window (primary)& 307 & 97.7\% \DIFaddbeginFL & \DIFaddFL{216 }& \DIFaddFL{22 }\DIFaddendFL \\
+18-month window                         & 307 & 97.7\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+24-month window                         & 307 & 97.7\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\
+Severe-tier subset                      & 42  & 95.2\% \DIFaddbeginFL & \DIFaddFL{21 }& \DIFaddFL{4 }\DIFaddendFL \\
+Top-5-issuer subset                     & 254 & 98.8\% \DIFaddbeginFL & \DIFaddFL{--- }& \DIFaddFL{--- }\DIFaddendFL \\ \DIFaddbeginFL \midrule
+\multicolumn{5}{@{}l}{\emph{\DIFaddFL{Post-hoc, not pre-specified}}} \\
+\DIFaddFL{Adjudicated T2 codes}& \DIFaddFL{307 }& \DIFaddFL{97.7\% (95.4--99.1) }& \DIFaddFL{216 }& \DIFaddFL{22 }\\
+\DIFaddFL{Coding-log code for incident 350}& \DIFaddFL{307 }& \DIFaddFL{97.7\% (95.4--99.1) }& \DIFaddFL{216 }& \DIFaddFL{21 }\\
+\DIFaddFL{Corrected sample (crosswalk + as-of-date fixes)}& \DIFaddFL{303 }& \DIFaddFL{97.7\% (95.3--99.1) }& \DIFaddFL{212 }& \DIFaddFL{18 }\\
+\DIFaddFL{Excluding platform-venue attributions}& \DIFaddFL{293 }& \DIFaddFL{97.6\% (95.1--99.0) }& \DIFaddFL{207 }& \DIFaddFL{22 }\\
+\DIFaddFL{Excluding platform-venue and mentioned-only}& \DIFaddFL{285 }& \DIFaddFL{97.5\% (95.0--99.0) }& \DIFaddFL{202 }& \DIFaddFL{19 }\\
+\DIFaddFL{Tie-break: prefer developer (changed incidents dropped)}& \DIFaddFL{305 }& \DIFaddFL{97.7\% (95.3--99.1) }& \DIFaddFL{215 }& \DIFaddFL{22 }\\
+\DIFaddFL{Tie-break: prefer parent (changed incidents dropped)}& \DIFaddFL{302 }& \DIFaddFL{97.7\% (95.3--99.1) }& \DIFaddFL{213 }& \DIFaddFL{20 }\\
+\DIFaddFL{Second-coder entity mappings}& \DIFaddFL{293 }& \DIFaddFL{97.6\% (95.1--99.0) }& \DIFaddFL{206 }& \DIFaddFL{19 }\\
+\DIFaddendFL \bottomrule
+\end{tabular}
+\DIFaddbeginFL \end{center}
+\DIFaddendFL \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  FIGURE CAPTIONS + FIGURES (Frontiers: at end)  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h!]
+\begin{center}\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.82\textwidth]{figures/fig1.png}%%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{figures/fig1.png}\DIFaddendFL \end{center}
+\caption{Sample construction: from 1{,}597 AIID incidents to the primary matchable population of N = 307 (21 issuers), with exclusion branches.}\label{fig:flow}
+\end{figure}
+
+\begin{figure}[h!]
+\begin{center}\includegraphics[width=0.62\textwidth]{figures/fig2.png}\end{center}
+\caption{\DIFdelbeginFL \DIFdelFL{Shadow rate (T3+T4) }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Disclosure tier }\DIFaddendFL by incident severity, \DIFaddbeginFL \DIFaddFL{five-way distribution }\DIFaddendFL with \DIFaddbeginFL \DIFaddFL{the T3 relatedness split (adjudicated codes). Bars show the share of incidents in each severity stratum falling in each tier; stratum sizes are given above each bar. The collapsed shadow rate for the same strata, with }\DIFaddendFL 95\% Wilson intervals\DIFaddbeginFL \DIFaddFL{, is Supplementary Figure~S1}\DIFaddendFL .}\label{fig:sev}
+\end{figure}
+
+\begin{figure}[h!]
+\begin{center}\includegraphics[width=0.9\textwidth]{figures/fig3.png}\end{center}
+\caption{Incident concentration by issuer (Pareto): incidents per issuer and cumulative share.}\label{fig:pareto}
+\end{figure}
+
+\begin{figure}[h!]
+\begin{center}\includegraphics[width=0.9\textwidth]{figures/fig4.png}\end{center}
+\caption{Disclosure tier by incident year (share of incidents).}\label{fig:year}
+\end{figure}
+
+
+\end{document}
