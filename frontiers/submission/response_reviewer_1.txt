@@ -1,0 +1,123 @@
+RESPONSE TO REVIEWER 1
+The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings
+
+Section, page and line numbers refer to the revised manuscript PDF, using the printed line numbers in its margin. Text set between asterisks is intended as italic.
+
+Q1. The denominator is not a neutral population of “AI incidents,” and the interpretation of the 97.7% shadow rate needs to be narrowed substantially.
+
+*Addressed in Section 3.1.1 (Estimand and selection mechanism), pp. 4–5, lines 178–196; Abstract, p. 1, lines 3–24; Section 1, p. 2, lines 80–84; Section 3.2, p. 5, lines 234–237; Section 6 (Limitations), p. 13, lines 618–622; the title; Figure 1, p. 23; Supplementary Table S4.*
+
+- Section 3.1.1 now defines the estimand formally as the probability of substantive disclosure in Forms 8-K, 10-K or 10-Q within 12 months, conditional on AIID recording, organizational identifiability and conservative resolution to a U.S.-listed domestic periodic-report filer.
+
+- Lines 193–196 explicitly state that the estimates do not generalize to all corporate AI incidents, that incidents absent from AIID or not resolvable to a listed issuer are unobserved, and that the direction and magnitude of the resulting selection bias are not identified.
+
+- Lines 183–192 identify and quantify the three selection layers: publicity; organizational identifiability, excluding 398 incidents naming only generic or individual actors; and issuer resolvability, excluding 243 private firms, 400 unresolved organizations, 26 foreign private issuers and 15 issuers under the delisted-issuer rule.
+
+- We also changed the title from “The AI Incident Disclosure Shadow: An Incident-Level Study Matching AIID-Recorded AI Failures to U.S.-Listed Companies' Investor Disclosures, 2019–2026” to “The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings,” so the title names the measured object without implying a population disclosure rate.
+
+- The same restriction is carried through the abstract, Figure 1 and Supplementary Table S4, which reconciles the 1,389 window incidents to the 307 analysed incidents stage by stage.
+
+
+Q2. The conceptual meaning of T3 is too broad and may mechanically inflate the “shadow.”
+
+*Addressed in Section 3.4 (Disclosure classification), pp. 6–7, lines 279–295; Section 4.2 (How related is the generic language? The T3a/T3b split), p. 9, lines 410–422; Section 3.7, p. 8, lines 355–358; Abstract, p. 1, lines 3–24; Table 1, p. 19; Table 3, p. 20; Table 8, p. 22; Supplementary Table S2.*
+
+- T3 is now operationalized as a closed rule: a passage qualifies if it names at least one technology/application family or at least one harm family from Table 1. Abstract references to technology, regulatory, litigation or operational risk do not qualify, nor do unrelated AI mentions, compensation-plan exhibits, subsidiary lists, promotional AI language or routine product/segment names.
+
+- We implemented the suggested split. T3a matches both the incident’s technology/application family and harm family; T3b matches only one; T4 remains no related language.
+
+- Of the 278 T3 incidents, 84 are T3a and 194 are T3b, so only 30.2% of the T3 mass matches both dimensions of the realized incident.
+
+- Under the stricter interpretation, T3b+T4 comprises 216 of 307 incidents, 70.4% (95% CI 64.9–75.4), with at most weakly related filing language.
+
+- Lines 419–422 state explicitly that the split does not change the 97.7% shadow rate because both T3a and T3b remain outside T1 and T2; it changes only the interpretation of the generic-language mass.
+
+- The T3a/T3b analysis is labelled post-hoc, and Supplementary Table S2 provides worked T3a and T3b examples by domain.
+
+
+Q3. The “disclosure shadow” terminology is memorable but normatively loaded.
+
+*Addressed in Section 3.4, p. 7, lines 296–300 and 305–311; Section 1, p. 2, lines 53–59; Section 4.1, p. 9, lines 393–398; Section 5 (Discussion), p. 12, lines 531–537; Section 7 (Conclusion), p. 15, lines 711–714; Table 2, p. 19; Table 3, p. 20.*
+
+- We retained the term but defined it descriptively: an incident falls in the shadow when neither incident-specific disclosure nor disclosure of a directly related formal legal consequence is identifiable in the specified filing universe under the study protocol.
+
+- The manuscript now states explicitly that this is not a determination of legal materiality, disclosure obligation or compliance. Section 5 also lists non-normative reasons for shadow membership, including immateriality, lack of financial-statement effect, indirect attribution and prior public disclosure through other channels.
+
+- Table 2 presents all four tiers before any aggregation, and Table 3 presents the five-way T1/T2/T3a/T3b/T4 distribution. The collapsed shadow rate is therefore a summary measure rather than the primary presentation.
+
+
+Q4. The validity of the entity-resolution procedure requires more evidence.
+
+*Addressed in Section 3.2 (Entity Resolution and Issuer Matching), p. 5, lines 203–237; Section 3.2.1 (Basis for attribution), pp. 5–6, lines 238–245; Section 4.8, p. 11, lines 507–511; Section 6 (Limitations), pp. 13–14, lines 628–634; Table 5, p. 21; Table 8, p. 22; Supplementary Tables S4, S8 and S9.*
+
+- A blind second coder independently re-derived the issuer for a stratified sample of 80 incidents, including all 27 multi-candidate incidents, 30 subsidiary/product mappings and all 13 incidents from issuers contributing three or fewer cases.
+
+- Agreement on issuer identity is 82.5%, with Cohen’s κ = 0.79 and Gwet’s AC1 = 0.82. All 14 disagreements occur among multi-candidate cases and none involves a T1 or T2 incident.
+
+- Adjudication favoured the study mapping in ten cases and the second coder in four; those four reassignments are incorporated into the corrected-sample robustness analysis.
+
+- Lines 203–210 now state the one-issuer-per-incident rule and tie-break ordering. Lines 211–215 report 47 subsidiary/product/platform mappings and the as-of-date ownership check, including the one failed historical ownership match.
+
+- Lines 216–221 report the row-by-row review of the 137-row validation crosswalk. Section 3.2.1 and Table 5 separately classify the basis for attribution, distinguishing direct development/deployment from weaker forms of association.
+
+- Table 8 reports alternative issuer tie-break specifications, while Supplementary Tables S8–S9 report the second-coder audit and every disagreement.
+
+
+Q5. The severity analysis is too weak to support much substantive interpretation.
+
+*Addressed in Section 4.3 (Incident severity and substantive disclosure, exploratory), pp. 9–10, lines 423–437; Section 3.6, p. 7, lines 327–334; Section 3.7, p. 8, lines 348–354; Section 5, p. 12, lines 560–565; Section 6 (Limitations), p. 14, lines 659–663; Table 4, p. 20; Figure 2, p. 24; Supplementary Tables S1 and S5.*
+
+- Section 4.3 is now explicitly exploratory because only seven incidents are substantively disclosed.
+
+- Table 4 reports exact counts by severity and tier, with Clopper–Pearson 95% intervals for T1 and T1+T2.
+
+- The added power analysis shows 23.3% power for a threefold Severe-versus-Limited difference; approximately a sevenfold difference would be required for 80% power at the observed Limited-group rate.
+
+- Lines 434–437 therefore state the result narrowly: a severity gradient is not detectable in this sample, rather than concluding that severity is unrelated to disclosure.
+
+- Restricting the analysis to the 40 incidents with external CSET severity classifications leaves only one substantive case, so no inferential test is conducted for that subset.
+
+- Supplementary Table S1 identifies the 40 externally classified CSET incidents, while Supplementary Table S5 reports their disclosure-tier distribution separately.
+
+
+Q6. The developer-versus-deployer result (p = 0.02) may be fragile and should be presented more cautiously.
+
+*Addressed in Section 4.4 (Issuer role and disclosure, descriptive), p. 10, lines 438–455; Section 5, p. 12, lines 566–571; Table 6, p. 21; Supplementary Table S6.*
+
+- Table 6 now reports the exact role-by-tier counts and a separate two-by-two substantive-disclosure contrast.
+
+- We added a leave-one-positive-out analysis covering 22 perturbations of the seven substantive cases. The three-level p-value ranges from 0.016 to 0.225 and reaches or exceeds 0.05 in five cases; the two-by-two contrast never rejects.
+
+- Lines 447–451 report the most diagnostic perturbations: dropping or reclassifying either deployer-only positive to T3 moves the three-level p-value to about 0.22, while promoting one developer-only T3 case to T1 moves it to 0.054.
+
+- We therefore withdrew the interpretation of the association as a stable inferential finding. The manuscript now presents the result primarily descriptively and as hypothesis-generating: all T1 disclosures involve deployer-only or dual-role issuers, and none of the 58 developer-only incidents receives T1 or T2 disclosure.
+
+- Supplementary Table S6 reports all perturbations individually.
+
+
+Q7. The paper should more clearly distinguish “SEC filing disclosure” from “investor-facing disclosure” in general.
+
+*Addressed in Section 3.3 (Filing retrieval and disclosure window), p. 6, lines 247–250 and 257–262; Abstract, p. 1, lines 3–24; Section 3.4, p. 7, lines 294–295 and 305–311; Section 6 (Limitations), p. 13, lines 623–627; Section 7 (Conclusion), p. 15, lines 711–714.*
+
+- The title now refers specifically to “U.S. Securities Filings” rather than investor disclosures.
+
+- The outcome is consistently defined against Forms 8-K, 10-K and 10-Q. Section 3.3 explicitly excludes earnings calls, investor presentations, press releases not filed with the SEC, non-SEC litigation dockets, regulator announcements, corporate websites, product blogs and conference communications.
+
+- An incident disclosed through one of those channels but not repeated in the specified forms is therefore coded as not identifiable in this study.
+
+- The manuscript now states directly that the outcome is visibility in a defined SEC filing universe, not total investor-facing communication, and repeats that limitation in the abstract, limitations and conclusion.
+
+
+Q8. The relationship between the paper and the cybersecurity disclosure literature could be developed more deeply.
+
+*Addressed in Section 2 (Related work), p. 3, lines 120–144; Section 1, p. 2, lines 60–68; Section 6, p. 15, lines 683–690.*
+
+- The cybersecurity subsection is now framed explicitly as the closest analogue and where the analogy stops.
+
+- The institutional distinction is stated directly: material cybersecurity incidents have a dedicated U.S. reporting architecture under Form 8-K Item 1.05 and Regulation S-K Item 106, while no comparable U.S. AI-incident reporting duty applied during the study period.
+
+- The manuscript also distinguishes event measurement and attribution: cyber incidents often have clearer event boundaries, whereas AI harms may be diffuse and responsibility may be distributed across a developer, deployer and platform.
+
+- These differences make the entity-resolution and attribution procedures in Section 3.2 especially important in the AI setting. Cybersecurity supplies the design template—an external event record compared with later filings—but not the expected disclosure rate or the attribution procedure required here.
+
+- Section 6 extends this logic to Article 73 of the EU AI Act and a possible Item 1.05-style U.S. regime, identifying future mandatory incident-reporting settings in which the same design could test whether the gap narrows.
