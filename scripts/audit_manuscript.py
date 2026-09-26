@@ -11,6 +11,7 @@ from collections import Counter
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+FRONTIERS = ROOT / "frontiers" if (ROOT / "frontiers").exists() else DATA / "frontiers"
 
 rows = list(csv.DictReader(open(DATA / "disclosure_coding.csv")))
 inc  = list(csv.DictReader(open(DATA / "inbox" / "aiid_incidents.csv")))
@@ -83,14 +84,22 @@ for key, mval in manuscript.items():
     ok &= match
     print(f"{key:30s} {str(fval):>18s}  {str(mval):>18s}  {'OK' if match else 'FAIL'}")
 
-# cross-check against committed result JSONs
-res = json.load(open(ROOT / "pilot" / "results.json"))
-print("\nresults.json present and loadable:", bool(res))
+# analysis.py writes results/results.json; frozen copy may also exist under pilot/
+_pilot = ROOT / "results" / "results.json"
+if not _pilot.exists():
+    _pilot = ROOT / "pilot" / "results.json"
+if not _pilot.exists():
+    _pilot = DATA / "pilot" / "results.json"
+if _pilot.exists():
+    res = json.load(open(_pilot))
+    print("\nresults.json present and loadable:", bool(res))
+else:
+    print("\nresults.json present and loadable:", False)
 
 # ---- source-of-truth check: the recomputed values must literally appear in the
 # manuscript .tex (not just in the hardcoded dict above). This closes the gap
 # where the audit could pass while the compiled paper drifts from the data. ----
-tex_path = ROOT / "frontiers" / "manuscript.tex"
+tex_path = FRONTIERS / "manuscript.tex"
 def fmt_ci(t):  # (p, lo, hi) -> "95.4--99.1" style body used in the .tex
     return f"{t[1]:.1f}--{t[2]:.1f}"
 # each entry: (human label, string that must be found verbatim in the .tex).

@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from config import DATA, ROOT
+from config import DATA, ROOT, CODING
 csv.field_size_limit(10_000_000)
 REV=ROOT/"results"
 REV.mkdir(parents=True, exist_ok=True)   # a clean checkout has no results/
@@ -17,7 +17,7 @@ CATS=["T1","T2","T3","T4"]
 rows=list(csv.DictReader(open(DATA/"disclosure_coding.csv")))
 p1={r["incident_id"]:r["disclosure_code"] for r in rows}
 p2={}
-for f in glob.glob(str(ROOT/"coding/pass2/results_*.json")):
+for f in glob.glob(str(CODING/"pass2/results_*.json")):
     for k,v in json.load(open(f)).items():
         if isinstance(v,dict) and "code" in v: p2[str(k)]=v["code"]
 pairs=[(p1[i],p2[i]) for i in p2 if i in p1]

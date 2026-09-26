@@ -5,11 +5,13 @@ import csv,glob,json,os,re,sys
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import paths as L
 R=L.ROOT
+F=L.FRONTIERS
+CODING=L.CODING
 # sibling scripts live in scripts/ in the repo and code/ in the Code Ocean capsule
 _SCRIPTDIR=os.path.dirname(os.path.abspath(__file__))
-man=open(f"{R}/frontiers/manuscript.tex",encoding='utf-8').read()
-sup=open(f"{R}/frontiers/submission/supplementary.tex",encoding='utf-8').read()
-bib=open(f"{R}/frontiers/references.bib",encoding='utf-8').read()
+man=open(f"{F}/manuscript.tex",encoding='utf-8').read()
+sup=open(f"{F}/submission/supplementary.tex",encoding='utf-8').read()
+bib=open(f"{F}/references.bib",encoding='utf-8').read()
 body=man[man.index(r'\section{Introduction}'):man.index(r'\section*{Conflict of Interest')]
 abstract=man[man.index(r'\begin{abstract}'):man.index(r'\tiny')]
 tabreg=man[man.index("TABLES (Frontiers: at end)"):man.index("FIGURE CAPTIONS + FIGURES")]
@@ -24,7 +26,7 @@ def chk(n,ok,d=""):
 blobs=[]
 for p in (glob.glob(f"{R}/results/*.json")+glob.glob(f"{R}/results/*.csv")+glob.glob(f"{R}/results/*.json")
           +glob.glob(f"{R}/data/*.csv")+glob.glob(f"{R}/data/*.csv")
-          +glob.glob(f"{R}/coding/results/*.json")):
+          +glob.glob(f"{CODING}/results/*.json")):
     try: blobs.append(open(p,encoding='utf-8',errors='replace').read())
     except Exception: pass
 allout=" ".join(blobs)
@@ -89,7 +91,8 @@ chk("only the expected entries lack a DOI",nodoi==NO_DOI_BY_NATURE,
 chk("DataCite-registered DOIs are documented",DOI_EXPECTED_DATACITE <= {k for _,k,_ in ents})
 chk("online-first year exceptions are documented",DOI_ONLINE_FIRST <= {k for _,k,_ in ents})
 chk("citation verification record exists",
-    os.path.exists(f"{R}/docs/CITATION_VERIFICATION.md"))
+    os.path.exists(f"{R}/docs/CITATION_VERIFICATION.md")
+    or os.path.exists(f"{R}/data/docs/CITATION_VERIFICATION.md"))
 
 # ---------- cross-references ----------
 labels=set(re.findall(r'\\label\{([^}]*)\}',man))
@@ -188,19 +191,11 @@ ml=man.lower()
 chk(f"pre-registered / post-hoc distinction retained  ({ml.count('post-hoc')} post-hoc, {ml.count('pre-registered')} pre-registered)",
     ml.count("post-hoc")>=5 and ml.count("pre-registered")>=5)
 
-# ---------- the compiled figures are the freshly generated ones ----------
-# The manuscript compiles from frontiers/figures/, while make_figures.py writes to
-# frontiers/figures/. If the two ever diverge the PDF silently ships a stale figure.
-import hashlib
-_srcdir=f"{R}/frontiers/figures"; _cmpdir=f"{R}/frontiers/figures"
-_stale=[]
-for _f in sorted(glob.glob(f"{_srcdir}/fig*.png")):
-    _n=os.path.basename(_f); _c=f"{_cmpdir}/{_n}"
-    if not os.path.exists(_c): _stale.append(_n+" (missing)"); continue
-    if hashlib.md5(open(_f,'rb').read()).digest()!=hashlib.md5(open(_c,'rb').read()).digest():
-        _stale.append(_n)
-chk(f"compiled figures match the generated ones  ({len(glob.glob(f'{_srcdir}/fig*.png'))} files)",
-    not _stale,f"stale in frontiers/figures/: {_stale}")
+# ---------- figures land in results/figures/ (data/frontiers is read-only) ----------
+_gen=sorted(glob.glob(f"{R}/results/figures/fig*.png"))
+chk(f"generated figures written to results/figures/  ({len(_gen)} files)",
+    {os.path.basename(p) for p in _gen}>= {"fig1.png","fig2.png","fig3.png","fig4.png","figS1.png"},
+    f"found: {[os.path.basename(p) for p in _gen]}")
 
 # ---------- figure 1 agrees with the text on the corrected sample ----------
 _fg=open(f"{_SCRIPTDIR}/make_figures.py",encoding='utf-8').read()
@@ -228,21 +223,21 @@ chk("every stated range covers the values it claims to summarise",not _bad,"; ".
 # ---------- no eaten backslashes ----------
 # A literal TAB in a .tex file is nearly always the signature of "\t" being interpreted in a
 # regex replacement string, which silently swallows the backslash of a command such as \texttt.
-for _n,_f in (("manuscript",f"{R}/frontiers/manuscript.tex"),
-              ("supplementary",f"{R}/frontiers/submission/supplementary.tex")):
+for _n,_f in (("manuscript",f"{F}/manuscript.tex"),
+              ("supplementary",f"{F}/submission/supplementary.tex")):
     _s=open(_f,encoding="utf-8").read()
     _bad=[_s[max(0,m):m+28].replace("\t","<TAB>") for m in
           [i for i,c in enumerate(_s) if c=="\t"]]
     chk(f"no stray tab (eaten backslash) in the {_n}", not _bad, f"{len(_bad)} found: {_bad[:3]}")
 # a LaTeX command name should never be left bare after losing its backslash
-_man=open(f"{R}/frontiers/manuscript.tex",encoding="utf-8").read()
+_man=open(f"{F}/manuscript.tex",encoding="utf-8").read()
 _orphan=re.findall(r"(?<![\\\w])(?:exttt|extbf|extit|extsc|mph|ef|abel|ootnote)\{",_man)
 chk("no LaTeX command left without its backslash", not _orphan, f"found: {sorted(set(_orphan))}")
 
 # ---------- supplementary pointers resolve ----------
 # These are plain text, not \ref, so LaTeX cannot catch an off-by-one when a table is added
 # or removed. Recompute the numbering the supplementary will actually render.
-_sup=open(f"{R}/frontiers/submission/supplementary.tex",encoding="utf-8").read()
+_sup=open(f"{F}/submission/supplementary.tex",encoding="utf-8").read()
 _start=re.search(r"\\setcounter\{table\}\{(\d+)\}",_sup)
 _n=int(_start.group(1)) if _start else 0
 _exist=set()
@@ -261,11 +256,11 @@ chk(f"every supplementary table the manuscript cites exists  ({len(_cited)} cite
 # cannot catch drift when a table is inserted or removed.
 _ntab=len(re.findall(r"\\begin\{table\}",man))
 _nsup=_n if False else None
-_supsrc=open(f"{R}/frontiers/submission/supplementary.tex",encoding="utf-8").read()
+_supsrc=open(f"{F}/submission/supplementary.tex",encoding="utf-8").read()
 _start=re.search(r"\\setcounter\{table\}\{(\d+)\}",_supsrc)
 _nsupt=(int(_start.group(1)) if _start else 0)+len(re.findall(r"\\begin\{(?:table|longtable)\}",_supsrc))
 _led=open(f"{R}/results/number_audit.csv",encoding="utf-8").read()
-_lp=f"{R}/frontiers/submission/response_to_reviewers.md"
+_lp=f"{F}/submission/response_to_reviewers.md"
 _letter=open(_lp,encoding="utf-8").read() if os.path.exists(_lp) else ""
 _badmain=sorted({int(x) for x in re.findall(r"Table (\d+)",_led) if int(x)>_ntab})
 _badsup=sorted({int(x) for x in re.findall(r"Table S(\d+)",_led) if int(x)>_nsupt})
@@ -284,7 +279,7 @@ for _m in re.finditer(r"\\(section|subsection|subsubsection)(\*?)\{([^}]*)\}",ma
     elif _m.group(1)=="subsection": _n2+=1;_n3=0;_valid.add(f"{_n1}.{_n2}")
     else: _n3+=1;_valid.add(f"{_n1}.{_n2}.{_n3}")
 _ledtxt=open(f"{R}/results/number_audit.csv",encoding="utf-8").read()
-_lq=f"{R}/frontiers/submission/response_to_reviewers.md"
+_lq=f"{F}/submission/response_to_reviewers.md"
 _lettxt=open(_lq,encoding="utf-8").read() if os.path.exists(_lq) else ""
 for _lbl,_src in (("number ledger",_ledtxt),("response letter",_lettxt)):
     _b=sorted({s for s in re.findall(r"§([\w.]+)",_src) if s not in _valid})
@@ -294,22 +289,23 @@ for _lbl,_src in (("number ledger",_ledtxt),("response letter",_lettxt)):
 # A figure that is generated but never included is usually the sign of a figure having been
 # replaced without its caption being updated.
 import os as _os
-_supsrc2=open(f"{R}/frontiers/submission/supplementary.tex",encoding="utf-8").read()
+_supsrc2=open(f"{F}/submission/supplementary.tex",encoding="utf-8").read()
 _used={_os.path.basename(x) for x in re.findall(r"includegraphics[^{]*\{([^}]*)\}",man+_supsrc2)}
-_have={f for f in _os.listdir(f"{R}/frontiers/figures") if f.endswith(".png")}
+_have={f for f in _os.listdir(f"{F}/figures") if f.endswith(".png")}
 _orph=sorted(_have-_used-{"FigureS1.png"})
 _orph=[f for f in _orph if f.replace("fig","Figure") not in _used]
 chk(f"every generated figure is included somewhere  ({len(_have)} generated)",
     not _orph, f"generated but never included: {_orph}")
-_missing=sorted(f for f in _used if not _os.path.exists(f"{R}/frontiers/figures/{f}")
-                and not _os.path.exists(f"{R}/frontiers/submission/{f}"))
+_missing=sorted(f for f in _used if not _os.path.exists(f"{F}/figures/{f}")
+                and not _os.path.exists(f"{F}/submission/{f}"))
 chk("every included figure file exists", not _missing, f"missing: {_missing}")
 
 # ---------- the repository is public; nothing reader-facing may say otherwise ----------
 _stale=[]
-for _f in (f"{R}/frontiers/manuscript.tex", f"{R}/frontiers/submission/supplementary.tex",
+for _f in (f"{F}/manuscript.tex", f"{F}/submission/supplementary.tex",
            f"{R}/DATA_AVAILABILITY.md", f"{R}/README.md",
-           f"{R}/frontiers/submission/SUBMISSION_README.md"):
+           f"{R}/data/DATA_AVAILABILITY.md", f"{R}/data/README.md",
+           f"{F}/submission/SUBMISSION_README.md"):
     if os.path.exists(_f) and re.search(r"(upon|on) acceptance", open(_f,encoding="utf-8").read(), re.I):
         _stale.append(os.path.basename(_f))
 chk("no live file says the repository becomes public on acceptance", not _stale, f"found in: {_stale}")
@@ -317,7 +313,7 @@ chk("no live file says the repository becomes public on acceptance", not _stale,
 # ---------- no text or table may run past the right margin ----------
 # pdflatex records every such case as an overfull hbox. One is inherent to the Frontiers
 # title block and is present in the as-submitted version too, so that one is allowed.
-_log=f"{R}/frontiers/manuscript.log"
+_log=f"{F}/manuscript.log"
 if os.path.exists(_log):
     _lg=open(_log,errors="replace").read()
     _ov=re.findall(r"Overfull \\hbox \(([\d.]+)pt too wide\)",_lg)
@@ -434,7 +430,7 @@ for _lbl,_ca,_cb,_mr in (("tab:sev",4,5,1),("tab:role",4,5,1),("tab:attrib",4,5,
 # ---------- tie-break counts reconcile with the table's N ----------
 # The prose says how many incidents change issuer; the table reports N after dropping them.
 # 307 - changed must equal the row's N, or the reader cannot connect the two.
-_co=[_r for _r in csv.DictReader(open(f"{R}/data/cocandidates.csv",newline="",encoding="utf-8",errors="replace"))
+_co=[_r for _r in csv.DictReader(open(L.out("cocandidates.csv"),newline="",encoding="utf-8",errors="replace"))
      if _r["incident_id"] in {_d["incident_id"] for _d in csv.DictReader(open(f"{R}/data/disclosure_coding.csv",newline="",encoding="utf-8",errors="replace"))}]
 _dev=sum(1 for _r in _co if _r.get("changes_under_prefer_developer")=="True")
 _par=sum(1 for _r in _co if _r.get("changes_under_prefer_parent")=="True")

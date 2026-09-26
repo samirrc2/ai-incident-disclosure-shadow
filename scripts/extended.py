@@ -157,11 +157,17 @@ R["by_category"]=cat_tbl
 
 # ---- 7. retrieval-validation + window robustness summaries (from agent outputs) ----
 fn=0; ftot=0
+def _audit_records(obj):
+    if isinstance(obj, dict):
+        return obj.values()
+    if isinstance(obj, list):
+        return obj
+    return []
 for f in ["retrieval_A.json","retrieval_B.json"]:
-    p=REV/f
+    p=DATA/f if (DATA/f).exists() else REV/f
     if p.exists():
         d=json.load(open(p))
-        for v in d.values():
+        for v in _audit_records(d):
             ftot+=1
             if isinstance(v,dict) and str(v.get("audit_verdict","")).upper().startswith("REVISE"): fn+=1
 R["retrieval_validation"]={"audited":ftot,"false_negatives_found":fn,

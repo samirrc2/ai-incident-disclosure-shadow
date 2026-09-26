@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """analysis — compute all manuscript numbers from the coded table. Deterministic; no network.
 Input : data/disclosure_coding.csv (307 primary domestic-listed incidents, T1-T4 coded)
-Output: pilot/results.json  (machine-readable, consumed by check_claims.py and the manuscript)
-        pilot/results.md    (human-readable results)
+Output: results/results.json  (machine-readable, consumed by later checks)
+        results/results.md    (human-readable results)
+The frozen copy at pilot/results.json is not overwritten.
 """
 from __future__ import annotations
 import csv, json, math
@@ -10,7 +11,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from config import PILOT, DATA
+from config import DATA, ROOT
 
 def wilson(k, n, z=1.96):
     if n == 0: return (0.0, 0.0, 0.0)
@@ -91,7 +92,8 @@ def main():
         "total_filings":79,"total_issuers":74,
         "framing":"disclosure-under-mandate (count of filings under a legal duty); NOT a cyber shadow rate"}
 
-    (PILOT/"results.json").write_text(json.dumps(R,indent=2))
+    RES = ROOT / "results"; RES.mkdir(parents=True, exist_ok=True)
+    (RES/"results.json").write_text(json.dumps(R,indent=2))
     # markdown
     h=R["headline"]
     def pct(b): return f"{100*b['k']/b['n']:.1f}% [{b['ci95'][0]*100:.1f}, {b['ci95'][1]*100:.1f}]"
@@ -129,7 +131,7 @@ def main():
         f"Item 1.05 material: {R['cyber_benchmark']['item_1_05_material_issuers']} issuers; "
         f"Item 8.01 voluntary: {R['cyber_benchmark']['item_8_01_voluntary_issuers']}; "
         f"as of {R['cyber_benchmark']['as_of']}."]
-    (PILOT/"results.md").write_text("\n".join(L)+"\n")
+    (RES/"results.md").write_text("\n".join(L)+"\n")
     print("\n".join(L))
 
 if __name__=="__main__": main()

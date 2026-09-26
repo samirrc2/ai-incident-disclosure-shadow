@@ -17,7 +17,7 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import paths as L
 from stats_lib import load,TIERS5,dist
-FIG=Path(L.ROOT)/"frontiers"/"figures"; FIG.mkdir(parents=True,exist_ok=True)
+FIG=Path(L.res("figures")); FIG.mkdir(parents=True,exist_ok=True)
 plt.rcParams.update({"font.family":"DejaVu Sans","font.size":10,"axes.spines.top":False,
                      "axes.spines.right":False,"figure.dpi":300})
 C={"T1":"#009E73","T2":"#0072B2","T3a":"#E69F00","T3b":"#F0D58C","T4":"#999999"}
@@ -190,11 +190,5 @@ _ax2.set_ylabel("Cumulative %",color="#D55E00"); _ax2.set_ylim(0,105)
 _ax2.spines["top"].set_visible(False)
 fig.savefig(FIG/"fig3.png",bbox_inches="tight"); plt.close(fig)
 
-import shutil
-SUB=Path(L.ROOT)/"frontiers"/"submission"; SUB.mkdir(parents=True,exist_ok=True)
-for i in (1,2,3,4): shutil.copy(FIG/f"fig{i}.png",SUB/f"Figure{i}.png")
-shutil.copy(FIG/"figS1.png",SUB/"FigureS1.png")
-# FIG is frontiers/figures, which is where the manuscript compiles from, so no further mirror
-# is needed; the numbered Figure*.png copies for the submission package are written above.
-print("regenerated:",", ".join(sorted(p.name for p in FIG.glob('fig*.png'))),"(mirrored to submission/)")
+print("regenerated:",", ".join(sorted(p.name for p in FIG.glob('fig*.png'))),"(results/figures/)")
 for s,n,gg in zip(slab,ns,g): print(f"   {s:<9} n={n:3d}  "+"  ".join(f"{t}={gg.get(t,0)}" for t in TIERS5))

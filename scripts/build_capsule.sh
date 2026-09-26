@@ -1,31 +1,31 @@
 #!/usr/bin/env bash
-# Assemble the Code Ocean capsule from this repository.
+# Assemble a Code Ocean capsule (code / data / environment only).
 #
-# The capsule REGENERATES THE RESULTS of the article and verifies the manuscript's numbers
-# against them. It does not typeset the paper: the manuscript and supplementary sources are
-# copied in read-only, as the thing being checked.
-#
-# The capsule is a build product and is not tracked in git. Run this, then upload
-# codeocean/capsule_v3/ to Code Ocean.
+# Code Ocean's UI has three buckets. Extra top-level folders (coding/, frontiers/,
+# reproduce.sh at the repo root) never arrive. This build nests those under data/
+# and puts the run script plus reproduce.sh in code/.
 #
 # Usage:  bash scripts/build_capsule.sh
+# Upload: unzip codeocean/capsule_v3.zip into Code Ocean (code, data, environment).
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 C="codeocean/capsule_v3"
 
 rm -rf "$C"
-mkdir -p "$C"/{code,data/inbox,results,environment,metadata,docs,pilot,recon} \
-         "$C"/coding/{results,batches} \
-         "$C"/frontiers/{figures,submission,tables}
+mkdir -p "$C"/code \
+         "$C"/data/{inbox,coding/{results,batches},frontiers/{figures,submission,tables},docs,pilot} \
+         "$C"/environment \
+         "$C"/metadata \
+         "$C"/results
 
-# --- the pipeline ---------------------------------------------------------------------
+# --- Code (every analysis script + the Code Ocean entry point) ----------------
 cp scripts/*.py "$C/code/"
 rm -f "$C/code/build_capsule.sh"
+cp requirements.txt LICENSE CITATION.cff "$C/code/"
+cp codeocean/capsule_meta/README.md "$C/code/README.md"
 
-# --- inputs ---------------------------------------------------------------------------
-# Frozen tables, the audit material no script can regenerate, and the manifest that pins
-# all of it. The derived tables are deliberately NOT copied: the run must rebuild them.
+# --- Data: frozen tables + coding logs + manuscript (the thing we verify) ------
 for f in disclosure_coding.csv incident_firm_map.csv incidents.csv validation_sheet.csv \
          entity_audit_return.csv entity_audit_adjudication.csv \
          retrieval_A.json retrieval_B.json retrieval_validation_sample.json \
@@ -33,56 +33,55 @@ for f in disclosure_coding.csv incident_firm_map.csv incidents.csv validation_sh
     cp "data/$f" "$C/data/"
 done
 cp data/inbox/aiid_incidents.csv "$C/data/inbox/"
-cp coding/results/*.json  "$C/coding/results/"
-cp coding/batches/*.json  "$C/coding/batches/"
-cp -r coding/pass2        "$C/coding/" 2>/dev/null || true
-cp pilot/*.md pilot/*.csv "$C/pilot/" 2>/dev/null || true
-cp recon/*.md             "$C/recon/" 2>/dev/null || true
-
-# --- the article, read-only, as the thing being verified -------------------------------
+cp coding/results/*.json  "$C/data/coding/results/"
+cp coding/batches/*.json  "$C/data/coding/batches/"
+cp -r coding/pass2        "$C/data/coding/" 2>/dev/null || true
 cp frontiers/manuscript.tex frontiers/references.bib \
-   frontiers/FrontiersinHarvard.cls frontiers/Frontiers-Harvard.bst "$C/frontiers/"
-cp frontiers/logo*.eps frontiers/logo1.pdf frontiers/logos.eps frontiers/YM-logo.eps \
-   "$C/frontiers/" 2>/dev/null || true
-cp frontiers/submission/supplementary.tex "$C/frontiers/submission/"
-cp docs/CITATION_VERIFICATION.md "$C/docs/"
+   frontiers/FrontiersinHarvard.cls frontiers/Frontiers-Harvard.bst "$C/data/frontiers/"
+cp frontiers/figures/*.png "$C/data/frontiers/figures/" 2>/dev/null || true
+cp frontiers/submission/supplementary.tex "$C/data/frontiers/submission/"
+cp frontiers/submission/SUBMISSION_README.md "$C/data/frontiers/submission/" 2>/dev/null || true
+cp frontiers/submission/response_to_reviewers.md "$C/data/frontiers/submission/" 2>/dev/null || true
+cp docs/CITATION_VERIFICATION.md "$C/data/docs/"
+cp README.md DATA_AVAILABILITY.md "$C/data/"
+cp -R pilot/. "$C/data/pilot/" 2>/dev/null || true
 
-# --- capsule furniture ------------------------------------------------------------------
-cp reproduce.sh requirements.txt LICENSE CITATION.cff "$C/"
-cp environment/Dockerfile "$C/environment/"
-cp codeocean/capsule_meta/metadata.yml "$C/metadata/" 2>/dev/null || \
-  cp metadata/metadata.yml "$C/metadata/"
-cp codeocean/capsule_meta/README.md "$C/" 2>/dev/null || true
+# --- Environment: Code Ocean base image (not python:3.12-slim) ----------------
+cp codeocean/capsule/environment/Dockerfile "$C/environment/Dockerfile"
+cp codeocean/capsule_meta/metadata.yml "$C/metadata/" 2>/dev/null || true
 
-# The capsule runs scripts from code/, not scripts/. Typesetting steps are dropped: the
-# capsule regenerates results, it does not build the paper.
-python3 - "$C/reproduce.sh" <<'PY'
+# reproduce.sh lives in code/ and cds to the capsule root
+python3 - "$C/code/reproduce.sh" reproduce.sh <<'PY'
 import sys
-p = sys.argv[1]
-s = open(p, encoding="utf-8").read().replace("python3 scripts/", "python3 code/")
+src, dst = sys.argv[2], sys.argv[1]
+s = open(src, encoding="utf-8").read().replace("python3 scripts/", "python3 code/")
+# run from capsule root even though this file sits in code/
+s = s.replace('cd "$(dirname "$0")"', 'cd "$(cd "$(dirname "$0")/.." && pwd)"', 1)
 out = []
 for line in s.split("\n"):
     if line.startswith(("python3 code/make_tables_tex.py", "python3 code/supplementary.py")):
         out.append("# " + line + "   # typesetting: the capsule regenerates results only")
     else:
         out.append(line)
-open(p, "w", encoding="utf-8").write("\n".join(out))
+open(dst, "w", encoding="utf-8").write("\n".join(out))
 PY
 
 cat > "$C/code/run" <<'SH'
 #!/usr/bin/env bash
-# Code Ocean entry point. Regenerates the results, then verifies the article against them.
+# Code Ocean Reproducible Run entry point.
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 export MPLBACKEND=Agg PYTHONHASHSEED=0
-bash reproduce.sh
-mkdir -p results/figures
-cp -f frontiers/figures/*.png results/figures/ 2>/dev/null || true
+export PYTHONUNBUFFERED=1
+bash code/reproduce.sh
 echo
 echo "All regenerated results are under results/. Figures are in results/figures/."
 SH
-chmod +x "$C/code/run"
+chmod +x "$C/code/run" "$C/code/reproduce.sh"
 
+# Zip with the three Code Ocean buckets at the top level
+( cd "$C" && zip -qr ../capsule_v3.zip code data environment metadata results )
 echo "built $C  ($(du -sh "$C" | cut -f1))"
-echo "verify it with:  (cd $C && bash code/run)"
+echo "zip    codeocean/capsule_v3.zip  ($(du -h codeocean/capsule_v3.zip | cut -f1))"
+echo "verify:  (cd $C && bash code/run)"

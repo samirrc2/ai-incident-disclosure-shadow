@@ -161,5 +161,6 @@ AIID id & Issuer & Tier & Filing location & Booked impact \\ \midrule
 \end{center}
 \end{table}""")
 
-open(f"{L.ROOT}/frontiers/tables/tables_body.tex","w").write("\n\n".join(O)+"\n")
-print("wrote frontiers/tables/tables_body.tex  (%d tables)"%len(O))
+os.makedirs(L.res("tables"),exist_ok=True)
+open(f"{L.res('tables')}/tables_body.tex","w").write("\n\n".join(O)+"\n")
+print("wrote results/tables/tables_body.tex  (%d tables)"%len(O))

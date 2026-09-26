@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from config import DATA, ROOT
+from config import DATA, ROOT, CODING
 csv.field_size_limit(10_000_000)
 REV=ROOT/"results"
 rows=list(csv.DictReader(open(DATA/"disclosure_coding.csv")))
@@ -39,17 +39,19 @@ chk("category_substantive_total",cat_subst,sum(1 for r in rows if r["disclosure_
 # retrieval validation: recount from agent outputs
 fn=ftot=0
 for f in ["retrieval_A.json","retrieval_B.json"]:
-    p=REV/f
+    p=DATA/f if (DATA/f).exists() else REV/f
     if p.exists():
-        for v in json.load(open(p)).values():
+        obj=json.load(open(p))
+        recs=obj.values() if isinstance(obj,dict) else obj
+        for v in recs:
             ftot+=1
-            if str(v.get("audit_verdict","")).upper().startswith("REVISE"): fn+=1
+            if isinstance(v,dict) and str(v.get("audit_verdict","")).upper().startswith("REVISE"): fn+=1
 chk("retrieval_audited",ftot,E["retrieval_validation"]["audited"])
 chk("retrieval_false_neg",fn,E["retrieval_validation"]["false_negatives_found"])
 # reliability recompute
 p1={r["incident_id"]:r["disclosure_code"] for r in rows}
 p2={}
-for f in glob.glob(str(ROOT/"coding/pass2/results_*.json")):
+for f in glob.glob(str(CODING/"pass2/results_*.json")):
     for k,v in json.load(open(f)).items():
         if isinstance(v,dict) and "code" in v: p2[str(k)]=v["code"]
 pairs=[(p1[i],p2[i]) for i in p2 if i in p1]; n=len(pairs)

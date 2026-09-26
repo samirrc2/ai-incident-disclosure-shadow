@@ -280,7 +280,7 @@ Stratum & n & Agree & Agreement \\ \midrule
 \end{tabular}
 \end{table}""")
 
-ADJ=[r for r in csv.DictReader(open(L.out("entity_audit_adjudication.csv"),newline='',encoding='utf-8',errors='replace'))]
+ADJ=[r for r in csv.DictReader(open(L.frozen("entity_audit_adjudication.csv"),newline='',encoding='utf-8',errors='replace'))]
 O.append(r"""\begin{table}[H]
 \caption{Every disagreement on issuer identity, with its adjudication against the attribution rules of Section~3.2. Ten resolve in favour of the study mapping, four in favour of the second coder. None involves an incident coded T1 or T2. Post-hoc; not pre-specified.}
 \label{tab:entadj}
@@ -325,6 +325,6 @@ O.append(r"""\section{Shadow rate by severity}
 \label{fig:supp-sev}
 \end{figure}""")
 
-open(f"{L.ROOT}/frontiers/submission/supplementary.tex","w").write(
+open(L.res("supplementary.tex"),"w").write(
     PREAMBLE + "\n\n".join(O) + "\n\\end{document}\n")
-print("wrote frontiers/submission/supplementary.tex; tables S2-S10; %d T3 examples"%len(rows))
+print("wrote results/supplementary.tex; tables S2-S10; %d T3 examples"%len(rows))

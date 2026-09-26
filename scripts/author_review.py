@@ -47,7 +47,7 @@ add("frontiers/manuscript.tex","-","generative_ai_statement","expanded to cover 
 add("frontiers/manuscript.tex","-","severity_label","sev_limited / sev_moderate / sev_severe","high",
     "the original severity values T1-limited/T2-moderate/T3-severe collide with the disclosure "
     "codes T1-T4 in the same table; renamed in all derived outputs")
-with open(f"{L.ROOT}/AUTHOR_REVIEW.csv","w",newline='') as f:
+with open(L.res("AUTHOR_REVIEW.csv"),"w",newline='') as f:
     w=csv.DictWriter(f,fieldnames=["source_file","incident_id","field","proposed_value","confidence","rationale"])
     w.writeheader(); w.writerows(R)
 c=collections.Counter(r['confidence'] for r in R)

@@ -1,5 +1,5 @@
 """regenerates every revision table from the frozen inputs plus the recodes.
-Writes machine-readable JSON to results/ and LaTeX fragments to frontiers/tables/.
+Writes machine-readable JSON to results/.
 All analyses here are reviewer-requested post-hoc additions; the pre-registered primary estimand
 (T1 = 4/307, shadow = 300/307) is reported unchanged alongside them."""
 import csv,json,sys,os,collections
@@ -8,7 +8,6 @@ import paths as L
 from stats_lib import cp,pct,load,dist,shadow_variants,TIERS5
 
 D=load(); ALL=list(D.values()); OUT={}
-os.makedirs(f"{L.ROOT}/frontiers/tables",exist_ok=True)
 
 # ---------- Table 1/5: five-way distribution, pre-registered and adjudicated ----------
 for tag,key in (("prereg","tier_prereg"),("adjudicated","tier_adj")):

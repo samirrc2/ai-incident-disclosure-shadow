@@ -11,10 +11,17 @@ AIID_SNAPSHOT_INDEX = "https://incidentdatabase.ai/research/snapshots/"
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+def _existing(*cands):
+    for p in cands:
+        if p.exists():
+            return p
+    return cands[0]
+CODING = _existing(ROOT / "coding", DATA / "coding")
+FRONTIERS = _existing(ROOT / "frontiers", DATA / "frontiers")
 RAW = DATA / "raw"
 INBOX = DATA / "inbox"
-PILOT = ROOT / "pilot"
-RECON = ROOT / "recon"
+PILOT = _existing(ROOT / "pilot", DATA / "pilot")
+RECON = _existing(ROOT / "recon", DATA / "recon")
 
 INCIDENT_WINDOW = ("2019-01-01", "2026-12-31")
 DISCLOSURE_FORMS = "8-K,10-K,10-Q"
