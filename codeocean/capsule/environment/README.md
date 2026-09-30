@@ -1,6 +1,6 @@
 # Environment (Code Ocean–compatible)
 
-Capsule DOI: https://doi.org/10.24433/CO.2340354.v1
+Capsule DOI: https://doi.org/10.24433/10.24433/CO.2340354.v3
 
 `Dockerfile` matches the capsule environment that runs the fully-offline reproduction:
 a Python 3.12 base from Code Ocean's registry plus a minimal pinned analysis stack

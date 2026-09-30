@@ -11,7 +11,7 @@ description: >
   inter-coder reliability (Cohen's kappa, PABAK, Gwet's AC1), the incident-firm map,
   and all publication figures — 100% offline and byte-identical across runs. Measures
   disclosure behavior, not compliance. Keys-free Reproducible Run via /code/run.
-  Code Ocean DOI: https://doi.org/10.24433/CO.2340354.v1
+  Code Ocean DOI: https://doi.org/10.24433/10.24433/CO.2340354.v3
 authors:
   - name: "Samir Chincholikar"
   - name: "Robin Chawla"

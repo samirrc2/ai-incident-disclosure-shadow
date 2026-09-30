@@ -3,7 +3,7 @@
 #
 # Versions are PINNED to the exact environment that produced the committed
 # results (see environment.txt and the Dockerfile, and the audited Code Ocean
-# capsule https://doi.org/10.24433/CO.2340354.v2). Pinning keeps a clean-machine
+# capsule https://doi.org/10.24433/10.24433/CO.2340354.v3). Pinning keeps a clean-machine
 # reproduction bit-for-bit identical to the archived run.
 #
 # Core — needed to REPRODUCE every result, table, and figure from the frozen data

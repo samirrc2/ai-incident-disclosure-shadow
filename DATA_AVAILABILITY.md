@@ -9,13 +9,12 @@ capsule (MIT and CC0), alongside a public source repository:
 
 - **Study repository (GitHub):** https://github.com/samirrc2/ai-incident-disclosure-shadow
   — `data`, `scripts`, `results`; one command rebuilds and verifies every reported number.
-- **Executable capsule (Code Ocean):** submitted; the DOI will be added at proof stage.
+- **Executable capsule (Code Ocean):** https://doi.org/10.24433/CO.2340354.v3 (version-pinned, MIT and CC0).
 - **Source repository:** https://github.com/samirrc2/ai-incident-disclosure-shadow
   — public.
 
 The repository is the archive of record for this version. A version-pinned Code Ocean
-capsule containing the same material has been submitted and its DOI will be added at
-proof stage.
+capsule containing the same material is published at https://doi.org/10.24433/CO.2340354.v3.
 
 ## The deposit contains
 

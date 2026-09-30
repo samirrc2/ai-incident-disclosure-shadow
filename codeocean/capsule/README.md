@@ -12,7 +12,7 @@ AIID-Recorded AI Failures to U.S.-Listed Companies' Investor Disclosures, 2019�
 **Contact:** robin.chawla.cse14@iitbhu.ac.in; samir.chincholikar@gmail.com  
 
 **Repository:** https://github.com/samirrc2/ai-incident-disclosure-shadow  
-**Code Ocean DOI:** https://doi.org/10.24433/CO.2340354.v1
+**Code Ocean DOI:** https://doi.org/10.24433/10.24433/CO.2340354.v3
 
 This Code Ocean–style capsule provides the frozen, SHA-256-pinned inputs and a
 deterministic pipeline that regenerates every quantitative result and figure in the
@@ -48,7 +48,7 @@ capsule (persistent DOI below).
 | Frozen AIID / coding inputs (SHA-256 pinned) | [`data/`](data/) — see [`archive_manifest.md`](archive_manifest.md) |
 | Integrity manifest | [`data/MANIFEST.sha256`](data/MANIFEST.sha256) |
 | Design / audit notes | [`AUDIT.md`](AUDIT.md) |
-| Code Ocean capsule | https://doi.org/10.24433/CO.2340354.v1 |
+| Code Ocean capsule | https://doi.org/10.24433/10.24433/CO.2340354.v3 |
 
 **Access / scope:** outputs are aggregate rates and counts. The study measures
 **disclosure behavior, not compliance**, and makes no assertion that any named company
@@ -100,7 +100,7 @@ pytest==8.3.3
 
 ### Code Ocean
 
-Capsule: https://doi.org/10.24433/CO.2340354.v1
+Capsule: https://doi.org/10.24433/10.24433/CO.2340354.v3
 
 1. Open the compute capsule.
 2. Click **Reproducible Run** (`/code/run`).
@@ -156,4 +156,4 @@ labels come from frozen, human-validated coding logs.
 ## Citation
 
 Cite the Frontiers article once available, and the Code Ocean capsule
-https://doi.org/10.24433/CO.2340354.v1 as the reproducibility deposit.
+https://doi.org/10.24433/10.24433/CO.2340354.v3 as the reproducibility deposit.

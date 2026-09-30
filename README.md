@@ -109,8 +109,8 @@ frozen inputs here.
 ## Data availability
 
 Everything needed to reproduce the study is in this repository (MIT for code, CC0 for
-data). A deterministic Code Ocean capsule containing the same material has been submitted;
-its DOI will be added at proof stage.
+data). A deterministic Code Ocean capsule containing the same material is published at
+https://doi.org/10.24433/CO.2340354.v3.
 
 ## Citation
 
