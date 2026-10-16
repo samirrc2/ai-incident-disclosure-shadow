@@ -40,8 +40,6 @@ cp frontiers/manuscript.tex frontiers/references.bib \
    frontiers/FrontiersinHarvard.cls frontiers/Frontiers-Harvard.bst "$C/data/frontiers/"
 cp frontiers/figures/*.png "$C/data/frontiers/figures/" 2>/dev/null || true
 cp frontiers/submission/supplementary.tex "$C/data/frontiers/submission/"
-cp frontiers/submission/SUBMISSION_README.md "$C/data/frontiers/submission/" 2>/dev/null || true
-cp frontiers/submission/response_to_reviewers.md "$C/data/frontiers/submission/" 2>/dev/null || true
 cp docs/CITATION_VERIFICATION.md "$C/data/docs/"
 cp README.md DATA_AVAILABILITY.md "$C/data/"
 cp -R pilot/. "$C/data/pilot/" 2>/dev/null || true

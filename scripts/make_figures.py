@@ -26,7 +26,7 @@ LAB={"T1":"T1 incident-specific","T2":"T2 legal-consequence only",
 D=load(); ALL=list(D.values())
 
 # ---------------- fig1: PRISMA-style flowchart with every exclusion count ----------------
-# Reviewer 2 point 1. Two reconciliations must hold and are asserted before the figure is drawn:
+# Two reconciliations must hold and are asserted before the figure is drawn:
 #   1,597 - 208 = 1,389 ;  1,389 - 398 - 400 - 243 = 348 ;  348 - 26 - 15 = 307 ;  307 - 4 = 303
 N_SNAP,N_OUTWIN,N_WIN = 1597,208,1389
 EX_GENERIC,EX_UNRESOLVED,EX_PRIVATE = 398,400,243

@@ -260,15 +260,10 @@ _supsrc=open(f"{F}/submission/supplementary.tex",encoding="utf-8").read()
 _start=re.search(r"\\setcounter\{table\}\{(\d+)\}",_supsrc)
 _nsupt=(int(_start.group(1)) if _start else 0)+len(re.findall(r"\\begin\{(?:table|longtable)\}",_supsrc))
 _led=open(f"{R}/results/number_audit.csv",encoding="utf-8").read()
-_lp=f"{F}/submission/response_to_reviewers.md"
-_letter=open(_lp,encoding="utf-8").read() if os.path.exists(_lp) else ""
 _badmain=sorted({int(x) for x in re.findall(r"Table (\d+)",_led) if int(x)>_ntab})
 _badsup=sorted({int(x) for x in re.findall(r"Table S(\d+)",_led) if int(x)>_nsupt})
 chk(f"number ledger cites tables that exist  (main 1-{_ntab}, suppl S1-{_nsupt})",
     not _badmain and not _badsup, f"out of range: main {_badmain}, suppl {_badsup}")
-_badletter=sorted({int(x) for x in re.findall(r"Table (\d+)",_letter) if int(x)>_ntab})
-chk(f"response letter cites tables that exist  (1-{_ntab})",
-    not _badletter, f"out of range: {_badletter}")
 
 # ---------- section numbers cited outside the manuscript exist ----------
 _st=man.index("\\section{Introduction}")
@@ -279,9 +274,7 @@ for _m in re.finditer(r"\\(section|subsection|subsubsection)(\*?)\{([^}]*)\}",ma
     elif _m.group(1)=="subsection": _n2+=1;_n3=0;_valid.add(f"{_n1}.{_n2}")
     else: _n3+=1;_valid.add(f"{_n1}.{_n2}.{_n3}")
 _ledtxt=open(f"{R}/results/number_audit.csv",encoding="utf-8").read()
-_lq=f"{F}/submission/response_to_reviewers.md"
-_lettxt=open(_lq,encoding="utf-8").read() if os.path.exists(_lq) else ""
-for _lbl,_src in (("number ledger",_ledtxt),("response letter",_lettxt)):
+for _lbl,_src in (("number ledger",_ledtxt),):
     _b=sorted({s for s in re.findall(r"§([\w.]+)",_src) if s not in _valid})
     chk(f"{_lbl} cites sections that exist", not _b, f"unknown: {_b}")
 
@@ -305,7 +298,7 @@ _stale=[]
 for _f in (f"{F}/manuscript.tex", f"{F}/submission/supplementary.tex",
            f"{R}/DATA_AVAILABILITY.md", f"{R}/README.md",
            f"{R}/data/DATA_AVAILABILITY.md", f"{R}/data/README.md",
-           f"{F}/submission/SUBMISSION_README.md"):
+           ):
     if os.path.exists(_f) and re.search(r"(upon|on) acceptance", open(_f,encoding="utf-8").read(), re.I):
         _stale.append(os.path.basename(_f))
 chk("no live file says the repository becomes public on acceptance", not _stale, f"found in: {_stale}")

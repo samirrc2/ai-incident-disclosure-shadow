@@ -48,3 +48,19 @@ codeocean/capsule_v3/
 
 # Generated but not included by the manuscript
 frontiers/tables/
+
+# Peer-review correspondence and review-era scaffolding. The paper is published; these
+# are the submission package, not the published artifact. They stay on disk and are not
+# republished: referee replies, tracked-changes copies, the version that was submitted,
+# and the packaging notes that name the referees.
+frontiers/submission/build_tracked.sh
+frontiers/submission/fix_tracked.py
+frontiers/submission/manuscript_tracked.*
+frontiers/submission/manuscript_v1_as_submitted.*
+frontiers/submission/references_v1_as_submitted.bib
+frontiers/submission/response_to_reviewers.md
+frontiers/submission/README_package.md
+frontiers/submission/SUBMISSION_README.md
+frontiers/submission/*_portal.txt
+frontiers/submission/response_reviewer_*
+docs/named_issuer_response.md
