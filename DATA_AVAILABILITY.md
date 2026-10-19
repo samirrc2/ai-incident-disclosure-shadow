@@ -1,52 +1,17 @@
-# Data availability statement
+# Data availability and reproducibility
 
-*(For the Frontiers in Artificial Intelligence submission — deposit supporting
-materials in a repository, then cite and link them from the article.)*
+## Production-approved article statement
 
-All data and code required to reproduce every number, table, and figure in this
-article are openly available in a published, deterministic, executable Code Ocean
-capsule (MIT and CC0), alongside a public source repository:
+> The original contributions presented in the study are included in the article/Supplementary material; further inquiries can be directed to the corresponding author. Incident data were obtained from the AI Incident Database (AIID) snapshot of 27 July 2026 (https://incidentdatabase.ai/research/snapshots/), which is licensed under CC BY-SA 4.0 (McGregor, 2021). Supplementary files containing AIID-derived records are distributed under the same CC BY-SA 4.0 license. SEC filings were obtained from SEC EDGAR and are in the public domain.
 
-- **Study repository (GitHub):** https://github.com/samirrc2/ai-incident-disclosure-shadow
-  — `data`, `scripts`, `results`; one command rebuilds and verifies every reported number.
-- **Executable capsule (Code Ocean):** https://doi.org/10.24433/CO.2340354.v3 (version-pinned, MIT and CC0).
-- **Source repository:** https://github.com/samirrc2/ai-incident-disclosure-shadow
-  — public.
+## Supporting computational materials
 
-The repository is the archive of record for this version. A version-pinned Code Ocean
-capsule containing the same material is published at https://doi.org/10.24433/CO.2340354.v3.
+- **Public study repository:** https://github.com/samirrc2/ai-incident-disclosure-shadow. This contains the documented, frozen incident-to-issuer mappings, per-incident coding records, analytical scripts and SHA-256 manifests.
+- **Previously archived Code Ocean computational artifact:** https://doi.org/10.24433/CO.2340354.v3. This is a **separate research artifact DOI**, not the peer-reviewed article DOI.
+- **Journal article:** https://doi.org/10.3389/frai.2026.1969275. Cite this DOI for the peer-reviewed research findings.
 
-## The deposit contains
+The repository's `reproduce.sh` regenerates the analytical outputs from frozen inputs without calling external AI APIs. It does not re-run historical SEC EDGAR web retrieval or recreate the upstream AIID incident database. Source data and derivative records must be reused in accordance with the applicable upstream terms.
 
-- **Frozen four-tier disclosure coding** (`data/disclosure_coding.csv`, 307 incidents)
-  and the **entity-resolution map** (`data/incident_firm_map.csv`), each SHA-256-pinned
-  in `data/MANIFEST.sha256` and `archive_manifest.md`.
-- **Frozen per-incident EDGAR search logs** (`coding/`) — pass-1 and pass-2 records,
-  retrieval audit, and window-sensitivity checks — the provenance behind every label.
-- **Analysis code** (`scripts/`): entity resolution, the four-tier analysis, extended
-  concentration/robustness tests, exact inference, reliability, figures, and two
-  independent claim verifiers.
-- **Provenance**: hashed pre-registration and codebook (`pilot/`), decision log
-  (`DECISIONS.md`), and the pilot verdict.
+The AIID source snapshot was dated 27 July 2026. The source material's CC BY-SA 4.0 terms apply to AIID-derived records, alongside attribution to the AI Incident Database and McGregor (2021). SEC EDGAR filings are public-domain sources. See [LICENSE](LICENSE) for the separate software and data provisions.
 
-## Reproduction is offline, deterministic, and free
-
-`bash reproduce.sh` regenerates the full analysis from the frozen coded table and logs
-and re-derives every reported statistic through two independent verifiers
-(`scripts/check_claims.py`, `scripts/check_claims_ext.py`). It makes **no vendor API
-calls and requires no network or keys**.
-
-The disclosure labels were produced by point-in-time SEC EDGAR full-text search
-(network, time-sensitive) plus two-pass human-validated coding. As with a frozen
-model-output dataset, that retrieval is **not re-executed**; the coded table and coding
-logs are frozen, and the pipeline reproduces every published number from them.
-
-## Upstream source (referenced by hash, not redistributed here)
-
-AI Incident Database snapshot `backup-20260727110451.tar.bz2` (27 Jul 2026), SHA-256
-`fa13c2093c09ce039a9576ef7d69ef892b4e5e8dd47fd0b3b73badab7643d2f7`, publicly available
-from the Responsible AI Collaborative. `incidents.csv` is extracted from it.
-
-No proprietary, personal, or confidential data are used or distributed. Only aggregate
-rates and counts are reported; the study measures disclosure behavior, not compliance,
-and makes no claim that any named company breached a disclosure obligation.
+The research concerns whether records are identifiable in specified filings, not whether a corporation complied with securities law. No named company's legal disclosure obligations are adjudicated.
