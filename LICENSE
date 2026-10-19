@@ -7,9 +7,20 @@ without restriction, including without limitation the rights to use, copy, modif
 publish, distribute, sublicense, and/or sell copies of the Software, subject to including
 this notice. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
-DATA (data/*.csv, coding logs, results): CC BY 4.0. Incident and issuer names are public
-facts drawn from the AI Incident Database and SEC EDGAR. The dataset records disclosure
-BEHAVIOR (search-scoped codes); it makes no assertion that any issuer violated a disclosure
-duty. Reusers must retain attribution and this behavior-not-compliance notice.
+DATA AND THIRD-PARTY SOURCES
 
-The AIID snapshot is © the Responsible AI Collaborative under its own terms; not redistributed here.
+- AI Incident Database (AIID) records and files derived from its July 27, 2026
+  snapshot are subject to the upstream CC BY-SA 4.0 licence, including
+  attribution and applicable share-alike conditions. Source:
+  https://incidentdatabase.ai/research/snapshots/ .
+  Cite McGregor (2021), DOI: 10.1609/aaai.v35i17.17817.
+- SEC EDGAR filing texts are U.S. public-domain records.
+- Original author-created coding notes, analysis outputs and other content that
+  is not covered by third-party rights remain available under the previously
+  stated CC BY 4.0 grant, where applicable. Third-party conditions take
+  precedence for material derived from those sources.
+- These files record how incidents appeared in a defined SEC filing search,
+  not whether a named issuer breached any legal disclosure duty.
+
+The software's MIT licence does not relicense AIID-derived datasets. For the
+publication-approved data-availability statement, see DATA_AVAILABILITY.md.
