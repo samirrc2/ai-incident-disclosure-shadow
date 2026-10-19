@@ -5,7 +5,11 @@
 **Authors:** Samir Chincholikar (independent researcher) · Robin Chawla (independent researcher, corresponding author)
 **ORCID:** [0009-0007-2779-3492](https://orcid.org/0009-0007-2779-3492) · [0009-0007-2807-3948](https://orcid.org/0009-0007-2807-3948)
 **Contact:** robin.chawla.cse14@iitbhu.ac.in · samir.chincholikar@gmail.com
-Under review at *Frontiers in Artificial Intelligence* (AI in Finance).
+**Accepted** by *Frontiers in Artificial Intelligence* (AI in Finance) on 5 October 2026. The publisher lists the final formatted article as forthcoming.
+
+**Read and cite the journal article:** [The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings](https://doi.org/10.3389/frai.2026.1969275) · DOI **10.3389/frai.2026.1969275**.
+
+**Research questions:** [50 evidence-based questions and answers on AI incidents and securities filings](https://samirrc2.github.io/ai-incident-disclosure-shadow/) (single GitHub Pages website).
 
 This repository is the reproducibility artifact for the article. It holds the frozen,
 SHA-256-pinned inputs and the deterministic pipeline that regenerates **every reported
@@ -108,9 +112,7 @@ frozen inputs here.
 
 ## Data availability
 
-Everything needed to reproduce the study is in this repository (MIT for code, CC0 for
-data). A deterministic Code Ocean capsule containing the same material is published at
-https://doi.org/10.24433/CO.2340354.v3.
+The study's reproducibility materials and frozen analytical inputs are available here. Analysis code is MIT-licensed; **AIID-derived records retain the source database's CC BY-SA 4.0 terms** and SEC EDGAR filings are public-domain materials. See [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md) and [`LICENSE`](LICENSE) for the precise data-source and licensing distinctions. A separately archived Code Ocean capsule is available at https://doi.org/10.24433/CO.2340354.v3; its artifact DOI is **not** the peer-reviewed article DOI.
 
 ## Citation
 
@@ -118,4 +120,4 @@ See `CITATION.cff`.
 
 ## Licence
 
-Code MIT, data CC0 — see `LICENSE`.
+Code MIT; AIID-derived records CC BY-SA 4.0; other sources and materials as detailed in [`LICENSE`](LICENSE).
