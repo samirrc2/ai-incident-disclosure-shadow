@@ -5,7 +5,7 @@
 **Authors:** Samir Chincholikar (independent researcher) · Robin Chawla (independent researcher, corresponding author)
 **ORCID:** [0009-0007-2779-3492](https://orcid.org/0009-0007-2779-3492) · [0009-0007-2807-3948](https://orcid.org/0009-0007-2807-3948)
 **Contact:** robin.chawla.cse14@iitbhu.ac.in · samir.chincholikar@gmail.com
-**Accepted** by *Frontiers in Artificial Intelligence* (AI in Finance) on 5 October 2026. The publisher lists the final formatted article as forthcoming.
+**Published** in *Frontiers in Artificial Intelligence* (AI in Finance) on 21 October 2026 (accepted 5 October 2026).
 
 **Read and cite the journal article:** [The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings](https://doi.org/10.3389/frai.2026.1969275) · DOI **10.3389/frai.2026.1969275**.
 
