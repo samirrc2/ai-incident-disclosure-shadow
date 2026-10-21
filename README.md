@@ -11,6 +11,8 @@
 
 **Research questions:** [50 evidence-based questions and answers on AI incidents and securities filings](https://samirrc2.github.io/ai-incident-disclosure-shadow/) (single GitHub Pages website).
 
+**Code Ocean reproducibility capsule:** [Open the published, executable replication artifact](https://doi.org/10.24433/CO.2340354.v3) · DOI **10.24433/CO.2340354.v3**.
+
 This repository is the reproducibility artifact for the article. It holds the frozen,
 SHA-256-pinned inputs and the deterministic pipeline that regenerates **every reported
 number, table and figure**, then verifies them against the manuscript.
