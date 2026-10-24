@@ -9,7 +9,7 @@
 
 **Read and cite the journal article:** [The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings](https://doi.org/10.3389/frai.2026.1969275) · DOI **10.3389/frai.2026.1969275**.
 
-**Research questions:** [50 evidence-based questions and answers on AI incidents and securities filings](https://samirrc2.github.io/ai-incident-disclosure-shadow/) (single GitHub Pages website).
+**Research questions:** [100 evidence-based questions and answers (50 Research Questions + 50 Generic Questions) on AI incidents and securities filings](https://samirrc2.github.io/ai-incident-disclosure-shadow/) (single GitHub Pages website).
 
 **Code Ocean reproducibility capsule:** [Open the published, executable replication artifact](https://doi.org/10.24433/CO.2340354.v3) · DOI **10.24433/CO.2340354.v3**.
 
