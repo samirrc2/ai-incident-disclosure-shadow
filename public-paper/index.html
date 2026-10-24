@@ -20,22 +20,229 @@
 <meta property="og:url" content="https://samirrc2.github.io/ai-incident-disclosure-shadow/">
 <meta name="twitter:card" content="summary">
 <style>
-:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.65;color:#1a2534;background:#f6f8fa}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{color:#14549a}a:hover{text-decoration-thickness:2px}
-.wrap{width:min(100% - 38px,940px);margin:auto}header{background:white;border-bottom:1px solid #dce4ec}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:16px 0}.brand{font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;color:#455b72;font-weight:750}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem}
-main{padding:48px 0 72px}.eyebrow{font-weight:750;text-transform:uppercase;letter-spacing:.11em;color:#1552a2;font-size:.8rem}h1{line-height:1.13;font-size:clamp(2.08rem,5vw,3.45rem);letter-spacing:-.035em;margin:13px 0 20px}.dek{font-size:1.17rem;color:#495a71;max-width:840px}.meta{color:#596b7d;font-size:.92rem}
-.btn{background:#154d91;border-radius:7px;padding:12px 18px;display:inline-block;color:white;text-decoration:none;font-weight:750;margin:14px 16px 14px 0}.link{font-weight:650}.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:30px 0}.metric{background:white;border:1px solid #dce4ec;border-radius:10px;padding:20px}.metric strong{font-size:2rem;color:#164c86;display:block;line-height:1.3}.metric span{color:#43566d;font-size:.93rem}
-.notice{padding:17px 20px;background:#e9f0f8;border-left:4px solid #3d639c;color:#263f5c;margin-bottom:30px;border-radius:3px}
-article{background:white;border:1px solid #dde5ed;padding:clamp(22px,5vw,44px);border-radius:12px}h2{font-size:1.48rem;line-height:1.3;letter-spacing:-.016em}h3{font-size:1.08rem;line-height:1.4;margin:16px 0 7px}
-p{margin:12px 0}.intro h2{margin:0 0 12px}.toc{border-radius:10px;padding:16px 20px;background:#f4f7fb;border:1px solid #dce4ed;margin:22px 0}.toc ol{margin:7px 0;padding-left:22px;columns:2;column-gap:30px}.toc li{break-inside:avoid;margin-bottom:5px;font-size:.92rem}
-.topic{padding:20px 0;border-bottom:1px solid #e2e7ed;scroll-margin-top:18px}.topic h2{color:#154d91;margin:22px 0}.qa{scroll-margin-top:20px;padding:7px 0}.qa p{color:#354960;margin:0 0 15px}.index{color:#1552a2}.more{font-size:.91rem;margin:15px 0 5px}.sources{border:1px solid #dce4ed;background:#f4f7fb;border-radius:8px;padding:22px;margin-top:30px;overflow-wrap:anywhere}
-footer{border-top:1px solid #dce4ec;padding:25px 0 40px;color:#5b6c7d;font-size:.87rem}
-@media(max-width:680px){main{padding-top:30px}.metrics{grid-template-columns:1fr}.toc ol{columns:1}}
-.generic-questions{border-top:2px solid #d3dee8;margin-top:34px;padding-top:18px;scroll-margin-top:22px}.generic-topic{border-top:1px solid #e1e8f1;margin:15px 0;padding-top:15px;scroll-margin-top:22px}.generic-topic h3{font-size:1.19rem;color:#1b527f}.generic-qa{padding:7px 0;scroll-margin-top:20px}.generic-qa h4{font-size:1.055rem;line-height:1.44;margin:12px 0 8px}.generic-qa p{margin:0 0 9px}.generic-index{margin-right:4px;text-decoration:none;font-size:.88rem}.generic-source{font-size:.82rem;color:#586e83;padding-bottom:11px}</style>
+
+/*
+ * CLASSICAL ACADEMIC — shared visual template
+ * White paper, Georgia text, black typographic hierarchy, fine grey rules.
+ * No decorative card fills, pill buttons, gradients or branded accent colors.
+ */
+:root{
+  color-scheme:light;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:16px;line-height:1.74;
+  color:#252525;background:#fff;
+  font-synthesis: none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#252525;overflow-wrap:break-word}
+a{color:#1e1e1e;text-decoration:underline;text-decoration-color:#8e8e8e;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#000;text-decoration-color:#000}
+a:focus-visible,summary:focus-visible{outline:2px solid #222;outline-offset:4px}
+.wrap{width:min(100% - 44px,880px);margin-inline:auto}
+header{background:#fff;border-bottom:1px solid #bdbdbd;text-align:center}
+header .wrap,header .top,header .header-inner{
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  gap:12px;padding:24px 0 18px
+}
+header .brand,header .header-inner .brand{
+  font:700 .77rem/1.4 Arial,Helvetica,sans-serif;
+  letter-spacing:.21em;text-transform:uppercase;color:#222
+}
+header nav{display:flex;justify-content:center;flex-wrap:wrap;gap:7px 20px;font:400 .72rem/1.45 Arial,Helvetica,sans-serif}
+header nav a,header .header-link{font:400 .72rem/1.45 Arial,Helvetica,sans-serif;text-transform:none}
+main.wrap,main{padding-top:45px;padding-bottom:72px}
+.eyebrow{
+  text-align:center;font:700 .67rem/1.6 Arial,Helvetica,sans-serif;
+  text-transform:uppercase;letter-spacing:.14em;color:#666;
+  margin:0 auto 17px;max-width:760px
+}
+h1{
+  font:400 clamp(2.1rem,4.8vw,3.45rem)/1.18 Georgia,"Times New Roman",serif;
+  letter-spacing:-.025em;color:#171717;
+  max-width:815px;margin:0 auto 16px;text-align:center
+}
+main > .authors,main > .meta,main > .dek{
+  text-align:center;max-width:790px;margin-left:auto;margin-right:auto
+}
+main > .authors{
+  font:400 .84rem/1.7 Arial,Helvetica,sans-serif;
+  color:#4e4e4e;margin-top:10px;margin-bottom:12px
+}
+main > .meta{
+  font:400 .76rem/1.75 Arial,Helvetica,sans-serif;
+  color:#5b5b5b;margin-top:9px;margin-bottom:13px
+}
+main > .dek{
+  font:400 1.04rem/1.64 Georgia,"Times New Roman",serif;
+  color:#3c3c3c;margin-top:14px;margin-bottom:17px
+}
+h2,h3,h4{color:#222;letter-spacing:normal}
+h2{
+  font:400 1.63rem/1.3 Georgia,"Times New Roman",serif;
+  margin:29px 0 15px
+}
+h3{
+  font:400 1.25rem/1.37 Georgia,"Times New Roman",serif;
+  margin:18px 0 9px
+}
+h4{
+  font:400 1.17rem/1.42 Georgia,"Times New Roman",serif;
+  margin:16px 0 9px
+}
+p{margin:11px 0 17px}
+strong,b{font-weight:700}
+.links,main > p:has(> .btn),main > p:has(> .link){
+  text-align:center;display:flex;justify-content:center;gap:8px 24px;
+  flex-wrap:wrap;align-items:baseline;margin:18px auto 20px
+}
+.links a,.links a.primary,.btn,.cta,.secondary-cta,.link,header .header-link{
+  display:inline-block;background:transparent;color:#222;
+  border:0;border-radius:0;box-shadow:none;
+  font:400 .76rem/1.55 Arial,Helvetica,sans-serif;
+  text-decoration:underline;text-underline-offset:4px;
+  text-decoration-color:#777;padding:5px 0;margin:0
+}
+.links a.primary,.btn,.cta{
+  font-weight:700;color:#171717;
+}
+.links a:hover,.btn:hover,.cta:hover,.secondary-cta:hover,.link:hover{background:transparent;color:#000}
+.metrics{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;
+  margin:35px 0 30px;padding:17px 0 18px;
+  border-top:1px solid #b1b1b1;border-bottom:1px solid #b1b1b1
+}
+.metric{
+  background:transparent;border:0;border-radius:0;box-shadow:none;
+  text-align:center;padding:10px 18px;min-width:0
+}
+.metric + .metric{border-left:1px solid #d4d4d4}
+.metric b,.metric strong,.metric .number{
+  display:block;margin:0 0 6px;
+  font:400 clamp(1.75rem,3.2vw,2.35rem)/1.2 Georgia,"Times New Roman",serif;
+  letter-spacing:-.018em;color:#202020
+}
+.metric span,.metric small,.metric p{
+  display:block;margin:0;
+  font:400 .72rem/1.55 Arial,Helvetica,sans-serif;color:#666
+}
+.metric p strong{font-weight:600;color:#4a4a4a}
+.scope,.note,.notice{
+  background:transparent;color:#404040;
+  border:0;border-radius:0;border-top:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0;
+  box-shadow:none;margin:22px 0 40px;padding:17px 0;
+  font-size:.94rem;line-height:1.7
+}
+article,article.paper,.paper{
+  background:#fff;border:0;border-radius:0;
+  box-shadow:none;padding:0;margin:0
+}
+article section{scroll-margin-top:24px}
+article > section:first-child h2{margin-top:14px}
+.paper .abstract, .abstract{font-size:.98rem;line-height:1.77;color:#333}
+.intro,.questions-intro{padding-bottom:15px;border-bottom:1px solid #c5c5c5}
+.intro h2,.questions-intro h2{margin-top:10px}
+.fit,.citation-relevance,.sources,.reference,.citation,section.reference{
+  background:transparent;color:#282828;box-shadow:none;
+  border:0;border-radius:0;padding:0;margin:33px 0 25px
+}
+.fit,.citation-relevance{border-top:1px solid #bfbfbf;padding-top:14px}
+.fit ul{padding-left:23px;margin:10px 0 20px}
+.fit li{margin:7px 0}
+.toc,.generic-toc,.question-list{
+  background:transparent;color:#2b2b2b;box-shadow:none;
+  border:0;border-radius:0;border-top:1px solid #bfbfbf;border-bottom:1px solid #d1d1d1;
+  padding:18px 0 17px;margin:25px 0
+}
+.toc strong,.generic-toc strong{
+  font:700 .72rem/1.5 Arial,Helvetica,sans-serif;
+  text-transform:uppercase;letter-spacing:.13em;color:#515151
+}
+.toc ol,.generic-toc ol,.question-list ol{
+  padding-left:23px;columns:2;column-gap:40px;margin:10px 0 0
+}
+.toc li,.generic-toc li,.question-list li{
+  font:400 .85rem/1.55 Georgia,"Times New Roman",serif;
+  break-inside:avoid;margin:0 0 8px
+}
+.question-list summary{
+  color:#333;cursor:pointer;
+  font:700 .76rem/1.5 Arial,Helvetica,sans-serif;letter-spacing:.04em
+}
+.topic,.topic-section,.generic-topic{
+  background:transparent;
+  border:0;border-top:1px solid #c6c6c6;
+  padding:22px 0 6px;margin:29px 0 0;scroll-margin-top:22px
+}
+.topic h2,.topic-section > h2{
+  font:400 1.53rem/1.3 Georgia,"Times New Roman",serif;
+  letter-spacing:0;color:#222;margin:0 0 21px
+}
+.generic-topic h3{
+  font:400 1.53rem/1.3 Georgia,"Times New Roman",serif;
+  color:#222;margin:0 0 21px
+}
+.qa,.answer-block,.generic-qa{padding:5px 0 13px;scroll-margin-top:22px}
+.qa h3,.answer-block h3,.generic-qa h4{
+  font:400 1.17rem/1.44 Georgia,"Times New Roman",serif;
+  color:#191919;margin:6px 0 10px
+}
+.qa p,.answer-block p,.generic-qa p{color:#353535;margin:0 0 10px;line-height:1.75}
+.index,.question-number,.generic-index,.qlink{
+  font:400 .78rem/1.5 Arial,Helvetica,sans-serif;
+  color:#666;text-decoration:none;margin-right:5px
+}
+.reference, .generic-source,.topic-source,.more,.evidence{
+  font:400 .74rem/1.62 Arial,Helvetica,sans-serif;
+  color:#606060
+}
+.topic-source,.more{margin:14px 0 8px}
+.generic-source{padding-bottom:8px}
+.generic-questions{
+  border:0;border-top:2px solid #292929;
+  padding:20px 0 0;margin:49px 0 0;scroll-margin-top:22px
+}
+.generic-questions > h2{margin-top:0}
+.sources,section.sources,section.citation,section.reference{
+  border:0;border-top:2px solid #222;background:transparent;
+  padding:17px 0 0;margin-top:44px;overflow-wrap:anywhere
+}
+.sources h2:first-child,.reference h2:first-child,.citation h2:first-child{margin-top:0}
+.citecode,pre{
+  background:#fff;color:#242424;border:1px solid #c8c8c8;border-radius:0;
+  padding:14px 17px;white-space:pre-wrap;overflow-wrap:anywhere;
+  font:400 .76rem/1.65 "Courier New",monospace
+}
+footer{border-top:1px solid #c6c6c6;color:#626262;background:#fff;
+  font:400 .73rem/1.65 Arial,Helvetica,sans-serif;
+  padding:23px 0 36px
+}
+@media(max-width:700px){
+  .wrap{width:min(100% - 34px,880px)}
+  header .wrap,header .top,header .header-inner{padding:19px 0 16px}
+  header nav{gap:9px 15px}
+  main.wrap,main{padding-top:30px;padding-bottom:45px}
+  h1{font-size:clamp(1.9rem,7vw,2.65rem)}
+  .metrics{grid-template-columns:1fr;padding:4px 0}
+  .metric{padding:14px 6px}
+  .metric + .metric{border-left:0;border-top:1px solid #dadada}
+  .toc ol,.generic-toc ol,.question-list ol{columns:1}
+  .topic,.topic-section,.generic-topic{padding-top:18px}
+  .qa h3,.answer-block h3,.generic-qa h4{font-size:1.12rem}
+}
+@media print{
+  header nav{display:none}
+  main.wrap,main{padding-top:18px}
+  .wrap{width:100%}
+  article a{color:#111}
+  .qa,.answer-block,.generic-qa{break-inside:avoid}
+}
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The AI Incident Disclosure Shadow: 50 research questions on AI incidents and SEC filings","url":"https://samirrc2.github.io/ai-incident-disclosure-shadow/","dateModified":"2026-10-24","description":"Evidence-based research guide to AI incidents, financial disclosure and SEC filings using 307 incidents matched to 21 public-company issuers.","about":{"@type":"ScholarlyArticle","headline":"The AI Incident Disclosure Shadow: Tracking AI Incidents into U.S. Securities Filings","dateCreated":"2026","dateAccepted":"2026-10-05","author":[{"@type":"Person","name":"Samir Chincholikar","sameAs":"https://orcid.org/0009-0007-2779-3492"},{"@type":"Person","name":"Robin Chawla","sameAs":"https://orcid.org/0009-0007-2807-3948"}],"isPartOf":{"@type":"Periodical","name":"Frontiers in Artificial Intelligence"},"identifier":"https://doi.org/10.3389/frai.2026.1969275","url":"https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1969275/full","datePublished":"2026-10-21"}}</script>
 </head>
 <body>
-<header><div class="wrap top"><span class="brand">AI in finance · Empirical research</span><nav aria-label="Primary"><a href="#questions">Research questions</a><a href="#generic-questions">Generic questions</a><a href="https://github.com/samirrc2/ai-incident-disclosure-shadow">Reproducibility materials ↗</a><a href="https://doi.org/10.3389/frai.2026.1969275">Frontiers article ↗</a></nav></div></header>
+<header><div class="wrap top"><span class="brand">RESEARCH PAPERS</span><nav aria-label="Primary"><a href="#questions">Research questions</a><a href="#generic-questions">Generic questions</a><a href="https://github.com/samirrc2/ai-incident-disclosure-shadow">Reproducibility materials ↗</a><a href="https://doi.org/10.3389/frai.2026.1969275">Frontiers article ↗</a></nav></div></header>
 <main class="wrap">
 <div class="eyebrow">AI incidents · Corporate transparency · Securities disclosure</div>
 <h1>When AI incidents happen, what do securities filings tell investors?</h1>
